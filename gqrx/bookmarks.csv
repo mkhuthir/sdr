@@ -1,64 +1,66 @@
 # Tag name          ;  color
-GPS                 ; #ce5c00
-ELF                 ; #ef2929
-AM                  ; #ff5a5a
-90m                 ; #c17d11
-31m                 ; #75507b
-HAM15m              ; #729fcf
-Marine              ; #c07010
-WalkiTalki_VHF      ; #8ae234
-120m                ; #73d216
-HAM1.25m            ; #729fcf
-GLONASS             ; #c17d11
-HAM20m              ; #729fcf
-HAM2200m            ; #729fcf
-HAM80m              ; #729fcf
-ULF                 ; #3465a4
-15m                 ; #edd400
-49m                 ; #fcaf3e
-HAM60m              ; #729fcf
-RC                  ; #729fcf
-22m                 ; #ad7fa8
-HAM12m              ; #729fcf
-MW                  ; #0056e6
-16m                 ; #4e9a06
-Airband             ; #ce5c00
-HAM40m              ; #729fcf
-VLF                 ; #c0c0c0
-HAM2m               ; #729fcf
-SLF                 ; #8f5902
-75m                 ; #204a87
-HAM6m               ; #729fcf
-DVB                 ; #f57900
-ADSB                ; #75507b
-HAM33cm             ; #729fcf
-ISM                 ; #edd400
-HAM13cm             ; #729fcf
-Galileo             ; #8f5902
-FM                  ; #00ff00
-HAM17m              ; #729fcf
-WalkiTalki_UHF      ; #8ae234
-Tetra               ; #14a08c
 41m                 ; #8ae234
-HAM160m             ; #729fcf
-NOAA                ; #cc0000
-LF                  ; #8ae234
-HAM10m              ; #729fcf
-11m                 ; #ad7fa8
-13m                 ; #204a87
-HAM4m               ; #729fcf
-Untagged            ; #888a85
-IRNSS               ; #a08c14
-HAM23cm             ; #729fcf
 60m                 ; #ce5c00
+15m                 ; #edd400
+22m                 ; #ad7fa8
+ULF                 ; #3465a4
+HAM13cm             ; #729fcf
+31m                 ; #75507b
+HAM80m              ; #729fcf
+HAM160m             ; #729fcf
+HAM2m               ; #729fcf
+ISM                 ; #edd400
 HAM630m             ; #729fcf
-SAT                 ; #73d216
-25m                 ; #edd400
-19m                 ; #c4a000
+HAM12m              ; #729fcf
+HAM20m              ; #729fcf
 CW                  ; #00ff00
-HAM30m              ; #729fcf
-WWV Time            ; #4e9a06
 HAM70cm             ; #729fcf
+90m                 ; #c17d11
+Marker              ; #c0c0c0
+Untagged            ; #888a85
+HAM33cm             ; #729fcf
+RC                  ; #729fcf
+MW                  ; #0056e6
+WWV Time            ; #4e9a06
+ELF                 ; #ef2929
+19m                 ; #c4a000
+Tetra               ; #14a08c
+GLONASS             ; #c17d11
+25m                 ; #edd400
+HAM40m              ; #729fcf
+HAM15m              ; #729fcf
+120m                ; #73d216
+HAM23cm             ; #729fcf
+ADSB                ; #75507b
+Galileo             ; #8f5902
+HAM60m              ; #729fcf
+HAM17m              ; #729fcf
+HAM10m              ; #729fcf
+WalkiTalki_VHF      ; #8ae234
+13m                 ; #204a87
+49m                 ; #fcaf3e
+HAM2200m            ; #729fcf
+HAM6m               ; #729fcf
+11m                 ; #ad7fa8
+75m                 ; #204a87
+Marine              ; #c07010
+Airband             ; #ce5c00
+VLF                 ; #c0c0c0
+HAM30m              ; #729fcf
+IRNSS               ; #a08c14
+Wi-Fi-2.4G          ; #c0c0c0
+LF                  ; #8ae234
+16m                 ; #4e9a06
+DVB                 ; #f57900
+WalkiTalki_UHF      ; #8ae234
+SLF                 ; #8f5902
+FM                  ; #00ff00
+NOAA                ; #cc0000
+GPS                 ; #ce5c00
+SAT                 ; #73d216
+AM                  ; #ff5a5a
+HAM4m               ; #729fcf
+HAM1.25m            ; #729fcf
 
 # Frequency ; Name                     ; Modulation          ;  Bandwidth; Tags
            3; S                        ; AM                  ;          0; ELF
@@ -3061,9 +3063,24 @@ HAM70cm             ; #729fcf
   2300000000; S                        ; Narrow FM           ;      10000; HAM13cm
   2310000000; E                        ; Narrow FM           ;      10000; HAM13cm
   2400000000; S                        ; Demod Off           ;          0; ISM
+  2412000000; Ch1                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2417000000; Ch2                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2422000000; Ch3                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2427000000; Ch4                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2432000000; Ch5                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2437000000; Ch6                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2442000000; Ch7                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2447000000; Ch8                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
   2450000000; *                        ; Demod Off           ;      50000; ISM
+  2452000000; Ch9                      ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2457000000; Ch10                     ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2462000000; Ch11                     ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2467000000; Ch12                     ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2472000000; Ch13                     ; Demod Off           ;   22000000; Wi-Fi-2.4G
+  2484000000; Ch14                     ; Demod Off           ;   22000000; Wi-Fi-2.4G
   2492080000; IRNSS S                  ; Narrow FM           ;       2000; IRNSS
   2500000000; E                        ; Demod Off           ;          0; ISM
   5725000000; S                        ; Demod Off           ;          0; ISM
   5800000000; *                        ; Demod Off           ;      50000; ISM
   5875000000; E                        ; Demod Off           ;          0; ISM
+  7245708100; HackRFEnd                ; CW-U                ;        500; Marker
