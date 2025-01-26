@@ -218,11 +218,6 @@
                     "frequency": 98400000.0,
                     "mode": 1
                 },
-                "AD SEHA": {
-                    "bandwidth": 200000.0,
-                    "frequency": 104600000.0,
-                    "mode": 1
-                },
                 "AD Zayed Quran": {
                     "bandwidth": 200000.0,
                     "frequency": 97600000.0,
@@ -361,6 +356,11 @@
                 "Pearl": {
                     "bandwidth": 200000.0,
                     "frequency": 102000000.0,
+                    "mode": 1
+                },
+                "Quran": {
+                    "bandwidth": 200000.0,
+                    "frequency": 105900000.0,
                     "mode": 1
                 },
                 "RAK FM": {
@@ -519,7 +519,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 11MHz": {
             "bookmarks": {
@@ -599,7 +599,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 13MHz": {
             "bookmarks": {
@@ -619,7 +619,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 15MHz": {
             "bookmarks": {
@@ -664,7 +664,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 17MHz": {
             "bookmarks": {
@@ -694,7 +694,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 21MHz": {
             "bookmarks": {
@@ -709,7 +709,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 7MHz": {
             "bookmarks": {
@@ -739,7 +739,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "BC - SW 9Mhz": {
             "bookmarks": {
@@ -809,7 +809,7 @@
                     "mode": 2
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "Data - ACARS": {
             "bookmarks": {},
@@ -903,7 +903,7 @@
                     "mode": 7
                 }
             },
-            "showOnWaterfall": false
+            "showOnWaterfall": true
         },
         "Data - WiFi 2.4GHz": {
             "bookmarks": {
@@ -9255,8 +9255,8 @@
                     "mode": 7
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         }
     },
-    "selectedList": "Sat - NOAA"
+    "selectedList": "BC - FM"
 }
