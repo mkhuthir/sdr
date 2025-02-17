@@ -1,0 +1,1236 @@
+** TagInfo scan (version 4.24.7) 2021-02-26 09:48:13 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x7D993FE6895852D2F56EA508747F3C86
+* s: 0xB4308B496DA718E5EB2A04EE23DD1EF9
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:5B:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:5B:42 95 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:01 (OTP0-OTP3)
+[04] .  64 0A EE F3 |d␊..|
+[05] .  3E 41 20 23 |>A␠#|
+[06] .  87 89 0A 1B |..␊␛|
+[07] .  C2 60 2C AC |.`,.|
+[08] .  AC 04 30 21 |.␄0!|
+[09] .  3E 8F 2F 1B |>./␛|
+[0A] .  ED D6 CE 08 |...␈|
+[0B] .  37 F3 D7 20 |7..␠|
+[0C] .  64 06 EE F3 |d␆..|
+[0D] .  1A 20 00 28 |␚␠␀(|
+[0E] .  A0 B6 6A AB |..j.|
+[0F] .  5B 38 44 68 |[8Dh|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:48:09 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0xA5E58D8452FABA8AFAEF2BC17170822B
+* s: 0xA87767EE7BD55A5EE578B53B320EEE09
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:53:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:53:42 9D (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 1B |>..␛|
+[06] .  2A 58 7B D3 |*X{.|
+[07] .  48 D4 1A 69 |H.␚i|
+[08] .  68 0E EE F4 |h␎..|
+[09] .  2B 20 00 23 |+␠␀#|
+[0A] .  2E FE E2 23 |...#|
+[0B] .  0F 88 E5 6D |␏..m|
+[0C] .  70 12 EE F4 |p␒..|
+[0D] .  4F 41 20 29 |OA␠)|
+[0E] .  EF 0A 7C 2B |.␊|+|
+[0F] .  F4 55 C6 43 |.U.C|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:48:06 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x3DDDECE65278B7FCAF94692D384A187D
+* s: 0xDF69F1760D13B7CBFA45303D043998A9
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:59:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:59:42 97 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 1B |>..␛|
+[06] .  7C 0A A1 A2 ||␊..|
+[07] .  B6 CB 9F 26 |...&|
+[08] .  68 0E EE F4 |h␎..|
+[09] .  2B 20 00 23 |+␠␀#|
+[0A] .  4B B7 4B B4 |K.K.|
+[0B] .  D9 59 4A 84 |.YJ.|
+[0C] .  70 12 EE F4 |p␒..|
+[0D] .  4F 41 20 29 |OA␠)|
+[0E] .  E6 64 EE C2 |.d..|
+[0F] .  A9 1C F4 F0 |.␜..|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:48:01 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x01AA49D6286A45AC66F7100D9426418B
+* s: 0x2B210A3EDF67D588A7553D7CD67D9949
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:55:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:55:42 9B (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 1B |>..␛|
+[06] .  9F DC D6 41 |...A|
+[07] .  EE 09 DE 78 |.␉.x|
+[08] .  68 0E EE F4 |h␎..|
+[09] .  2B 20 00 23 |+␠␀#|
+[0A] .  2C 80 55 5A |,.UZ|
+[0B] .  2B DA B3 D8 |+...|
+[0C] .  70 12 EE F4 |p␒..|
+[0D] .  4F 41 20 29 |OA␠)|
+[0E] .  08 3A 15 35 |␈:␕5|
+[0F] .  0F 4A 81 C5 |␏J..|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:55 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x9C5CA1E560BC3F61815A0393707D8308
+* s: 0x00A20D4462345FAD07506297D82A4690
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:57:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:57:42 99 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 1B |>..␛|
+[06] .  38 56 4D F9 |8VM.|
+[07] .  47 BB D6 E1 |G...|
+[08] .  68 0E EE F4 |h␎..|
+[09] .  2B 20 00 23 |+␠␀#|
+[0A] .  5A CB F8 03 |Z..␃|
+[0B] .  16 E3 65 B5 |␖.e.|
+[0C] .  70 12 EE F4 |p␒..|
+[0D] .  4F 41 20 29 |OA␠)|
+[0E] .  D5 B6 70 C2 |..p.|
+[0F] .  ED 94 4E 03 |..N␃|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:50 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0xEA74AC57DA6355D18634DD686942A669
+* s: 0xBABFB67C8AB6E993B9E300D37119172B
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:E5:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:E5:B2 DB (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 11 |>..␑|
+[06] .  5D 04 90 CB |]␄..|
+[07] .  89 4D 0E C9 |.M␎.|
+[08] .  78 0E EE 4C |x␎.L|
+[09] .  2B 20 00 27 |+␠␀'|
+[0A] .  9E B5 7A 03 |..z␃|
+[0B] .  B2 8D D2 CC |....|
+[0C] .  80 12 EE 4C |.␒.L|
+[0D] .  6B 42 00 29 |kB␀)|
+[0E] .  EB B5 2D B7 |..-.|
+[0F] .  7E 5D 2B 31 |~]+1|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:45 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x5453C0F5CC9A3994FC65524E52727590
+* s: 0xC3C8137D5A235AD5C9CE0ED211217A2D
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:E9:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:E9:B2 D7 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 11 |>..␑|
+[06] .  AB 29 DD 6E |.).n|
+[07] .  82 0D B5 B0 |.␍..|
+[08] .  78 0E EE 4C |x␎.L|
+[09] .  2B 20 00 27 |+␠␀'|
+[0A] .  4D 0B C8 BA |M␋..|
+[0B] .  7C 06 40 4F ||␆@O|
+[0C] .  80 12 EE 4C |.␒.L|
+[0D] .  6B 42 00 29 |kB␀)|
+[0E] .  A7 09 0D D5 |.␉␍.|
+[0F] .  85 06 33 F9 |.␆3.|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:41 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x7A2E77B7D10FD3987FAF672FCB4878F2
+* s: 0xBC3D42DCF6FDD356A553D35326858B5E
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:E7:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:E7:B2 D9 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 11 |>..␑|
+[06] .  B8 33 B0 D1 |.3..|
+[07] .  F4 1A A0 4D |.␚.M|
+[08] .  78 0E EE 4C |x␎.L|
+[09] .  2B 20 00 27 |+␠␀'|
+[0A] .  50 96 8C 9C |P...|
+[0B] .  E1 00 60 48 |.␀`H|
+[0C] .  80 12 EE 4C |.␒.L|
+[0D] .  6B 42 00 29 |kB␀)|
+[0E] .  CA E4 40 98 |..@.|
+[0F] .  8F 21 9B 06 |.!.␆|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:36 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0xBCBA66A7220593109B813D16055C2750
+* s: 0x428D11E7E26141414E11E6E089BAEE17
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:EF:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:EF:B2 D1 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 11 |>..␑|
+[06] .  4C 39 53 BA |L9S.|
+[07] .  E4 0A 7F CE |.␊␡.|
+[08] .  78 0E EE 4C |x␎.L|
+[09] .  2B 20 00 27 |+␠␀'|
+[0A] .  D1 F8 66 6E |..fn|
+[0B] .  48 24 1B 6E |H$␛n|
+[0C] .  80 12 EE 4C |.␒.L|
+[0D] .  6B 42 00 29 |kB␀)|
+[0E] .  1B 1F A7 CF |␛␟..|
+[0F] .  6B 14 9F EF |k␔..|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:29 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+# NFC Forum NDEF-compliant tag:
+Type 2 Tag
+
+-- NDEF ------------------------------
+
+# NFC data set information:
+NDEF message containing 1 record
+Current message size: 27 bytes
+Maximum message size: 27 bytes
+NFC data set access: Read & Write
+Can be made Read-Only
+
+# Record #1: Text record:
+Type Name Format: NFC Forum well-known type (1)
+Short Record
+type: "T"
+encoding: UTF-8
+lang: "en"
+text: "Muthanna Love Nuriam"
+Payload length: 23 bytes
+Payload data:
+
+[00] 02 65 6E 4D 75 74 68 61 6E 6E 61 20 4C 6F 76 65 |␂enMuthanna␠Love|
+
+[10] 20 4E 75 72 69 61 6D                            |␠Nuriam         |
+
+
+# NDEF message:
+[00] D1 01 17 54 02 65 6E 4D 75 74 68 61 6E 6E 61 20 |.␁␗T␂enMuthanna␠|
+
+[10] 4C 6F 76 65 20 4E 75 72 69 61 6D                |Love␠Nuriam     |
+
+
+# NDEF Capability Container (CC):
+Mapping version: 1.0
+Maximum NDEF data size: 48 bytes (0x06)
+NDEF access: free read access, limited write access [RFU] (0x03)
+ E1 10 06 03                                     |.␐␆␃            |
+
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0xA02BD96CFC47239DF910B933B03670F0
+* s: 0x0272E4176A83F09DDFAA82E78668C92D
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.Ndef]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:51:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:51:42 9F (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  E1:10:06:03 (OTP0-OTP3)
+[04] .  03 1B D1 01 |␃␛.␁|
+[05] .  17 54 02 65 |␗T␂e|
+[06] .  6E 4D 75 74 |nMut|
+[07] .  68 61 6E 6E |hann|
+[08] .  61 20 4C 6F |a␠Lo|
+[09] .  76 65 20 4E |ve␠N|
+[0A] .  75 72 69 61 |uria|
+[0B] .  6D FE 00 00 |m.␀␀|
+[0C] .  00 00 00 00 |␀␀␀␀|
+[0D] .  00 00 00 00 |␀␀␀␀|
+[0E] .  00 00 00 00 |␀␀␀␀|
+[0F] .  00 00 00 00 |␀␀␀␀|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:24 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0x3DD89A171F6648142A02965DF618ACF0
+* s: 0x9F28D1C957679B4FC724D5B9860AA6C5
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:88:E8:B2:F9:4E:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:88:E8 EC (UID0-UID2, BCC0)
+[01] *  B2:F9:4E:80 (UID3-UID6)
+[02] .  85 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 1C |>..␜|
+[06] .  06 A4 F5 3F |␆..?|
+[07] .  D2 61 96 AD |.a..|
+[08] .  58 0E EE FB |X␎..|
+[09] .  DE 20 00 23 |.␠␀#|
+[0A] .  56 62 02 97 |Vb␂.|
+[0B] .  26 A5 7C 3E |&.|>|
+[0C] .  68 12 EE FC |h␒..|
+[0D] .  04 41 30 29 |␄A0)|
+[0E] .  8B BB 1E 58 |..␞X|
+[0F] .  41 77 88 45 |Aw.E|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:47:19 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+NXP Semiconductors
+
+# IC type:
+MIFARE Ultralight EV1 (MF0UL11)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# Memory size:
+48 bytes user memory
+* 12 pages, with 4 bytes per page
+
+# IC detailed information:
+Full product name: MF0UL1101DUx
+Capacitance: 17 pF
+
+# Version information:
+Vendor ID: NXP (0x04)
+Type: MIFARE Ultralight (0x03)
+Subtype: 17 pF (0x01)
+Major version: EV1 (0x01)
+Minor version: V0 (0x00)
+Storage size: 48 bytes (0x0B)
+Protocol: ISO/IEC 14443-3 (0x03)
+
+# Configuration information:
+AFC counter values:
+* Counter #0: 0 (0x000000)
+* Counter #1: 0 (0x000000)
+* Counter #2: 0 (0x000000)
+No limit on wrong password attempts
+Strong load modulation disabled
+
+# Originality check:
+Signature verified with NXP public keyECDSA signature:
+* r: 0xEC4CC7E27ABB5249F80EE171886E3B2A
+* s: 0xED1047FC92908B1EAFD16BBE9900D88B
+
+# Virtual Card Type Identifier:
+[not accessible]
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 04:EB:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00
+
+# Memory content:
+[00] *  04:EB:B2 D5 (UID0-UID2, BCC0)
+[01] *  B2:B8:4C:80 (UID3-UID6)
+[02] .  C6 48 00 00 (BCC1, INT, LOCK0-LOCK1)
+[03] .  80:00:00:03 (OTP0-OTP3)
+[04] .  B0 08 30 21 |.␈0!|
+[05] .  3E 8E AF 11 |>..␑|
+[06] .  B7 49 6C A9 |.Il.|
+[07] .  45 06 7B 48 |E␆{H|
+[08] .  78 0E EE 4C |x␎.L|
+[09] .  2B 20 00 27 |+␠␀'|
+[0A] .  DD FE 98 AE |....|
+[0B] .  C4 FB 8B 8A |....|
+[0C] .  80 12 EE 4C |.␒.L|
+[0D] .  6B 42 00 29 |kB␀)|
+[0E] .  AB A4 2F 8D |../.|
+[0F] .  63 F1 D0 10 |c..␐|
+[10]    00 00 00 FF (AUTH0)
+[11]    00 05 -- -- (ACCESS, VCTID)
+[12] +P FF FF FF FF (PWD0-PWD3)
+[13] +P 00 00 -- -- (PACK0-PACK1)
+
+  *:locked & blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only
+
+--------------------------------------
+
+
+====================================

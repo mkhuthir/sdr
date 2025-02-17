@@ -1,0 +1,211 @@
+{
+  "Version": 0,
+  "Lists": [
+    {
+      "Id": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Title": "FM",
+      "IsCloseable": true,
+      "IsAdder": false
+    },
+    {
+      "Id": "f41dbd8e-6c58-46c8-8953-50f1d711b362",
+      "Title": "AM",
+      "IsCloseable": true,
+      "IsAdder": false
+    },
+    {
+      "Id": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Title": "Airband",
+      "IsCloseable": true,
+      "IsAdder": false
+    },
+    {
+      "Id": "c26a1a50-edd8-41d9-bda1-5dde0dc96b9c",
+      "Title": "\u002B",
+      "IsCloseable": false,
+      "IsAdder": true
+    }
+  ],
+  "StoredFrequencies": [
+    {
+      "FrequencyHz": 100300000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "100.3 Talk",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 91400000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Quran",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 104800000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Channel 4",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 90500000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -60000,
+      "FilterBandwidthUpper": 60000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 95000000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 94400000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 99900000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Star FM",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 90800000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 91100000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Philippino",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -60000,
+      "FilterBandwidthUpper": 60000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 88800000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 89100000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Radio 4",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 87900000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Music",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 99600000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 87600000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Quran",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 88200000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "Quran",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 89400000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 90300000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 101300000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -60000,
+      "FilterBandwidthUpper": 60000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 102000000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -60000,
+      "FilterBandwidthUpper": 60000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 101600000,
+      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
+      "Description": "",
+      "DemodulatorIndex": 4,
+      "FilterBandwidthLower": -60000,
+      "FilterBandwidthUpper": 60000,
+      "AntennaIndex": 0
+    }
+  ]
+}

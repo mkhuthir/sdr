@@ -1,0 +1,13 @@
+PiAware master process (piaware) is running with pid 2027.
+PiAware ADS-B client (faup1090) is running with pid 2098.
+PiAware ADS-B UAT client (faup978) is not running (disabled by configuration settings)
+PiAware mlat client (fa-mlat-client) is running with pid 2095.
+Local ADS-B receiver (dump1090-fa) is running with pid 1315.
+
+dump1090-fa (pid 1315) is listening for ES connections on port 30005.
+faup1090 is connected to the ADS-B receiver.
+piaware is connected to FlightAware.
+
+dump1090 is producing data on localhost:30005.
+
+Your feeder ID is 96cd0256-5137-447b-b035-42ae9ddf0770 (configured at /etc/piaware.conf:9)

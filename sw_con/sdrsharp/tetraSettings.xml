@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TetraSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogFileNameRules>date \ frequency \ mcc "_" mnc "_" la</LogFileNameRules>
+  <LogEntryRules>date + time + mcc + mnc + la + cc + carrier + slot + callid + type + from + to + encryption + duplex</LogEntryRules>
+  <LogSeparator> ; </LogSeparator>
+  <LogEnabled>false</LogEnabled>
+  <BlockedLevel>0</BlockedLevel>
+  <TopMostInfo>true</TopMostInfo>
+  <NetworkBase>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>0</GSSI>
+      <Name>Individual</Name>
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029819</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7640599</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029825</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029824</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4043477</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029921</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029954</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7628961</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4081046</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029826</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029918</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7661987</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4174541</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029830</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4043452</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4049014</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029924</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029800</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4172219</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039186</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029922</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029926</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029834</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029861</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029925</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4106488</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4081080</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4043476</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089056</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4150963</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4040469</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4140992</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029963</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4021717</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029920</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029919</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029849</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7628963</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089080</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4150959</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089057</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029917</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039302</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039601</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039251</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039620</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039127</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4163331</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029927</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039504</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039672</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7200285</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7200259</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7200555</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7200481</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4042468</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4229343</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029806</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089068</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4049036</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4123904</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029901</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029908</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029820</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4052982</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4043509</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089002</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089067</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4167875</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4099737</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7309250</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7309252</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029809</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7668048</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4054715</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029951</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7309251</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4107977</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4166678</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4150928</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4114467</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4123960</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4123963</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029894</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4123900</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039611</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4123903</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4021766</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4150961</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4107994</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4099736</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4099757</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4180298</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4208010</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4140990</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039085</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039673</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039654</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039670</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039196</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039606</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039013</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4039671</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4166683</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4116901</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4114478</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4150902</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>7309254</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4114428</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4029929</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4184440</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4194213</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4167269</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4196986</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4089081</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4133327</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946826</NMI>
+      <GSSI>4102956</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946817</NMI>
+      <GSSI>0</GSSI>
+      <Name>Individual</Name>
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+    <GroupsEntries>
+      <NMI>6946817</NMI>
+      <GSSI>7514304</GSSI>
+      <Name />
+      <Priopity>0</Priopity>
+      <Blocked>false</Blocked>
+    </GroupsEntries>
+  </NetworkBase>
+  <AutoPlay>true</AutoPlay>
+  <IgnoreEncodedSpeech>true</IgnoreEncodedSpeech>
+  <UdpEnabled>true</UdpEnabled>
+  <UdpPort>20025</UdpPort>
+  <AfcDisabled>false</AfcDisabled>
+</TetraSettings>

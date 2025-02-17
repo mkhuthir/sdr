@@ -1,0 +1,3 @@
+~/.sdrconnect/
+/opt/sdrplay_api/
+/opt/sdrconnect/

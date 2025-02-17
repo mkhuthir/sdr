@@ -1,0 +1,235 @@
+
+** TagInfo scan (version 4.24.7) 2021-02-26 09:35:18 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+Unknown manufacturer
+
+# IC type:
+Unknown IC implementing ISO/IEC 14443-4
+
+# Card OS type:
+Oberthur OS
+
+# Application information:
+Global Platform card manager present
+Proximity Payment System Environment (PPSE) present
+Visa credit card
+* Label: "Visa Debit"
+* Priority: 1
+Visa card manager
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# ATS historical bytes details:
+ISO/IEC 7816-4 coding
+Card service data: (0x31C1)
+* Application selection methods: (0xC0)
+	- By full DF name
+	- By partial DF name
+* BER-TLV data objects available: (0x00)
+	- None
+* Card without Master File
+Pre-issuing data: 0x08603206 |␈`2␆|
+Life Cycle Status (LCS):
+* No information given (0x00)
+SW1-SW2: 0x9000
+
+# Global Platform information:
+Global Platform version 2.1.1
+GP Secure Channel Protocol: 02 option 15
+Visa card manager
+* FCI: 0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011342E0094931142900411439004114490042A01000011450033244200009F6501FF |o=.␈.␀␀␀␃␀␀␀.1.n*H0␘W.1r␂␀␋.`␑4.␀..␑B.␄␑C.␄␑D.␄*␁␀␀␑E␀3$B␀␀.e␁.|
+
+# Card Production Life Cycle data (CPLC):
+IC Fabricator: [unknown] (0x4830)
+IC Type: [unknown] (0x1857)
+OS ID: OCS (0x8231)
+OS release date: 2017/07/21 (0x7202)
+OS release level: 0x000B
+IC Fabrication Date: 2018/09/16 (0x8260)
+IC Serial Number: 0x11342E00
+IC Batch Identifier: 0x9493
+IC Module Fabricator: [unknown] (0x1142)
+IC Module Packaging Date: 2019/01/04 (0x9004)
+ICC Manufacturer: [unknown] (0x1143)
+IC Embedding Date: 2019/01/04 (0x9004)
+IC Pre-Personalizer: [unknown] (0x1144)
+IC Pre-Perso. Equipment Date: 2019/01/04 (0x9004)
+IC Pre-Perso. Equipment ID: 0x2A010000
+IC Personalizer: [unknown] (0x1145)
+IC Personalization Date: 2020/02/02 (0x0033)
+IC Perso. Equipment ID: 0x24420000
+IC Personalizer: [unknown] (0x1145)
+IC Personalization Date: 2020/02/02 (0x0033)
+IC Perso. Equipment ID: 0x24420000
+
+# File Control Information:
+Default selected AID
+0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011342E0094931142900411439004114490042A01000011450033244200009F6501FF |o=.␈.␀␀␀␃␀␀␀.1.n*H0␘W.1r␂␀␋.`␑4.␀..␑B.␄␑C.␄␑D.␄*␁␀␀␑E␀3$B␀␀.e␁.|
+Proximity Payment System Environment (PPSE) present
+0x6F2F840E325041592E5359532E4444463031A51DBF0C1A61184F07A0000000031010500A56697361204465626974870101 |o/.␎2PAY.SYS.DDF01.␝.␌␚a␘O␇.␀␀␀␃␐␐P␊Visa␠Debit.␁␁|
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA]
+* Maximum transceive length: 65279 bytes
+* Default maximum transceive time-out: 2000 ms
+* Extended length APDUs supported
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 08:5E:E2:CF
+* Random ID
+ATQA: 0x0400
+SAK: 0x20
+ATS: 0x6700
+* Max. accepted frame size: 16 bytes (FSCI: 0)
+* Supported receive rates:
+	- 106 kbit/s
+* Supported send rates:
+	- 106 kbit/s
+* SFGT: 302.0 us
+* FWT: 4.833 ms
+* NAD not supported
+* CID supported
+* Historical bytes: [none]
+
+--------------------------------------
+
+
+====================================
+
+
+** TagInfo scan (version 4.24.7) 2021-02-26 09:35:08 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+Unknown manufacturer
+
+# IC type:
+Unknown IC implementing ISO/IEC 14443-4
+
+# Card OS type:
+Oberthur OS
+
+# Application information:
+Global Platform card manager present
+Proximity Payment System Environment (PPSE) present
+Visa credit card
+* Label: "Visa Debit"
+* Priority: 1
+Visa card manager
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# ATS historical bytes details:
+ISO/IEC 7816-4 coding
+Card service data: (0x31C1)
+* Application selection methods: (0xC0)
+	- By full DF name
+	- By partial DF name
+* BER-TLV data objects available: (0x00)
+	- None
+* Card without Master File
+Pre-issuing data: 0x08603206 |␈`2␆|
+Life Cycle Status (LCS):
+* No information given (0x00)
+SW1-SW2: 0x9000
+
+# Global Platform information:
+Global Platform version 2.1.1
+GP Secure Channel Protocol: 02 option 15
+Visa card manager
+* FCI: 0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011372E0094931142900411439004114490042A01000011450033244200009F6501FF |o=.␈.␀␀␀␃␀␀␀.1.n*H0␘W.1r␂␀␋.`␑7.␀..␑B.␄␑C.␄␑D.␄*␁␀␀␑E␀3$B␀␀.e␁.|
+
+# Card Production Life Cycle data (CPLC):
+IC Fabricator: [unknown] (0x4830)
+IC Type: [unknown] (0x1857)
+OS ID: OCS (0x8231)
+OS release date: 2017/07/21 (0x7202)
+OS release level: 0x000B
+IC Fabrication Date: 2018/09/16 (0x8260)
+IC Serial Number: 0x11372E00
+IC Batch Identifier: 0x9493
+IC Module Fabricator: [unknown] (0x1142)
+IC Module Packaging Date: 2019/01/04 (0x9004)
+ICC Manufacturer: [unknown] (0x1143)
+IC Embedding Date: 2019/01/04 (0x9004)
+IC Pre-Personalizer: [unknown] (0x1144)
+IC Pre-Perso. Equipment Date: 2019/01/04 (0x9004)
+IC Pre-Perso. Equipment ID: 0x2A010000
+IC Personalizer: [unknown] (0x1145)
+IC Personalization Date: 2020/02/02 (0x0033)
+IC Perso. Equipment ID: 0x24420000
+IC Personalizer: [unknown] (0x1145)
+IC Personalization Date: 2020/02/02 (0x0033)
+IC Perso. Equipment ID: 0x24420000
+
+# File Control Information:
+Default selected AID
+0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011372E0094931142900411439004114490042A01000011450033244200009F6501FF |o=.␈.␀␀␀␃␀␀␀.1.n*H0␘W.1r␂␀␋.`␑7.␀..␑B.␄␑C.␄␑D.␄*␁␀␀␑E␀3$B␀␀.e␁.|
+Proximity Payment System Environment (PPSE) present
+0x6F2F840E325041592E5359532E4444463031A51DBF0C1A61184F07A0000000031010500A56697361204465626974870101 |o/.␎2PAY.SYS.DDF01.␝.␌␚a␘O␇.␀␀␀␃␐␐P␊Visa␠Debit.␁␁|
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA]
+* Maximum transceive length: 65279 bytes
+* Default maximum transceive time-out: 2000 ms
+* Extended length APDUs supported
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+MIFARE Classic support present in Android
+
+# Detailed protocol information:
+ID: 08:FE:6D:EB
+* Random ID
+ATQA: 0x0400
+SAK: 0x20
+ATS: 0x6700
+* Max. accepted frame size: 16 bytes (FSCI: 0)
+* Supported receive rates:
+	- 106 kbit/s
+* Supported send rates:
+	- 106 kbit/s
+* SFGT: 302.0 us
+* FWT: 4.833 ms
+* NAD not supported
+* CID supported
+* Historical bytes: [none]
+
+--------------------------------------
+
+
+====================================

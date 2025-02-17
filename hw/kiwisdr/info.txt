@@ -1,0 +1,23 @@
+ssh root@192.168.1.103 "debian" account with a password of either "temppwd" (note two "pp" characters)
+the Kiwi admin password, the Kiwi serial number or a password you may have set yourself. 
+sudo su (to get a root shell before continuing)
+cd
+dog (shows Debian version -- remember for future reference)
+ls
+Most likely there will be no Beagle_SDR_GPS directory but will be a KiwiSDR directory.
+Remove the Beagle_SDR_GPS directory tree if it exists.
+rm -rf Beagle_SDR_GPS
+df. (check that there is at least 500 MB of free filesystem space, note the "." following the "df")
+If no KiwiSDR directory do a: "gclone KiwiSDR"
+cd KiwiSDR
+gup (git update)
+msd (stops the Kiwi server to speedup build time)
+dpkg --configure -a
+apt-get -f install
+mc (make clean)
+m (make)
+mi (make install)
+ku (starts Kiwi server)
+
+
+

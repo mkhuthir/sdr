@@ -1,0 +1,19 @@
+Found 1 device(s):
+  0:  Generic RTL2832U OEM
+
+Using device 0: Generic RTL2832U OEM
+Detached kernel driver
+Found Rafael Micro R820T tuner
+
+Current configuration:
+__________________________________________
+Vendor ID:		0x0bda
+Product ID:		0x2838
+Manufacturer:		NooElec
+Product:		NESDR Nano 3
+Serial number:		0808267433
+Serial number enabled:	yes
+IR endpoint enabled:	no
+Remote wakeup enabled:	no
+__________________________________________
+Reattached kernel driver

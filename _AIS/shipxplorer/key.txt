@@ -1,0 +1,9 @@
+Your new key is 48cfe1231e2ccf480b45be8705b0e48f 
+and Serial Number (SN) is SXTRPI000680. 
+
+Please save this key for future use. 
+You will have to know this key to link this 
+receiver to your account in https://www.shipxplorer.com/. 
+This key is also saved in configuration file (/etc/sxfeeder.ini)
+
+This is your station serial number: SXTRPI000680

@@ -1,0 +1,10 @@
+https://github.com/flightaware/piaware
+https://www.flightaware.com/adsb/piaware/
+
+https://github.com/flightaware/piaware
+https://github.com/flightaware/dump1090
+https://github.com/abcd567a/ubuntu24/blob/master/README.md
+
+#folders
+/etc/default/dump1090-fa
+/etc/piaware.conf

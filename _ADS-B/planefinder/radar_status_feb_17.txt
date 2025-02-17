@@ -1,0 +1,13 @@
+Serial Address	/dev/ttyO2
+Serial Baudrate	3000000
+Select Timeout	10
+Data Upload Interval	10
+Connection Type	Serial
+Aircraft Timeout	30
+Data Format	Plane Finder Radar
+Latitude	25.316292
+Longitude	55.374824
+Lock Config	1
+User Altitude	106.283483
+Gps Valid	1
+Mlat Enabled	1

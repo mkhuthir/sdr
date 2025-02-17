@@ -1,0 +1,4 @@
+https://github.com/abcd567a/mm2
+
+
+/usr/share/mm2/mm2.conf

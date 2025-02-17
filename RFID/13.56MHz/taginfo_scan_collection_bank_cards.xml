@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scans><scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:35:18</date>
+	<title>Unknown IC implementing ISO/IEC 14443-4 tag with Oberthur OS</title>
+	<uid nxp="false">08:5E:E2:CF</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>Unknown manufacturer</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>Unknown IC implementing ISO/IEC 14443-4</content>
+</block>
+		</subsection>
+		<subsection title="Card OS type">
+			<block type="text">
+	<content>Oberthur OS</content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Global Platform card manager present
+Proximity Payment System Environment (PPSE) present
+Visa credit card
+‣ Label: &quot;Visa Debit&quot;
+‣ Priority: 1
+Visa card manager</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="ATS historical bytes details">
+			<block type="text">
+	<content>ISO/IEC 7816-4 coding
+Card service data: (0x31C1)
+‣ Application selection methods: (0xC0)
+	• By full DF name
+	• By partial DF name
+‣ BER-TLV data objects available: (0x00)
+	• None
+‣ Card without Master File
+Pre-issuing data: 0x08603206 |␈`2␆|
+Life Cycle Status (LCS):
+‣ No information given (0x00)
+SW1-SW2: 0x9000</content>
+</block>
+		</subsection>
+		<subsection title="Global Platform information">
+			<block type="text">
+	<content>Global Platform version 2.1.1
+GP Secure Channel Protocol: 02 option 15
+Visa card manager
+‣ FCI: 0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011342E0094931142900411439004114490042A01000011450033244200009F6501FF |o=·␈·␀␀␀␃␀␀␀·1·n*H0␘W·1r␂␀␋·`␑4.␀··␑B·␄␑C·␄␑D·␄*␁␀␀␑E␀3$B␀␀·e␁·|</content>
+</block>
+		</subsection>
+		<subsection title="Card Production Life Cycle data (CPLC)">
+			<block type="text">
+	<content>IC Fabricator: [unknown]<hexoutput> (0x4830)</hexoutput>
+IC Type: [unknown]<hexoutput> (0x1857)</hexoutput>
+OS ID: OCS<hexoutput> (0x8231)</hexoutput>
+OS release date: 2017/07/21<hexoutput> (0x7202)</hexoutput>
+OS release level: 0x000B
+IC Fabrication Date: 2018/09/16<hexoutput> (0x8260)</hexoutput>
+IC Serial Number: 0x11342E00
+IC Batch Identifier: 0x9493
+IC Module Fabricator: [unknown]<hexoutput> (0x1142)</hexoutput>
+IC Module Packaging Date: 2019/01/04<hexoutput> (0x9004)</hexoutput>
+ICC Manufacturer: [unknown]<hexoutput> (0x1143)</hexoutput>
+IC Embedding Date: 2019/01/04<hexoutput> (0x9004)</hexoutput>
+IC Pre-Personalizer: [unknown]<hexoutput> (0x1144)</hexoutput>
+IC Pre-Perso. Equipment Date: 2019/01/04<hexoutput> (0x9004)</hexoutput>
+IC Pre-Perso. Equipment ID: 0x2A010000
+IC Personalizer: [unknown]<hexoutput> (0x1145)</hexoutput>
+IC Personalization Date: 2020/02/02<hexoutput> (0x0033)</hexoutput>
+IC Perso. Equipment ID: 0x24420000
+IC Personalizer: [unknown]<hexoutput> (0x1145)</hexoutput>
+IC Personalization Date: 2020/02/02<hexoutput> (0x0033)</hexoutput>
+IC Perso. Equipment ID: 0x24420000</content>
+</block>
+		</subsection>
+		<subsection title="File Control Information">
+			<block type="text">
+	<content>Default selected AID
+<mono>0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011342E0094931142900411439004114490042A01000011450033244200009F6501FF |o=·␈·␀␀␀␃␀␀␀·1·n*H0␘W·1r␂␀␋·`␑4.␀··␑B·␄␑C·␄␑D·␄*␁␀␀␑E␀3$B␀␀·e␁·|</mono>
+Proximity Payment System Environment (PPSE) present
+<mono>0x6F2F840E325041592E5359532E4444463031A51DBF0C1A61184F07A0000000031010500A56697361204465626974870101 |o/·␎2PAY.SYS.DDF01·␝·␌␚a␘O␇·␀␀␀␃␐␐P␊Visa␠Debit·␁␁|</mono></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 08:5E:E2:CF
+‣ Random ID
+ATQA: 0x0400
+SAK: 0x20
+ATS: 0x6700
+‣ Max. accepted frame size: 16 bytes (FSCI: 0)
+‣ Supported receive rates:
+	• 106 kbit/s
+‣ Supported send rates:
+	• 106 kbit/s
+‣ SFGT: 302.0 µs
+‣ FWT: 4.833 ms
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: [none]</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:35:08</date>
+	<title>Unknown IC implementing ISO/IEC 14443-4 tag with Oberthur OS</title>
+	<uid nxp="false">08:FE:6D:EB</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>Unknown manufacturer</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>Unknown IC implementing ISO/IEC 14443-4</content>
+</block>
+		</subsection>
+		<subsection title="Card OS type">
+			<block type="text">
+	<content>Oberthur OS</content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Global Platform card manager present
+Proximity Payment System Environment (PPSE) present
+Visa credit card
+‣ Label: &quot;Visa Debit&quot;
+‣ Priority: 1
+Visa card manager</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="ATS historical bytes details">
+			<block type="text">
+	<content>ISO/IEC 7816-4 coding
+Card service data: (0x31C1)
+‣ Application selection methods: (0xC0)
+	• By full DF name
+	• By partial DF name
+‣ BER-TLV data objects available: (0x00)
+	• None
+‣ Card without Master File
+Pre-issuing data: 0x08603206 |␈`2␆|
+Life Cycle Status (LCS):
+‣ No information given (0x00)
+SW1-SW2: 0x9000</content>
+</block>
+		</subsection>
+		<subsection title="Global Platform information">
+			<block type="text">
+	<content>Global Platform version 2.1.1
+GP Secure Channel Protocol: 02 option 15
+Visa card manager
+‣ FCI: 0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011372E0094931142900411439004114490042A01000011450033244200009F6501FF |o=·␈·␀␀␀␃␀␀␀·1·n*H0␘W·1r␂␀␋·`␑7.␀··␑B·␄␑C·␄␑D·␄*␁␀␀␑E␀3$B␀␀·e␁·|</content>
+</block>
+		</subsection>
+		<subsection title="Card Production Life Cycle data (CPLC)">
+			<block type="text">
+	<content>IC Fabricator: [unknown]<hexoutput> (0x4830)</hexoutput>
+IC Type: [unknown]<hexoutput> (0x1857)</hexoutput>
+OS ID: OCS<hexoutput> (0x8231)</hexoutput>
+OS release date: 2017/07/21<hexoutput> (0x7202)</hexoutput>
+OS release level: 0x000B
+IC Fabrication Date: 2018/09/16<hexoutput> (0x8260)</hexoutput>
+IC Serial Number: 0x11372E00
+IC Batch Identifier: 0x9493
+IC Module Fabricator: [unknown]<hexoutput> (0x1142)</hexoutput>
+IC Module Packaging Date: 2019/01/04<hexoutput> (0x9004)</hexoutput>
+ICC Manufacturer: [unknown]<hexoutput> (0x1143)</hexoutput>
+IC Embedding Date: 2019/01/04<hexoutput> (0x9004)</hexoutput>
+IC Pre-Personalizer: [unknown]<hexoutput> (0x1144)</hexoutput>
+IC Pre-Perso. Equipment Date: 2019/01/04<hexoutput> (0x9004)</hexoutput>
+IC Pre-Perso. Equipment ID: 0x2A010000
+IC Personalizer: [unknown]<hexoutput> (0x1145)</hexoutput>
+IC Personalization Date: 2020/02/02<hexoutput> (0x0033)</hexoutput>
+IC Perso. Equipment ID: 0x24420000
+IC Personalizer: [unknown]<hexoutput> (0x1145)</hexoutput>
+IC Personalization Date: 2020/02/02<hexoutput> (0x0033)</hexoutput>
+IC Perso. Equipment ID: 0x24420000</content>
+</block>
+		</subsection>
+		<subsection title="File Control Information">
+			<block type="text">
+	<content>Default selected AID
+<mono>0x6F3D8408A000000003000000A5319F6E2A4830185782317202000B826011372E0094931142900411439004114490042A01000011450033244200009F6501FF |o=·␈·␀␀␀␃␀␀␀·1·n*H0␘W·1r␂␀␋·`␑7.␀··␑B·␄␑C·␄␑D·␄*␁␀␀␑E␀3$B␀␀·e␁·|</mono>
+Proximity Payment System Environment (PPSE) present
+<mono>0x6F2F840E325041592E5359532E4444463031A51DBF0C1A61184F07A0000000031010500A56697361204465626974870101 |o/·␎2PAY.SYS.DDF01·␝·␌␚a␘O␇·␀␀␀␃␐␐P␊Visa␠Debit·␁␁|</mono></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 08:FE:6D:EB
+‣ Random ID
+ATQA: 0x0400
+SAK: 0x20
+ATS: 0x6700
+‣ Max. accepted frame size: 16 bytes (FSCI: 0)
+‣ Supported receive rates:
+	• 106 kbit/s
+‣ Supported send rates:
+	• 106 kbit/s
+‣ SFGT: 302.0 µs
+‣ FWT: 4.833 ms
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: [none]</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+</scans>

@@ -1,0 +1,21 @@
+[Unit]
+Description=SXFeeder Service
+After=network-online.target
+
+[Service]
+Type=simple
+User=sxfeeder
+Group=sxfeeder
+PermissionsStartOnly=true
+ExecStartPre=+-/bin/mkdir /var/run/sxfeeder
+ExecStartPre=+-/bin/chown sxfeeder:sxfeeder /var/run/sxfeeder
+ExecStartPre=+-/bin/touch /var/log/sxfeeder.log
+ExecStartPre=+-/bin/chown sxfeeder:sxfeeder /var/log/sxfeeder.log
+ExecStartPre=+-/bin/chown sxfeeder:sxfeeder /etc/sxfeeder.ini
+ExecStartPre=+-/bin/setfacl -m u:www-data:rwx /etc/sxfeeder.ini
+ExecStart=/usr/bin/sxfeeder
+ExecStop=/bin/kill -TERM $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

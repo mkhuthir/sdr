@@ -1,0 +1,2302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scans><scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:48:13</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:5B:42:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x7D993FE6895852D2F56EA508747F3C86
+‣ s: 0xB4308B496DA718E5EB2A04EE23DD1EF9</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:5B:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 5B 42 95</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 01</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">64 0A EE F3</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 41 20 23</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">87 89 0A 1B</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">C2 60 2C AC</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">AC 04 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">3E 8F 2F 1B</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">ED D6 CE 08</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">37 F3 D7 20</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">64 06 EE F3</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">1A 20 00 28</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">A0 B6 6A AB</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">5B 38 44 68</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:48:09</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:53:42:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0xA5E58D8452FABA8AFAEF2BC17170822B
+‣ s: 0xA87767EE7BD55A5EE578B53B320EEE09</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:53:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 53 42 9D</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 1B</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">2A 58 7B D3</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">48 D4 1A 69</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">68 0E EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 23</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">2E FE E2 23</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">0F 88 E5 6D</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">70 12 EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">4F 41 20 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">EF 0A 7C 2B</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">F4 55 C6 43</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:48:06</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:59:42:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x3DDDECE65278B7FCAF94692D384A187D
+‣ s: 0xDF69F1760D13B7CBFA45303D043998A9</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:59:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 59 42 97</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 1B</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">7C 0A A1 A2</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">B6 CB 9F 26</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">68 0E EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 23</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">4B B7 4B B4</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">D9 59 4A 84</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">70 12 EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">4F 41 20 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">E6 64 EE C2</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">A9 1C F4 F0</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:48:01</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:55:42:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x01AA49D6286A45AC66F7100D9426418B
+‣ s: 0x2B210A3EDF67D588A7553D7CD67D9949</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:55:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 55 42 9B</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 1B</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">9F DC D6 41</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">EE 09 DE 78</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">68 0E EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 23</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">2C 80 55 5A</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">2B DA B3 D8</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">70 12 EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">4F 41 20 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">08 3A 15 35</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">0F 4A 81 C5</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:55</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:57:42:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x9C5CA1E560BC3F61815A0393707D8308
+‣ s: 0x00A20D4462345FAD07506297D82A4690</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:57:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 57 42 99</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 1B</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">38 56 4D F9</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">47 BB D6 E1</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">68 0E EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 23</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">5A CB F8 03</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">16 E3 65 B5</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">70 12 EE F4</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">4F 41 20 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">D5 B6 70 C2</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">ED 94 4E 03</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:50</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:E5:B2:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0xEA74AC57DA6355D18634DD686942A669
+‣ s: 0xBABFB67C8AB6E993B9E300D37119172B</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:E5:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 E5 B2 DB</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 11</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">5D 04 90 CB</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">89 4D 0E C9</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">78 0E EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 27</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">9E B5 7A 03</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">B2 8D D2 CC</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">80 12 EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">6B 42 00 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">EB B5 2D B7</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">7E 5D 2B 31</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:45</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:E9:B2:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x5453C0F5CC9A3994FC65524E52727590
+‣ s: 0xC3C8137D5A235AD5C9CE0ED211217A2D</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:E9:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 E9 B2 D7</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 11</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">AB 29 DD 6E</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">82 0D B5 B0</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">78 0E EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 27</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">4D 0B C8 BA</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">7C 06 40 4F</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">80 12 EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">6B 42 00 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">A7 09 0D D5</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">85 06 33 F9</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:41</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:E7:B2:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x7A2E77B7D10FD3987FAF672FCB4878F2
+‣ s: 0xBC3D42DCF6FDD356A553D35326858B5E</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:E7:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 E7 B2 D9</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 11</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">B8 33 B0 D1</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">F4 1A A0 4D</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">78 0E EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 27</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">50 96 8C 9C</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">E1 00 60 48</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">80 12 EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">6B 42 00 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">CA E4 40 98</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">8F 21 9B 06</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:36</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:EF:B2:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0xBCBA66A7220593109B813D16055C2750
+‣ s: 0x428D11E7E26141414E11E6E089BAEE17</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:EF:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 EF B2 D1</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 11</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">4C 39 53 BA</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">E4 0A 7F CE</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">78 0E EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 27</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">D1 F8 66 6E</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">48 24 1B 6E</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">80 12 EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">6B 42 00 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">1B 1F A7 CF</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">6B 14 9F EF</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:29</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag as Type 2 Tag</title>
+	<uid nxp="true">04:51:42:B2:B8:4C:80</uid>
+	<hasndef>true</hasndef>
+	<ndef>D101175402656E4D757468616E6E61204C6F7665204E757269616D</ndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+		<subsection title="NFC Forum NDEF-compliant tag">
+			<block type="text">
+	<content>Type 2 Tag</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="NFC data set information">
+			<block type="text">
+	<content>NDEF message containing 1 record
+Current message size: 27 bytes
+Maximum message size: 27 bytes
+NFC data set access: Read &amp; Write
+Can be made Read-Only</content>
+</block>
+		</subsection>
+		<subsection title="Record #1: Text record">
+			<block type="text">
+	<content><size size="12">Type Name Format: NFC Forum well-known type<hexoutput> (1)</hexoutput>
+Short Record</size></content>
+</block><block type="text">
+	<content><mono>type: "T"
+</mono>encoding: UTF-8
+lang: "en"
+text: "Muthanna Love Nuriam"</content>
+</block>
+<block type="text">
+	<content>Payload length: 23 bytes</content>
+</block>
+<block type="text">
+	<content>Payload data:
+</content>
+</block>
+<block type="File">
+	<address>0</address>
+	<data>02 65 6E 4D 75 74 68 61 6E 6E 61 20 4C 6F 76 65</data>
+</block>
+<block type="File">
+	<address>16</address>
+	<data>20 4E 75 72 69 61 6D</data>
+</block>
+		</subsection>
+		<subsection title="NDEF message">
+			<block type="File">
+	<address>0</address>
+	<data>D1 01 17 54 02 65 6E 4D 75 74 68 61 6E 6E 61 20</data>
+</block>
+<block type="File">
+	<address>16</address>
+	<data>4C 6F 76 65 20 4E 75 72 69 61 6D</data>
+</block>
+		</subsection>
+		<subsection title="NDEF Capability Container (CC)">
+			<block type="text">
+	<content>Mapping version: 1.0
+Maximum NDEF data size: 48 bytes<hexoutput> (0x06)</hexoutput>
+NDEF access: free read access, limited write access [RFU]<hexoutput> (0x03)</hexoutput></content>
+</block><block type="File">
+	<address>-1</address>
+	<data>E1 10 06 03</data>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0xA02BD96CFC47239DF910B933B03670F0
+‣ s: 0x0272E4176A83F09DDFAA82E78668C92D</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.Ndef]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:51:42:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 51 42 9F</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">E1 10 06 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">03 1B D1 01</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">17 54 02 65</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">6E 4D 75 74</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">68 61 6E 6E</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">61 20 4C 6F</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">76 65 20 4E</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">75 72 69 61</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">6D FE 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:24</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:88:E8:B2:F9:4E:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x3DD89A171F6648142A02965DF618ACF0
+‣ s: 0x9F28D1C957679B4FC724D5B9860AA6C5</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:88:E8:B2:F9:4E:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 88 E8 EC</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 F9 4E 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">85 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 1C</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">06 A4 F5 3F</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">D2 61 96 AD</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">58 0E EE FB</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">DE 20 00 23</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">56 62 02 97</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">26 A5 7C 3E</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">68 12 EE FC</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">04 41 30 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">8B BB 1E 58</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">41 77 88 45</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 09:47:19</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:EB:B2:B2:B8:4C:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput>
+No limit on wrong password attempts
+Strong load modulation disabled</content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0xEC4CC7E27ABB5249F80EE171886E3B2A
+‣ s: 0xED1047FC92908B1EAFD16BBE9900D88B</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:EB:B2:B2:B8:4C:80
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 EB B2 D5</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">B2 B8 4C 80</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access=". " comment="(BCC1, INT, LOCK0-LOCK1)">C6 48 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access=". " comment="(OTP0-OTP3)">80 00 00 03</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">B0 08 30 21</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">3E 8E AF 11</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">B7 49 6C A9</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">45 06 7B 48</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">78 0E EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">2B 20 00 27</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">DD FE 98 AE</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">C4 FB 8B 8A</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">80 12 EE 4C</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">6B 42 00 29</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">AB A4 2F 8D</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">63 F1 D0 10</data>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="  " comment="(AUTH0)">00 00 00 FF</data>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="  " comment="(ACCESS, VCTID)" length="2">00 05</data>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)">FF FF FF FF</data>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" length="2">00 00</data>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+</scans>

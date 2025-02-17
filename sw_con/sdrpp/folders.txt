@@ -1,0 +1,7 @@
+~/.config/sdrpp/
+
+/usr/share/sdrpp/
+/usr/share/sdrpp/bandplans/
+
+/usr/lib/sdrpp/
+/usr/lib/sdrpp/plugins/
