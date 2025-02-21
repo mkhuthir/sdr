@@ -1,0 +1,4 @@
+https://stations.vesselfinder.com/stations/6919
+
+Host: ais.vesselfinder.com (IP 195.201.71.220)
+UDP port: 6919
