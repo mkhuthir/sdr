@@ -8,3 +8,5 @@ https://github.com/abcd567a/ubuntu24/blob/master/README.md
 #folders
 /etc/default/dump1090-fa
 /etc/piaware.conf
+/var/cache/piaware/location.env
+

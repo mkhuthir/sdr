@@ -1,1 +1,7 @@
-/etc/default/adsbexchange 
+/etc/default/adsbexchange
+/usr/local/share/adsbexchange/adsbx-uuid
+
+a6f8eda5-6ef0-48e6-80ff-3a3ab9d1bea8
+
+https://www.adsbexchange.com/api/feeders/?feed=a6f8eda5-6ef0-48e6-80ff-3a3ab9d1bea8
+

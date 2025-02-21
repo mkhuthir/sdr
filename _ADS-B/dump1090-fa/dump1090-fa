@@ -8,7 +8,7 @@ ENABLED=yes
 # SDR device type. Use "none" for a net-only configuration
 RECEIVER=rtlsdr
 # serial number or device index of device to use (only needed if there is more than one SDR connected)
-RECEIVER_SERIAL=00000001
+RECEIVER_SERIAL=00001090
 # Initial receiver gain, in dB. If adaptive gain is enabled (see below) the actual gain
 # may change over time
 RECEIVER_GAIN=60
