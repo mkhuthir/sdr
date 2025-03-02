@@ -5,5 +5,9 @@ AIS hub key
 -X b105bdb0-266a-4686-86e7-78e1cfaf75e5
 
 folders
+
 /lib/systemd/system/aiscatcher.service 
 /usr/share/aiscatcher/
+/etc/AIS-catcher/config.json
+/usr/bin/AIS-catcher
+

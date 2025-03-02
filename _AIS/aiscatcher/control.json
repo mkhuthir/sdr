@@ -1,7 +1,7 @@
 {
-    "password_hash": "080e2558d94a10d74cdddb125b64500ce904eb7c266d492eecba7aa2c9bf40bc",
+    "password_hash": "50e208fd38b8db89ac7de0ba1ed5ad50cac44bcd585c78ff3debe99e3445f7b3",
     "port": "8110",
     "config_cmd_hash": 435605018,
-    "config_json_hash": 4182169024,
+    "config_json_hash": 1231034373,
     "docker": false
 }
