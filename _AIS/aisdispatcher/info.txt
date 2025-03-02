@@ -1,0 +1,12 @@
+
+https://www.aishub.net/ais-dispatcher
+
+folders
+/home/ais/
+
+
+admin control >> http://192.168.1.50:8082/
+To change default listening host/port check "/home/ais/etc/aiscontrol.cfg"
+To disable auto start execute "loginctl disable-linger ais"
+to enable "loginctl enable-linger ais"
+
