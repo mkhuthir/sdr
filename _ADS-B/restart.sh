@@ -1,3 +1,4 @@
+  GNU nano 7.2                                           restart.sh                                                     
 #!/bin/sh
 
 sudo service dump1090-fa stop
@@ -15,5 +16,7 @@ sudo service adsbexchange-feed restart
 sudo service adsbexchange-mlat restart
 sudo service adsbexchange-stats restart
 sudo service pfclient restart
+
 sudo service ais-catcher-control restart
+sudo service sxfeeder restart
 
