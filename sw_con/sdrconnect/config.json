@@ -27,7 +27,326 @@
     },
     "dock_window": {
         "version": "2",
-        "layout": null
+        "layout": {
+            "$id": "1",
+            "$type": "Dock.Model.ReactiveUI.Controls.RootDock, Dock.Model.ReactiveUI",
+            "IsFocusableRoot": true,
+            "HiddenDockables": [
+                {
+                    "$id": "2",
+                    "$type": "SDRconnect.ScheduledEvents.ViewModels.ScheduledEventsViewModel, SDRconnect.ScheduledEvents",
+                    "Id": "TimedRecordings",
+                    "Title": "Timed Recordings",
+                    "CanClose": true,
+                    "CanPin": true,
+                    "CanFloat": true
+                },
+                {
+                    "$id": "3",
+                    "$type": "SDRconnect.WebSocketInterface.ViewModels.WebSocketInterfaceViewModel, SDRconnect.WebSocketInterface",
+                    "Id": "WebSocketInterface",
+                    "Title": "WebSocketInterface",
+                    "CanClose": true,
+                    "CanPin": true,
+                    "CanFloat": true
+                }
+            ],
+            "VisibleDockables": [
+                {
+                    "$id": "4",
+                    "$type": "Dock.Model.ReactiveUI.Controls.ProportionalDock, Dock.Model.ReactiveUI",
+                    "Orientation": 0,
+                    "VisibleDockables": [
+                        {
+                            "$id": "5",
+                            "$type": "Dock.Model.ReactiveUI.Controls.ProportionalDock, Dock.Model.ReactiveUI",
+                            "Orientation": 1,
+                            "VisibleDockables": [
+                                {
+                                    "$id": "6",
+                                    "$type": "Dock.Model.ReactiveUI.Controls.ToolDock, Dock.Model.ReactiveUI",
+                                    "Alignment": 3,
+                                    "IsExpanded": false,
+                                    "AutoHide": true,
+                                    "GripMode": 0,
+                                    "VisibleDockables": [
+                                        {
+                                            "$id": "7",
+                                            "$type": "SDRconnect.ViewModels.MainRadioViewModel, SDRconnect",
+                                            "Id": "MainSP",
+                                            "Title": "Primary SP",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": false
+                                        }
+                                    ],
+                                    "ActiveDockable": {
+                                        "$ref": "7"
+                                    },
+                                    "DefaultDockable": {
+                                        "$ref": "7"
+                                    },
+                                    "Proportion": 1.0,
+                                    "Dock": 0,
+                                    "IsActive": true,
+                                    "IsEmpty": false,
+                                    "OpenedDockablesCount": 1,
+                                    "IsCollapsable": true,
+                                    "Id": "",
+                                    "Title": "",
+                                    "CanClose": true,
+                                    "CanPin": true,
+                                    "CanFloat": true
+                                }
+                            ],
+                            "Proportion": 0.75,
+                            "Dock": 0,
+                            "IsActive": false,
+                            "IsEmpty": false,
+                            "OpenedDockablesCount": 1,
+                            "IsCollapsable": false,
+                            "Id": "",
+                            "Title": "",
+                            "CanClose": true,
+                            "CanPin": true,
+                            "CanFloat": true
+                        },
+                        {
+                            "$id": "8",
+                            "$type": "Dock.Model.ReactiveUI.Controls.ProportionalDockSplitter, Dock.Model.ReactiveUI",
+                            "Id": "",
+                            "Title": "",
+                            "CanClose": true,
+                            "CanPin": true,
+                            "CanFloat": true
+                        },
+                        {
+                            "$id": "9",
+                            "$type": "Dock.Model.ReactiveUI.Controls.ProportionalDock, Dock.Model.ReactiveUI",
+                            "Orientation": 1,
+                            "VisibleDockables": [
+                                {
+                                    "$id": "10",
+                                    "$type": "Dock.Model.ReactiveUI.Controls.ToolDock, Dock.Model.ReactiveUI",
+                                    "Alignment": 2,
+                                    "IsExpanded": false,
+                                    "AutoHide": true,
+                                    "GripMode": 0,
+                                    "VisibleDockables": [
+                                        {
+                                            "$id": "11",
+                                            "$type": "SDRconnect.AuxSpectrum.ViewModels.AuxSpectrumViewModel, SDRconnect.AuxSpectrum",
+                                            "Id": "AuxSP",
+                                            "Title": "Aux SP",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "12",
+                                            "$type": "SDRconnect.AudioSpectrum.ViewModels.AudioSpectrumViewModel, SDRconnect.AudioSpectrum",
+                                            "Id": "AudioSP",
+                                            "Title": "Audio SP",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "13",
+                                            "$type": "SDRconnect.MpxSpectrum.ViewModels.MpxSpectrumViewModel, SDRconnect.MpxSpectrum",
+                                            "Id": "WFMMPX",
+                                            "Title": "MPX SP",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "14",
+                                            "$type": "SDRconnect.RdsView.ViewModels.RdsViewModel, SDRconnect.RdsView",
+                                            "Id": "RDS",
+                                            "Title": "RDS",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        }
+                                    ],
+                                    "ActiveDockable": {
+                                        "$ref": "11"
+                                    },
+                                    "DefaultDockable": {
+                                        "$ref": "11"
+                                    },
+                                    "Proportion": 0.5,
+                                    "Dock": 0,
+                                    "IsActive": false,
+                                    "IsEmpty": false,
+                                    "OpenedDockablesCount": 1,
+                                    "IsCollapsable": true,
+                                    "Id": "",
+                                    "Title": "",
+                                    "CanClose": true,
+                                    "CanPin": true,
+                                    "CanFloat": true
+                                },
+                                {
+                                    "$id": "15",
+                                    "$type": "Dock.Model.ReactiveUI.Controls.ProportionalDockSplitter, Dock.Model.ReactiveUI",
+                                    "Id": "",
+                                    "Title": "",
+                                    "CanClose": true,
+                                    "CanPin": true,
+                                    "CanFloat": true
+                                },
+                                {
+                                    "$id": "16",
+                                    "$type": "Dock.Model.ReactiveUI.Controls.ToolDock, Dock.Model.ReactiveUI",
+                                    "Alignment": 2,
+                                    "IsExpanded": false,
+                                    "AutoHide": true,
+                                    "GripMode": 0,
+                                    "VisibleDockables": [
+                                        {
+                                            "$id": "17",
+                                            "$type": "SDRconnect.Recording.ViewModels.RecordingViewModel, SDRconnect.Recording",
+                                            "Id": "Recording",
+                                            "Title": "Recording",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "18",
+                                            "$type": "SDRconnect.StoredFrequencies.ViewModels.StoredFrequenciesViewModel, SDRconnect.StoredFrequencies",
+                                            "Id": "Frequencies",
+                                            "Title": "Frequencies",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "19",
+                                            "$type": "SDRconnect.RigControl.ViewModels.RigControlViewModel, SDRconnect.RigControl",
+                                            "Id": "RigControl",
+                                            "Title": "Rig Control",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "20",
+                                            "$type": "SDRconnect.Diversity.ViewModels.DiversityViewModel, SDRconnect.Diversity",
+                                            "Id": "Diversity",
+                                            "Title": "Diversity",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "21",
+                                            "$type": "SDRconnect.IqPlayback.ViewModels.IqPlaybackViewModel, SDRconnect.IqPlayback",
+                                            "Id": "IqPlayback",
+                                            "Title": "IQ Playback",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "22",
+                                            "$type": "SDRconnect.AudioAgcProfiles.ViewModels.AudioAgcProfilesViewModel, SDRconnect.AudioAgcProfiles",
+                                            "Id": "AGC",
+                                            "Title": "AGC",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        },
+                                        {
+                                            "$id": "23",
+                                            "$type": "SDRconnect.Profiles.ViewModels.ProfilesViewModel, SDRconnect.Profiles",
+                                            "Id": "Profiles",
+                                            "Title": "Profiles",
+                                            "CanClose": false,
+                                            "CanPin": false,
+                                            "CanFloat": true
+                                        }
+                                    ],
+                                    "ActiveDockable": {
+                                        "$ref": "18"
+                                    },
+                                    "DefaultDockable": {
+                                        "$ref": "17"
+                                    },
+                                    "Proportion": 0.5,
+                                    "Dock": 0,
+                                    "IsActive": false,
+                                    "IsEmpty": false,
+                                    "OpenedDockablesCount": 1,
+                                    "IsCollapsable": true,
+                                    "Id": "",
+                                    "Title": "",
+                                    "CanClose": true,
+                                    "CanPin": true,
+                                    "CanFloat": true
+                                }
+                            ],
+                            "ActiveDockable": {
+                                "$ref": "11"
+                            },
+                            "DefaultDockable": {
+                                "$ref": "11"
+                            },
+                            "Proportion": 0.25,
+                            "Dock": 0,
+                            "IsActive": false,
+                            "IsEmpty": false,
+                            "OpenedDockablesCount": 2,
+                            "IsCollapsable": true,
+                            "Id": "",
+                            "Title": "",
+                            "CanClose": true,
+                            "CanPin": true,
+                            "CanFloat": true
+                        }
+                    ],
+                    "ActiveDockable": {
+                        "$ref": "5"
+                    },
+                    "DefaultDockable": {
+                        "$ref": "5"
+                    },
+                    "Proportion": "NaN",
+                    "Dock": 0,
+                    "IsActive": false,
+                    "IsEmpty": false,
+                    "OpenedDockablesCount": 3,
+                    "IsCollapsable": false,
+                    "Id": "",
+                    "Title": "",
+                    "CanClose": true,
+                    "CanPin": true,
+                    "CanFloat": true
+                }
+            ],
+            "ActiveDockable": {
+                "$ref": "4"
+            },
+            "DefaultDockable": {
+                "$ref": "4"
+            },
+            "FocusedDockable": {
+                "$ref": "7"
+            },
+            "Proportion": "NaN",
+            "Dock": 0,
+            "IsActive": false,
+            "IsEmpty": false,
+            "OpenedDockablesCount": 3,
+            "IsCollapsable": false,
+            "Id": "",
+            "Title": "",
+            "CanClose": true,
+            "CanPin": true,
+            "CanFloat": true
+        }
     },
     "module_settings": {
         "Version": 0,
@@ -53,20 +372,20 @@
         "SelectedBandGroupIndex": 0,
         "FrequencyExpanderOpen": false,
         "ControlExpanderOpen": true,
-        "AgcExpanderOpen": true,
+        "AgcExpanderOpen": false,
         "AudioExpanderOpen": false,
         "BandsExpanderOpen": false,
         "OptionsExpanderOpen": false,
         "DeviceExpanderOpen": true,
-        "SidebarIsVisible": false,
+        "SidebarIsVisible": true,
         "StatsEnabled": true,
         "DigitsSwapped": false,
         "FillSpectrum": true,
         "FrequencyTicks": true,
         "FormatFrequencies": true,
         "PeakHoldDecay": false,
-        "PeakDetectionEnable": false,
-        "PeakDetectionThreshold": 40,
+        "PeakDetectionEnable": true,
+        "PeakDetectionThreshold": 56,
         "MeasurementDisplayIndex": 0,
         "WfmStereoEnable": true,
         "RdsDecoderEnable": true,
@@ -120,36 +439,42 @@
         "Demodulator": 5,
         "PowerMeasurementMode": 1,
         "WaterfallPalette": 0,
-        "WaterfallPaletteKey": "SpecExt",
-        "SpectrumGradientKey": "Blue",
-        "DisplaySpectrumViewHeight": 0,
+        "WaterfallPaletteKey": "Winrad",
+        "SpectrumGradientKey": "Green",
+        "DisplaySpectrumViewHeight": 441,
         "AuxDisplaySpectrumViewHeight": 251,
         "AudioVolumePercent": 33,
         "AudioMuteEnabled": false,
         "FilterBandwidth": 192000,
         "CustomFilterBandwidths": {
-            "WFM": 182662,
+            "WFM": 203204,
             "AM": 39062
         }
     },
-    "application_window": null,
+    "application_window": {
+        "X": 50,
+        "Y": 32,
+        "Width": 1870,
+        "Height": 1011,
+        "WindowState": 2
+    },
     "networkserver_sources": null,
     "device_210500B845": {
         "SelectedAntenna": 0,
         "DeviceAgcEnable": true,
-        "IfGr": 59,
+        "IfGr": 28,
         "IfAgcAttack": 500,
         "IfAgcDecay": 500,
         "IfAgcDecayDelay": 200,
         "IfAgcDecayThreshold": 5,
-        "LnaState": 9,
+        "LnaState": 13,
         "SetPoint": -30,
         "BiasTEnabled": false,
         "RepeatEnabled": false,
         "DabNotchEnabled": false,
         "RfNotchEnabled": false,
         "RefClkOutputEnabled": false,
-        "DeviceCenterFrequency": 93100000,
+        "DeviceCenterFrequency": 100300000,
         "DeviceTunedFrequency": 0,
         "DeviceSampleRate": 6000000,
         "DevicePpmCorrection": 0
