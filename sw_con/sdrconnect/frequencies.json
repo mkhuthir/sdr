@@ -3,19 +3,25 @@
   "Lists": [
     {
       "Id": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
-      "Title": "FM",
+      "Title": "FM 87-108",
       "IsCloseable": true,
       "IsAdder": false
     },
     {
       "Id": "63484e12-7554-47d8-9cd2-3e3c468618f9",
-      "Title": "Airband",
+      "Title": "Airband 118-137",
       "IsCloseable": true,
       "IsAdder": false
     },
     {
       "Id": "236792d1-0af7-4803-b30c-3e066c147e2b",
-      "Title": "Marine VHF",
+      "Title": "Marine VHF 155-162",
+      "IsCloseable": true,
+      "IsAdder": false
+    },
+    {
+      "Id": "2189f4f2-8189-40c7-bd4d-50aefc959716",
+      "Title": "ILS 108-118",
       "IsCloseable": true,
       "IsAdder": false
     },
@@ -27,16 +33,6 @@
     }
   ],
   "StoredFrequencies": [
-    {
-      "FrequencyHz": 87600000,
-      "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
-      "Description": "Quran",
-      "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -96000,
-      "FilterBandwidthUpper": 96000,
-      "FilterBandwidth": 192000,
-      "AntennaIndex": 0
-    },
     {
       "FrequencyHz": 87900000,
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
@@ -528,7 +524,37 @@
       "AntennaIndex": 1
     },
     {
-      "FrequencyHz": 118350000,
+      "FrequencyHz": 108000000,
+      "ListId": "2189f4f2-8189-40c7-bd4d-50aefc959716",
+      "Description": "ILS Start",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 117950000,
+      "ListId": "2189f4f2-8189-40c7-bd4d-50aefc959716",
+      "Description": "ILS End",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118000000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "Start",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118025000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
       "DemodulatorIndex": 0,
@@ -538,13 +564,533 @@
       "AntennaIndex": 0
     },
     {
-      "FrequencyHz": 118675000,
+      "FrequencyHz": 118050000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
       "DemodulatorIndex": 0,
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
       "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118100000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118225000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118275000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118325000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118350000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "DXB Ground (GND)",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118375000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118425000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118450000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118475000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118525000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118550000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118575000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118625000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118650000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118675000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118725000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118750000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "DXB Tower (TWR)",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118775000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118825000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118850000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118875000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118925000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118950000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 118975000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119000000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119100000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119350000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119450000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
@@ -558,6 +1104,86 @@
       "AntennaIndex": 0
     },
     {
+      "FrequencyHz": 119600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119650000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119750000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119850000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 119950000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
       "FrequencyHz": 120000000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
@@ -568,13 +1194,303 @@
       "AntennaIndex": 0
     },
     {
-      "FrequencyHz": 120350000,
+      "FrequencyHz": 120025000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
       "DemodulatorIndex": 0,
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
       "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120100000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120350000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "DXB Delivery (DEL)",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120450000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120550000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120650000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120750000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120850000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 120950000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
@@ -588,6 +1504,26 @@
       "AntennaIndex": 0
     },
     {
+      "FrequencyHz": 121700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 121800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
       "FrequencyHz": 121875000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "SHJ",
@@ -595,6 +1531,96 @@
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
       "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
@@ -608,9 +1634,389 @@
       "AntennaIndex": 0
     },
     {
+      "FrequencyHz": 122500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 122900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 123900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124023000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
       "FrequencyHz": 124675000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 124900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "DXB Arrival (ARR)",
       "DemodulatorIndex": 0,
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
@@ -622,9 +2028,109 @@
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
       "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125000000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
       "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
@@ -638,9 +2144,69 @@
       "AntennaIndex": 0
     },
     {
-      "FrequencyHz": 126275000,
+      "FrequencyHz": 125400000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
-      "Description": "DXB Int. Airport",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 125900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
       "DemodulatorIndex": 0,
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
@@ -648,7 +2214,347 @@
       "AntennaIndex": 0
     },
     {
+      "FrequencyHz": 126050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126275000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "DXB ATIS Arrival",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
       "FrequencyHz": 126775000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 126900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 127900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128125000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
       "DemodulatorIndex": 0,
@@ -668,6 +2574,36 @@
       "AntennaIndex": 0
     },
     {
+      "FrequencyHz": 128150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
       "FrequencyHz": 128250000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
@@ -678,13 +2614,433 @@
       "AntennaIndex": 0
     },
     {
-      "FrequencyHz": 131175000,
+      "FrequencyHz": 128250000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
-      "Description": "ACARS",
+      "Description": "",
       "DemodulatorIndex": 0,
       "FilterBandwidthLower": -5500,
       "FilterBandwidthUpper": 5500,
       "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 128900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 129900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130025000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130075000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130150000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130175000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130250000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -5500,
+      "FilterBandwidthUpper": 5500,
+      "FilterBandwidth": 11000,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 130900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
@@ -692,19 +3048,549 @@
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "ACARS",
       "DemodulatorIndex": 0,
-      "FilterBandwidthLower": -5500,
-      "FilterBandwidthUpper": 5500,
-      "FilterBandwidth": 11000,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
       "FrequencyHz": 131700000,
       "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "DXB ATIS Departure",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
       "Description": "",
       "DemodulatorIndex": 0,
-      "FilterBandwidthLower": -5500,
-      "FilterBandwidthUpper": 5500,
-      "FilterBandwidth": 11000,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131825000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "ACARS",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 131900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 132900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 133900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 134900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 135900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136000000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136050000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136125000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136200000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136300000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136400000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136500000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136600000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136700000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136800000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
+      "AntennaIndex": 0
+    },
+    {
+      "FrequencyHz": 136900000,
+      "ListId": "63484e12-7554-47d8-9cd2-3e3c468618f9",
+      "Description": "",
+      "DemodulatorIndex": 0,
+      "FilterBandwidthLower": -23437,
+      "FilterBandwidthUpper": 23437,
+      "FilterBandwidth": 46874,
       "AntennaIndex": 0
     },
     {
