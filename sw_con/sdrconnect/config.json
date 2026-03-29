@@ -4,7 +4,7 @@
         "RecordingFolder": "/home/mkhuthir/Downloads/",
         "RdsStandardIsRbds": false,
         "DeviceDiscoveryEnabled": true,
-        "ShowSidebarDeviceControls": false,
+        "ShowSidebarDeviceControls": true,
         "WebSocketInterfaceEnabled": false,
         "AudioAgcSlowProfile": {
             "Name": "Slow",
@@ -88,7 +88,7 @@
                                     },
                                     "Proportion": 1.0,
                                     "Dock": 0,
-                                    "IsActive": true,
+                                    "IsActive": false,
                                     "IsEmpty": false,
                                     "OpenedDockablesCount": 1,
                                     "IsCollapsable": true,
@@ -99,9 +99,6 @@
                                     "CanFloat": true
                                 }
                             ],
-                            "ActiveDockable": {
-                                "$ref": "6"
-                            },
                             "Proportion": 0.75,
                             "Dock": 0,
                             "IsActive": false,
@@ -179,7 +176,7 @@
                                     "DefaultDockable": {
                                         "$ref": "11"
                                     },
-                                    "Proportion": 0.5,
+                                    "Proportion": 0.39743915226975385,
                                     "Dock": 0,
                                     "IsActive": false,
                                     "IsEmpty": false,
@@ -278,9 +275,9 @@
                                     "DefaultDockable": {
                                         "$ref": "17"
                                     },
-                                    "Proportion": 0.5,
+                                    "Proportion": 0.6025608477302462,
                                     "Dock": 0,
-                                    "IsActive": false,
+                                    "IsActive": true,
                                     "IsEmpty": false,
                                     "OpenedDockablesCount": 1,
                                     "IsCollapsable": true,
@@ -336,7 +333,7 @@
                 "$ref": "4"
             },
             "FocusedDockable": {
-                "$ref": "7"
+                "$ref": "18"
             },
             "Proportion": "NaN",
             "Dock": 0,
@@ -367,7 +364,7 @@
     "application_state": {
         "TouchControlsEnabled": false,
         "NoiseReductionEnable": true,
-        "NoiseReductionThreshold": 51,
+        "NoiseReductionThreshold": 100,
         "WidebandNoiseBlankerThreshold": 200,
         "NarrowbandNoiseBlankerThreshold": 190,
         "DevicePpmCorrection": 0,
@@ -375,7 +372,7 @@
         "SelectedBandGroupIndex": 2,
         "FrequencyExpanderOpen": false,
         "ControlExpanderOpen": true,
-        "AgcExpanderOpen": false,
+        "AgcExpanderOpen": true,
         "AudioExpanderOpen": true,
         "BandsExpanderOpen": true,
         "OptionsExpanderOpen": false,
@@ -408,14 +405,14 @@
         "DiversityAmplitude": 0,
         "DiversityPhaseStep": 1e-05,
         "DiversityAmplitudeStep": 1e-05,
-        "TuningStep": 100000,
+        "TuningStep": 1000,
         "TuningStepEnabled": true,
         "TuningStepSnapEnabled": true,
         "AgcAttack": 0,
         "AgcRelease": 0,
         "AgcHold": 0,
         "AgcMaxGain": 0,
-        "AgcRefLevel": 120,
+        "AgcRefLevel": 100,
         "AgcEnabled": true,
         "SquelchEnabled": false,
         "SquelchThreshold": -115,
@@ -439,7 +436,7 @@
         "AudioDisplayTopLevel": 0,
         "AudioDisplayBottomLevel": 0,
         "AuxDisplayFftWindow": 0,
-        "Demodulator": 5,
+        "Demodulator": 4,
         "PowerMeasurementMode": 1,
         "WaterfallPalette": 0,
         "WaterfallPaletteKey": "Winrad",
@@ -448,9 +445,9 @@
         "AuxDisplaySpectrumViewHeight": 251,
         "AudioVolumePercent": 50,
         "AudioMuteEnabled": false,
-        "FilterBandwidth": 248022,
+        "FilterBandwidth": 10000,
         "CustomFilterBandwidths": {
-            "WFM": 248022,
+            "WFM": 203204,
             "AM": 46875,
             "NFM": 24939
         }
@@ -466,21 +463,21 @@
     "device_210500B845": {
         "SelectedAntenna": 1,
         "DeviceAgcEnable": true,
-        "IfGr": 53,
+        "IfGr": 20,
         "IfAgcAttack": 500,
         "IfAgcDecay": 500,
         "IfAgcDecayDelay": 200,
         "IfAgcDecayThreshold": 5,
-        "LnaState": 12,
+        "LnaState": 15,
         "SetPoint": -30,
         "BiasTEnabled": false,
         "RepeatEnabled": false,
-        "DabNotchEnabled": true,
+        "DabNotchEnabled": false,
         "RfNotchEnabled": false,
         "RefClkOutputEnabled": false,
-        "DeviceCenterFrequency": 105500000,
+        "DeviceCenterFrequency": 161631000,
         "DeviceTunedFrequency": 0,
-        "DeviceSampleRate": 6000000,
+        "DeviceSampleRate": 1000000,
         "DevicePpmCorrection": 0
     }
 }
