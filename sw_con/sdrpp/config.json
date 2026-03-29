@@ -1,0 +1,173 @@
+{
+    "bandColors": {
+        "amateur": "#FF0000FF",
+        "aviation": "#00FF00FF",
+        "broadcast": "#0000FFFF",
+        "marine": "#00FFFFFF",
+        "military": "#FFFF00FF"
+    },
+    "bandPlan": "UAE",
+    "bandPlanEnabled": true,
+    "bandPlanPos": 0,
+    "centerTuning": false,
+    "colorMap": "Classic",
+    "decimation": 1,
+    "fastFFT": false,
+    "fftHeight": 531,
+    "fftHold": false,
+    "fftHoldSpeed": 60,
+    "fftRate": 20,
+    "fftSize": 65536,
+    "fftSmoothing": false,
+    "fftSmoothingSpeed": 100,
+    "fftWindow": 2,
+    "frequency": 396435000.0,
+    "fullWaterfallUpdate": false,
+    "fullscreen": false,
+    "invertIQ": false,
+    "iqCorrection": false,
+    "lockMenuOrder": false,
+    "manualOffset": 0.0,
+    "max": -34.117652893066406,
+    "maximized": true,
+    "menuElements": [
+        {
+            "name": "Source",
+            "open": false
+        },
+        {
+            "name": "Radio",
+            "open": false
+        },
+        {
+            "name": "Recorder",
+            "open": true
+        },
+        {
+            "name": "Sinks",
+            "open": false
+        },
+        {
+            "name": "Frequency Manager",
+            "open": false
+        },
+        {
+            "name": "VFO Color",
+            "open": false
+        },
+        {
+            "name": "Band Plan",
+            "open": false
+        },
+        {
+            "name": "Display",
+            "open": false
+        },
+        {
+            "name": "Theme",
+            "open": false
+        },
+        {
+            "name": "Module Manager",
+            "open": false
+        },
+        {
+            "name": "Rigctl Server",
+            "open": false
+        },
+        {
+            "name": "Tetra",
+            "open": false
+        }
+    ],
+    "menuWidth": 317,
+    "min": -140.0,
+    "moduleInstances": {
+        "Audio Sink": {
+            "enabled": true,
+            "module": "audio_sink"
+        },
+        "Audio Source": {
+            "enabled": true,
+            "module": "audio_source"
+        },
+        "Frequency Manager": {
+            "enabled": true,
+            "module": "frequency_manager"
+        },
+        "HackRF Source": {
+            "enabled": true,
+            "module": "hackrf_source"
+        },
+        "Network Sink": {
+            "enabled": true,
+            "module": "network_sink"
+        },
+        "Network Source": {
+            "enabled": true,
+            "module": "network_source"
+        },
+        "RTL-SDR Source": {
+            "enabled": true,
+            "module": "rtl_sdr_source"
+        },
+        "RTL-TCP Source": {
+            "enabled": true,
+            "module": "rtl_tcp_source"
+        },
+        "Radio": {
+            "enabled": false,
+            "module": "radio"
+        },
+        "SDRplay Source": {
+            "enabled": true,
+            "module": "sdrplay_source"
+        },
+        "Tetra": {
+            "enabled": true,
+            "module": "tetra_demodulator"
+        }
+    },
+    "modules": [],
+    "modulesDirectory": "/usr/lib/sdrpp/plugins",
+    "offsets": {
+        "DK5AV X-Band": -6800000000.0,
+        "Ham-It-Up": 125000000.0,
+        "Ku LNB (10700MHz)": -10700000000.0,
+        "Ku LNB (9750MHz)": -9750000000.0,
+        "MMDS S-band (1998MHz)": -1998000000.0,
+        "SpyVerter": 120000000.0
+    },
+    "resourcesDirectory": "/usr/share/sdrpp",
+    "selectedOffset": "None",
+    "showMenu": true,
+    "showWaterfall": true,
+    "snrSmoothing": false,
+    "snrSmoothingSpeed": 20,
+    "source": "SDRplay",
+    "streams": {
+        "Radio": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 1.0
+        },
+        "Tetra": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 1.0
+        }
+    },
+    "theme": "Dark",
+    "uiScale": 1.0,
+    "vfoColors": {
+        "Radio": "#FFFFFF"
+    },
+    "vfoOffsets": {
+        "Radio": -696000.0,
+        "Tetra": -60000.0
+    },
+    "windowSize": {
+        "h": 720,
+        "w": 1280
+    }
+}

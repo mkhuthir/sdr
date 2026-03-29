@@ -1,0 +1,8 @@
+{
+    "Tetra": {
+        "hostname": "localhost",
+        "mode": 0,
+        "port": 8355,
+        "sending": false
+    }
+}

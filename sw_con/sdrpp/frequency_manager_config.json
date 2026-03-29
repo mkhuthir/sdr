@@ -903,7 +903,7 @@
                     "mode": 7
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "Data - WiFi 2.4GHz": {
             "bookmarks": {
@@ -7718,7 +7718,7 @@
                     "mode": 7
                 }
             },
-            "showOnWaterfall": false
+            "showOnWaterfall": true
         },
         "Sat - GPS": {
             "bookmarks": {
@@ -9258,5 +9258,5 @@
             "showOnWaterfall": false
         }
     },
-    "selectedList": "BC - FM"
+    "selectedList": "Radio - Tetra"
 }

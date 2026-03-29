@@ -1,0 +1,11 @@
+{
+    "device": "",
+    "devices": {
+        "RSPdx (210500B845)": {
+            "agc": true,
+            "fmmwNotch": false,
+            "ifGain": 46,
+            "lnaGain": 10
+        }
+    }
+}
