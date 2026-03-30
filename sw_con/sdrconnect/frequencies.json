@@ -98,9 +98,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "SkyNews",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -60000,
-      "FilterBandwidthUpper": 60000,
-      "FilterBandwidth": 120000,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 0
     },
     {
@@ -118,9 +118,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "TAG 911",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -60000,
-      "FilterBandwidthUpper": 60000,
-      "FilterBandwidth": 120000,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 0
     },
     {
@@ -138,19 +138,19 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Dubai 92",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
       "FrequencyHz": 92200000,
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
-      "Description": "",
+      "Description": "Home FM",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -158,9 +158,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Fujairah 92.6",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -178,9 +178,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Shoma 93.4",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -188,9 +188,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Noor Dubai",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -218,9 +218,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -228,9 +228,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "UAQ FM",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -238,9 +238,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "WatarFM",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -248,9 +248,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Hit FM",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -268,9 +268,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Quran",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -308,9 +308,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Radio 2",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
@@ -348,9 +348,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "Khalejya",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -101602,
-      "FilterBandwidthUpper": 101602,
-      "FilterBandwidth": 203204,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 0
     },
     {
@@ -368,9 +368,9 @@
       "ListId": "00ec058b-a992-44a8-8ecc-97fd4e747eab",
       "Description": "City 101.6",
       "DemodulatorIndex": 4,
-      "FilterBandwidthLower": -124011,
-      "FilterBandwidthUpper": 124011,
-      "FilterBandwidth": 248022,
+      "FilterBandwidthLower": -96000,
+      "FilterBandwidthUpper": 96000,
+      "FilterBandwidth": 192000,
       "AntennaIndex": 1
     },
     {
