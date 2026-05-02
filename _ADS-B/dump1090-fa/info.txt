@@ -1,0 +1,2 @@
+https://www.flightaware.com/adsb/piaware/advanced_configuration
+/etc/default/dump1090-fa

@@ -1,0 +1,27 @@
+{
+    "Radio": {
+        "RAW": {
+            "FMIFNREnabled": false,
+            "bandwidth": 48000.0,
+            "noiseBlankerEnabled": false,
+            "noiseBlankerLevel": 1.0,
+            "snapInterval": 2500.0,
+            "squelchEnabled": false,
+            "squelchLevel": -100.0,
+            "squelchMode": "off"
+        },
+        "WFM": {
+            "FMIFNREnabled": false,
+            "bandwidth": 200000.0,
+            "deempMode": "50us",
+            "highPass": false,
+            "noiseBlankerEnabled": false,
+            "noiseBlankerLevel": 1.0,
+            "snapInterval": 100000.0,
+            "squelchEnabled": false,
+            "squelchLevel": -100.0,
+            "squelchMode": "off"
+        },
+        "selectedDemodId": 7
+    }
+}

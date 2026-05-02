@@ -1,0 +1,238 @@
+{
+    "user_interface": {
+        "remember_pos": {
+            "value": true
+        },
+        "window": {
+            "maximized": true
+        }
+    },
+    "satdump_general": {
+        "qth_lat": {
+            "value": 25.31646
+        },
+        "qth_lon": {
+            "value": 55.37483
+        },
+        "qth_alt": {
+            "value": 131.0
+        },
+        "default_qth_label": {
+            "value": "LL75QH"
+        },
+        "default_borders_color": {
+            "value": [
+                0.0,
+                1.0,
+                0.0
+            ]
+        },
+        "default_shores_color": {
+            "value": [
+                1.0,
+                1.0,
+                0.0
+            ]
+        },
+        "default_cities_color": {
+            "value": [
+                1.0,
+                0.0,
+                0.0
+            ]
+        },
+        "default_qth_color": {
+            "value": [
+                1.0,
+                0.0,
+                1.0
+            ]
+        },
+        "default_latlon_color": {
+            "value": [
+                0.0,
+                0.0,
+                1.0
+            ]
+        },
+        "tle_space_track_login": {
+            "value": "mkhuthir@gmail.com"
+        },
+        "tle_space_track_password": {
+            "value": ""
+        }
+    },
+    "satdump_directories": {
+        "recording_path": {
+            "value": "/home/mkhuthir/rfdata"
+        },
+        "live_processing_autogen": {
+            "value": false
+        },
+        "live_processing_path": {
+            "value": "/home/mkhuthir/rfdata"
+        },
+        "default_input_directory": {
+            "value": "/home/mkhuthir/rfdata"
+        },
+        "default_output_directory": {
+            "value": "/home/mkhuthir/rfdata"
+        },
+        "default_image_output_directory": {
+            "value": "/home/mkhuthir/rfdata"
+        },
+        "default_projection_output_directory": {
+            "value": "/home/mkhuthir/rfdata"
+        }
+    },
+    "plugin_settings": {
+        "remote_sdr_support": [],
+        "goes_support": {
+            "last_pdt_update": 0,
+            "update_interval": 14400,
+            "pdt_urls": [
+                "https://dcs1.noaa.gov/PDTS_COMPRESSED.txt",
+                "https://dcs2.noaa.gov/PDTS_COMPRESSED.txt",
+                "https://dcs3.noaa.gov/PDTS_COMPRESSED.txt",
+                "https://dcs4.noaa.gov/PDTS_COMPRESSED.txt"
+            ],
+            "hads_urls": [
+                "https://hads.ncep.noaa.gov/compressed_defs/all_dcp_defs.txt"
+            ]
+        }
+    },
+    "user": {
+        "recorder_state": {
+            "baseband_type": "cf32",
+            "fft_avgn": 5.0,
+            "fft_max": -80.26200103759766,
+            "fft_min": -94.39600372314453,
+            "fft_rate": 120,
+            "fft_size": 4096,
+            "panel_ratio": 0.2518918812274933,
+            "show_waterfall": true,
+            "waterfall_palette": "GQRX",
+            "waterfall_rate": 120,
+            "waterfall_ratio": 0.47863247990608215,
+            "ziq_depth": 8
+        },
+        "viewer_state": {
+            "panel_ratio": 0.23000000417232513,
+            "save_type": "png",
+            "projections": {
+                "projection_auto_mode": false,
+                "projection_auto_scale_mode": false,
+                "projection_autoscale_x": 0.016,
+                "projection_autoscale_y": 0.016,
+                "projections_current_selected_proj": 0,
+                "projections_equirectangular_br_lat": -90.0,
+                "projections_equirectangular_br_lon": 180.0,
+                "projections_equirectangular_tl_lat": 90.0,
+                "projections_equirectangular_tl_lon": -180.0,
+                "projections_image_height": 1024,
+                "projections_image_width": 2048,
+                "projections_mode_radio": 0,
+                "projections_overlay_settings": {
+                    "borders_color": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "cities_color": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ],
+                    "cities_scale": 50,
+                    "cities_scale_rank": 3,
+                    "cities_size": 50,
+                    "cities_type": 0,
+                    "draw_cities_overlay": true,
+                    "draw_latlon_overlay": false,
+                    "draw_map_overlay": true,
+                    "draw_qth_overlay": false,
+                    "draw_shores_overlay": false,
+                    "latlon_color": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "qth_color": [
+                        1.0,
+                        0.0,
+                        1.0
+                    ],
+                    "qth_label": "QTH",
+                    "shores_color": [
+                        1.0,
+                        1.0,
+                        0.0
+                    ]
+                },
+                "projections_stereo_center_lat": 0.0,
+                "projections_stereo_center_lon": 0.0,
+                "projections_stereo_scale": 2.0,
+                "projections_tpers_alt": 30000.0,
+                "projections_tpers_ang": 0.0,
+                "projections_tpers_azi": 0.0,
+                "projections_tpers_lat": 0.0,
+                "projections_tpers_lon": 0.0,
+                "projections_tpers_scale": 8000.0,
+                "projections_utm_center_lon": 0.0,
+                "projections_utm_offset_y": 0.0,
+                "projections_utm_scale": 2400.0,
+                "projections_utm_south": false,
+                "projections_utm_zone": 30
+            }
+        },
+        "tles_last_updated": 1735491234,
+        "recorder_sdr_settings": {
+            "last_used_sdr": "File Source",
+            "Realtek RTL2838UHIDIR #00000001": {
+                "agc": false,
+                "bias": false,
+                "gain": 47,
+                "ppm_correction": 0,
+                "samplerate": 1024000,
+                "frequency": 434775200,
+                "xconverter_frequency": 0.0,
+                "decimation": 1
+            },
+            "File Source": {
+                "baseband_type": "cs16",
+                "buffer_size": 25000,
+                "file_path": "/home/mkhuthir/Downloads/rfdata/GOES-R/HRIT/SDRSharp_20170117_162508Z_1694100000Hz_IQ.wav",
+                "iq_swap": false,
+                "samplerate": 5000000,
+                "frequency": 1694100000,
+                "xconverter_frequency": 0.0,
+                "decimation": 1
+            }
+        },
+        "recorder_tracking": {
+            "rotator_config": {
+                "rotctl": {
+                    "address": "127.0.0.1",
+                    "port": 4533
+                }
+            },
+            "enabled_objects": [],
+            "autotrack_cfg": {
+                "autotrack_min_elevation": 0.0,
+                "stop_sdr_when_idle": false,
+                "multi_mode": false
+            },
+            "rotator_algo": {
+                "park_position": {
+                    "az": 0.0,
+                    "el": 0.0
+                },
+                "park_while_idle": false,
+                "rounding": false,
+                "rounding_decimal_places": 3,
+                "unpark_at_minus": 60.0,
+                "update_period": 1.0
+            }
+        }
+    }
+}

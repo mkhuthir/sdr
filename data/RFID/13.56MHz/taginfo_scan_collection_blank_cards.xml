@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scans><scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:06:09</date>
+	<title>Unknown Manufacturer Unknown Mifare class IC, possibly cloned tag</title>
+	<uid nxp="false">57:6F:3F:63</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>Unknown Manufacturer</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>Unknown Mifare class IC, possibly cloned</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>1 kB
+‣ 16 sectors, with 4 blocks per sector
+‣ 64 blocks, with 16 bytes per block</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareClassic, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms</content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 57:6F:3F:63
+ATQA: 0x0400
+SAK: 0x08</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="MifareData">
+	<address>0</address>
+	<data access="r--">57 6F 3F 63 64 08 04 00 62 63 64 65 66 67 68 69</data>
+</block>
+<block type="MifareData">
+	<address>1</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>2</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>3</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>4</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>5</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>6</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>7</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>8</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>9</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>10</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>11</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>12</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>13</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>14</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>15</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>16</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>17</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>18</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>19</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>20</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>21</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>22</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>23</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>24</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>25</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>26</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>27</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>28</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>29</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>30</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>31</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>32</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>33</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>34</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>35</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>36</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>37</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>38</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>39</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>40</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>41</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>42</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>43</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>44</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>45</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>46</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>47</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>48</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>49</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>50</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>51</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>52</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>53</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>54</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>55</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>56</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>57</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>58</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>59</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="MifareData">
+	<address>60</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>61</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareData">
+	<address>62</address>
+	<data access="rwi">00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="MifareTrailer">
+	<address>63</address>
+	<data access="wxx">00 00 00 00 00 00 FF 07 80 69 FF FF FF FF FF FF</data>
+	<keyA name="Factory default key">FF FF FF FF FF FF</keyA>
+	<keyB name="Factory default key">FF FF FF FF FF FF</keyB>
+</block>
+<block type="text">
+	<content><mono>
+r/R=read, w/W=write, i/I=increment,
+d=decr/transfer/restore, x=r+w, X=R+W
+data block: r/w/i/d:key A|B, R/W/I:key B only,
+  I/i implies d, *=value block
+trailer (order: key A, AC, key B): r/w:key A,
+  W:key B, R:key A|B, (r)=readable key
+AC: W implies R+r, R implies r</mono></content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:06:02</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:93:42:92:F7:48:84</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1:  [ERROR]
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0xBDBE624324BAF3FB3B51E7D9ABA65B9F
+‣ s: 0xA599B6CFA665A4BDFCE5403EF5FC389E</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:93:42:92:F7:48:84
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 93 42 5D</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">92 F7 48 84</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access="x " comment="(BCC1, INT, LOCK0-LOCK1)">A9 48 08 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access="x " comment="(OTP0-OTP3)">B2 04 23 16</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">3A C8 E7 8D</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">36 28 A3 0E</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">52 05 50 E8</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">E9 B1 E4 9C</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">3E E7 D4 8E</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">F2 0F 96 6F</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access="?p" comment="(LOCK2-LOCK4, CHK)" secure="true"/>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="?p" comment="(AUTH0)" secure="true" length="1"/>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="?p" comment="(ACCESS, VCTID)" secure="true" length="2"/>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)" secure="true"/>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" secure="true" length="2"/>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:05:54</date>
+	<title>NXP Semiconductors MIFARE Ultralight EV1 (MF0UL11) tag</title>
+	<uid nxp="true">04:17:F6:92:F7:48:81</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE Ultralight EV1 (MF0UL11)</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage populated">
+			<block type="text">
+	<content></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory size">
+			<block type="text">
+	<content>48 bytes user memory
+‣ 12 pages, with 4 bytes per page</content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Full product name: MF0UL1101DUx
+Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Type: MIFARE Ultralight<hexoutput> (0x03)</hexoutput>
+Subtype: 17 pF<hexoutput> (0x01)</hexoutput>
+Major version: EV1<hexoutput> (0x01)</hexoutput>
+Minor version: V0<hexoutput> (0x00)</hexoutput>
+Storage size: 48 bytes<hexoutput> (0x0B)</hexoutput>
+Protocol: ISO/IEC 14443-3<hexoutput> (0x03)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Configuration information">
+			<block type="text">
+	<content>AFC counter values:
+‣ Counter #0: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #1: 0<hexoutput> (0x000000)</hexoutput>
+‣ Counter #2: 0<hexoutput> (0x000000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Originality check">
+			<block type="text">
+	<content>Signature verified with NXP public key<hexoutput>ECDSA signature:
+‣ r: 0x710462AD1B07C10310A1F7E3918600BB
+‣ s: 0x41630C4AAC7DA10CE6A726E56C27567F</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Virtual Card Type Identifier">
+			<block type="text">
+	<content>[not accessible]</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.NfcA, android.nfc.tech.MifareUltralight, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:17:F6:92:F7:48:81
+ATQA: 0x4400
+SAK: 0x00</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="Ultralight">
+	<address>0</address>
+	<data access="* " comment="(UID0-UID2, BCC0)">04 17 F6 6D</data>
+</block>
+<block type="Ultralight">
+	<address>1</address>
+	<data access="* " comment="(UID3-UID6)">92 F7 48 81</data>
+</block>
+<block type="Ultralight">
+	<address>2</address>
+	<data access="x " comment="(BCC1, INT, LOCK0-LOCK1)">AC 48 08 00</data>
+</block>
+<block type="Ultralight">
+	<address>3</address>
+	<data access="x " comment="(OTP0-OTP3)">66 08 27 1A</data>
+</block>
+<block type="Ultralight">
+	<address>4</address>
+	<data access=". ">BF 73 69 CD</data>
+</block>
+<block type="Ultralight">
+	<address>5</address>
+	<data access=". ">EA 7B E2 52</data>
+</block>
+<block type="Ultralight">
+	<address>6</address>
+	<data access=". ">D9 79 FF 4B</data>
+</block>
+<block type="Ultralight">
+	<address>7</address>
+	<data access=". ">12 7C 0D 7C</data>
+</block>
+<block type="Ultralight">
+	<address>8</address>
+	<data access=". ">78 6C D5 D1</data>
+</block>
+<block type="Ultralight">
+	<address>9</address>
+	<data access=". ">E9 32 FF 82</data>
+</block>
+<block type="Ultralight">
+	<address>10</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>11</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>12</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>13</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>14</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access=". ">00 00 00 00</data>
+</block>
+<block type="Ultralight">
+	<address>15</address>
+	<data access="?p" comment="(LOCK2-LOCK4, CHK)" secure="true"/>
+</block>
+<block type="Ultralight">
+	<address>16</address>
+	<data access="?p" comment="(AUTH0)" secure="true" length="1"/>
+</block>
+<block type="Ultralight">
+	<address>17</address>
+	<data access="?p" comment="(ACCESS, VCTID)" secure="true" length="2"/>
+</block>
+<block type="Ultralight">
+	<address>18</address>
+	<data access="+P" comment="(PWD0-PWD3)" secure="true"/>
+</block>
+<block type="Ultralight">
+	<address>19</address>
+	<data access="+P" comment="(PACK0-PACK1)" secure="true" length="2"/>
+</block>
+<block type="text">
+	<content>
+  *:locked &amp; blocked, x:locked,
+  +:blocked, .:un(b)locked, ?:unknown
+  r:readable (write-protected),
+  p:password protected, -:write-only
+  P:password protected write-only</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+</scans>

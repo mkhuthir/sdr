@@ -1,0 +1,7 @@
+Firmware version: 2018-12-R1 (API:1.06)
+ubertooth 2018-12-R1 (mikeryan@steel) Tue Dec  4 22:23:44 PST 2018
+PA Level: 7
+Current frequency: 2441 MHz (Bluetooth channel 39)
+Board ID Number: 1 (Ubertooth One)
+Part ID: 25011723
+Serial No: 12c00019480c2caf4d89ef5ac02000f5

@@ -1,0 +1,90 @@
+
+Starting rtlsdr-wsprd (2022-07-30, 11:31z) -- Version 0.5.4
+  Callsign     : A1A10
+  Locator      : LL75qh
+  Dial freq.   : 144489000 Hz
+  Real freq.   : 144489000 Hz
+  PPM factor   : 0
+  Gain         : 35 dB
+Wait for time sync (start in 56 sec)
+
+              Date  Time(z)    SNR     DT       Freq Dr    Call    Loc Pwr
+No spot 2022-07-30 11:32z
+No spot 2022-07-30 11:34z
+No spot 2022-07-30 11:36z
+No spot 2022-07-30 11:38z
+No spot 2022-07-30 11:40z
+No spot 2022-07-30 11:42z
+No spot 2022-07-30 11:44z
+No spot 2022-07-30 11:46z
+No spot 2022-07-30 11:48z
+No spot 2022-07-30 11:50z
+No spot 2022-07-30 11:52z
+No spot 2022-07-30 11:54z
+No spot 2022-07-30 11:56z
+No spot 2022-07-30 11:58z
+No spot 2022-07-30 12:00z
+No spot 2022-07-30 12:02z
+No spot 2022-07-30 12:04z
+No spot 2022-07-30 12:06z
+No spot 2022-07-30 12:08z
+No spot 2022-07-30 12:10z
+No spot 2022-07-30 12:12z
+No spot 2022-07-30 12:14z
+No spot 2022-07-30 12:16z
+No spot 2022-07-30 12:18z
+No spot 2022-07-30 12:20z
+No spot 2022-07-30 12:22z
+No spot 2022-07-30 12:24z
+No spot 2022-07-30 12:26z
+No spot 2022-07-30 12:28z
+No spot 2022-07-30 12:30z
+No spot 2022-07-30 12:32z
+No spot 2022-07-30 12:34z
+No spot 2022-07-30 12:36z
+No spot 2022-07-30 12:38z
+No spot 2022-07-30 12:40z
+No spot 2022-07-30 12:42z
+No spot 2022-07-30 12:44z
+No spot 2022-07-30 12:46z
+No spot 2022-07-30 12:48z
+No spot 2022-07-30 12:50z
+No spot 2022-07-30 12:52z
+No spot 2022-07-30 12:54z
+No spot 2022-07-30 12:56z
+No spot 2022-07-30 12:58z
+No spot 2022-07-30 13:00z
+No spot 2022-07-30 13:02z
+No spot 2022-07-30 13:04z
+No spot 2022-07-30 13:06z
+No spot 2022-07-30 13:08z
+No spot 2022-07-30 13:10z
+No spot 2022-07-30 13:12z
+No spot 2022-07-30 13:14z
+No spot 2022-07-30 13:16z
+No spot 2022-07-30 13:18z
+No spot 2022-07-30 13:20z
+No spot 2022-07-30 13:22z
+No spot 2022-07-30 13:24z
+No spot 2022-07-30 13:26z
+No spot 2022-07-30 13:28z
+No spot 2022-07-30 13:30z
+No spot 2022-07-30 13:32z
+No spot 2022-07-30 13:34z
+No spot 2022-07-30 13:36z
+No spot 2022-07-30 13:38z
+No spot 2022-07-30 13:40z
+No spot 2022-07-30 13:42z
+No spot 2022-07-30 13:44z
+No spot 2022-07-30 13:46z
+No spot 2022-07-30 13:48z
+No spot 2022-07-30 13:50z
+No spot 2022-07-30 13:52z
+No spot 2022-07-30 13:54z
+No spot 2022-07-30 13:56z
+No spot 2022-07-30 13:58z
+No spot 2022-07-30 14:00z
+No spot 2022-07-30 14:02z
+No spot 2022-07-30 14:04z
+No spot 2022-07-30 14:06z
+Bye!

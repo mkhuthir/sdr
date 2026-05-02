@@ -1,0 +1,14 @@
+{
+    "Radio": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
+    },
+    "Tetra": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
+    }
+}
