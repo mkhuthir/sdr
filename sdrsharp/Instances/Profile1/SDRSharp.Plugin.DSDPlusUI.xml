@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptDat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<DSDPlusEXEName>DSDPlus.exe</DSDPlusEXEName>
+	<DSDPlusHash>41581c8a47c3120f09bc5d12960968e2</DSDPlusHash>
+	<DSDPlusType>1</DSDPlusType>
+	<ToolTips>0</ToolTips>
+	<Overlay>0</Overlay>
+	<AutoSharpSettings>0</AutoSharpSettings>
+	<DisableFilterAudio>0</DisableFilterAudio>
+	<DisableSquelch>0</DisableSquelch>
+	<EnableSnapToGrid>0</EnableSnapToGrid>
+	<AutoStartRadio>0</AutoStartRadio>
+	<AutoStartFrequency>0</AutoStartFrequency>
+	<AutoStartFrequencyValue>445500500</AutoStartFrequencyValue>
+	<EnableToolBarButtons>0</EnableToolBarButtons>
+	<EnableKeyShorts>0</EnableKeyShorts>
+	<DSDPlusPath>C:\SDRSharp\bin\dsdplus</DSDPlusPath></OptDat>

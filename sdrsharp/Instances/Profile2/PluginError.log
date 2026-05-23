@@ -1,0 +1,276 @@
+*** Plugin Load Error - 2026-04-12 18:45:41.961
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:45:42.060
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:45:42.305
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 18:47:16.787
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:47:16.931
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:47:17.286
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 18:49:09.738
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:49:09.838
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:49:10.103
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 19:11:51.011
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:11:51.110
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:11:51.382
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 19:18:29.480
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:18:34.228
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:18:35.551
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 19:25:56.210
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:26:00.834
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:26:02.039
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 19:26:16.771
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.<LoadFromPath>g____PInvoke|5_0(IntPtr __ptrNativeAssemblyBinder_native, UInt16* __ilPath_native, UInt16* __niPath_native, ObjectHandleOnStack __retAssembly_native)
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:26:16.815
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.<LoadFromPath>g____PInvoke|5_0(IntPtr __ptrNativeAssemblyBinder_native, UInt16* __ilPath_native, UInt16* __niPath_native, ObjectHandleOnStack __retAssembly_native)
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 19:26:16.858
+Config Key   'SDRSharp.Plugin.DSDPlusUI.DSDPlusUIPlugin,C:\SDRSharp\Plugins\DSDPlusUI\SDRSharp.Plugin.DSDPlusUI.dll'
+Type         'SDRSharp.Plugin.DSDPlusUI.DSDPlusUIPlugin, SDRSharp.Plugin.DSDPlusUI, Version=1.0.0.54, Culture=neutral, PublicKeyToken=null'
+Message      'Only one instance is allowed'
+Stack Trace
+   at SDRSharp.Plugin.DSDPlusUI.DSDPlusUIPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
+*** Plugin Load Error - 2026-04-12 19:26:16.886
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+

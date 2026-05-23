@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VFOSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Enabled>false</Enabled>
+  <Frequency>0</Frequency>
+  <DetectorType>NFM</DetectorType>
+  <Bandwidth>12500</Bandwidth>
+  <IFOffset>0</IFOffset>
+  <SquelchEnabled>true</SquelchEnabled>
+  <SquelchThreshold>50</SquelchThreshold>
+  <CWToneShift>0</CWToneShift>
+  <FilterOrder>0</FilterOrder>
+  <WindowType>None</WindowType>
+  <LockCarrier>false</LockCarrier>
+  <UseAntiFading>false</UseAntiFading>
+  <FMStereo>false</FMStereo>
+  <FilterAudio>false</FilterAudio>
+  <AudioGain>0</AudioGain>
+  <AgcDecay>0</AgcDecay>
+  <AgcHang>false</AgcHang>
+  <AgcSlope>0</AgcSlope>
+  <AgcThreshold>0</AgcThreshold>
+  <UseAgc>false</UseAgc>
+  <OutputDevice>[File] Write то file</OutputDevice>
+  <LeftChannel>true</LeftChannel>
+  <RightChannel>true</RightChannel>
+  <Mix>false</Mix>
+  <DontWritePause>false</DontWritePause>
+  <ContinueRecordTime>0</ContinueRecordTime>
+  <NewFileTimeEnable>false</NewFileTimeEnable>
+  <NewFileTime>0</NewFileTime>
+  <SampleFormatSelectedIndex>0</SampleFormatSelectedIndex>
+  <SamplerateOut>0</SamplerateOut>
+  <OutputSamplerateArray>48 kHz,32 kHz,16 kHz,8 kHz</OutputSamplerateArray>
+  <FileNameRules>/ date / frequency / time</FileNameRules>
+  <WriteFolder>C:\SDRSharp\Instances\Profile1\</WriteFolder>
+  <LogFileNameRules>/"Log" / date / frequency</LogFileNameRules>
+  <LogWriteFolder>C:\SDRSharp\Instances\Profile1\</LogWriteFolder>
+  <LogEntryRules>date + time + frequency + level + squelch + record</LogEntryRules>
+  <LogSeparator>;</LogSeparator>
+  <LogEnabled>false</LogEnabled>
+  <LogUpdateTime>100</LogUpdateTime>
+  <LogUseSquelch>false</LogUseSquelch>
+  <LogOnlyEvents>false</LogOnlyEvents>
+</VFOSettings>

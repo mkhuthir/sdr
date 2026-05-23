@@ -1,0 +1,38 @@
+*** Plugin Load Error - 2026-04-12 18:43:12.748
+DLL          'C:\SDRSharp\Plugins\CalicoCAT\SDRSharp.Calico.dll'
+Message      'Could not load file or assembly 'SDRSharp.Calico, Version=1.19.9.22, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:43:17.667
+DLL          'C:\SDRSharp\Plugins\MeteorDemodulator\SDRSharp.PluginsCom.dll'
+Message      'Could not load file or assembly 'SDRSharp.PluginsCom, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'. Assembly with same name is already loaded'
+Stack Trace
+   at System.Runtime.Loader.AssemblyLoadContext.LoadFromAssemblyPath(String assemblyPath)
+   at System.Reflection.Assembly.LoadFrom(String assemblyFile)
+   at SDRSharp.MainForm.LoadPluginTree(String directory, Dictionary`2 pluginTypes, Dictionary`2 orderedPluginKeys)
+
+*** Plugin Load Error - 2026-04-12 18:43:18.994
+Config Key   'SDRSharp.FreqMan.FreqManPlugin,C:\SDRSharp\Plugins\FreqMan\SDRSharp.FreqMan.dll'
+Type         'SDRSharp.FreqMan.FreqManPlugin, SDRSharp.FreqMan, Version=1.1.7.1, Culture=neutral, PublicKeyToken=null'
+Message      'BinaryFormatter serialization and deserialization have been removed. See https://aka.ms/binaryformatter for more information.'
+Stack Trace
+   at System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(Stream serializationStream)
+   at System.Resources.ResourceReader.<>c__DisplayClass7_0`1.<CreateUntypedDelegate>b__0(Object obj, Stream stream)
+   at System.Resources.ResourceReader.DeserializeObject(Int32 typeIndex)
+   at System.Resources.ResourceReader._LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObjectV2(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.ResourceReader.LoadObject(Int32 pos, ResourceTypeCode& typeCode)
+   at System.Resources.RuntimeResourceSet.ReadValue(ResourceReader reader, Int32 dataPos, Boolean isString, ResourceLocator& locator)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase, Boolean isString)
+   at System.Resources.RuntimeResourceSet.GetObject(String key, Boolean ignoreCase)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture, Boolean wrapUnmanagedMemStream)
+   at System.Resources.ResourceManager.GetObject(String name, CultureInfo culture)
+   at SDRSharp.FreqMan.Properties.Resources.get_btnNewEntry()
+   at SDRSharp.FreqMan.FrequencyManagerPanel.InitializeComponent()
+   at SDRSharp.FreqMan.FrequencyManagerPanel..ctor(ISharpControl control)
+   at SDRSharp.FreqMan.FreqManPlugin.Initialize(ISharpControl control)
+   at SDRSharp.MainForm.InitializeSharpPlugins()
+
