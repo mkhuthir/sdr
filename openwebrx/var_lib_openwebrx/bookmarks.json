@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Quran",
+        "frequency": 87600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Pulse95",
+        "frequency": 95000000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Sharjah",
+        "frequency": 94400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Sharjah",
+        "frequency": 94400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "AM",
+        "frequency": 131600000,
+        "modulation": "am",
+        "underlying": "",
+        "description": "",
+        "scannable": true
+    },
+    {
+        "name": "Channel 4",
+        "frequency": 104800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 105400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 104400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 103800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "AM",
+        "frequency": 131700000,
+        "modulation": "am",
+        "underlying": "",
+        "description": "",
+        "scannable": true
+    }
+]

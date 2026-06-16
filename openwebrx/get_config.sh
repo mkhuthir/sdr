@@ -1,3 +1,5 @@
 #!/usr/bin/sh
 
-cp /etc/openwebrx etc_openwrx -rf
+cp -r /etc/openwebrx etc_openwrx
+sudo cp -r /var/lib/openwebrx var_lib_openwebrx 
+
