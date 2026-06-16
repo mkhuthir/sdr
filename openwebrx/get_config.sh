@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-sudo journalctl -u openwebrx -n 25
+cp /etc/openwebrx etc_openwrx -rf
