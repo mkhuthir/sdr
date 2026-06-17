@@ -20,7 +20,7 @@
     "url": "http://remoteradio.changeip.org:8073/",
     "logourl": "http://remoteradio.changeip.org:08073/websdrlogo.png",
     "qth": "IO92SC",
-    "users": 25,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -523,7 +523,7 @@
     "url": "http://websdr.printf.cc:8901/",
     "logourl": "http://websdr.printf.cc:08901/f48.gif",
     "qth": "KO04SD",
-    "users": 11,
+    "users": 16,
     "device": "WebSDR",
     "bands": [
       {
@@ -667,7 +667,7 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "109.164.114.15:8073",
-    "lat": 49.94,
+    "lat": 49.93,
     "lon": 12.56,
     "comment": "0-30 MHz SDR, DX.CZ | Marianske Lazne, Czech",
     "url": "http://109.164.114.15:8073/",
@@ -693,7 +693,7 @@
     "url": "http://hackgreensdr.org:8901/",
     "logourl": "http://hackgreensdr.org:08901/nuclear.gif",
     "qth": "IO83RA",
-    "users": 6,
+    "users": 12,
     "device": "WebSDR",
     "bands": [
       {
@@ -737,6 +737,16 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
+    "id": "kiwisdr.k1ra.us:8073",
+    "lat": 38.742405,
+    "lon": -77.797874,
+    "comment": "0-30 MHz SDR, K1RA/KW4VA Virginia, USA",
+    "url": "http://kiwisdr.k1ra.us:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
     "id": "df3af.ddns.net:8073",
     "lat": 51.705434,
     "lon": 8.336273,
@@ -748,8 +758,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "fsdr.duckdns.org",
-    "lat": 47.151659,
-    "lon": 18.390309,
+    "lat": 47.151703,
+    "lon": 18.390164,
     "comment": "KiwiSDR with Dipole | Szekesfehervar, Hungary",
     "url": "http://fsdr.duckdns.org/",
     "device": "KiwiSDR 1.842.0"
@@ -784,17 +794,6 @@
     "comment": "0-30 MHz SDR, ON1AFF, Belgium",
     "url": "http://sdr1.on1aff.be/",
     "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "cb0bed.selfhost.co:8073",
-    "lat": 50.85174,
-    "lon": 13.301789,
-    "comment": "CB0BED WebSDR - LK Mittelsachsen / Brand-Erbisdorf",
-    "url": "http://cb0bed.selfhost.co:8073/",
-    "device": "OpenWebRX 1.2.116",
-    "logourl": "http://cb0bed.selfhost.co:8073/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -1007,7 +1006,7 @@
     "url": "http://websdr1.sdrutah.org:8901/",
     "logourl": "http://websdr1.sdrutah.org:08901/Utah_SDR_Logo_48x48.gif",
     "qth": "DN31uo",
-    "users": 63,
+    "users": 68,
     "device": "WebSDR",
     "bands": [
       {
@@ -1064,7 +1063,7 @@
     "url": "http://kj6eo.com:8901/",
     "logourl": "http://kj6eo.com:08901/usflagsm.png",
     "qth": "DM04RL",
-    "users": 3,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -1141,7 +1140,7 @@
     "lon": 1.602,
     "comment": "Sdr Online Espa\u00f1a Barcelona, web radio rtl y escuche las bandas de HF UHF VHF QO100 Sat\u00e9lite Banda Maritma",
     "url": "http://5.154.110.148:8073/#freq=145550000,mod=nfm,sql=-748073",
-    "device": "OpenWebRX 1.2.105",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "http://5.154.110.148:8073/#freq=145550000,mod=nfm,sql=-748073/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -1153,17 +1152,6 @@
     "comment": "0-30 MHz KiwiSDR 2 | Bernau bei Berlin, Germany",
     "url": "http://db0bbb.dnshome.de:8073/",
     "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "sdr.flaretechnologies.com.au",
-    "lat": -37.823018,
-    "lon": 145.03715,
-    "comment": "HomPit Radio",
-    "url": "http://sdr.flaretechnologies.com.au/",
-    "device": "OpenWebRX 1.2.2",
-    "logourl": "http://sdr.flaretechnologies.com.au/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -1189,16 +1177,6 @@
   },
   {
     "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "2.58.223.112:8073",
-    "lat": 62.5,
-    "lon": 30.18,
-    "comment": "Karelia SW DX | Joensuu, Finland",
-    "url": "http://2.58.223.112:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
     "mode": "WebSDR",
     "id": "lu6flz.no-ip.org:7999",
     "lat": -33.7292,
@@ -1207,7 +1185,7 @@
     "url": "http://lu6flz.no-ip.org:7999/",
     "logourl": "http://lu6flz.no-ip.org:07999/mylogo.jpg",
     "qth": "FF96AG",
-    "users": 5,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -1228,7 +1206,7 @@
     "url": "http://lu3dj.ddns.net:8080/",
     "logourl": "http://lu3dj.ddns.net:08080/lu3dj.jpg",
     "qth": "FF91up",
-    "users": 9,
+    "users": 12,
     "device": "WebSDR",
     "bands": [
       {
@@ -1339,7 +1317,7 @@
     "url": "http://phermosa.dyndns.org:8901/",
     "logourl": "http://phermosa.dyndns.org:08901/bandera.jpg",
     "qth": "GF25ID",
-    "users": 0,
+    "users": 5,
     "device": "WebSDR",
     "bands": [
       {
@@ -1382,7 +1360,7 @@
     "url": "http://kb5avy.hopto.org:8901/",
     "logourl": "http://kb5avy.hopto.org:08901/radio1.gif",
     "qth": "EM40wa",
-    "users": 1,
+    "users": 0,
     "device": "WebSDR",
     "bands": [
       {
@@ -1442,7 +1420,7 @@
     "url": "http://g0xbuwebsdr.ddns.net:8901/",
     "logourl": "http://g0xbuwebsdr.ddns.net:08901/g0xbu_logo.gif",
     "qth": "IO83UF",
-    "users": 4,
+    "users": 11,
     "device": "WebSDR",
     "bands": [
       {
@@ -1493,7 +1471,7 @@
     "url": "http://g0xbuwebsdr.ddns.net:8902/",
     "logourl": "http://g0xbuwebsdr.ddns.net:08902/g0xbu_logo2.gif",
     "qth": "IO83UF",
-    "users": -8,
+    "users": -6,
     "device": "WebSDR",
     "bands": [
       {
@@ -1684,7 +1662,7 @@
     "url": "http://websdr.fi:8080/",
     "logourl": "http://websdr.fi:08080/finflag.jpg",
     "qth": "KP01WJ",
-    "users": -9,
+    "users": -10,
     "device": "WebSDR",
     "bands": [
       {
@@ -1791,7 +1769,7 @@
     "url": "http://websdr1.kfsdr.com:8901/",
     "logourl": "http://websdr1.kfsdr.com:08901/logo.gif",
     "qth": "CM87tj",
-    "users": 47,
+    "users": 25,
     "device": "WebSDR",
     "bands": [
       {
@@ -1887,7 +1865,7 @@
     "url": "http://websdr4.sdrutah.org:8904/",
     "logourl": "http://websdr4.sdrutah.org:08904/Utah_SDR_Logo_48x48.gif",
     "qth": "DN31so",
-    "users": 28,
+    "users": 21,
     "device": "WebSDR",
     "bands": [
       {
@@ -2281,16 +2259,6 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
-    "id": "chantilly-sdr.ddns.net:8073",
-    "lat": 49.19316,
-    "lon": 2.468739,
-    "comment": "0-30 MHz SDR, 14HAM01 / Daviken - Chantilly (60) North France",
-    "url": "http://chantilly-sdr.ddns.net:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
     "id": "hill.n8ga.org:8073",
     "lat": 40.187121,
     "lon": -83.648692,
@@ -2341,7 +2309,7 @@
     "url": "http://websdr.dynv6.net:8901/",
     "logourl": "http://websdr.dynv6.net:08901/HamHomer.png",
     "qth": "GG77xm",
-    "users": 0,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -2498,7 +2466,7 @@
     "lon": 18.3107377988517,
     "comment": "SR4DON JASTRZ\u0118BIA G\u00d3RA / POLAND LW-MW-SW-VHF-UHF",
     "url": "https://3.websdr.jestok.com/",
-    "device": "OpenWebRX 1.2.115",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "https://3.websdr.jestok.com/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -2678,16 +2646,6 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
-    "id": "kiwisdrzl1kfm.ddns.net:8073",
-    "lat": -37.4,
-    "lon": 175.13,
-    "comment": "0-30 MHz SDR, ZL1KFM, North Waikato, New Zealand (SDR Upgrade, 80mtr Full Wave Closed Loop Connected). I am experiencing some QRM, from I believe my solar charger.",
-    "url": "http://kiwisdrzl1kfm.ddns.net:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
     "id": "zl1ce.ddns.net:8073",
     "lat": -36.895398,
     "lon": 174.810575,
@@ -2798,7 +2756,7 @@
     "lon": 6.97286126193236,
     "comment": "HB9HRL",
     "url": "https://sdrwifi.gaialabs.ch/",
-    "device": "OpenWebRX 1.2.109",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "https://sdrwifi.gaialabs.ch/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -2811,7 +2769,7 @@
     "url": "http://sdr.radioandorra.org/",
     "logourl": "http://sdr.radioandorra.org/ardam_icon.gif",
     "qth": "JN02SN",
-    "users": 6,
+    "users": 13,
     "device": "WebSDR",
     "bands": [
       {
@@ -2844,7 +2802,7 @@
     "url": "http://sv3yy1.no-ip.org:8901/",
     "logourl": "http://sv3yy1.no-ip.org:08901/greece.gif",
     "qth": "KM08VH42QI",
-    "users": 3,
+    "users": 7,
     "device": "WebSDR",
     "bands": [
       {
@@ -2919,7 +2877,7 @@
     "url": "http://ham.websdrbordeaux.fr:8000/",
     "logourl": "http://ham.websdrbordeaux.fr:08000/drapeau.gif",
     "qth": "IN94RP",
-    "users": 34,
+    "users": 33,
     "device": "WebSDR",
     "bands": [
       {
@@ -3018,17 +2976,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "sdr.lifoy.it:8073",
-    "lat": 51.719104,
-    "lon": 8.730788,
-    "comment": "SDRPaderborn",
-    "url": "http://sdr.lifoy.it:8073/",
-    "device": "OpenWebRX 1.2.102",
-    "logourl": "http://sdr.lifoy.it:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "dm2nt.goip.de:8073",
     "lat": 51.476758971870574,
     "lon": 12.016223679116091,
@@ -3116,17 +3063,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "ly5at.qsl.lt:8073",
-    "lat": 55.24538741105222,
-    "lon": 22.276891491323774,
-    "comment": "LY5AT",
-    "url": "http://ly5at.qsl.lt:8073/",
-    "device": "OpenWebRX 1.2.112",
-    "logourl": "http://ly5at.qsl.lt:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "sdr.hq.c3d2.de",
     "lat": 51.081034128991845,
     "lon": 13.7280695920353,
@@ -3161,12 +3097,23 @@
     "type": "latlon",
     "mode": "OpenWebRX",
     "id": "websdr.dl0ht.de",
-    "lat": 53.0632,
-    "lon": 8.96239,
-    "comment": "Web SDR | Bremen Tenever, Germany | DL9BQ ",
-    "url": "https://websdr.dl0ht.de/otesdr/",
+    "lat": 53.07151,
+    "lon": 8.79351,
+    "comment": "2m/70cm Web SDR | Clubstation DL0HT | Bremen, Germany",
+    "url": "https://websdr.dl0ht.de/sdr/",
     "device": "OpenWebRX 1.3.0-dev",
-    "logourl": "https://websdr.dl0ht.de/otesdr/static/gfx/openwebrx-avatar.png"
+    "logourl": "https://websdr.dl0ht.de/sdr/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "openwebrx.zl3bcj.duckdns.org",
+    "lat": -43.8118,
+    "lon": 172.252,
+    "comment": "ZL3BCJ",
+    "url": "https://openwebrx.zl3bcj.duckdns.org/",
+    "device": "OpenWebRX 1.2.114",
+    "logourl": "https://openwebrx.zl3bcj.duckdns.org/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -3305,7 +3252,7 @@
     "lon": 24.647,
     "comment": "ES1MAK",
     "url": "http://marko.synoserver.com/websdr/",
-    "device": "OpenWebRX 1.2.115",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "http://marko.synoserver.com/websdr/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -3354,17 +3301,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "gwinnovation.dynv6.net:8073",
-    "lat": 53.187559397007334,
-    "lon": 8.56719509335492,
-    "comment": "OpenWebRX+SDR * Bremen-Blumenthal * LF>MF>HF>VHF>UHF>etc. * 13RF1005 * DB3GW",
-    "url": "http://gwinnovation.dynv6.net:8073/",
-    "device": "OpenWebRX 1.2.116",
-    "logourl": "http://gwinnovation.dynv6.net:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "owrx.manilasdr.net",
     "lat": 14.42388,
     "lon": 120.940819,
@@ -3407,17 +3343,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "gwinnovation.dynv6.net",
-    "lat": 53.187559397007334,
-    "lon": 8.56719509335492,
-    "comment": "OpenWebRX+SDR * Bremen-Blumenthal * LF>MF>HF>VHF>UHF>etc. * 13RF1005 * DB3GW",
-    "url": "https://gwinnovation.dynv6.net/websdr/",
-    "device": "OpenWebRX 1.2.116",
-    "logourl": "https://gwinnovation.dynv6.net/websdr/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "webrx.sytes.net:8073",
     "lat": 50.0720513417472,
     "lon": 20.0373274759241,
@@ -3436,7 +3361,7 @@
     "url": "http://sv1cmg.no-ip.org/",
     "logourl": "http://sv1cmg.no-ip.org/Hellas.gif",
     "qth": "KM18FV65WB",
-    "users": 0,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -3475,7 +3400,7 @@
     "url": "http://sv4bfb.ddns.net/",
     "logourl": "http://sv4bfb.ddns.net/Hellas.gif",
     "qth": "KM09TJ65BP",
-    "users": 1,
+    "users": 0,
     "device": "WebSDR",
     "bands": [
       {
@@ -3633,7 +3558,7 @@
     "url": "http://sv2hnh.no-ip.org:8901/",
     "logourl": "http://sv2hnh.no-ip.org:08901/gr.jpg",
     "qth": "KN10LP",
-    "users": 10,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -3771,8 +3696,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "websdr.mwrs.org.au:8073",
-    "lat": -33.679903,
-    "lon": 151.231195,
+    "lat": -33.679933,
+    "lon": 151.231169,
     "comment": "VK2MB: Manly-Warringah Radio Society KiwiSDR | Sydney, New South Wales, Australia",
     "url": "http://websdr.mwrs.org.au:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -4148,7 +4073,7 @@
     "url": "http://sdr.websdrmaasbree.nl:8901/",
     "logourl": "http://sdr.websdrmaasbree.nl:08901/favicon.gif",
     "qth": "JO31ai59",
-    "users": 115,
+    "users": 98,
     "device": "WebSDR",
     "bands": [
       {
@@ -4575,16 +4500,6 @@
   },
   {
     "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "kiwisdr-iz0ina.ns0.it:8073",
-    "lat": 41.910861,
-    "lon": 12.57463,
-    "comment": "kiwiSDR Receiver of 0-30 MHz |  | Rome Italy UE | IZ0INA",
-    "url": "http://kiwisdr-iz0ina.ns0.it:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
     "mode": "OpenWebRX",
     "id": "ub3aww.ru:8073",
     "lat": 55.9462022066859,
@@ -4662,17 +4577,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "openwebrx.taild7742.ts.net",
-    "lat": 41.81791988716215,
-    "lon": -90.53626338563126,
-    "comment": "troyBORG",
-    "url": "https://openwebrx.taild7742.ts.net/",
-    "device": "OpenWebRX 1.2.115",
-    "logourl": "https://openwebrx.taild7742.ts.net/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "sdroliva.ddns.net",
     "lat": 38.92050763694133,
     "lon": -0.11535263061522194,
@@ -4733,7 +4637,7 @@
     "lon": 12.5339343547821,
     "comment": "IU0REG",
     "url": "http://romasdr.ddns.net:8073/",
-    "device": "OpenWebRX 1.2.114",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "http://romasdr.ddns.net:8073/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -4801,28 +4705,6 @@
     "url": "http://109.202.205.254:8080/",
     "device": "OpenWebRX 1.2.2",
     "logourl": "http://109.202.205.254:8080/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "www.iu2mch.duckdns.org:8073",
-    "lat": 45.464805,
-    "lon": 9.094794,
-    "comment": "IU2MCH HF-VHF-UHF-Air Band",
-    "url": "http://www.iu2mch.duckdns.org:8073/",
-    "device": "OpenWebRX 1.2.116",
-    "logourl": "http://www.iu2mch.duckdns.org:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "iu2mch.duckdns.org:8073",
-    "lat": 45.464805,
-    "lon": 9.094794,
-    "comment": "IU2MCH HF-VHF-UHF-Air Band",
-    "url": "http://iu2mch.duckdns.org:8073/",
-    "device": "OpenWebRX 1.2.116",
-    "logourl": "http://iu2mch.duckdns.org:8073/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -4899,6 +4781,17 @@
     "url": "https://websdr.mileshilliard.com/",
     "device": "OpenWebRX 1.2.96",
     "logourl": "https://websdr.mileshilliard.com/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "sdrmexico.ddns.net:60003",
+    "lat": 20.66742251623925,
+    "lon": -87.09084709236866,
+    "comment": "XE3N",
+    "url": "http://sdrmexico.ddns.net:60003/",
+    "device": "OpenWebRX 1.2.81",
+    "logourl": "http://sdrmexico.ddns.net:60003/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -5044,6 +4937,17 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
+    "id": "jacksdr.ddns.net:8073",
+    "lat": 51.484251496254416,
+    "lon": 7.081885499209634,
+    "comment": "\ud83c\udde9\ud83c\uddea Jacks S D R \ud83c\udde9\ud83c\uddea NRW Gelsenkirchen/Essen  | \u26a1\ufe0f CB, Freenet, PMR, 160m-70cm AFU \u26a1\ufe0f",
+    "url": "http://jacksdr.ddns.net:8073/",
+    "device": "OpenWebRX 1.2.116",
+    "logourl": "http://jacksdr.ddns.net:8073/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
     "id": "openwebrx.nl",
     "lat": 52.645858,
     "lon": 4.759133,
@@ -5151,8 +5055,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "22033.proxy.kiwisdr.com:8073",
-    "lat": 46.593914,
-    "lon": -114.028059,
+    "lat": 46.593899,
+    "lon": -114.028022,
     "comment": "W0AY:  kiwiSDR @1  0.1-30 MHz | W. Montana,  USA",
     "url": "http://22033.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -5161,8 +5065,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "22033.proxy.kiwisdr.com",
-    "lat": 46.593914,
-    "lon": -114.028059,
+    "lat": 46.593899,
+    "lon": -114.028022,
     "comment": "W0AY:  kiwiSDR @1  0.1-30 MHz | W. Montana,  USA",
     "url": "http://22033.proxy.kiwisdr.com/",
     "device": "KiwiSDR 1.842.0"
@@ -5171,8 +5075,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "22034.proxy.kiwisdr.com:8073",
-    "lat": 46.594104,
-    "lon": -114.02742,
+    "lat": 46.59388,
+    "lon": -114.027884,
     "comment": "W0AY:  kiwiSDR @1  0.1-30 MHz | W. Montana,  USA",
     "url": "http://22034.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -5217,7 +5121,7 @@
     "lon": 1.602,
     "comment": "Sdr Online Espa\u00f1a Barcelona, web radio rtl y escuche las bandas de HF UHF VHF QO100 Sat\u00e9lite Banda Maritma",
     "url": "http://ea3er.sytes.net:8073/",
-    "device": "OpenWebRX 1.2.105",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "http://ea3er.sytes.net:8073/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -5342,17 +5246,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "maritime.nkpa.co.uk:8073",
-    "lat": 51.473694431844116,
-    "lon": 0.07288181746124334,
-    "comment": "Maritime Radio",
-    "url": "http://maritime.nkpa.co.uk:8073/",
-    "device": "OpenWebRX 1.2.104",
-    "logourl": "http://maritime.nkpa.co.uk:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "websdr.pi6ehv.ampr.org:8073",
     "lat": 51.4657595133042,
     "lon": 5.47165437380621,
@@ -5360,6 +5253,17 @@
     "url": "http://websdr.pi6ehv.ampr.org:8073/",
     "device": "OpenWebRX 1.2.1",
     "logourl": "http://websdr.pi6ehv.ampr.org:8073/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "138.118.215.154:8073",
+    "lat": -51.68000987480535,
+    "lon": -69.21657773703642,
+    "comment": "LU1XA Radio Club Rio Gallegos",
+    "url": "http://138.118.215.154:8073/",
+    "device": "OpenWebRX 1.2.82",
+    "logourl": "http://138.118.215.154:8073/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -5386,6 +5290,17 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
+    "id": "sdrbahia.com.ar",
+    "lat": -38.757281,
+    "lon": -62.26511,
+    "comment": "SDR Bah\u00eda Blanca LU3EHB (SWL LU7DBL-139) <a href='https://cafecito.app/lu3ehb' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_1.png' alt='Invitame un caf\u00e9 en cafecito.app' /></a>",
+    "url": "https://sdrbahia.com.ar/",
+    "device": "OpenWebRX 1.2.116",
+    "logourl": "https://sdrbahia.com.ar/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
     "id": "185.138.197.168:8073",
     "lat": 52.491086199756126,
     "lon": -2.1576087642768704,
@@ -5393,6 +5308,45 @@
     "url": "http://185.138.197.168:8073/",
     "device": "OpenWebRX 1.3.0-dev",
     "logourl": "http://185.138.197.168:8073/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "2360.ddns.me:8901",
+    "lat": 32.6042,
+    "lon": -97.375,
+    "comment": "RTLSDR Dell Optiplex 960 EM12ho W2DB",
+    "url": "http://2360.ddns.me:8901/",
+    "logourl": "http://2360.ddns.me:08901/texasflag.png",
+    "qth": "EM12ho",
+    "users": 1,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "muhf",
+        "freql": 926988000,
+        "freqh": 928012000,
+        "antenna": ""
+      },
+      {
+        "id": "m15",
+        "freql": 19961000,
+        "freqh": 22009000,
+        "antenna": "75&#39; wire"
+      },
+      {
+        "id": "m40",
+        "freql": 5976000,
+        "freqh": 8023999,
+        "antenna": "75&#39; wire"
+      },
+      {
+        "id": "m20",
+        "freql": 13276000,
+        "freqh": 15324000,
+        "antenna": "75&#39; wire"
+      }
+    ]
   },
   {
     "type": "latlon",
@@ -5761,7 +5715,7 @@
     "lon": 16.7917336492992,
     "comment": "SQ6NCC",
     "url": "http://openwebrx.sq6ncc.eu/",
-    "device": "OpenWebRX 1.2.115",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "http://openwebrx.sq6ncc.eu/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -5785,6 +5739,17 @@
     "url": "https://sdr-serpuhov.ru/",
     "device": "OpenWebRX 1.2.114",
     "logourl": "https://sdr-serpuhov.ru/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "xe3jac-openweb.zapto.org:8073",
+    "lat": 19.08069956130074,
+    "lon": -98.26422124919387,
+    "comment": "XE3JAC",
+    "url": "http://xe3jac-openweb.zapto.org:8073/",
+    "device": "OpenWebRX 1.2.116",
+    "logourl": "http://xe3jac-openweb.zapto.org:8073/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -5822,17 +5787,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "81.242.146.94:8073",
-    "lat": 50.280753504071484,
-    "lon": 5.921694842140206,
-    "comment": "ONL13454  UBA",
-    "url": "http://81.242.146.94:8073/",
-    "device": "OpenWebRX 1.2.115",
-    "logourl": "http://81.242.146.94:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "sdr.7z8d.com:8074",
     "lat": 31.208,
     "lon": 121.526,
@@ -5840,6 +5794,17 @@
     "url": "http://sdr.7z8d.com:8074/",
     "device": "OpenWebRX 1.2.105",
     "logourl": "http://sdr.7z8d.com:8074/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "sdr.vanish125.netcraze.pro",
+    "lat": 55.70267067829901,
+    "lon": 38.9587778063207,
+    "comment": "EastMO Receiver",
+    "url": "https://sdr.vanish125.netcraze.pro/",
+    "device": "OpenWebRX 1.2.115",
+    "logourl": "https://sdr.vanish125.netcraze.pro/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -6120,7 +6085,7 @@
     "url": "http://websdr.srr-76.ru/",
     "logourl": "http://websdr.srr-76.ru/rd3mk.png",
     "qth": "KO97XP89",
-    "users": 53,
+    "users": 51,
     "device": "WebSDR",
     "bands": [
       {
@@ -6183,7 +6148,7 @@
     "url": "http://freebands.websdrbordeaux.fr:9000/",
     "logourl": "http://freebands.websdrbordeaux.fr:09000/drapeau.gif",
     "qth": "IN94QU",
-    "users": 3,
+    "users": 2,
     "device": "WebSDR",
     "bands": [
       {
@@ -6285,8 +6250,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg05.proxy.kiwisdr.com:8073",
-    "lat": 47.378521,
-    "lon": 8.364282,
+    "lat": 47.378378,
+    "lon": 8.364548,
     "comment": "0-30 MHZ HAM KiwiSDR | SWITZERLAND Hasenberg05 AG 700m (HB9HEH) / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg05.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -6435,8 +6400,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "sergiocorda.synology.me:28073",
-    "lat": 39.224072,
-    "lon": 9.13392,
+    "lat": 39.224046,
+    "lon": 9.133884,
     "comment": "0-30 MHz KIWI SDR, 1HS1322 .Cagliari Italy",
     "url": "http://sergiocorda.synology.me:28073/",
     "device": "KiwiSDR 1.842.0"
@@ -6485,8 +6450,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "178.203.119.206:8073",
-    "lat": 51.254587,
-    "lon": 6.983222,
+    "lat": 51.255335,
+    "lon": 6.979098,
     "comment": "0-30 MHZ KIWISDR - DO9PL & 13RC811 - METTMANN / NEANDERTAL - JO31LG - GERMANY",
     "url": "http://178.203.119.206:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -6495,8 +6460,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "13rc811.ddns.net:8073",
-    "lat": 51.254587,
-    "lon": 6.983222,
+    "lat": 51.255335,
+    "lon": 6.979098,
     "comment": "0-30 MHZ KIWISDR - DO9PL & 13RC811 - METTMANN / NEANDERTAL - JO31LG - GERMANY",
     "url": "http://13rc811.ddns.net:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -6529,6 +6494,16 @@
     "lon": -78.45,
     "comment": "0-30 MHz KiwiSDR Central NC KIWI 1",
     "url": "http://75.189.217.152:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "21150.proxy.kiwisdr.com:8073",
+    "lat": 54.5021,
+    "lon": 9.6635,
+    "comment": "0-30 MHz KiwiSDR | DO6LSM | Borgwedel, Germany",
+    "url": "http://21150.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
   },
   {
@@ -6620,16 +6595,6 @@
     "comment": "0-30 MHz MFJ-1886 Loop, DH5PR, Rhede, Germany",
     "url": "http://91.137.118.149:8073/",
     "device": "KiwiSDR 1.710.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "kiwisdr.kixs.org",
-    "lat": 52.3759,
-    "lon": 4.8975,
-    "comment": "0-30 MHz PA8E, Amersfoort, The Netherlands",
-    "url": "https://kiwisdr.kixs.org/",
-    "device": "KiwiSDR 1.841.0"
   },
   {
     "type": "latlon",
@@ -7124,16 +7089,6 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
-    "id": "72.250.70.87:8073",
-    "lat": 21.566,
-    "lon": -158.2578,
-    "comment": "0-30 MHz SDR | KAENA POINT,  HAWAII, USA",
-    "url": "http://72.250.70.87:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
     "id": "22341.proxy.kiwisdr.com:8073",
     "lat": 42.0523,
     "lon": -82.6721,
@@ -7405,8 +7360,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21886.proxy.kiwisdr.com:8073",
-    "lat": 51.654969,
-    "lon": 3.910115,
+    "lat": 51.654976,
+    "lon": 3.909889,
     "comment": "0-30 MHz KiwiSDR2 - Doublet 2x17meter | Zierikzee, (SW) Netherlands",
     "url": "http://21886.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -7464,29 +7419,9 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
-    "id": "daviken.ddns.net:8073",
-    "lat": 49.19316,
-    "lon": 2.468739,
-    "comment": "0-30 MHz SDR, 14HAM01 / Daviken - Chantilly (60) North France",
-    "url": "http://daviken.ddns.net:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "80.119.208.227:8073",
-    "lat": 49.19316,
-    "lon": 2.468739,
-    "comment": "0-30 MHz SDR, 14HAM01 / Daviken - Chantilly (60) North France",
-    "url": "http://80.119.208.227:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
     "id": "ab9mq.hopto.org:8073",
-    "lat": 40.587559,
-    "lon": -89.121383,
+    "lat": 40.587505,
+    "lon": -89.12142,
     "comment": "0-30 MHz SDR, AB9MQ, Carlock Illinois USA",
     "url": "http://ab9mq.hopto.org:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -7510,6 +7445,16 @@
     "comment": "0-30 MHz SDR, Bikedork, Minneapolis USA",
     "url": "http://bikedork.myddns.me:8073/",
     "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "jplin53a.proxy.kiwisdr.com:8073",
+    "lat": 25.106238,
+    "lon": 121.816775,
+    "comment": "0-30 MHz SDR, BM2KVV Taiwan #1",
+    "url": "http://jplin53a.proxy.kiwisdr.com:8073/",
+    "device": "KiwiSDR 1.710.0"
   },
   {
     "type": "latlon",
@@ -7994,6 +7939,16 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
+    "id": "22148.proxy.kiwisdr.com:8073",
+    "lat": 44.04,
+    "lon": -121.27,
+    "comment": "0-30 MHz SDR | Bend, Oregon USA",
+    "url": "http://22148.proxy.kiwisdr.com:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
     "id": "kiwisdr-bern.try.yaler.io",
     "lat": 46.94,
     "lon": 7.53,
@@ -8005,8 +7960,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21079.proxy.kiwisdr.com:8073",
-    "lat": 30.212132,
-    "lon": -84.333868,
+    "lat": 30.211859,
+    "lon": -84.33392,
     "comment": "0-30 MHz SDR | Big Bend Florida",
     "url": "http://21079.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -8015,8 +7970,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21310.proxy.kiwisdr.com:8073",
-    "lat": 30.211917,
-    "lon": -84.333862,
+    "lat": 30.211847,
+    "lon": -84.333691,
     "comment": "0-30 MHz SDR | Big Bend Florida",
     "url": "http://21310.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -8040,6 +7995,16 @@
     "comment": "0-30 MHz SDR | Breda, Netherlands",
     "url": "http://21915.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.832.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "rgv.twrmon.net:8075",
+    "lat": 25.93,
+    "lon": -97.46,
+    "comment": "0-30 MHz SDR | Brownsville, Texas, USA",
+    "url": "http://rgv.twrmon.net:8075/",
+    "device": "KiwiSDR 1.842.0"
   },
   {
     "type": "latlon",
@@ -8169,16 +8134,6 @@
     "lon": -87.680097,
     "comment": "0-30 MHz SDR, Que4, Wicker Park, Chicago, Illinois",
     "url": "http://kiwisdr.que4.org:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "os.f5.si:8073",
-    "lat": 34.85,
-    "lon": 135.59,
-    "comment": "0-30 MHz SDR, Rio, Osaka, Japan",
-    "url": "http://os.f5.si:8073/",
     "device": "KiwiSDR 1.842.0"
   },
   {
@@ -8325,8 +8280,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "90.46.27.243:8073",
-    "lat": 48.740287,
-    "lon": 2.561018,
+    "lat": 48.740302,
+    "lon": 2.561055,
     "comment": "0-30 MHz SDR, VICTOR DELTA PARIS FRANCE",
     "url": "http://90.46.27.243:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -8625,8 +8580,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "22161.proxy.kiwisdr.com:8073",
-    "lat": 33.639616,
-    "lon": -117.770169,
+    "lat": 33.64,
+    "lon": -117.77,
     "comment": "0-30 MHz SDR2, AA6CQ | Irvine, California, USA",
     "url": "http://22161.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.813.0"
@@ -8645,8 +8600,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21951.proxy.kiwisdr.com:8073",
-    "lat": 53.450697,
-    "lon": 10.310056,
+    "lat": 53.450647,
+    "lon": 10.310241,
     "comment": "0-30 MHZ \ud83c\udde9\ud83c\uddea \ud83c\udde9\ud83c\uddea SWLJO53DK \ud83c\udde9\ud83c\uddea \ud83c\udde9\ud83c\uddea Vo\u00dfmoor OT von Escheburg \ud83c\udde9\ud83c\uddea \ud83c\udde9\ud83c\uddea Germany | Vossmoor",
     "url": "http://21951.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -8844,6 +8799,16 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
+    "id": "kiwisdr.dl1rf.ipv64.de:8073",
+    "lat": 48.414761,
+    "lon": 12.278801,
+    "comment": "0.01-32 MHz SDR | near Landshut, Bavaria, Germany",
+    "url": "http://kiwisdr.dl1rf.ipv64.de:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
     "id": "131.234.222.140:8073",
     "lat": 51.709104,
     "lon": 8.768726,
@@ -8896,7 +8861,7 @@
     "mode": "KiwiSDR",
     "id": "22049.proxy.kiwisdr.com:8073",
     "lat": 39.15,
-    "lon": -123.17,
+    "lon": -123.2,
     "comment": "0.1-32 MHz KiwiSDR2 - 4 user selectable antennas - N6VUD | Ukiah, California USA",
     "url": "http://22049.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -9041,7 +9006,7 @@
     "url": "http://websdr.pi2ehv.ampr.org:8901/",
     "logourl": "",
     "qth": "JO21RL",
-    "users": 0,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -9132,7 +9097,7 @@
     "url": "http://hackgreensdr.org:8902/",
     "logourl": "http://hackgreensdr.org:08902/nuclear.gif",
     "qth": "IO83RA",
-    "users": 5,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -9185,16 +9150,6 @@
     "lon": 0.65,
     "comment": "15 kHz-30 MHz KiwiSDR2 - F1JEK/P - France - DX-500 active antenna.",
     "url": "http://f1jeksdr1.ddns.net:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "sdr.n4but.com",
-    "lat": 28.6,
-    "lon": -81.4,
-    "comment": "0-30 MHz SDR, KG4BUT, Orlando, Florida",
-    "url": "http://sdr.n4but.com/",
     "device": "KiwiSDR 1.842.0"
   },
   {
@@ -9340,8 +9295,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg700m.ddns.net:8072",
-    "lat": 47.378367,
-    "lon": 8.364474,
+    "lat": 47.378379,
+    "lon": 8.364547,
     "comment": "0-30 MHZ HAM KiwiSDR | SWITZERLAND Hasenberg05 AG 700m (HB9HEH) / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg700m.ddns.net:8072/",
     "device": "KiwiSDR 1.842.0"
@@ -9479,6 +9434,79 @@
   },
   {
     "type": "latlon",
+    "mode": "WebSDR",
+    "id": "sdrgeorgia.sytes.net:8902",
+    "lat": 41.9792,
+    "lon": 45.2917,
+    "comment": "GEORGIA Country, Odlisi-Kakheti",
+    "url": "http://sdrgeorgia.sytes.net:8902/",
+    "logourl": "http://sdrgeorgia.sytes.net:08902/geo.gif",
+    "qth": "LN21PX",
+    "users": 9,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m160",
+        "freql": 1388000,
+        "freqh": 2412000,
+        "antenna": "RTL-SDR V4 G5RV"
+      },
+      {
+        "id": "m80",
+        "freql": 3138000,
+        "freqh": 4162000,
+        "antenna": "RTL-SDR V4 G5RV"
+      },
+      {
+        "id": "m40",
+        "freql": 6588000,
+        "freqh": 7612000,
+        "antenna": "RTL-SDR V4 G5RV"
+      },
+      {
+        "id": "m20",
+        "freql": 13663000,
+        "freqh": 14687000,
+        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
+      },
+      {
+        "id": "m17",
+        "freql": 17606000,
+        "freqh": 18630000,
+        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
+      },
+      {
+        "id": "m15",
+        "freql": 20738000,
+        "freqh": 21762000,
+        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
+      },
+      {
+        "id": "m12",
+        "freql": 24428000,
+        "freqh": 25452000,
+        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
+      },
+      {
+        "id": "m10",
+        "freql": 26976000,
+        "freqh": 29024000,
+        "antenna": "RTL-SDR V3 HEXBEAM 6 BAND"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "31.57.58.12:8902",
+    "lat": 41.9811,
+    "lon": 45.2955,
+    "comment": "GEORGIA Country, Odlisi-Kakheti",
+    "url": "http://31.57.58.12:8902/",
+    "device": "WebSDR"
+  },
+  {
+    "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21804.proxy.kiwisdr.com:8073",
     "lat": 54.905408,
@@ -9497,6 +9525,16 @@
     "url": "http://sdr1.gourbex.pl:8080/",
     "device": "OpenWebRX 1.2.110",
     "logourl": "http://sdr1.gourbex.pl:8080/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "lb1pj-kiwisdr.hopto.org:8073",
+    "lat": 59.190928,
+    "lon": 9.715149,
+    "comment": "Grenland | Skien, Norway",
+    "url": "http://lb1pj-kiwisdr.hopto.org:8073/",
+    "device": "KiwiSDR 1.842.0"
   },
   {
     "type": "latlon",
@@ -9750,7 +9788,7 @@
     "url": "http://websdr.is0grb.it:8901/",
     "logourl": "http://websdr.is0grb.it:08901/satellite150x.jpg",
     "qth": "JM49OJ",
-    "users": 51,
+    "users": 43,
     "device": "WebSDR",
     "bands": [
       {
@@ -9771,7 +9809,7 @@
     "url": "http://websdr.is0grb.it:8903/",
     "logourl": "http://websdr.is0grb.it:08903/satellite48x.jpg",
     "qth": "JM49OJ",
-    "users": 1,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -9792,7 +9830,7 @@
     "url": "http://websdr.is0grb.it:8902/",
     "logourl": "http://websdr.is0grb.it:08902/satellite48x.jpg",
     "qth": "JM49OJ",
-    "users": 2,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -9861,6 +9899,16 @@
     "lon": -74.223123,
     "comment": "K2RH SDR | New Jersey",
     "url": "http://sdr.k2rh.radio:8072/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "kiwisdr.k3fef.com:8073",
+    "lat": 41.325953,
+    "lon": -74.922089,
+    "comment": "K3FEF Milford PA USA",
+    "url": "http://kiwisdr.k3fef.com:8073/",
     "device": "KiwiSDR 1.842.0"
   },
   {
@@ -9937,8 +9985,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21426.proxy.kiwisdr.com:8073",
-    "lat": 43.973644,
-    "lon": -116.832233,
+    "lat": 43.973805,
+    "lon": -116.832461,
     "comment": "K7SPS 0-30 MHz SDR  | New Plymouth Idaho USA",
     "url": "http://21426.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -10026,59 +10074,9 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
-    "id": "kareliamwdx.ddns.net:8074",
-    "lat": 62.5,
-    "lon": 30.18,
-    "comment": "Karelia MW DX | Joensuu, Finland",
-    "url": "http://kareliamwdx.ddns.net:8074/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "kareliamwdx.ddns.net:8073",
-    "lat": 62.5,
-    "lon": 30.18,
-    "comment": "Karelia SW DX | Joensuu, Finland",
-    "url": "http://kareliamwdx.ddns.net:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "kareliaswdx.ddns.net:8073",
-    "lat": 62.5,
-    "lon": 30.18,
-    "comment": "Karelia SW DX | Joensuu, Finland",
-    "url": "http://kareliaswdx.ddns.net:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "2.58.223.112:8074",
-    "lat": 62.5,
-    "lon": 30.18,
-    "comment": "Karelia MW DX | Joensuu, Finland",
-    "url": "http://2.58.223.112:8074/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "kareliaswdx.ddns.net:8074",
-    "lat": 62.5,
-    "lon": 30.18,
-    "comment": "Karelia MW DX | Joensuu, Finland",
-    "url": "http://kareliaswdx.ddns.net:8074/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
     "id": "kb1uif-kiwisdr.ddns.net:8073",
-    "lat": 42.055403,
-    "lon": -73.312517,
+    "lat": 42.055245,
+    "lon": -73.312456,
     "comment": "KB1UIF KiwiSDR | Ashley Falls, MA.USA.",
     "url": "http://kb1uif-kiwisdr.ddns.net:8073/",
     "device": "KiwiSDR 1.806.0"
@@ -10087,8 +10085,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "69.204.142.218:8073",
-    "lat": 42.055403,
-    "lon": -73.312517,
+    "lat": 42.055245,
+    "lon": -73.312456,
     "comment": "KB1UIF KiwiSDR | Ashley Falls, MA.USA.",
     "url": "http://69.204.142.218:8073/",
     "device": "KiwiSDR 1.806.0"
@@ -10147,6 +10145,16 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
+    "id": "22459.proxy.kiwisdr.com:8073",
+    "lat": 43.02095,
+    "lon": -88.15912,
+    "comment": "KD9KHZ | Brookfield, WI USA",
+    "url": "http://22459.proxy.kiwisdr.com:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
     "id": "22000.proxy.kiwisdr.com:8073",
     "lat": 40.96,
     "lon": -72.78,
@@ -10194,7 +10202,7 @@
     "url": "http://sdr.kf5jmd.com:8901/",
     "logourl": "http://sdr.kf5jmd.com:08901/mylogo3.jpg",
     "qth": "EM11dk",
-    "users": 5,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -10703,7 +10711,7 @@
     "url": "http://stream.sdr48.ru/",
     "logourl": "http://stream.sdr48.ru/rus.gif",
     "qth": "KO92SO",
-    "users": 0,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -10828,8 +10836,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "f6bir.ddns.net:8074",
-    "lat": 49.224322,
-    "lon": 2.209659,
+    "lat": 49.224384,
+    "lon": 2.209257,
     "comment": "Satellite  QO100 -- F6bir KiwiSdr | Anserville  NR PARIS",
     "url": "http://f6bir.ddns.net:8074/",
     "device": "KiwiSDR 1.842.0"
@@ -10844,7 +10852,7 @@
     "url": "http://websdr.sk4ko.com:8901/",
     "logourl": "http://websdr.sk4ko.com:08901/logoV1_WebSdr.jpg",
     "qth": "JP71GA",
-    "users": 1,
+    "users": 0,
     "device": "WebSDR",
     "bands": [
       {
@@ -10898,6 +10906,117 @@
   },
   {
     "type": "latlon",
+    "mode": "WebSDR",
+    "id": "sdr.r9a.ru",
+    "lat": 54.9375,
+    "lon": 61.7917,
+    "comment": "SDR receiver in Russia, near Chelyabinsk city",
+    "url": "http://sdr.r9a.ru/",
+    "logourl": "http://sdr.r9a.ru/logo.jpg",
+    "qth": "MO04VW",
+    "users": 41,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m160",
+        "freql": 1804000,
+        "freqh": 1996000,
+        "antenna": "Bewerage"
+      },
+      {
+        "id": "m160",
+        "freql": 1804000,
+        "freqh": 1996000,
+        "antenna": "Inverted Vee"
+      },
+      {
+        "id": "m80",
+        "freql": 3458000,
+        "freqh": 3842000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m40",
+        "freql": 6908000,
+        "freqh": 7292000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m30",
+        "freql": 10029000,
+        "freqh": 10221000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m20",
+        "freql": 13983000,
+        "freqh": 14367000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m17",
+        "freql": 18022000,
+        "freqh": 18214000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m15",
+        "freql": 20841000,
+        "freqh": 21609000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m12",
+        "freql": 24844000,
+        "freqh": 25036000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m0",
+        "freql": 26838000,
+        "freqh": 27862000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m10",
+        "freql": 27826000,
+        "freqh": 29874000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m6",
+        "freql": 50000000,
+        "freqh": 50768000,
+        "antenna": "Hy-Gain AV-680"
+      },
+      {
+        "id": "m2",
+        "freql": 144000000,
+        "freqh": 144768000,
+        "antenna": "Diamond X7000"
+      },
+      {
+        "id": "m2",
+        "freql": 143876000,
+        "freqh": 145924000,
+        "antenna": "Diamond X7000"
+      },
+      {
+        "id": "m70",
+        "freql": 431966000,
+        "freqh": 432734000,
+        "antenna": "Diamond X7000"
+      },
+      {
+        "id": "muhf",
+        "freql": 1295990000,
+        "freqh": 1297010000,
+        "antenna": "Diamond X7000"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
     "mode": "OpenWebRX",
     "id": "sdr.gudynas.lt:2052",
     "lat": 55.370461,
@@ -10933,8 +11052,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "kiwi5167.ddns.net:8073",
-    "lat": 46.09383,
-    "lon": -119.087021,
+    "lat": 46.094065,
+    "lon": -119.087515,
     "comment": "SE WASHINGTON BLAIR FARM, USA",
     "url": "http://kiwi5167.ddns.net:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -10943,8 +11062,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "64.184.132.64:8073",
-    "lat": 46.09383,
-    "lon": -119.087021,
+    "lat": 46.094065,
+    "lon": -119.087515,
     "comment": "SE WASHINGTON BLAIR FARM, USA",
     "url": "http://64.184.132.64:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -10953,8 +11072,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "kiwisdr2blair.ddns.net:8073",
-    "lat": 46.09383,
-    "lon": -119.087021,
+    "lat": 46.094065,
+    "lon": -119.087515,
     "comment": "SE WASHINGTON BLAIR FARM, USA",
     "url": "http://kiwisdr2blair.ddns.net:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -10969,7 +11088,7 @@
     "url": "http://sebagolakesdr.us:8901/",
     "logourl": "http://sebagolakesdr.us:08901/n1ps01.jpeg",
     "qth": "FN43SS",
-    "users": 5,
+    "users": 4,
     "device": "WebSDR",
     "bands": [
       {
@@ -11121,8 +11240,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "21900.proxy.kiwisdr.com:8073",
-    "lat": 40.809003,
-    "lon": 22.071155,
+    "lat": 40.809143,
+    "lon": 22.07115,
     "comment": "SV2CSN 0-30 MHz SDR FROM EDESSA GREECE",
     "url": "http://21900.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -11231,6 +11350,36 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
+    "id": "208.38.9.135:8073",
+    "lat": 50.08,
+    "lon": -113.68,
+    "comment": "ve6ars kiwi #1",
+    "url": "http://208.38.9.135:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "208.38.9.135:8074",
+    "lat": 50.08,
+    "lon": -113.68,
+    "comment": "ve6ars kiwi #2",
+    "url": "http://208.38.9.135:8074/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "porky.dahlbros.net:8074",
+    "lat": 50.08,
+    "lon": -113.68,
+    "comment": "ve6ars kiwi #2",
+    "url": "http://porky.dahlbros.net:8074/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
     "id": "ve6ddd.proxy.kiwisdr.com:8073",
     "lat": 52.47,
     "lon": -114.84,
@@ -11278,7 +11427,7 @@
     "url": "http://itajai.sdr.net.br:8083/",
     "logourl": "http://itajai.sdr.net.br:08083/th_lr.gif",
     "qth": "GG53ob",
-    "users": 1,
+    "users": 0,
     "device": "WebSDR",
     "bands": [
       {
@@ -11311,7 +11460,7 @@
     "url": "http://sdr.codedv.com:8091/",
     "logourl": "",
     "qth": "IO91TP",
-    "users": 3,
+    "users": 2,
     "device": "WebSDR",
     "bands": [
       {
@@ -11354,8 +11503,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "203.129.16.92:8073",
-    "lat": -33.67991,
-    "lon": 151.23118,
+    "lat": -33.679925,
+    "lon": 151.2312,
     "comment": "VK2MB: Manly-Warringah Radio Society KiwiSDR | Sydney, New South Wales, Australia",
     "url": "http://203.129.16.92:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -11416,7 +11565,7 @@
     "id": "vk4een.proxy.kiwisdr.com:8073",
     "lat": -27.086151,
     "lon": 153.108752,
-    "comment": "VK4UL/VK4EEN | Godwin beach, Brisbane",
+    "comment": "VK4UL/VK4EEN/ZL1EM | Godwin beach, Brisbane",
     "url": "http://vk4een.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
   },
@@ -11683,7 +11832,7 @@
     "url": "http://sv8fxn-naxos.ddns.net:8901/",
     "logourl": "http://sv8fxn-naxos.ddns.net:08901/greece.gif",
     "qth": "km27rb65mi",
-    "users": 7,
+    "users": 5,
     "device": "WebSDR",
     "bands": [
       {
@@ -11765,7 +11914,7 @@
     "url": "http://sv0xbs.ddns.net:8901/",
     "logourl": "http://sv0xbs.ddns.net:08901/mylogo.gif",
     "qth": "KM17UX",
-    "users": 1,
+    "users": 0,
     "device": "WebSDR",
     "bands": [
       {
@@ -11779,6 +11928,16 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "siros1.ddns.net:8901",
+    "lat": 37.9927,
+    "lon": 23.6778,
+    "comment": "Websdr by SV1NQZ in Aegaleo-Athens GREECE with RTL receiver.",
+    "url": "http://siros1.ddns.net:8901/",
+    "device": "WebSDR"
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "varadero1000.ddns.net:8901",
     "lat": 37.9758,
     "lon": 23.6415,
@@ -11786,7 +11945,7 @@
     "url": "http://varadero1000.ddns.net:8901/",
     "logourl": "http://varadero1000.ddns.net:08901/mylogoGR.gif",
     "qth": "KM17TX64XE",
-    "users": 5,
+    "users": 2,
     "device": "WebSDR",
     "bands": [
       {
@@ -11876,7 +12035,7 @@
     "url": "http://sy9cgz.ddns.net:8901/",
     "logourl": "http://sy9cgz.ddns.net:08901/GRmylogo.gif",
     "qth": "KM25DI",
-    "users": 2,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -11909,7 +12068,7 @@
     "url": "http://cb0mtl.selfhost.eu:8080/",
     "logourl": "http://cb0mtl.selfhost.eu:08080/muldentalkreis.gif",
     "qth": "JO61HF",
-    "users": 4,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -11972,7 +12131,7 @@
     "url": "http://sdr.homeip.net:8901/",
     "logourl": "http://sdr.homeip.net:08901/DK1ML_FFM.gif",
     "qth": "JO40IB",
-    "users": 24,
+    "users": 20,
     "device": "WebSDR",
     "bands": [
       {
@@ -12289,8 +12448,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg01.proxy.kiwisdr.com:8073",
-    "lat": 47.378338,
-    "lon": 8.364738,
+    "lat": 47.378411,
+    "lon": 8.364502,
     "comment": "0-30 MHz SDR | SWITZERLAND Hasenberg01 AG 700m / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg01.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -12299,8 +12458,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg700m.ddns.net:8073",
-    "lat": 47.378338,
-    "lon": 8.364738,
+    "lat": 47.378411,
+    "lon": 8.364502,
     "comment": "0-30 MHz SDR | SWITZERLAND Hasenberg01 AG 700m / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg700m.ddns.net:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -12309,8 +12468,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg700m.ddns.net:8074",
-    "lat": 47.378372,
-    "lon": 8.364603,
+    "lat": 47.378394,
+    "lon": 8.364571,
     "comment": "0-30 MHz SDR | SWITZERLAND Hasenberg02 AG 700m / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg700m.ddns.net:8074/",
     "device": "KiwiSDR 1.842.0"
@@ -12319,8 +12478,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg02.proxy.kiwisdr.com:8073",
-    "lat": 47.378372,
-    "lon": 8.364603,
+    "lat": 47.378394,
+    "lon": 8.364571,
     "comment": "0-30 MHz SDR | SWITZERLAND Hasenberg02 AG 700m / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg02.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -12329,8 +12488,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg700m.ddns.net:8075",
-    "lat": 47.37838,
-    "lon": 8.364598,
+    "lat": 47.378393,
+    "lon": 8.364625,
     "comment": "0-30 MHz SDR | SWITZERLAND Hasenberg03 AG 700m / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg700m.ddns.net:8075/",
     "device": "KiwiSDR 1.842.0"
@@ -12339,8 +12498,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "hasenberg03.proxy.kiwisdr.com:8073",
-    "lat": 47.37838,
-    "lon": 8.364598,
+    "lat": 47.378393,
+    "lon": 8.364625,
     "comment": "0-30 MHz SDR | SWITZERLAND Hasenberg03 AG 700m / Antenna: Sirio Gain-Master 25.5-30MHz",
     "url": "http://hasenberg03.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -12419,8 +12578,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "76.53.60.62:8073",
-    "lat": 20.031868,
-    "lon": -155.695731,
+    "lat": 20.025728,
+    "lon": -155.697948,
     "comment": "0-30 MHz SDR | Waimea, Hawaii",
     "url": "http://76.53.60.62:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -12708,6 +12867,26 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
+    "id": "211.19.58.248:8073",
+    "lat": 35.54,
+    "lon": 139.69,
+    "comment": "0-30 MHz SDR | Kawasaki, JAPAN",
+    "url": "http://211.19.58.248:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
+    "id": "aa842.jp:8073",
+    "lat": 35.54,
+    "lon": 139.69,
+    "comment": "0-30 MHz SDR | Kawasaki, JAPAN",
+    "url": "http://aa842.jp:8073/",
+    "device": "KiwiSDR 1.842.0"
+  },
+  {
+    "type": "latlon",
+    "mode": "KiwiSDR",
     "id": "jk1lot.ham-radio-op.net:8073",
     "lat": 35.54,
     "lon": 139.46,
@@ -12809,8 +12988,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "22661.proxy.kiwisdr.com:8073",
-    "lat": 38.419287,
-    "lon": -90.568868,
+    "lat": 38.418745,
+    "lon": -90.569878,
     "comment": "N0DSS | St. Louis, Missouri",
     "url": "http://22661.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -12855,7 +13034,7 @@
     "url": "http://37.64.57.142:8901/",
     "logourl": "http://37.64.57.142:08901/france.png",
     "qth": "jn18hn35ak",
-    "users": 0,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -13108,7 +13287,7 @@
     "url": "http://alfredomarcondes.sdr.net.br:37001/",
     "logourl": "http://alfredomarcondes.sdr.net.br:37001/th_lr.gif",
     "qth": "GG48gb",
-    "users": 2,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -13161,7 +13340,7 @@
     "url": "http://appr.org.br:8901/",
     "logourl": "http://appr.org.br:08901/brasil.jpg",
     "qth": "GG56TV",
-    "users": 40,
+    "users": 55,
     "device": "WebSDR",
     "bands": [
       {
@@ -13268,17 +13447,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "db0bbb.dnshome.de:8088",
-    "lat": 52.6765616546373,
-    "lon": 13.5825560390949,
-    "comment": "DB0BBB",
-    "url": "http://db0bbb.dnshome.de:8088/",
-    "device": "OpenWebRX 1.2.106",
-    "logourl": "http://db0bbb.dnshome.de:8088/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "db0blg.de:8073",
     "lat": 47.8493,
     "lon": 8.5316,
@@ -13286,16 +13454,6 @@
     "url": "http://db0blg.de:8073/",
     "device": "OpenWebRX 1.2.21",
     "logourl": "http://db0blg.de:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "df0twn.dnsuser.de:8073",
-    "lat": 52.302252,
-    "lon": 7.176263,
-    "comment": "DF0TWN KiwiSDR 30 Mhz SDR | Bad Bentheim , Germany",
-    "url": "http://df0twn.dnsuser.de:8073/",
-    "device": "KiwiSDR 1.842.0"
   },
   {
     "type": "latlon",
@@ -13338,7 +13496,7 @@
     "url": "http://dk0te.inf.dhbw-ravensburg.de:8901/",
     "logourl": "http://dk0te.inf.dhbw-ravensburg.de:08901/dhbwlogo.gif",
     "qth": "JN47RP",
-    "users": 4,
+    "users": 2,
     "device": "WebSDR",
     "bands": [
       {
@@ -13501,7 +13659,7 @@
     "url": "http://el22.dyndns-blog.com:8081/",
     "logourl": "http://el22.dyndns-blog.com:08081/lu8fcj.jpg",
     "qth": "FF95hv",
-    "users": 9,
+    "users": 11,
     "device": "WebSDR",
     "bands": [
       {
@@ -13542,7 +13700,7 @@
     "url": "http://es4o.ee:8901/",
     "logourl": "http://es4o.ee:08901/es4o.gif",
     "qth": "KO39DC",
-    "users": 20,
+    "users": 17,
     "device": "WebSDR",
     "bands": [
       {
@@ -13605,7 +13763,7 @@
     "url": "http://eshail.batc.org.uk:8901/",
     "logourl": "http://eshail.batc.org.uk:08901/project-logo.jpg",
     "qth": "IO70JB",
-    "users": 75,
+    "users": 86,
     "device": "WebSDR",
     "bands": [
       {
@@ -13711,8 +13869,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "g8ure.ddns.net:8079",
-    "lat": 50.836811,
-    "lon": -0.651192,
+    "lat": 50.846394,
+    "lon": -0.66162,
     "comment": "80m Dipole (17 to 20) | Chichester UK",
     "url": "http://g8ure.ddns.net:8079/",
     "device": "KiwiSDR 1.842.0"
@@ -13727,7 +13885,7 @@
     "url": "http://garypaucha.ddns.net:8901/",
     "logourl": "http://garypaucha.ddns.net:08901/rtl.webp",
     "qth": "GF05PL",
-    "users": 0,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -13871,6 +14029,17 @@
   },
   {
     "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "unevenly-settled-lungfish.cloudpub.ru",
+    "lat": 61.56400763062912,
+    "lon": 31.482650551226776,
+    "comment": "Loft is for you... \u7535\u9e23",
+    "url": "https://unevenly-settled-lungfish.cloudpub.ru/",
+    "device": "OpenWebRX 1.2.103",
+    "logourl": "https://unevenly-settled-lungfish.cloudpub.ru/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
     "mode": "KiwiSDR",
     "id": "t.ben2.de:8073",
     "lat": 51.47,
@@ -13960,16 +14129,6 @@
   },
   {
     "type": "latlon",
-    "mode": "KiwiSDR",
-    "id": "w3ilt.proxy.kiwisdr.com:8073",
-    "lat": 40.661072,
-    "lon": -78.511428,
-    "comment": "Mark W3ILT | Fallentimber, PA USA",
-    "url": "http://w3ilt.proxy.kiwisdr.com:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
     "mode": "WebSDR",
     "id": "websdr2.sdrutah.org:8902",
     "lat": 41.6042,
@@ -13978,7 +14137,7 @@
     "url": "http://websdr2.sdrutah.org:8902/",
     "logourl": "http://websdr2.sdrutah.org:08902/Utah_SDR_Logo_48x48.gif",
     "qth": "DN31vo",
-    "users": 59,
+    "users": 48,
     "device": "WebSDR",
     "bands": [
       {
@@ -14041,7 +14200,7 @@
     "url": "http://websdr3.sdrutah.org:8903/",
     "logourl": "http://websdr3.sdrutah.org:08903/Utah_SDR_Logo_48x48.gif",
     "qth": "DN31to",
-    "users": 9,
+    "users": 7,
     "device": "WebSDR",
     "bands": [
       {
@@ -14104,7 +14263,7 @@
     "url": "http://websdr5.sdrutah.org:8905/",
     "logourl": "http://websdr5.sdrutah.org:08905/Utah_SDR_Logo_48x48.gif",
     "qth": "DN31wo",
-    "users": 5,
+    "users": 6,
     "device": "WebSDR",
     "bands": [
       {
@@ -14161,7 +14320,7 @@
     "url": "http://websdr.78dx.ru:8901/",
     "logourl": "",
     "qth": "KO59CS",
-    "users": 4,
+    "users": 6,
     "device": "WebSDR",
     "bands": [
       {
@@ -14255,7 +14414,7 @@
     "url": "http://websdr.electrosystem.ru:8081/",
     "logourl": "http://websdr.electrosystem.ru:08081/websdr.png",
     "qth": "MO27RD",
-    "users": 2,
+    "users": 0,
     "device": "WebSDR",
     "bands": [
       {
@@ -14297,7 +14456,7 @@
     "url": "http://websdr.lz2kac.org:8901/",
     "logourl": "http://websdr.lz2kac.org:08901/lz2kac.png",
     "qth": "KN22PV",
-    "users": 0,
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
@@ -14383,7 +14542,7 @@
     "url": "http://wessex.hopto.org:8902/",
     "logourl": "http://wessex.hopto.org:08902/wessexflagicon.png",
     "qth": "IO80QR",
-    "users": 2,
+    "users": 4,
     "device": "WebSDR",
     "bands": [
       {
@@ -14483,16 +14642,6 @@
   {
     "type": "latlon",
     "mode": "KiwiSDR",
-    "id": "zl2ba.proxy.kiwisdr.com:8073",
-    "lat": -40.95,
-    "lon": 175.68,
-    "comment": "ZL2BA Located in Masterton, New Zealand 0-30Mhz SDR",
-    "url": "http://zl2ba.proxy.kiwisdr.com:8073/",
-    "device": "KiwiSDR 1.842.0"
-  },
-  {
-    "type": "latlon",
-    "mode": "KiwiSDR",
     "id": "zl2bkw.proxy.kiwisdr.com:8073",
     "lat": -40.288936,
     "lon": 175.6062,
@@ -14524,8 +14673,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "g8ure.ddns.net:8074",
-    "lat": 50.846812,
-    "lon": -0.661955,
+    "lat": 50.847455,
+    "lon": -0.662345,
     "comment": "80m dipole (1 to 4) | Chichester UK",
     "url": "http://g8ure.ddns.net:8074/",
     "device": "KiwiSDR 1.842.0"
@@ -14688,7 +14837,7 @@
     "mode": "KiwiSDR",
     "id": "k7abj.proxy.kiwisdr.com:8073",
     "lat": 47.85,
-    "lon": -119.88,
+    "lon": -119.87,
     "comment": "Lake Chelan LCARC McNiel ",
     "url": "http://k7abj.proxy.kiwisdr.com:8073/",
     "device": "KiwiSDR 1.842.0"
@@ -15153,8 +15302,8 @@
     "type": "latlon",
     "mode": "KiwiSDR",
     "id": "altstetten01.kiwisdr.ch",
-    "lat": 47.390677,
-    "lon": 8.48569,
+    "lat": 47.390872,
+    "lon": 8.485045,
     "comment": "0-30MHz KiwiSDR | SWITZERLAND Zurich Altstetten01 JN47FJ (HB9HEH)",
     "url": "https://altstetten01.kiwisdr.ch/",
     "device": "KiwiSDR 1.842.0"
@@ -15224,6 +15373,17 @@
     "url": "http://sdrsjriopreto.ddns.net:8073/",
     "device": "OpenWebRX 1.2.113",
     "logourl": "http://sdrsjriopreto.ddns.net:8073/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "openwebrx-server.tortoise-mine.ts.net",
+    "lat": 41.980110310395695,
+    "lon": 21.464825551242214,
+    "comment": "Experimental WebSDR by Z31ALN",
+    "url": "https://openwebrx-server.tortoise-mine.ts.net/",
+    "device": "OpenWebRX 1.2.103",
+    "logourl": "https://openwebrx-server.tortoise-mine.ts.net/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -15415,9 +15575,9 @@
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m40",
-        "freql": 6588000,
-        "freqh": 7612000,
+        "id": "m80",
+        "freql": 3088000,
+        "freqh": 4112000,
         "antenna": "RTL-SDR Blog V4 and HFDY-Loop (Horiz.)"
       }
     ]
@@ -15432,17 +15592,6 @@
     "url": "http://sdrchapeco.ddns.net:8181/",
     "device": "OpenWebRX 1.2.115",
     "logourl": "http://sdrchapeco.ddns.net:8181/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "sdr.dkdonnas.com",
-    "lat": 37.4835,
-    "lon": 126.9185,
-    "comment": "NOCALLSIGN",
-    "url": "https://sdr.dkdonnas.com/",
-    "device": "OpenWebRX 1.2.114",
-    "logourl": "https://sdr.dkdonnas.com/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -15579,17 +15728,6 @@
   {
     "type": "latlon",
     "mode": "OpenWebRX",
-    "id": "sdr-plus.i6iqx.it",
-    "lat": 42.30316424833685,
-    "lon": 14.183019990933499,
-    "comment": "i6iqx",
-    "url": "https://sdr-plus.i6iqx.it/",
-    "device": "OpenWebRX 1.2.102",
-    "logourl": "https://sdr-plus.i6iqx.it/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
     "id": "sdr.jefferso.net",
     "lat": 40.14,
     "lon": -79.88,
@@ -15619,6 +15757,17 @@
     "url": "http://93.47.89.55:8073/",
     "device": "OpenWebRX 1.2.115",
     "logourl": "http://93.47.89.55:8073/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "sdr.surrealservers.net",
+    "lat": 37.433863332994605,
+    "lon": -79.24450242663413,
+    "comment": "Receiver",
+    "url": "https://sdr.surrealservers.net/",
+    "device": "OpenWebRX 1.2.106",
+    "logourl": "https://sdr.surrealservers.net/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -15674,17 +15823,6 @@
     "url": "http://yo9hzn.go.ro:8073/",
     "device": "OpenWebRX 1.2.107",
     "logourl": "http://yo9hzn.go.ro:8073/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "sdr.69696969.uk",
-    "lat": 25.061388043763756,
-    "lon": 121.36796596317015,
-    "comment": "\u5929\u7afa\u9f20\u7684SDR",
-    "url": "https://sdr.69696969.uk/",
-    "device": "OpenWebRX 1.2.112",
-    "logourl": "https://sdr.69696969.uk/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -15770,7 +15908,7 @@
     "lon": 1.602,
     "comment": "Sdr Online Espa\u00f1a Barcelona, web radio rtl y escuche las bandas de HF UHF VHF QO100 Sat\u00e9lite Banda Maritma",
     "url": "https://ea3er-sdr.duckdns.org:8444/",
-    "device": "OpenWebRX 1.2.105",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "https://ea3er-sdr.duckdns.org:8444/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -15836,7 +15974,7 @@
     "lon": 25.006878,
     "comment": "Spacepl",
     "url": "http://sdr.hosted.top:8073/",
-    "device": "OpenWebRX 1.2.114",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "http://sdr.hosted.top:8073/static/gfx/openwebrx-avatar.png"
   },
   {
@@ -15871,17 +16009,6 @@
     "url": "http://46.232.212.142:8074/",
     "device": "OpenWebRX 1.2.97",
     "logourl": "http://46.232.212.142:8074/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "176.207.174.90:8073",
-    "lat": 42.98807721782385,
-    "lon": 11.870720745401266,
-    "comment": "STEFANO ROMAGNOLI JONES SDR",
-    "url": "http://176.207.174.90:8073/",
-    "device": "OpenWebRX 1.2.2",
-    "logourl": "http://176.207.174.90:8073/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -15935,19 +16062,8 @@
     "lon": 105.84485442323009,
     "comment": "Vietanh's SDR",
     "url": "https://maytinhvietanh.id.vn/",
-    "device": "OpenWebRX 1.2.115",
+    "device": "OpenWebRX 1.2.116",
     "logourl": "https://maytinhvietanh.id.vn/static/gfx/openwebrx-avatar.png"
-  },
-  {
-    "type": "latlon",
-    "mode": "OpenWebRX",
-    "id": "hallmann.selfhost.eu:9999",
-    "lat": 49.88584777900732,
-    "lon": 8.074055116097462,
-    "comment": "DF7PN",
-    "url": "http://hallmann.selfhost.eu:9999/",
-    "device": "OpenWebRX 1.2.115",
-    "logourl": "http://hallmann.selfhost.eu:9999/static/gfx/openwebrx-avatar.png"
   },
   {
     "type": "latlon",
@@ -16115,6 +16231,17 @@
   },
   {
     "type": "latlon",
+    "mode": "OpenWebRX",
+    "id": "sdr.naranetwork.com",
+    "lat": 43.03,
+    "lon": 141.19,
+    "comment": "Sapporo -- 0.5 -- 30.5 MHz -- NARA NETWORK JAPAN (www.naranetwork.com) RTLSDRV4+Airloop",
+    "url": "https://sdr.naranetwork.com/",
+    "device": "OpenWebRX 1.2.116",
+    "logourl": "https://sdr.naranetwork.com/static/gfx/openwebrx-avatar.png"
+  },
+  {
+    "type": "latlon",
     "mode": "WebSDR",
     "id": "websdr.ewi.utwente.nl:8901",
     "lat": 52.2292,
@@ -16123,7 +16250,7 @@
     "url": "http://websdr.ewi.utwente.nl:8901/",
     "logourl": "http://websdr.ewi.utwente.nl:08901/utlogo48.gif",
     "qth": "JO32KF",
-    "users": 485,
+    "users": 457,
     "device": "WebSDR",
     "bands": [
       {
@@ -16137,219 +16264,6 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "py7nmcaruarupe.ddns.net:81",
-    "lat": -8.15703,
-    "lon": -35.9273,
-    "comment": "RECEPTOR DE CARUARU, PE - POR PY7NM",
-    "url": "http://py7nmcaruarupe.ddns.net:81/",
-    "logourl": "http://py7nmcaruarupe.ddns.net:00081/animated_favicon1.gif",
-    "qth": "HI21AU82RH",
-    "users": 14,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m40",
-        "freql": 6688000,
-        "freqh": 7712000,
-        "antenna": "DIPOLO"
-      },
-      {
-        "id": "m30",
-        "freql": 9032000,
-        "freqh": 10568000,
-        "antenna": "DIPOLO"
-      },
-      {
-        "id": "m2",
-        "freql": 146282000,
-        "freqh": 147818000,
-        "antenna": "DIPOLO"
-      },
-      {
-        "id": "m10",
-        "freql": 26887000,
-        "freqh": 28423000,
-        "antenna": "5/8"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "sdr.r9a.ru",
-    "lat": 54.9375,
-    "lon": 61.7917,
-    "comment": "SDR receiver in Russia, near Chelyabinsk city",
-    "url": "http://sdr.r9a.ru/",
-    "logourl": "http://sdr.r9a.ru/logo.jpg",
-    "qth": "MO04VW",
-    "users": 18,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m160",
-        "freql": 1804000,
-        "freqh": 1996000,
-        "antenna": "Bewerage"
-      },
-      {
-        "id": "m160",
-        "freql": 1804000,
-        "freqh": 1996000,
-        "antenna": "Inverted Vee"
-      },
-      {
-        "id": "m80",
-        "freql": 3458000,
-        "freqh": 3842000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m40",
-        "freql": 6908000,
-        "freqh": 7292000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m30",
-        "freql": 10029000,
-        "freqh": 10221000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m20",
-        "freql": 13983000,
-        "freqh": 14367000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m17",
-        "freql": 18022000,
-        "freqh": 18214000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m15",
-        "freql": 20841000,
-        "freqh": 21609000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m12",
-        "freql": 24844000,
-        "freqh": 25036000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m0",
-        "freql": 26838000,
-        "freqh": 27862000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m10",
-        "freql": 27826000,
-        "freqh": 29874000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m6",
-        "freql": 50000000,
-        "freqh": 50768000,
-        "antenna": "Hy-Gain AV-680"
-      },
-      {
-        "id": "m2",
-        "freql": 144000000,
-        "freqh": 144768000,
-        "antenna": "Diamond X7000"
-      },
-      {
-        "id": "m2",
-        "freql": 143876000,
-        "freqh": 145924000,
-        "antenna": "Diamond X7000"
-      },
-      {
-        "id": "m70",
-        "freql": 431966000,
-        "freqh": 432734000,
-        "antenna": "Diamond X7000"
-      },
-      {
-        "id": "muhf",
-        "freql": 1295990000,
-        "freqh": 1297010000,
-        "antenna": "Diamond X7000"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "sdr.websdrmaasbree.nl:8902",
-    "lat": 51.3646,
-    "lon": 6.04583,
-    "comment": "WebSDR Maasbree Netherlands (High): rural low noise level, 40m/30m/20m/17m/15m/12m/10m band, CW segments included",
-    "url": "http://sdr.websdrmaasbree.nl:8902/",
-    "logourl": "http://sdr.websdrmaasbree.nl:08902/favicon.gif",
-    "qth": "JO31ai57",
-    "users": 26,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m40",
-        "freql": 6908000,
-        "freqh": 7292000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m30",
-        "freql": 10054000,
-        "freqh": 10246000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m20",
-        "freql": 13983000,
-        "freqh": 14367000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m17",
-        "freql": 18022000,
-        "freqh": 18214000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m15",
-        "freql": 20841000,
-        "freqh": 21609000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m12",
-        "freql": 24844000,
-        "freqh": 25036000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m10",
-        "freql": 27966000,
-        "freqh": 28734000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      },
-      {
-        "id": "m10",
-        "freql": 28716000,
-        "freqh": 29484000,
-        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
     "id": "NA5B.com:8901",
     "lat": 38.7708,
     "lon": -77.2083,
@@ -16357,7 +16271,7 @@
     "url": "http://NA5B.com:8901/",
     "logourl": "http://NA5B.com:08901/mylogo.gif",
     "qth": "FM18JS",
-    "users": 84,
+    "users": 79,
     "device": "WebSDR",
     "bands": [
       {
@@ -16413,6 +16327,69 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "sdr.websdrmaasbree.nl:8902",
+    "lat": 51.3646,
+    "lon": 6.04583,
+    "comment": "WebSDR Maasbree Netherlands (High): rural low noise level, 40m/30m/20m/17m/15m/12m/10m band, CW segments included",
+    "url": "http://sdr.websdrmaasbree.nl:8902/",
+    "logourl": "http://sdr.websdrmaasbree.nl:08902/favicon.gif",
+    "qth": "JO31ai57",
+    "users": 32,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m40",
+        "freql": 6908000,
+        "freqh": 7292000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m30",
+        "freql": 10054000,
+        "freqh": 10246000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m20",
+        "freql": 13983000,
+        "freqh": 14367000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m17",
+        "freql": 18022000,
+        "freqh": 18214000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m15",
+        "freql": 20841000,
+        "freqh": 21609000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m12",
+        "freql": 24844000,
+        "freqh": 25036000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m10",
+        "freql": 27966000,
+        "freqh": 28734000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      },
+      {
+        "id": "m10",
+        "freql": 28716000,
+        "freqh": 29484000,
+        "antenna": "Low noise active receiving loop and GPS locked RX888MKII"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "3.radiorubka.org",
     "lat": 52.7708,
     "lon": 41.5417,
@@ -16434,60 +16411,39 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "radio-sdr.dyndns.org:8901",
-    "lat": 39.6042,
-    "lon": 20.9583,
-    "comment": "Websdr receiver with RSP1A by SV6KPT in IOANNINA GREECE (with band operation)",
-    "url": "http://radio-sdr.dyndns.org:8901/",
-    "logourl": "http://radio-sdr.dyndns.org:08901/mylogo.gif",
-    "qth": "KM09LO ",
-    "users": 17,
+    "id": "py7nmcaruarupe.ddns.net:81",
+    "lat": -8.15703,
+    "lon": -35.9273,
+    "comment": "RECEPTOR DE CARUARU, PE - POR PY7NM",
+    "url": "http://py7nmcaruarupe.ddns.net:81/",
+    "logourl": "http://py7nmcaruarupe.ddns.net:00081/animated_favicon1.gif",
+    "qth": "HI21AU82RH",
+    "users": 9,
     "device": "WebSDR",
     "bands": [
       {
         "id": "m40",
-        "freql": 6972000,
-        "freqh": 7228000,
-        "antenna": "LOOP"
+        "freql": 6688000,
+        "freqh": 7712000,
+        "antenna": "DIPOLO"
       },
       {
-        "id": "m80",
-        "freql": 3542000,
-        "freqh": 3798000,
-        "antenna": "LOOP"
+        "id": "m30",
+        "freql": 9032000,
+        "freqh": 10568000,
+        "antenna": "DIPOLO"
       },
       {
-        "id": "m160",
-        "freql": 1782000,
-        "freqh": 2037999,
-        "antenna": "LOOP"
+        "id": "m2",
+        "freql": 146282000,
+        "freqh": 147818000,
+        "antenna": "DIPOLO"
       },
       {
-        "id": "m160",
-        "freql": 1289000,
-        "freqh": 1801000,
-        "antenna": "LOOP"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "80m.radiorubka.org:8903",
-    "lat": 52.6042,
-    "lon": 41.2083,
-    "comment": "80m Band. Tambov. Russia. https://80m.radiorubka.org/.",
-    "url": "http://80m.radiorubka.org:8903/",
-    "logourl": "http://80m.radiorubka.org:08903/logo1.gif",
-    "qth": "LO02OO",
-    "users": 20,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m80",
-        "freql": 3394000,
-        "freqh": 3906000,
-        "antenna": "Experimental zenith antenna."
+        "id": "m10",
+        "freql": 26887000,
+        "freqh": 28423000,
+        "antenna": "5/8"
       }
     ]
   },
@@ -16501,7 +16457,7 @@
     "url": "http://85.173.189.23:8901/",
     "logourl": "http://85.173.189.23:08901/mylogo.gif",
     "qth": "LN03su98",
-    "users": 10,
+    "users": 20,
     "device": "WebSDR",
     "bands": [
       {
@@ -16527,6 +16483,93 @@
         "freql": 13608000,
         "freqh": 14632000,
         "antenna": "Inverted V and RTL-SDR V3 Pro"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "80m.radiorubka.org:8903",
+    "lat": 52.6042,
+    "lon": 41.2083,
+    "comment": "80m Band. Tambov. Russia. https://80m.radiorubka.org/.",
+    "url": "http://80m.radiorubka.org:8903/",
+    "logourl": "http://80m.radiorubka.org:08903/logo1.gif",
+    "qth": "LO02OO",
+    "users": 21,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m80",
+        "freql": 3394000,
+        "freqh": 3906000,
+        "antenna": "Experimental zenith antenna."
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "orlandia.sdr.net.br:9001",
+    "lat": -20.7292,
+    "lon": -47.875,
+    "comment": "Orlandia - SP - Brazil",
+    "url": "http://orlandia.sdr.net.br:9001/",
+    "logourl": "http://orlandia.sdr.net.br:09001/th_lr.gif",
+    "qth": "GG69bg",
+    "users": 2,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m40",
+        "freql": 6894000,
+        "freqh": 7406000,
+        "antenna": "Inverted V"
+      },
+      {
+        "id": "m80",
+        "freql": 3558000,
+        "freqh": 3942000,
+        "antenna": "Inverted V"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "radio-sdr.dyndns.org:8901",
+    "lat": 39.6042,
+    "lon": 20.9583,
+    "comment": "Websdr receiver with RSP1A by SV6KPT in IOANNINA GREECE (with band operation)",
+    "url": "http://radio-sdr.dyndns.org:8901/",
+    "logourl": "http://radio-sdr.dyndns.org:08901/mylogo.gif",
+    "qth": "KM09LO ",
+    "users": 12,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m40",
+        "freql": 6972000,
+        "freqh": 7228000,
+        "antenna": "LOOP"
+      },
+      {
+        "id": "m80",
+        "freql": 3542000,
+        "freqh": 3798000,
+        "antenna": "LOOP"
+      },
+      {
+        "id": "m160",
+        "freql": 1782000,
+        "freqh": 2037999,
+        "antenna": "LOOP"
+      },
+      {
+        "id": "m160",
+        "freql": 1289000,
+        "freqh": 1801000,
+        "antenna": "LOOP"
       }
     ]
   },
@@ -16596,6 +16639,141 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "sdr.shbrg.nl:9002",
+    "lat": 51.6875,
+    "lon": 5.29167,
+    "comment": "S.H.B.R.G. &#39;s-Hertogenbosch, The Netherlands.",
+    "url": "http://sdr.shbrg.nl:9002/",
+    "logourl": "http://sdr.shbrg.nl:09002/vlag-nl-48.jpg",
+    "qth": "JO21PQ",
+    "users": 16,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m2",
+        "freql": 143976000,
+        "freqh": 146024000,
+        "antenna": "Diamond X300 19m ASL. RSP1A VHF"
+      },
+      {
+        "id": "g10",
+        "freql": 429650000,
+        "freqh": 439650000,
+        "antenna": "Diamond X300 19m ASL. RSP1A UHF"
+      },
+      {
+        "id": "muhf",
+        "freql": 1295000000,
+        "freqh": 1301000000,
+        "antenna": "Diamond X5000 14m ASL. RSP1A SHF"
+      },
+      {
+        "id": "m70",
+        "freql": 444976000,
+        "freqh": 447024000,
+        "antenna": "Diamond X5000 14m ASL. RSP1A UHF2"
+      },
+      {
+        "id": "g10",
+        "freql": 118000000,
+        "freqh": 128000000,
+        "antenna": "Diamond X5000 14m ASL. RSP1A AIRBAND1"
+      },
+      {
+        "id": "g10",
+        "freql": 127000000,
+        "freqh": 137000000,
+        "antenna": "Diamond X5000 14m ASL. RSP1A AIRBAND2"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "ra0sms-websdr.ru:8902",
+    "lat": 52.1875,
+    "lon": 104.542,
+    "comment": "QS1R SDR in RUSSIA, Irkutsk, Loc-OO22GE : Multiband",
+    "url": "http://ra0sms-websdr.ru:8902/",
+    "logourl": "",
+    "qth": "OO22GE",
+    "users": 18,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m160",
+        "freql": 1795000,
+        "freqh": 1987000,
+        "antenna": "Beverage 250m"
+      },
+      {
+        "id": "m80",
+        "freql": 3495000,
+        "freqh": 3687000,
+        "antenna": "Beverage 250m"
+      },
+      {
+        "id": "m40",
+        "freql": 6995000,
+        "freqh": 7187000,
+        "antenna": "Beverage 250m"
+      },
+      {
+        "id": "m30",
+        "freql": 10095000,
+        "freqh": 10287000,
+        "antenna": "Beverage 250m"
+      },
+      {
+        "id": "m20",
+        "freql": 13995000,
+        "freqh": 14187000,
+        "antenna": "Beverage 250m"
+      },
+      {
+        "id": "m17",
+        "freql": 18063000,
+        "freqh": 18255000,
+        "antenna": "Beverage 250m"
+      },
+      {
+        "id": "m15",
+        "freql": 20995000,
+        "freqh": 21187000,
+        "antenna": "Beverage 250m"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "paraibuna.websdr.com.br:8901",
+    "lat": -23.3958,
+    "lon": -45.625,
+    "comment": "Receptor SDR de Paraibuna, SP - Brazil",
+    "url": "http://paraibuna.websdr.com.br:8901/",
+    "logourl": "http://paraibuna.websdr.com.br:08901/caracol.jpg",
+    "qth": "GG76eo",
+    "users": 2,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m80",
+        "freql": 3474000,
+        "freqh": 3986000,
+        "antenna": "Multiband Dipole"
+      },
+      {
+        "id": "m40",
+        "freql": 6884000,
+        "freqh": 7396000,
+        "antenna": "Multiband Dipole"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "websdr.camras.nl:8901",
     "lat": 52.8125,
     "lon": 6.375,
@@ -16603,7 +16781,7 @@
     "url": "http://websdr.camras.nl:8901/",
     "logourl": "http://websdr.camras.nl:08901/camras48a.gif",
     "qth": "JO32ET",
-    "users": 11,
+    "users": 5,
     "device": "WebSDR",
     "bands": [
       {
@@ -16698,198 +16876,96 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "ra0sms-websdr.ru:8902",
-    "lat": 52.1875,
-    "lon": 104.542,
-    "comment": "QS1R SDR in RUSSIA, Irkutsk, Loc-OO22GE : Multiband",
-    "url": "http://ra0sms-websdr.ru:8902/",
-    "logourl": "",
-    "qth": "OO22GE",
-    "users": 6,
+    "id": "pu3alk.com.br:9001",
+    "lat": -27.8542,
+    "lon": -54.7917,
+    "comment": "WebSDR Porto Lucena - RS - Brazil",
+    "url": "http://pu3alk.com.br:9001/",
+    "logourl": "http://pu3alk.com.br:09001/sdrpl.png",
+    "qth": "GG22od",
+    "users": 4,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m160",
-        "freql": 1795000,
-        "freqh": 1987000,
-        "antenna": "Beverage 250m"
-      },
-      {
         "id": "m80",
-        "freql": 3495000,
-        "freqh": 3687000,
-        "antenna": "Beverage 250m"
+        "freql": 3238000,
+        "freqh": 4262000,
+        "antenna": "Delta loop"
       },
       {
         "id": "m40",
-        "freql": 6995000,
-        "freqh": 7187000,
-        "antenna": "Beverage 250m"
+        "freql": 6026000,
+        "freqh": 8074000,
+        "antenna": "Delta loop"
       },
       {
-        "id": "m30",
-        "freql": 10095000,
-        "freqh": 10287000,
-        "antenna": "Beverage 250m"
-      },
-      {
-        "id": "m20",
-        "freql": 13995000,
-        "freqh": 14187000,
-        "antenna": "Beverage 250m"
-      },
-      {
-        "id": "m17",
-        "freql": 18063000,
-        "freqh": 18255000,
-        "antenna": "Beverage 250m"
-      },
-      {
-        "id": "m15",
-        "freql": 20995000,
-        "freqh": 21187000,
-        "antenna": "Beverage 250m"
+        "id": "m10",
+        "freql": 26876000,
+        "freqh": 28924000,
+        "antenna": "Delta loop"
       }
     ]
   },
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "sdr.shbrg.nl:9002",
-    "lat": 51.6875,
-    "lon": 5.29167,
-    "comment": "S.H.B.R.G. &#39;s-Hertogenbosch, The Netherlands.",
-    "url": "http://sdr.shbrg.nl:9002/",
-    "logourl": "http://sdr.shbrg.nl:09002/vlag-nl-48.jpg",
-    "qth": "JO21PQ",
-    "users": 18,
+    "id": "websdr.so8oo.net:8091",
+    "lat": 49.9375,
+    "lon": 21.7917,
+    "comment": "RTL-SDR V3 receivers with BoG antenna in a quiet QTH in southeastern Poland (in the countryside). ",
+    "url": "http://websdr.so8oo.net:8091/",
+    "logourl": "http://websdr.so8oo.net:08091/so8oo-48x48.png",
+    "qth": "KN09vw",
+    "users": -1,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m2",
-        "freql": 143976000,
-        "freqh": 146024000,
-        "antenna": "Diamond X300 19m ASL. RSP1A VHF"
+        "id": "mlf",
+        "freql": 0,
+        "freqh": 96000,
+        "antenna": "Mini-whip like antenna on 4 m well grounded metal pipe, located ~50m far from any buildings."
       },
-      {
-        "id": "g10",
-        "freql": 429650000,
-        "freqh": 439650000,
-        "antenna": "Diamond X300 19m ASL. RSP1A UHF"
-      },
-      {
-        "id": "muhf",
-        "freql": 1295000000,
-        "freqh": 1301000000,
-        "antenna": "Diamond X5000 14m ASL. RSP1A SHF"
-      },
-      {
-        "id": "m70",
-        "freql": 444976000,
-        "freqh": 447024000,
-        "antenna": "Diamond X5000 14m ASL. RSP1A UHF2"
-      },
-      {
-        "id": "g10",
-        "freql": 118000000,
-        "freqh": 128000000,
-        "antenna": "Diamond X5000 14m ASL. RSP1A AIRBAND1"
-      },
-      {
-        "id": "g10",
-        "freql": 127000000,
-        "freqh": 137000000,
-        "antenna": "Diamond X5000 14m ASL. RSP1A AIRBAND2"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "orlandia.sdr.net.br:9001",
-    "lat": -20.7292,
-    "lon": -47.875,
-    "comment": "Orlandia - SP - Brazil",
-    "url": "http://orlandia.sdr.net.br:9001/",
-    "logourl": "http://orlandia.sdr.net.br:09001/th_lr.gif",
-    "qth": "GG69bg",
-    "users": 13,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m40",
-        "freql": 6894000,
-        "freqh": 7406000,
-        "antenna": "Inverted V"
-      },
-      {
-        "id": "m80",
-        "freql": 3558000,
-        "freqh": 3942000,
-        "antenna": "Inverted V"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "sdrgeorgia.sytes.net:8902",
-    "lat": 41.9792,
-    "lon": 45.2917,
-    "comment": "GEORGIA Country, Odlisi-Kakheti",
-    "url": "http://sdrgeorgia.sytes.net:8902/",
-    "logourl": "http://sdrgeorgia.sytes.net:08902/geo.gif",
-    "qth": "LN21PX",
-    "users": 3,
-    "device": "WebSDR",
-    "bands": [
       {
         "id": "m160",
         "freql": 1388000,
         "freqh": 2412000,
-        "antenna": "RTL-SDR V4 G5RV"
+        "antenna": "FO0AAA antenna with &#34;High Z&#34; preamp. Antenna is located ~50m far from any buildings - low QRM, great S/N! DSP filters,"
       },
       {
         "id": "m80",
-        "freql": 3138000,
-        "freqh": 4162000,
-        "antenna": "RTL-SDR V4 G5RV"
+        "freql": 3326000,
+        "freqh": 4094000,
+        "antenna": "SDRplay RSP1A 14-bit on 80m. 24 h/7 FT8 reporting."
+      },
+      {
+        "id": "m0",
+        "freql": 4488000,
+        "freqh": 5512000,
+        "antenna": "band. Listen to Weather &#38; number stations like UVB-76/The Buzzer, The PIP, LORAN, VLF with SAQ and DCF77, Troyka"
       },
       {
         "id": "m40",
-        "freql": 6588000,
-        "freqh": 7612000,
-        "antenna": "RTL-SDR V4 G5RV"
+        "freql": 6887000,
+        "freqh": 7911000,
+        "antenna": "radio pirates or just CB radio. Check your report on pskreporter https://t.ly/GWNx"
       },
       {
         "id": "m20",
-        "freql": 13663000,
-        "freqh": 14687000,
-        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
-      },
-      {
-        "id": "m17",
-        "freql": 17606000,
-        "freqh": 18630000,
-        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
-      },
-      {
-        "id": "m15",
-        "freql": 20738000,
-        "freqh": 21762000,
-        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
-      },
-      {
-        "id": "m12",
-        "freql": 24428000,
-        "freqh": 25452000,
-        "antenna": "RTL-SDR V4 HEXBEAM 6 BAND"
+        "freql": 13326000,
+        "freqh": 14350000,
+        "antenna": "Other bands coming soon!"
       },
       {
         "id": "m10",
-        "freql": 26976000,
-        "freqh": 29024000,
-        "antenna": "RTL-SDR V3 HEXBEAM 6 BAND"
+        "freql": 27488000,
+        "freqh": 28512000,
+        "antenna": "One of the best websdr&#39;s in this part of Europe!"
+      },
+      {
+        "id": "muhf",
+        "freql": 10489200000,
+        "freqh": 10490300000,
+        "antenna": "Qatar-OSCAR 100 (QO-100/Es hail-2 satellite) - just initial setup - 1,5m dish with tcxo LNB, improvements will come (GPSDO etc)"
       }
     ]
   },
@@ -16953,48 +17029,6 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "phantomsdr.no-ip.org:8900",
-    "lat": 37.9792,
-    "lon": 23.7917,
-    "comment": "SV1BTL PhantomSDR+ Athens GR",
-    "url": "http://phantomsdr.no-ip.org:8900/",
-    "logourl": "http://phantomsdr.no-ip.org:08900/logo.jpg",
-    "qth": "KM17VX",
-    "users": 6,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "g10",
-        "freql": 0,
-        "freqh": 30000000,
-        "antenna": "EndFed 160-10m.. SV1BTL PhantomSDR+"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "roma2sdr.ddns.net",
-    "lat": 41.9375,
-    "lon": 12.4583,
-    "comment": "ROMA2 WEBSDR RADIO Italy Rome CB HF VHF UHF ",
-    "url": "http://roma2sdr.ddns.net/",
-    "logourl": "http://roma2sdr.ddns.net/R2logo.png",
-    "qth": "JN61FW",
-    "users": 7,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m10",
-        "freql": 26831000,
-        "freqh": 28879000,
-        "antenna": "Half Wave Vertical Antenna"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
     "id": "lu5dnpwebsdr.sytes.net:8901",
     "lat": -35.6458,
     "lon": -59.7917,
@@ -17002,7 +17036,7 @@
     "url": "http://lu5dnpwebsdr.sytes.net:8901/",
     "logourl": "http://lu5dnpwebsdr.sytes.net:08901/logo.jpg",
     "qth": "GF04CI",
-    "users": 9,
+    "users": 11,
     "device": "WebSDR",
     "bands": [
       {
@@ -17016,6 +17050,27 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "roma2sdr.ddns.net",
+    "lat": 41.9375,
+    "lon": 12.4583,
+    "comment": "ROMA2 WEBSDR RADIO Italy Rome CB HF VHF UHF ",
+    "url": "http://roma2sdr.ddns.net/",
+    "logourl": "http://roma2sdr.ddns.net/R2logo.png",
+    "qth": "JN61FW",
+    "users": 9,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m10",
+        "freql": 26831000,
+        "freqh": 28879000,
+        "antenna": "Half Wave Vertical Antenna"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "wmk.nordhessenfunk.de",
     "lat": 51.1042,
     "lon": 10.0417,
@@ -17023,7 +17078,7 @@
     "url": "http://wmk.nordhessenfunk.de/",
     "logourl": "http://wmk.nordhessenfunk.de/smallLogo.jpg",
     "qth": "JO51AC",
-    "users": 6,
+    "users": 8,
     "device": "WebSDR",
     "bands": [
       {
@@ -17073,135 +17128,63 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "pu3alk.com.br:9001",
-    "lat": -27.8542,
-    "lon": -54.7917,
-    "comment": "WebSDR Porto Lucena - RS - Brazil",
-    "url": "http://pu3alk.com.br:9001/",
-    "logourl": "http://pu3alk.com.br:09001/sdrpl.png",
-    "qth": "GG22od",
-    "users": 8,
+    "id": "phantomsdr.no-ip.org:8900",
+    "lat": 37.9792,
+    "lon": 23.7917,
+    "comment": "SV1BTL PhantomSDR+ Athens GR",
+    "url": "http://phantomsdr.no-ip.org:8900/",
+    "logourl": "http://phantomsdr.no-ip.org:08900/logo.jpg",
+    "qth": "KM17VX",
+    "users": 5,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m80",
-        "freql": 3238000,
-        "freqh": 4262000,
-        "antenna": "Delta loop"
-      },
-      {
-        "id": "m40",
-        "freql": 6026000,
-        "freqh": 8074000,
-        "antenna": "Delta loop"
-      },
-      {
-        "id": "m10",
-        "freql": 26876000,
-        "freqh": 28924000,
-        "antenna": "Delta loop"
+        "id": "g10",
+        "freql": 0,
+        "freqh": 30000000,
+        "antenna": "EndFed 160-10m.. SV1BTL PhantomSDR+"
       }
     ]
   },
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "websdr.so8oo.net:8091",
-    "lat": 49.9375,
-    "lon": 21.7917,
-    "comment": "RTL-SDR V3 receivers with BoG antenna in a quiet QTH in southeastern Poland (in the countryside). ",
-    "url": "http://websdr.so8oo.net:8091/",
-    "logourl": "http://websdr.so8oo.net:08091/so8oo-48x48.png",
-    "qth": "KN09vw",
+    "id": "9a7aof.ddns.net:8905",
+    "lat": 46.0208,
+    "lon": 16.2917,
+    "comment": "9A7AOF PhantomSDR+ with RX888MK2 and Active Loop, Croatia",
+    "url": "http://9a7aof.ddns.net:8905/",
+    "logourl": "http://9a7aof.ddns.net:08905/logo.jpg",
+    "qth": "JN86DA",
     "users": 7,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "mlf",
+        "id": "g10",
         "freql": 0,
-        "freqh": 96000,
-        "antenna": "Mini-whip like antenna on 4 m well grounded metal pipe, located ~50m far from any buildings."
-      },
-      {
-        "id": "m160",
-        "freql": 1388000,
-        "freqh": 2412000,
-        "antenna": "FO0AAA antenna with &#34;High Z&#34; preamp. Antenna is located ~50m far from any buildings - low QRM, great S/N! DSP filters,"
-      },
-      {
-        "id": "m80",
-        "freql": 3326000,
-        "freqh": 4094000,
-        "antenna": "SDRplay RSP1A 14-bit on 80m. 24 h/7 FT8 reporting."
-      },
-      {
-        "id": "m0",
-        "freql": 4488000,
-        "freqh": 5512000,
-        "antenna": "band. Listen to Weather &#38; number stations like UVB-76/The Buzzer, The PIP, LORAN, VLF with SAQ and DCF77, Troyka"
-      },
-      {
-        "id": "m40",
-        "freql": 6887000,
-        "freqh": 7911000,
-        "antenna": "radio pirates or just CB radio. Check your report on pskreporter https://t.ly/GWNx"
-      },
-      {
-        "id": "m20",
-        "freql": 13326000,
-        "freqh": 14350000,
-        "antenna": "Other bands coming soon!"
-      },
-      {
-        "id": "m10",
-        "freql": 27488000,
-        "freqh": 28512000,
-        "antenna": "One of the best websdr&#39;s in this part of Europe!"
-      },
-      {
-        "id": "muhf",
-        "freql": 10489200000,
-        "freqh": 10490300000,
-        "antenna": "Qatar-OSCAR 100 (QO-100/Es hail-2 satellite) - just initial setup - 1,5m dish with tcxo LNB, improvements will come (GPSDO etc)"
+        "freqh": 30000000,
+        "antenna": "Active Loop. 9A7AOF PhantomSDR+"
       }
     ]
   },
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "websdr.db0nt.de:8090",
-    "lat": 48.7292,
-    "lon": 9.20833,
-    "comment": "DB0NT, Esslingen, Germany",
-    "url": "http://websdr.db0nt.de:8090/",
-    "logourl": "",
-    "qth": "JN48OR",
-    "users": 0,
+    "id": "rietisdr.iu0esp.it:8901",
+    "lat": 42.4792,
+    "lon": 12.875,
+    "comment": "Rieti_IT WebSDR! loc.JN62KL hosted by www.QRZCB.io",
+    "url": "http://rietisdr.iu0esp.it:8901/",
+    "logourl": "http://rietisdr.iu0esp.it:08901/mylogo2024.gif",
+    "qth": "JN62KL",
+    "users": 1,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m2",
-        "freql": 144469000,
-        "freqh": 146005000,
-        "antenna": "Groundplane"
-      },
-      {
-        "id": "m70",
-        "freql": 438464000,
-        "freqh": 440000000,
-        "antenna": "Groundplane"
-      },
-      {
-        "id": "m70",
-        "freql": 432976000,
-        "freqh": 435024000,
-        "antenna": "Groundplane"
-      },
-      {
-        "id": "muhf",
-        "freql": 1298030000,
-        "freqh": 1299570000,
-        "antenna": "Groundplane"
+        "id": "m10",
+        "freql": 26531000,
+        "freqh": 28579000,
+        "antenna": "Antenna SuperLemm 16 radials 3/4"
       }
     ]
   },
@@ -17215,7 +17198,7 @@
     "url": "http://NA5B.com:8902/",
     "logourl": "http://NA5B.com:08902/mylogo.gif",
     "qth": "FM18KS",
-    "users": 1,
+    "users": 2,
     "device": "WebSDR",
     "bands": [
       {
@@ -17253,6 +17236,27 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "SIXMETERSCT.DDNS.NET:20553",
+    "lat": 41.8542,
+    "lon": -72.2083,
+    "comment": "RSP1A on six Meters from the Quiet Corner of CT ",
+    "url": "http://SIXMETERSCT.DDNS.NET:20553/",
+    "logourl": "http://SIXMETERSCT.DDNS.NET:20553/G50.jpg",
+    "qth": "FN31vu",
+    "users": 2,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m6",
+        "freql": 49866000,
+        "freqh": 50634000,
+        "antenna": "Delta Loop Turnstile Horizontaly Polarized Omni"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "rnd.websdr.pro",
     "lat": 47.3125,
     "lon": 39.7083,
@@ -17260,7 +17264,7 @@
     "url": "http://rnd.websdr.pro/",
     "logourl": "http://rnd.websdr.pro/mylogo.gif",
     "qth": "KN97UH",
-    "users": 1,
+    "users": 3,
     "device": "WebSDR",
     "bands": [
       {
@@ -17274,99 +17278,6 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "sdr.osthessenfunk.de",
-    "lat": 50.5625,
-    "lon": 9.70833,
-    "comment": "WebSDR Wasserkuppe 956m ",
-    "url": "http://sdr.osthessenfunk.de/",
-    "logourl": "http://sdr.osthessenfunk.de/xxxx.gif",
-    "qth": "JO40UN",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m10",
-        "freql": 25981000,
-        "freqh": 28029000,
-        "antenna": "A99"
-      },
-      {
-        "id": "m10",
-        "freql": 27916000,
-        "freqh": 29964000,
-        "antenna": "A99"
-      },
-      {
-        "id": "m2",
-        "freql": 143976000,
-        "freqh": 146024000,
-        "antenna": "Diamond X30"
-      },
-      {
-        "id": "m0",
-        "freql": 148061000,
-        "freqh": 150109000,
-        "antenna": "Diamond X30"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "club.lu1ma.org.ar:7999",
-    "lat": -32.8997,
-    "lon": -68.8359,
-    "comment": "&#34; MENDOZA, ARGENTINA / LU1MA CUYO RADIO CLUB",
-    "url": "http://club.lu1ma.org.ar:7999/",
-    "logourl": "http://club.lu1ma.org.ar:07999/escudo.gif",
-    "qth": "FF57NC94QB",
-    "users": -2,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m40",
-        "freql": 6643000,
-        "freqh": 7667000,
-        "antenna": "Pampa (experimental) a 18m"
-      },
-      {
-        "id": "m80",
-        "freql": 3238000,
-        "freqh": 4262000,
-        "antenna": "Pampa (experimental) a 18m"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "paraibuna.websdr.com.br:8901",
-    "lat": -23.3958,
-    "lon": -45.625,
-    "comment": "Receptor SDR de Paraibuna, SP - Brazil",
-    "url": "http://paraibuna.websdr.com.br:8901/",
-    "logourl": "http://paraibuna.websdr.com.br:08901/caracol.jpg",
-    "qth": "GG76eo",
-    "users": 3,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m80",
-        "freql": 3474000,
-        "freqh": 3986000,
-        "antenna": "Multiband Dipole"
-      },
-      {
-        "id": "m40",
-        "freql": 6884000,
-        "freqh": 7396000,
-        "antenna": "Multiband Dipole"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
     "id": "makrisv2amk.ddns.me:58901",
     "lat": 40.8542,
     "lon": 25.7083,
@@ -17374,7 +17285,7 @@
     "url": "http://makrisv2amk.ddns.me:58901/",
     "logourl": "http://makrisv2amk.ddns.me:58901/sv2amk.gif",
     "qth": "KN20UU",
-    "users": -1,
+    "users": -2,
     "device": "WebSDR",
     "bands": [
       {
@@ -17487,6 +17398,72 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "websdr.db0nt.de:8090",
+    "lat": 48.7292,
+    "lon": 9.20833,
+    "comment": "DB0NT, Esslingen, Germany",
+    "url": "http://websdr.db0nt.de:8090/",
+    "logourl": "",
+    "qth": "JN48OR",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m2",
+        "freql": 144469000,
+        "freqh": 146005000,
+        "antenna": "Groundplane"
+      },
+      {
+        "id": "m70",
+        "freql": 438464000,
+        "freqh": 440000000,
+        "antenna": "Groundplane"
+      },
+      {
+        "id": "m70",
+        "freql": 432976000,
+        "freqh": 435024000,
+        "antenna": "Groundplane"
+      },
+      {
+        "id": "muhf",
+        "freql": 1298030000,
+        "freqh": 1299570000,
+        "antenna": "Groundplane"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "club.lu1ma.org.ar:7999",
+    "lat": -32.8997,
+    "lon": -68.8359,
+    "comment": "&#34; MENDOZA, ARGENTINA / LU1MA CUYO RADIO CLUB",
+    "url": "http://club.lu1ma.org.ar:7999/",
+    "logourl": "http://club.lu1ma.org.ar:07999/escudo.gif",
+    "qth": "FF57NC94QB",
+    "users": -2,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m40",
+        "freql": 6643000,
+        "freqh": 7667000,
+        "antenna": "Pampa (experimental) a 18m"
+      },
+      {
+        "id": "m80",
+        "freql": 3238000,
+        "freqh": 4262000,
+        "antenna": "Pampa (experimental) a 18m"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "185.199.176.46:8092",
     "lat": 47.0208,
     "lon": 8.54167,
@@ -17502,6 +17479,93 @@
         "freql": 143876000,
         "freqh": 145924000,
         "antenna": "Diamond X-300-N and RSP1A"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "sdr.osthessenfunk.de",
+    "lat": 50.5625,
+    "lon": 9.70833,
+    "comment": "WebSDR Wasserkuppe 956m ",
+    "url": "http://sdr.osthessenfunk.de/",
+    "logourl": "http://sdr.osthessenfunk.de/xxxx.gif",
+    "qth": "JO40UN",
+    "users": 1,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m10",
+        "freql": 25981000,
+        "freqh": 28029000,
+        "antenna": "A99"
+      },
+      {
+        "id": "m10",
+        "freql": 27916000,
+        "freqh": 29964000,
+        "antenna": "A99"
+      },
+      {
+        "id": "m2",
+        "freql": 143976000,
+        "freqh": 146024000,
+        "antenna": "Diamond X30"
+      },
+      {
+        "id": "m0",
+        "freql": 148061000,
+        "freqh": 150109000,
+        "antenna": "Diamond X30"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "websdr.info:8902",
+    "lat": 42.7292,
+    "lon": 23.4583,
+    "comment": "WebSDR by LZ7AA based on NooElec nano on upper UHF bands",
+    "url": "http://websdr.info:8902/",
+    "logourl": "http://websdr.info:08902/LZ7AA_logo48x48.gif",
+    "qth": "KN12RR",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m2",
+        "freql": 143976000,
+        "freqh": 146024000,
+        "antenna": "Diamond X-200"
+      },
+      {
+        "id": "m70",
+        "freql": 437976000,
+        "freqh": 440024000,
+        "antenna": "Diamond X-200"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "makrisv2amk.ddns.me:9001",
+    "lat": 40.8958,
+    "lon": 25.7083,
+    "comment": "SV2AMK CATsync PhantomSDR+ Makri I3 + RSP1A",
+    "url": "http://makrisv2amk.ddns.me:9001/",
+    "logourl": "http://makrisv2amk.ddns.me:09001/logo.gif",
+    "qth": "KN20UV",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "mlf",
+        "freql": 0,
+        "freqh": 8000000,
+        "antenna": "LONG WIRE. SV2AMK CATsync PhantomSDR+ Makri I3 + RSP1A"
       }
     ]
   },
@@ -17571,330 +17635,21 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "9a7aof.ddns.net:8905",
-    "lat": 46.0208,
-    "lon": 16.2917,
-    "comment": "9A7AOF PhantomSDR+ with RX888MK2 and Active Loop, Croatia",
-    "url": "http://9a7aof.ddns.net:8905/",
-    "logourl": "http://9a7aof.ddns.net:08905/logo.jpg",
-    "qth": "JN86DA",
-    "users": 4,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "g10",
-        "freql": 0,
-        "freqh": 30000000,
-        "antenna": "Active Loop. 9A7AOF PhantomSDR+"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "rietisdr.iu0esp.it:8901",
-    "lat": 42.4792,
-    "lon": 12.875,
-    "comment": "Rieti_IT WebSDR! loc.JN62KL hosted by www.QRZCB.io",
-    "url": "http://rietisdr.iu0esp.it:8901/",
-    "logourl": "http://rietisdr.iu0esp.it:08901/mylogo2024.gif",
-    "qth": "JN62KL",
-    "users": 3,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m10",
-        "freql": 26531000,
-        "freqh": 28579000,
-        "antenna": "Antenna SuperLemm 16 radials 3/4"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "SIXMETERSCT.DDNS.NET:20553",
-    "lat": 41.8542,
-    "lon": -72.2083,
-    "comment": "RSP1A on six Meters from the Quiet Corner of CT ",
-    "url": "http://SIXMETERSCT.DDNS.NET:20553/",
-    "logourl": "http://SIXMETERSCT.DDNS.NET:20553/G50.jpg",
-    "qth": "FN31vu",
-    "users": 3,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m6",
-        "freql": 49866000,
-        "freqh": 50634000,
-        "antenna": "Delta Loop Turnstile Horizontaly Polarized Omni"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "websdr.info:8902",
-    "lat": 42.7292,
-    "lon": 23.4583,
-    "comment": "WebSDR by LZ7AA based on NooElec nano on upper UHF bands",
-    "url": "http://websdr.info:8902/",
-    "logourl": "http://websdr.info:08902/LZ7AA_logo48x48.gif",
-    "qth": "KN12RR",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m2",
-        "freql": 143976000,
-        "freqh": 146024000,
-        "antenna": "Diamond X-200"
-      },
-      {
-        "id": "m70",
-        "freql": 437976000,
-        "freqh": 440024000,
-        "antenna": "Diamond X-200"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "2360.ddns.me:8901",
-    "lat": 32.6042,
-    "lon": -97.375,
-    "comment": "RTLSDR Dell Optiplex 960 EM12ho W2DB",
-    "url": "http://2360.ddns.me:8901/",
-    "logourl": "http://2360.ddns.me:08901/texasflag.png",
-    "qth": "EM12ho",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "muhf",
-        "freql": 926988000,
-        "freqh": 928012000,
-        "antenna": ""
-      },
-      {
-        "id": "m15",
-        "freql": 19961000,
-        "freqh": 22009000,
-        "antenna": "75&#39; wire"
-      },
-      {
-        "id": "m40",
-        "freql": 5976000,
-        "freqh": 8023999,
-        "antenna": "75&#39; wire"
-      },
-      {
-        "id": "m20",
-        "freql": 13276000,
-        "freqh": 15324000,
-        "antenna": "75&#39; wire"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "142.44.211.133:8091",
-    "lat": 8.52083,
-    "lon": -80.375,
-    "comment": "WebSDR Panama",
-    "url": "http://142.44.211.133:8091/",
-    "logourl": "http://142.44.211.133:08091/logo.gif",
-    "qth": "EJ98tm",
-    "users": -1,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m80",
-        "freql": 3138000,
-        "freqh": 4162000,
-        "antenna": "Loop MLA30+"
-      },
-      {
-        "id": "m40",
-        "freql": 6638000,
-        "freqh": 7662000,
-        "antenna": "Loop MLA30+"
-      },
-      {
-        "id": "m20",
-        "freql": 13663000,
-        "freqh": 14687000,
-        "antenna": "Loop MLA30+"
-      },
-      {
-        "id": "m15",
-        "freql": 20738000,
-        "freqh": 21762000,
-        "antenna": "Loop MLA30+"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "makrisv2amk.ddns.me:9001",
-    "lat": 40.8958,
-    "lon": 25.7083,
-    "comment": "SV2AMK CATsync PhantomSDR+ Makri I3 + RSP1A",
-    "url": "http://makrisv2amk.ddns.me:9001/",
-    "logourl": "http://makrisv2amk.ddns.me:09001/logo.gif",
-    "qth": "KN20UV",
-    "users": 1,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "mlf",
-        "freql": 0,
-        "freqh": 8000000,
-        "antenna": "LONG WIRE. SV2AMK CATsync PhantomSDR+ Makri I3 + RSP1A"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "91.201.190.4:8901",
-    "lat": 49.8542,
-    "lon": 24.0417,
-    "comment": "FAIRS WEBSDR in Lvov Ukraine",
-    "url": "http://91.201.190.4:8901/",
-    "logourl": "http://91.201.190.4:08901/fairs1.GIF",
-    "qth": "kn29au",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m6",
-        "freql": 49988000,
-        "freqh": 51012000,
-        "antenna": "6 element Yagi pointing South"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "89.242.7.86",
-    "lat": 53.5208,
-    "lon": -0.0416667,
-    "comment": " http://sites.google.com/view/grimsbyradio/home ",
-    "url": "http://89.242.7.86/",
-    "logourl": "",
-    "qth": "IO93XM",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m10",
-        "freql": 26676000,
-        "freqh": 28724000,
-        "antenna": "End Fed Half Wave"
-      },
-      {
-        "id": "m6",
-        "freql": 49226000,
-        "freqh": 51274000,
-        "antenna": "Tri Band Colinear"
-      },
-      {
-        "id": "m2",
-        "freql": 143976000,
-        "freqh": 146024000,
-        "antenna": "Tri Band Colinear"
-      },
-      {
-        "id": "m70",
-        "freql": 431976000,
-        "freqh": 434024000,
-        "antenna": "Tri Band Colinear"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "itajai.sdr.net.br:8082",
-    "lat": -26.9375,
-    "lon": -48.7917,
-    "comment": "Itajai - SC - Brazil",
-    "url": "http://itajai.sdr.net.br:8082/",
-    "logourl": "http://itajai.sdr.net.br:08082/th_lr.gif",
-    "qth": "GG53ob",
+    "id": "217.155.0.218",
+    "lat": 53.2708,
+    "lon": -3.79167,
+    "comment": "Located in Conwy on the North Wales Coast",
+    "url": "http://217.155.0.218/",
+    "logourl": "http://217.155.0.218/vmars.JPG",
+    "qth": "IO83CG",
     "users": 0,
     "device": "WebSDR",
     "bands": [
       {
         "id": "m80",
-        "freql": 3344000,
-        "freqh": 3856000,
-        "antenna": "Inverted V"
-      },
-      {
-        "id": "m40",
-        "freql": 7044000,
-        "freqh": 7556000,
-        "antenna": "Inverted V"
-      },
-      {
-        "id": "m15",
-        "freql": 20788000,
-        "freqh": 21812000,
-        "antenna": "Inverted V"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "ub3aww.ru:8888",
-    "lat": 55.8958,
-    "lon": 37.5417,
-    "comment": "This is a WebSDR receiver, located North-East, Moscow |10M band repeaters|",
-    "url": "http://ub3aww.ru:8888/",
-    "logourl": "http://ub3aww.ru:08888/logo.jpg",
-    "qth": "ko85sv",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m10",
-        "freql": 27976000,
-        "freqh": 30024000,
-        "antenna": "Sirio SD-1300N"
-      },
-      {
-        "id": "m0",
-        "freql": 25776000,
-        "freqh": 27824000,
-        "antenna": "Sirio SD-1300N"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "websdr.ce3waq.cl:8091",
-    "lat": -33.4375,
-    "lon": -70.625,
-    "comment": "CE3WAQ - 40 mts |  Santiago, Chile",
-    "url": "http://websdr.ce3waq.cl:8091/",
-    "logourl": "http://websdr.ce3waq.cl:08091/bandera.png",
-    "qth": "FF46qn",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m40",
-        "freql": 6075600,
-        "freqh": 8123600,
-        "antenna": "Microvert 40 mts"
+        "freql": 3595430,
+        "freqh": 3787430,
+        "antenna": "80M dipole cut for 3615"
       }
     ]
   },
@@ -17934,39 +17689,6 @@
         "freql": 462088000,
         "freqh": 463112000,
         "antenna": "1886 Super HI loop G5RV with an automatic Switch"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "link.radiopaulafm.com:20002",
-    "lat": -37.2708,
-    "lon": -72.7083,
-    "comment": "Receptor SDR de CE5AUC en Laja, Chile",
-    "url": "http://link.radiopaulafm.com:20002/",
-    "logourl": "http://link.radiopaulafm.com:20002/logo.png",
-    "qth": "FF32pr",
-    "users": 1,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m40",
-        "freql": 6488000,
-        "freqh": 7512000,
-        "antenna": "V invertida"
-      },
-      {
-        "id": "m10",
-        "freql": 26965000,
-        "freqh": 29013000,
-        "antenna": "Dipolo 1/4 Lambda"
-      },
-      {
-        "id": "m2",
-        "freql": 146588000,
-        "freqh": 147612000,
-        "antenna": "1/4 plano a tierra"
       }
     ]
   },
@@ -18018,6 +17740,240 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
+    "id": "ub3aww.ru:8888",
+    "lat": 55.8958,
+    "lon": 37.5417,
+    "comment": "This is a WebSDR receiver, located North-East, Moscow |10M band repeaters|",
+    "url": "http://ub3aww.ru:8888/",
+    "logourl": "http://ub3aww.ru:08888/logo.jpg",
+    "qth": "ko85sv",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m10",
+        "freql": 27976000,
+        "freqh": 30024000,
+        "antenna": "Sirio SD-1300N"
+      },
+      {
+        "id": "m0",
+        "freql": 25776000,
+        "freqh": 27824000,
+        "antenna": "Sirio SD-1300N"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "link.radiopaulafm.com:20002",
+    "lat": -37.2708,
+    "lon": -72.7083,
+    "comment": "Receptor SDR de CE5AUC en Laja, Chile",
+    "url": "http://link.radiopaulafm.com:20002/",
+    "logourl": "http://link.radiopaulafm.com:20002/logo.png",
+    "qth": "FF32pr",
+    "users": 2,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m40",
+        "freql": 6488000,
+        "freqh": 7512000,
+        "antenna": "V invertida"
+      },
+      {
+        "id": "m10",
+        "freql": 26965000,
+        "freqh": 29013000,
+        "antenna": "Dipolo 1/4 Lambda"
+      },
+      {
+        "id": "m2",
+        "freql": 146588000,
+        "freqh": 147612000,
+        "antenna": "1/4 plano a tierra"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "89.242.7.86",
+    "lat": 53.5208,
+    "lon": -0.0416667,
+    "comment": " http://sites.google.com/view/grimsbyradio/home ",
+    "url": "http://89.242.7.86/",
+    "logourl": "",
+    "qth": "IO93XM",
+    "users": 1,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m10",
+        "freql": 26676000,
+        "freqh": 28724000,
+        "antenna": "End Fed Half Wave"
+      },
+      {
+        "id": "m6",
+        "freql": 49226000,
+        "freqh": 51274000,
+        "antenna": "Tri Band Colinear"
+      },
+      {
+        "id": "m2",
+        "freql": 143976000,
+        "freqh": 146024000,
+        "antenna": "Tri Band Colinear"
+      },
+      {
+        "id": "m70",
+        "freql": 431976000,
+        "freqh": 434024000,
+        "antenna": "Tri Band Colinear"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "142.44.211.133:8091",
+    "lat": 8.52083,
+    "lon": -80.375,
+    "comment": "WebSDR Panama",
+    "url": "http://142.44.211.133:8091/",
+    "logourl": "http://142.44.211.133:08091/logo.gif",
+    "qth": "EJ98tm",
+    "users": -1,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m80",
+        "freql": 3138000,
+        "freqh": 4162000,
+        "antenna": "Loop MLA30+"
+      },
+      {
+        "id": "m40",
+        "freql": 6638000,
+        "freqh": 7662000,
+        "antenna": "Loop MLA30+"
+      },
+      {
+        "id": "m20",
+        "freql": 13663000,
+        "freqh": 14687000,
+        "antenna": "Loop MLA30+"
+      },
+      {
+        "id": "m15",
+        "freql": 20738000,
+        "freqh": 21762000,
+        "antenna": "Loop MLA30+"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "websdr.ce3waq.cl:8091",
+    "lat": -33.4375,
+    "lon": -70.625,
+    "comment": "CE3WAQ - 40 mts |  Santiago, Chile",
+    "url": "http://websdr.ce3waq.cl:8091/",
+    "logourl": "http://websdr.ce3waq.cl:08091/bandera.png",
+    "qth": "FF46qn",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m40",
+        "freql": 6075600,
+        "freqh": 8123600,
+        "antenna": "Microvert 40 mts"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "itajai.sdr.net.br:8082",
+    "lat": -26.9375,
+    "lon": -48.7917,
+    "comment": "Itajai - SC - Brazil",
+    "url": "http://itajai.sdr.net.br:8082/",
+    "logourl": "http://itajai.sdr.net.br:08082/th_lr.gif",
+    "qth": "GG53ob",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m80",
+        "freql": 3344000,
+        "freqh": 3856000,
+        "antenna": "Inverted V"
+      },
+      {
+        "id": "m40",
+        "freql": 7044000,
+        "freqh": 7556000,
+        "antenna": "Inverted V"
+      },
+      {
+        "id": "m15",
+        "freql": 20788000,
+        "freqh": 21812000,
+        "antenna": "Inverted V"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "91.201.190.4:8901",
+    "lat": 49.8542,
+    "lon": 24.0417,
+    "comment": "FAIRS WEBSDR in Lvov Ukraine",
+    "url": "http://91.201.190.4:8901/",
+    "logourl": "http://91.201.190.4:08901/fairs1.GIF",
+    "qth": "kn29au",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m6",
+        "freql": 49988000,
+        "freqh": 51012000,
+        "antenna": "6 element Yagi pointing South"
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
+    "id": "176.118.197.49",
+    "lat": 999,
+    "lon": 999,
+    "comment": "",
+    "url": "http://176.118.197.49/",
+    "logourl": "",
+    "qth": "",
+    "users": 0,
+    "device": "WebSDR",
+    "bands": [
+      {
+        "id": "m2",
+        "freql": 143976000,
+        "freqh": 146024000,
+        "antenna": ""
+      }
+    ]
+  },
+  {
+    "type": "latlon",
+    "mode": "WebSDR",
     "id": "crapoca.websdr.com.br:8901",
     "lat": -21.7708,
     "lon": -46.5417,
@@ -18051,27 +18007,6 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "websdr.is0grb.it:8904",
-    "lat": 39.3958,
-    "lon": 9.20833,
-    "comment": "IS0GRB UHF 432-433 MHz WebSDR in south Sardinia, Italy",
-    "url": "http://websdr.is0grb.it:8904/",
-    "logourl": "http://websdr.is0grb.it:08904/satellite48x.jpg",
-    "qth": "JM49OJ",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "m70",
-        "freql": 431988000,
-        "freqh": 433012000,
-        "antenna": "Turnstile + 20dB Preamp. + 20m CellFlex 1/2&#39;&#39; + SDR GPSDO"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
     "id": "186.4.161.166:8091",
     "lat": -0.229167,
     "lon": -78.5417,
@@ -18093,63 +18028,42 @@
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "176.118.197.49",
-    "lat": 999,
-    "lon": 999,
-    "comment": "",
-    "url": "http://176.118.197.49/",
-    "logourl": "",
-    "qth": "",
+    "id": "websdr.is0grb.it:8904",
+    "lat": 39.3958,
+    "lon": 9.20833,
+    "comment": "IS0GRB UHF 432-433 MHz WebSDR in south Sardinia, Italy",
+    "url": "http://websdr.is0grb.it:8904/",
+    "logourl": "http://websdr.is0grb.it:08904/satellite48x.jpg",
+    "qth": "JM49OJ",
     "users": 0,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m2",
-        "freql": 143976000,
-        "freqh": 146024000,
-        "antenna": ""
+        "id": "m70",
+        "freql": 431988000,
+        "freqh": 433012000,
+        "antenna": "Turnstile + 20dB Preamp. + 20m CellFlex 1/2&#39;&#39; + SDR GPSDO"
       }
     ]
   },
   {
     "type": "latlon",
     "mode": "WebSDR",
-    "id": "0.tcp.ngrok.io:23374",
-    "lat": -15.7292,
-    "lon": -47.7917,
-    "comment": "PT2FHC WebSDR &lt;&gt; UberSDR - Brasilia, DF, Brazil",
-    "url": "http://0.tcp.ngrok.io:23374/",
-    "logourl": "",
-    "qth": "GH64cg",
-    "users": 0,
-    "device": "WebSDR",
-    "bands": [
-      {
-        "id": "g10",
-        "freql": 500000,
-        "freqh": 30000000,
-        "antenna": "BroadBand Dipole YA-30"
-      }
-    ]
-  },
-  {
-    "type": "latlon",
-    "mode": "WebSDR",
-    "id": "217.155.0.218",
-    "lat": 53.2708,
-    "lon": -3.79167,
-    "comment": "Located in Conwy on the North Wales Coast",
-    "url": "http://217.155.0.218/",
-    "logourl": "http://217.155.0.218/vmars.JPG",
-    "qth": "IO83CG",
+    "id": "pu2swx.ddns.net:8901",
+    "lat": -23.5208,
+    "lon": -46.375,
+    "comment": "PU2SWX Poa-Sao Paulo-Brasil--&gt; fantomas &lt;--",
+    "url": "http://pu2swx.ddns.net:8901/",
+    "logourl": "http://pu2swx.ddns.net:08901/poa.gif",
+    "qth": "GG66TL",
     "users": 1,
     "device": "WebSDR",
     "bands": [
       {
-        "id": "m80",
-        "freql": 3595430,
-        "freqh": 3787430,
-        "antenna": "80M dipole cut for 3615"
+        "id": "muhf",
+        "freql": 10489200000,
+        "freqh": 10490300000,
+        "antenna": "Offset_Dish 90cm,lnb greatek tcxo 25MHz"
       }
     ]
   }
