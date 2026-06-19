@@ -1,0 +1,2 @@
+~/.local/share/WSJT-X/logs
+~/.local/share/WSJT-X/save
