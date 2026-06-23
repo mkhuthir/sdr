@@ -26,7 +26,7 @@
     "receiver_keys": [],
     "waterfall_scheme": "GoogleTurboWaterfall",
     "fft_fps": 15,
-    "fft_size": 4096,
+    "fft_size": 16384,
     "fft_voverlap_factor": 0.3,
     "waterfall_levels": {
         "min": -88.0,
@@ -52,18 +52,20 @@
     "map_max_calls": 5,
     "map_ignore_indirect_reports": false,
     "map_prefer_recent_reports": true,
-    "callsign_url": "https://www.qrzcq.com/call/{}",
+    "callsign_url": "https://www.qrz.com/db/{}",
     "vessel_url": "https://www.vesselfinder.com/vessels/details/{}",
     "flight_url": "https://flightaware.com/live/flight/{}",
     "modes_url": "https://flightaware.com/live/modes/{}/redirect",
     "sonde_url": "https://sondehub.org/{}",
     "sdrs": {
-        "7b23f65f-3c1f-4856-890f-9d530690ed59": {
+        "sdrplay": {
             "name": "RSPdx",
             "type": "sdrplay",
+            "antenna": "Antenna A",
+            "rf_gain": "auto",
             "profiles": {
                 "551057da-0461-4297-a8fb-cca39e3835c5": {
-                    "name": "HF 1.800 - 2.000 MHz 160m",
+                    "name": "HAM HF 1.800 - 2.000 MHz 160m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -70.0,
@@ -78,11 +80,10 @@
                     "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
-                    "dab_notch": true,
-                    "if_mode": "Zero-IF"
+                    "dab_notch": true
                 },
                 "961a621e-dd6b-4f59-9933-d6106d91c992": {
-                    "name": "HF 3.500 - 4.000 MHz 80m",
+                    "name": "HAM HF 3.500 - 4.000 MHz 80m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -80.0,
@@ -101,7 +102,7 @@
                     "if_mode": "Zero-IF"
                 },
                 "3bec4987-6f5a-478a-b988-945a1602bb86": {
-                    "name": "HF 5.351 - 5.366 MHz 60m",
+                    "name": "HAM HF 5.351 - 5.366 MHz 60m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -80.0,
@@ -120,7 +121,7 @@
                     "if_mode": "Zero-IF"
                 },
                 "d87e92a9-b491-4d06-ab76-ac4129513386": {
-                    "name": "HF 7.000 - 7.300 MHz 40m",
+                    "name": "HAM HF 7.000 - 7.300 MHz 40m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -80.0,
@@ -139,7 +140,7 @@
                     "if_mode": "Zero-IF"
                 },
                 "0a4fa844-74aa-4f6c-8faf-777117d9813a": {
-                    "name": "HF 10.100 \u2013 10.150 MHz 30m",
+                    "name": "HAM HF 10.100 \u2013 10.150 MHz 30m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -80.0,
@@ -158,10 +159,10 @@
                     "if_mode": "Zero-IF"
                 },
                 "f048dc8b-4bf6-4307-bdf3-99f4d8aa8693": {
-                    "name": "HF 14.000 - 14.350 MHz 20m",
+                    "name": "HAM HF 14.000 - 14.350 MHz 20m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -65.0,
+                        "min": -60.0,
                         "max": 0.0
                     },
                     "center_freq": 14175000,
@@ -177,10 +178,10 @@
                     "if_mode": "Zero-IF"
                 },
                 "098ba73f-f7fe-4353-bab4-1d1a6099b16a": {
-                    "name": "HF 18.068 \u2013 18.168 MHz 17m",
+                    "name": "HAM HF 18.068 \u2013 18.168 MHz 17m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -95.0,
+                        "min": -60.0,
                         "max": 0.0
                     },
                     "center_freq": 18118000,
@@ -196,7 +197,7 @@
                     "if_mode": "Zero-IF"
                 },
                 "4185b689-bd05-48d4-85af-2b1b04f6b92f": {
-                    "name": "HF 21.000 \u2013 21.450 MHz 15m",
+                    "name": "HAM HF 21.000 \u2013 21.450 MHz 15m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -95.0,
@@ -215,7 +216,7 @@
                     "if_mode": "Zero-IF"
                 },
                 "0eaf44f3-b521-40c9-819f-731315b960ab": {
-                    "name": "HF 24.890 \u2013 24.990 MHz MHz 12m",
+                    "name": "HAM HF 24.890 \u2013 24.990 MHz MHz 12m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -95.0,
@@ -234,7 +235,7 @@
                     "if_mode": "Zero-IF"
                 },
                 "2dab2494-ae8a-44ec-bd84-0c3c376c547c": {
-                    "name": "HF 28.000 - 29.700 MHz 10m",
+                    "name": "HAM HF 28.000 - 29.700 MHz 10m",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -90.0,
@@ -252,8 +253,16 @@
                     "dab_notch": true,
                     "if_mode": "Zero-IF"
                 },
+                "6m": {
+                    "name": "HAM VHF 50 - 54 MHz 6m",
+                    "center_freq": 52000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 53000000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
                 "af54589f-f0e5-4616-ac15-c58955c794b7": {
-                    "name": "VHF 144 - 146 MHz 2m",
+                    "name": "HAM VHF 144 - 146 MHz 2m",
                     "waterfall_levels": {
                         "min": -100.0,
                         "max": 0.0
@@ -263,66 +272,71 @@
                     "start_freq": 145000000,
                     "start_mod": "nfm",
                     "tuning_step": 1,
-                    "rfgain_sel": 0,
-                    "antenna": "Antenna A",
+                    "antenna": "Antenna B",
                     "dab_notch": true,
                     "rf_notch": true,
-                    "agc_setpoint": -1,
                     "initial_nr_level": 0,
                     "rf_gain": "auto"
                 },
-                "a7dfdcef-35ca-4c60-9517-ca7f7ea1a196": {
-                    "name": "FM 87-97 MHz",
-                    "rf_gain": "auto",
+                "125cm": {
+                    "name": "HAM VHF 220 - 225 MHz 1.25m",
+                    "center_freq": 222500000,
+                    "samp_rate": 5000000,
+                    "start_freq": 224000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000,
                     "waterfall_levels": {
-                        "min": -90.0,
+                        "min": -45.0,
                         "max": 0.0
                     },
-                    "center_freq": 92000000,
-                    "samp_rate": 10000000,
-                    "start_freq": 85000000,
-                    "start_mod": "wfm",
-                    "initial_nr_level": 0,
-                    "tuning_step": 1,
                     "antenna": "Antenna A",
-                    "bias_tee": false,
-                    "rf_notch": true,
-                    "dab_notch": true,
-                    "if_mode": "Zero-IF"
-                },
-                "146aded9-7dcb-4e81-a168-d11c91ee9f1a": {
-                    "name": "FM 97-107 MHz",
-                    "center_freq": 102000000,
-                    "samp_rate": 10000000,
-                    "start_freq": 103200000,
-                    "start_mod": "wfm",
-                    "tuning_step": 1,
-                    "antenna": "Antenna B",
-                    "dab_notch": true,
                     "rf_notch": false,
-                    "waterfall_levels": {
-                        "min": -75.0,
-                        "max": 0.0
-                    },
-                    "bias_tee": false,
-                    "rfgain_sel": 4
+                    "dab_notch": false
                 },
-                "5d69fc41-e8cd-4d16-88ff-4ca2e8c79071": {
-                    "name": "FM 98-108 MHz",
+                "70cm": {
+                    "name": "HAM UHF 420 - 430 MHz 70cm",
+                    "center_freq": 425000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 425000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000,
                     "waterfall_levels": {
-                        "min": -75.0,
+                        "min": -65.0,
                         "max": 0.0
                     },
-                    "center_freq": 103500000,
-                    "samp_rate": 10000000,
-                    "start_freq": 103200000,
-                    "start_mod": "wfm",
-                    "tuning_step": 1,
-                    "antenna": "Antenna A",
-                    "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true,
-                    "rfgain_sel": 7
+                    "antenna": "Antenna B"
+                },
+                "c446ce7f-248f-412d-b755-3ef33515c296": {
+                    "name": "HAM UHF 430 - 440 MHz 70cm",
+                    "waterfall_levels": {
+                        "min": -65.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 435000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 435000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000,
+                    "antenna": "Antenna A",
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "1350d7cd-ca32-46da-bfef-4724075d6325": {
+                    "name": "HAM UHF 440 - 450 MHz 70cm",
+                    "waterfall_levels": {
+                        "min": -65.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 445000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 445000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000,
+                    "antenna": "Antenna A",
+                    "rf_notch": true,
+                    "dab_notch": true
                 },
                 "d3aa31e1-e753-43c1-b813-7c414ed9aafa": {
                     "name": "Airband 118-137MHz",
@@ -331,19 +345,33 @@
                         "min": -65.0,
                         "max": 0.0
                     },
-                    "center_freq": 120000000,
+                    "center_freq": 132000000,
                     "samp_rate": 10000000,
-                    "start_freq": 120000000,
+                    "start_freq": 131699999,
                     "start_mod": "am",
                     "tuning_step": 1,
                     "antenna": "Antenna A",
-                    "bias_tee": false,
                     "rf_notch": true,
-                    "dab_notch": true,
-                    "hdr_ctrl": false
+                    "dab_notch": true
+                },
+                "bb1f9cec-6469-457a-9115-f74bf1ae1cb4": {
+                    "name": "Marine  156-162 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -65.0,
+                        "max": -20.0
+                    },
+                    "center_freq": 159000000,
+                    "samp_rate": 8000000,
+                    "start_freq": 156800000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "rf_notch": true,
+                    "dab_notch": true
                 },
                 "62f48aaf-6fa8-4e80-9b65-7851315373ea": {
-                    "name": "ACARS 131.475MHz",
+                    "name": "DIG ACARS 131.475MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
                         "min": -65.0,
@@ -363,11 +391,11 @@
                     "agc_setpoint": -10
                 },
                 "fe7bf80c-8b86-43e5-ab93-cb13904bae38": {
-                    "name": "APRS 144.800 MHz",
+                    "name": "DIG APRS 144.800 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -85.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": -10.0
                     },
                     "center_freq": 144800000,
                     "samp_rate": 1000000,
@@ -380,11 +408,11 @@
                     "dab_notch": true
                 },
                 "2c95065c-5b13-42dd-a01b-1bee014166a6": {
-                    "name": "AIS 161.975 MHz",
+                    "name": "DIG AIS 161.975 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -45.0
+                        "min": -75.0,
+                        "max": 0.0
                     },
                     "center_freq": 161975000,
                     "samp_rate": 1000000,
@@ -396,25 +424,8 @@
                     "rf_notch": true,
                     "dab_notch": true
                 },
-                "bb1f9cec-6469-457a-9115-f74bf1ae1cb4": {
-                    "name": "Marine  156-162 MHz",
-                    "rf_gain": "auto",
-                    "waterfall_levels": {
-                        "min": -85.0,
-                        "max": -40.0
-                    },
-                    "center_freq": 159000000,
-                    "samp_rate": 8000000,
-                    "start_freq": 156800000,
-                    "start_mod": "nfm",
-                    "tuning_step": 1,
-                    "antenna": "Antenna A",
-                    "bias_tee": true,
-                    "rf_notch": true,
-                    "dab_notch": true
-                },
                 "23a0e9b8-a3ad-4e0d-ac07-4488a4cf7313": {
-                    "name": "ADS-B 1090 MHz",
+                    "name": "DIG ADS-B 1090 MHz",
                     "center_freq": 1090000000,
                     "samp_rate": 4000000,
                     "start_freq": 1090000000,
@@ -429,57 +440,314 @@
                         "min": -100.0,
                         "max": -40.0
                     }
+                },
+                "ism433": {
+                    "name": "DIG 433MHz ISM",
+                    "center_freq": 433000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 433000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 25000
+                },
+                "cb": {
+                    "name": "11m CB",
+                    "center_freq": 27000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 26965000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "am": {
+                    "name": "BC AM",
+                    "center_freq": 1100000,
+                    "samp_rate": 1000000,
+                    "start_freq": 1300000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "49m": {
+                    "name": "BC 49m",
+                    "center_freq": 6050000,
+                    "samp_rate": 500000,
+                    "start_freq": 6070000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "41m": {
+                    "name": "BC 41m",
+                    "center_freq": 7325000,
+                    "samp_rate": 250000,
+                    "start_freq": 7320000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "31m": {
+                    "name": "BC 31m",
+                    "center_freq": 9650000,
+                    "samp_rate": 500000,
+                    "start_freq": 9700000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "25m": {
+                    "name": "BC 25m",
+                    "center_freq": 11850000,
+                    "samp_rate": 500000,
+                    "start_freq": 12000000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "22m": {
+                    "name": "BC 22m",
+                    "center_freq": 13720000,
+                    "samp_rate": 500000,
+                    "start_freq": 13800000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "a7dfdcef-35ca-4c60-9517-ca7f7ea1a196": {
+                    "name": "BC FM 87-97 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -90.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 92000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 85000000,
+                    "start_mod": "wfm",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "146aded9-7dcb-4e81-a168-d11c91ee9f1a": {
+                    "name": "BC FM 97-107 MHz",
+                    "center_freq": 102000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 103200000,
+                    "start_mod": "wfm",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "dab_notch": true,
+                    "rf_notch": false,
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "bias_tee": false,
+                    "rfgain_sel": 4
+                },
+                "5d69fc41-e8cd-4d16-88ff-4ca2e8c79071": {
+                    "name": "BC FM 98-108 MHz",
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 103500000,
+                    "samp_rate": 10000000,
+                    "start_freq": 103200000,
+                    "start_mod": "wfm",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "rfgain_sel": 7
+                },
+                "a2bd6318-37c2-4078-9151-3bbe41607661": {
+                    "name": "DIG FT4 3.575 MHz 80m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 3575000,
+                    "samp_rate": 62500,
+                    "start_freq": 3575000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "55e80885-c84e-4e42-b206-50b5f92a6848": {
+                    "name": "DIG FT4 7.0475 MHz 40m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 7047500,
+                    "samp_rate": 62500,
+                    "start_freq": 7047500,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "0af06666-0c1d-4e2b-8d34-e4e621cffac6": {
+                    "name": "DIG FT4 10.140 MHz 30m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 10140000,
+                    "samp_rate": 62500,
+                    "start_freq": 10140000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "3a686720-5222-4487-a4cc-fc5710b0163f": {
+                    "name": "DIG FT4 14.080 MHz 20m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 14080000,
+                    "samp_rate": 62500,
+                    "start_freq": 14080000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d": {
+                    "name": "DIG FT4 18.104 MHz 17m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 18104000,
+                    "samp_rate": 62500,
+                    "start_freq": 18104000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8": {
+                    "name": "DIG FT4 21.140 MHz 15m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 21140000,
+                    "samp_rate": 250000,
+                    "start_freq": 21140000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "b3fbe4b8-608f-4dd6-ba2b-3aa55d589366": {
+                    "name": "DIG FT4 24.919 MHz 12m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 24919000,
+                    "samp_rate": 62500,
+                    "start_freq": 24919000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "da575668-d928-46b9-97cb-d3057159416b": {
+                    "name": "DIG FT4 28.180 MHz 10m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 28180000,
+                    "samp_rate": 62500,
+                    "start_freq": 28180000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "36c2fd04-267e-4aab-a125-1eb534346c3a": {
+                    "name": "DIG FT4 50.318 MHz 6m",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 50318000,
+                    "samp_rate": 62500,
+                    "start_freq": 50318000,
+                    "start_mod": "ft4",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
                 }
             },
             "services": true,
-            "rf_gain": "auto",
-            "always-on": true,
             "scheduler": {
                 "type": "static",
                 "schedule": {
-                    "0000-0000": "fe7bf80c-8b86-43e5-ab93-cb13904bae38"
+                    "0000-0100": "a2bd6318-37c2-4078-9151-3bbe41607661",
+                    "0100-0200": "55e80885-c84e-4e42-b206-50b5f92a6848",
+                    "0200-0300": "0af06666-0c1d-4e2b-8d34-e4e621cffac6",
+                    "0300-0400": "3a686720-5222-4487-a4cc-fc5710b0163f",
+                    "0500-0600": "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d",
+                    "0700-0800": "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8",
+                    "0900-1000": "b3fbe4b8-608f-4dd6-ba2b-3aa55d589366",
+                    "1100-1200": "da575668-d928-46b9-97cb-d3057159416b",
+                    "1200-1300": "36c2fd04-267e-4aab-a125-1eb534346c3a",
+                    "1300-0000": "3a686720-5222-4487-a4cc-fc5710b0163f"
                 }
             }
         }
     },
-    "aprs_igate_enabled": true,
-    "aprs_callsign": "A6009SWL",
-    "aprs_igate_server": "asia.aprs2.net",
-    "aprs_igate_password": "27899",
-    "aprs_igate_beacon": true,
-    "aprs_igate_symbol": "R&",
-    "aprs_igate_comment": "Muth-OpenWebRX+ APRS ",
-    "pskreporter_enabled": true,
-    "pskreporter_callsign": "A6009SWL",
-    "wsprnet_enabled": true,
-    "wsprnet_callsign": "A6009SWL",
-    "aisreporter_enabled": true,
-    "aisreporter_udp_hosts": "ais.vesselfinder.com",
-    "aisreporter_udp_ports": "6919",
-    "mqtt_enabled": false,
-    "report_clients": false,
-    "report_radio": false,
-    "mqtt_host": "localhost",
-    "mqtt_use_ssl": false,
-    "mqtt_chat": false,
-    "mqtt_aircraft": false,
-    "mqtt_ais": false,
-    "mqtt_aprs": false,
-    "mqtt_wsjt": false,
-    "mqtt_sonde": false,
-    "rig_enabled": false,
-    "rig_model": 2,
-    "rig_device": "127.0.0.1:4533",
-    "rig_address": 0,
-    "services_enabled": true,
-    "services_decoders": [
-        "packet"
-    ],
-    "pskreporter_rig_information": "RPi5 with RSPdx",
-    "aprs_igate_height": "42",
-    "aprs_igate_gain": "4",
-    "geoip_url": "https://www.geolocation.com/?ip={}#ipresult",
-    "pskreporter_antenna_information": "Dipole",
     "squelch_auto_margin": 10,
     "digimodes_fft_size": 2048,
     "ssb_agc_profile": "Fast",
@@ -517,9 +785,7 @@
     "decoding_queue_length": 10,
     "wsjt_decoding_depth": 3,
     "wsjt_decoding_depths": {
-        "ft4": 3,
-        "ft8": 3,
-        "wspr": 3
+        "jt65": 1
     },
     "js8_decoding_depth": 3,
     "js8_enabled_profiles": [
@@ -539,7 +805,49 @@
         "C60",
         "E120"
     ],
+    "aprs_igate_enabled": true,
+    "aprs_callsign": "A6009SWL",
+    "aprs_igate_server": "euro.aprs2.net",
+    "aprs_igate_password": "3FT7AjXwHW",
+    "aprs_igate_beacon": true,
+    "aprs_igate_symbol": "R&",
+    "aprs_igate_comment": "Muth-OpenWebRX+ APRS",
+    "aprs_igate_height": "42",
+    "aprs_igate_gain": "2",
+    "pskreporter_enabled": true,
+    "pskreporter_callsign": "A6009SWL",
+    "wsprnet_enabled": true,
+    "wsprnet_callsign": "A6009SWL",
     "sondehub_enabled": true,
+    "sondehub_antenna": "Dipole",
+    "aisreporter_enabled": true,
+    "aisreporter_udp_hosts": "ais.vesselfinder.com",
+    "aisreporter_udp_ports": "6919",
+    "mqtt_enabled": false,
+    "report_clients": true,
+    "report_radio": true,
+    "mqtt_host": "localhost",
+    "mqtt_user": "mkhuthir",
+    "mqtt_use_ssl": false,
+    "mqtt_chat": false,
+    "mqtt_aircraft": false,
+    "mqtt_ais": false,
+    "mqtt_aprs": false,
+    "mqtt_wsjt": false,
+    "mqtt_sonde": false,
+    "rig_enabled": false,
+    "rig_model": 2,
+    "rig_device": "127.0.0.1:4533",
+    "rig_address": 0,
+    "pskreporter_antenna_information": "Dipole",
+    "pskreporter_rig_information": "RPi5 with RSPdx",
     "sondehub_callsign": "A6009SWL",
-    "sondehub_antenna": "Dipole"
+    "geoip_url": "https://www.geolocation.com/?ip={}#ipresult",
+    "services_enabled": true,
+    "services_decoders": [
+        "ft4",
+        "ft8",
+        "packet",
+        "wspr"
+    ]
 }

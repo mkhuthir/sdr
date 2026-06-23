@@ -1,13 +1,13 @@
 [
     {
-        "user": "admin",
+        "user": "mkhuthir",
         "enabled": true,
         "must_change_password": false,
         "password": {
             "encoding": "hash",
-            "value": "004b9d436e002e9f02094c2fb8eeadf9b14773e229e5d9aa93b1e3fb58573ce9",
+            "value": "2e1d9fd5da52fb10a71f873da1a86ffaa32b16341de9c4d17da7da0c1f661778",
             "algorithm": "sha256",
-            "salt": "c37f3e9cda6224346092916f256a8caa52adefa770f38fb301e7f45deffadc38"
+            "salt": "a5220f98104f6749581d6703c5a64cbf46b1c71cbf5a14d03f16d300cf6fc265"
         }
     }
 ]
