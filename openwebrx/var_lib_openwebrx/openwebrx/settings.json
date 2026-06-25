@@ -728,22 +728,81 @@
                     "rf_notch": true,
                     "dab_notch": true,
                     "if_mode": "Zero-IF"
+                },
+                "95ab7159-ce78-4ec8-862b-00ead6952b72": {
+                    "name": "TETRA 410 - 420 MHz",
+                    "waterfall_levels": {
+                        "min": -90.0,
+                        "max": -30.0
+                    },
+                    "center_freq": 415000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 415000000,
+                    "start_mod": "tetra",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "rf_notch": false,
+                    "dab_notch": false
+                },
+                "f1bd7d31-4567-4c16-91eb-c7198897135c": {
+                    "name": "TETRA 400 - 410 MHz",
+                    "waterfall_levels": {
+                        "min": -90.0,
+                        "max": -30.0
+                    },
+                    "center_freq": 405000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 405000000,
+                    "start_mod": "tetra",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "rf_notch": false,
+                    "dab_notch": false
+                },
+                "92f9a285-e180-4366-b9a1-bdcaf7d832aa": {
+                    "name": "TETRA 390 - 400 MHz",
+                    "waterfall_levels": {
+                        "min": -90.0,
+                        "max": -30.0
+                    },
+                    "center_freq": 395000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 395000000,
+                    "start_mod": "tetra",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "rf_notch": false,
+                    "dab_notch": false
                 }
             },
             "services": true,
             "scheduler": {
                 "type": "static",
                 "schedule": {
-                    "0000-0100": "a2bd6318-37c2-4078-9151-3bbe41607661",
+                    "0000-0100": "b3fbe4b8-608f-4dd6-ba2b-3aa55d589366",
                     "0100-0200": "55e80885-c84e-4e42-b206-50b5f92a6848",
                     "0200-0300": "0af06666-0c1d-4e2b-8d34-e4e621cffac6",
                     "0300-0400": "3a686720-5222-4487-a4cc-fc5710b0163f",
-                    "0500-0600": "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d",
-                    "0700-0800": "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8",
-                    "0900-1000": "b3fbe4b8-608f-4dd6-ba2b-3aa55d589366",
-                    "1100-1200": "da575668-d928-46b9-97cb-d3057159416b",
-                    "1200-1300": "36c2fd04-267e-4aab-a125-1eb534346c3a",
-                    "1300-0000": "3a686720-5222-4487-a4cc-fc5710b0163f"
+                    "0400-0500": "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d",
+                    "0500-0600": "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8",
+                    "0600-0700": "b3fbe4b8-608f-4dd6-ba2b-3aa55d589366",
+                    "0700-0800": "da575668-d928-46b9-97cb-d3057159416b",
+                    "0800-0900": "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d",
+                    "0900-1000": "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8",
+                    "1000-1100": "55e80885-c84e-4e42-b206-50b5f92a6848",
+                    "1100-1200": "0af06666-0c1d-4e2b-8d34-e4e621cffac6",
+                    "1200-1300": "3a686720-5222-4487-a4cc-fc5710b0163f",
+                    "1300-1400": "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d",
+                    "1400-1500": "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8",
+                    "1500-1600": "b3fbe4b8-608f-4dd6-ba2b-3aa55d589366",
+                    "1600-1700": "da575668-d928-46b9-97cb-d3057159416b",
+                    "1700-1800": "3a686720-5222-4487-a4cc-fc5710b0163f",
+                    "1800-1900": "3a686720-5222-4487-a4cc-fc5710b0163f",
+                    "1900-2000": "0af06666-0c1d-4e2b-8d34-e4e621cffac6",
+                    "2000-2100": "3a686720-5222-4487-a4cc-fc5710b0163f",
+                    "2100-2200": "de47e756-a6f8-4d7e-8fd8-c03fc67aaf2d",
+                    "2200-2300": "cce3c531-c56f-46f0-9fe7-9890ab5c6ac8",
+                    "2300-0000": "da575668-d928-46b9-97cb-d3057159416b"
                 }
             }
         }
