@@ -249,7 +249,7 @@
                     "start_freq": 103200000,
                     "start_mod": "wfm",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "dab_notch": true,
                     "rf_notch": true,
                     "waterfall_levels": {
@@ -388,6 +388,23 @@
                         "min": -85.0,
                         "max": -40.0
                     }
+                },
+                "4bd035dd-d1db-479d-a0eb-7a416dda7dbf": {
+                    "name": "DIG ADS-B 978 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -85.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 978000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 978000000,
+                    "start_mod": "adsb",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
                 },
                 "6dbabd29-5416-4a3f-8ec6-57f9b0e11e0d": {
                     "name": "DIG Tetra 390-400 MHz",
