@@ -329,7 +329,7 @@
                     "start_freq": 131475000,
                     "start_mod": "acars",
                     "tuning_step": 1,
-                    "antenna": "Antenna A",
+                    "antenna": "Antenna B",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true,

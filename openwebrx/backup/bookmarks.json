@@ -37,7 +37,7 @@
         "modulation": "am",
         "underlying": "",
         "description": "",
-        "scannable": true
+        "scannable": false
     },
     {
         "name": "Channel 4",
@@ -51,30 +51,6 @@
         "name": "AM",
         "frequency": 131700000,
         "modulation": "am",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 145000000,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 144725000,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 144775000,
-        "modulation": "packet",
         "underlying": "",
         "description": "",
         "scannable": false
@@ -131,14 +107,6 @@
         "name": "Ch",
         "frequency": 88400000,
         "modulation": "wfm",
-        "underlying": "",
-        "description": "",
-        "scannable": false
-    },
-    {
-        "name": "V",
-        "frequency": 145550000,
-        "modulation": "nfm",
         "underlying": "",
         "description": "",
         "scannable": false
@@ -469,94 +437,6 @@
         "modulation": "wfm",
         "underlying": "",
         "description": "AlOula",
-        "scannable": false
-    },
-    {
-        "name": "V",
-        "frequency": 145224999,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 145525022,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 145650024,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 145786000,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 144749995,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 144925035,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 144024999,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 145375042,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 1446250,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 1446250,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
-        "scannable": true
-    },
-    {
-        "name": "V",
-        "frequency": 144375032,
-        "modulation": "nfm",
-        "underlying": "",
-        "description": "",
         "scannable": false
     }
 ]
