@@ -341,7 +341,7 @@
                     "name": "DIG APRS 144.800 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -85.0,
+                        "min": -80.0,
                         "max": -40.0
                     },
                     "center_freq": 144800000,
@@ -352,13 +352,14 @@
                     "tuning_step": 1,
                     "antenna": "Antenna A",
                     "rf_notch": true,
-                    "dab_notch": true
+                    "dab_notch": true,
+                    "bias_tee": false
                 },
                 "AIS": {
                     "name": "DIG AIS 161.975 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
+                        "min": -80.0,
                         "max": -45.0
                     },
                     "center_freq": 161975000,
@@ -367,7 +368,7 @@
                     "start_mod": "ais",
                     "tuning_step": 1,
                     "antenna": "Antenna A",
-                    "bias_tee": true,
+                    "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
                 },
@@ -379,14 +380,31 @@
                     "start_mod": "adsb",
                     "tuning_step": 1,
                     "antenna": "Antenna B",
-                    "rf_notch": false,
+                    "rf_notch": true,
                     "dab_notch": true,
-                    "bias_tee": true,
+                    "bias_tee": false,
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
+                        "min": -85.0,
                         "max": -40.0
                     }
+                },
+                "6dbabd29-5416-4a3f-8ec6-57f9b0e11e0d": {
+                    "name": "DIG Tetra 390-400 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -85.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 395000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 395000000,
+                    "start_mod": "tetra",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
                 }
             }
         }
