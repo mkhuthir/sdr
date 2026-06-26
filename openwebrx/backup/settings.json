@@ -422,6 +422,23 @@
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
+                },
+                "ef569c84-a929-4bb3-89f0-4fac1c215d5e": {
+                    "name": "DIG Meshtastic 869.525MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -80.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 869525000,
+                    "samp_rate": 2000000,
+                    "start_freq": 869525000,
+                    "start_mod": "meshtastic",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
                 }
             }
         }
