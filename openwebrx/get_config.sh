@@ -1,4 +1,4 @@
 #!/usr/bin/sh
 
-cp /var/lib/openwebrx/settings.json .
-cp /var/lib/openwebrx/bookmarks.json .
+cp /var/lib/openwebrx/settings.json  backup/.
+cp /var/lib/openwebrx/bookmarks.json backup/.
