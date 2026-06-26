@@ -1,0 +1,503 @@
+{
+    "version": 8,
+    "receiver_name": "A6009SWL",
+    "receiver_location": "Sharjah, UAE",
+    "receiver_asl": 42,
+    "receiver_admin": "mkhuthir@gmail.com",
+    "bandplan_region": 1,
+    "receiver_country": "AE",
+    "receiver_gps": {
+        "lat": 25.316315309170392,
+        "lon": 55.3752251576157
+    },
+    "gps_updates": false,
+    "photo_title": "Sharjah",
+    "photo_desc": "Sharjah",
+    "max_clients": 20,
+    "max_clients_per_ip": 20,
+    "keep_files": 20,
+    "session_timeout": 0,
+    "usage_policy_url": "policy",
+    "bot_ban_enabled": true,
+    "allow_chat": true,
+    "allow_audio_recording": true,
+    "allow_center_freq_changes": true,
+    "magic_key": "",
+    "receiver_keys": [],
+    "waterfall_scheme": "GoogleTurboWaterfall",
+    "fft_fps": 15,
+    "fft_size": 4096,
+    "fft_voverlap_factor": 0.3,
+    "waterfall_levels": {
+        "min": -88.0,
+        "max": -20.0
+    },
+    "waterfall_auto_levels": {
+        "min": 3.0,
+        "max": 10.0
+    },
+    "waterfall_auto_level_default_mode": false,
+    "waterfall_auto_min_range": 50,
+    "audio_compression": "adpcm",
+    "fft_compression": "adpcm",
+    "ui_theme": "default",
+    "tuning_precision": 2,
+    "eibi_bookmarks_range": 0,
+    "repeater_range": 0,
+    "map_type": "google",
+    "google_maps_api_key": "",
+    "openweathermap_api_key": "718f7381bda08dd19c325ea5681431c7",
+    "map_position_retention_time": 7200,
+    "map_call_retention_time": 300,
+    "map_max_calls": 5,
+    "map_ignore_indirect_reports": false,
+    "map_prefer_recent_reports": true,
+    "callsign_url": "https://www.qrzcq.com/call/{}",
+    "vessel_url": "https://www.vesselfinder.com/vessels/details/{}",
+    "flight_url": "https://flightaware.com/live/flight/{}",
+    "modes_url": "https://flightaware.com/live/modes/{}/redirect",
+    "sonde_url": "https://sondehub.org/{}",
+    "sdrs": {
+        "sdrplay": {
+            "name": "RSPdx",
+            "type": "sdrplay",
+            "antenna": "Antenna A",
+            "rf_gain": "auto",
+            "profiles": {
+                "160m": {
+                    "name": "HAM 160m 1.9MHz",
+                    "center_freq": 1900000,
+                    "samp_rate": 250000,
+                    "start_freq": 1910000,
+                    "start_mod": "lsb",
+                    "tuning_step": 500
+                },
+                "80m": {
+                    "name": "HAM 80m 3.7MHz",
+                    "center_freq": 3750000,
+                    "samp_rate": 500000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb",
+                    "tuning_step": 500
+                },
+                "60m": {
+                    "name": "HAM 60m 5.3MHz",
+                    "center_freq": 5350000,
+                    "samp_rate": 250000,
+                    "start_freq": 5357000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "40m": {
+                    "name": "HAM 40m 7.1MHz",
+                    "center_freq": 7150000,
+                    "samp_rate": 500000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb",
+                    "tuning_step": 500
+                },
+                "30m": {
+                    "name": "HAM 30m 10.1MHz",
+                    "center_freq": 10125000,
+                    "samp_rate": 250000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "20m": {
+                    "name": "HAM 20m 14.1MHz",
+                    "center_freq": 14175000,
+                    "samp_rate": 500000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "17m": {
+                    "name": "HAM 17m 18.1MHz",
+                    "center_freq": 18118000,
+                    "samp_rate": 250000,
+                    "start_freq": 18110000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "15m": {
+                    "name": "HAM 15m 21.2MHz",
+                    "center_freq": 21225000,
+                    "samp_rate": 500000,
+                    "start_freq": 21220000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "12m": {
+                    "name": "HAM 12m 24.9MHz",
+                    "center_freq": 24940000,
+                    "samp_rate": 250000,
+                    "start_freq": 24950000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "10m": {
+                    "name": "HAM 10m 28.8MHz",
+                    "center_freq": 28850000,
+                    "samp_rate": 2000000,
+                    "start_freq": 29000000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "6m": {
+                    "name": "HAM 6m 52MHz",
+                    "center_freq": 52000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 53000000,
+                    "start_mod": "usb",
+                    "tuning_step": 500
+                },
+                "2m": {
+                    "name": "HAM 2m 146MHz",
+                    "center_freq": 146000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 147000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000
+                },
+                "125cm": {
+                    "name": "HAM 1.25m 223.5MHz",
+                    "center_freq": 223500000,
+                    "samp_rate": 4000000,
+                    "start_freq": 224000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000
+                },
+                "HAM 70cm 443.5MHz": {
+                    "name": "HAM 70cm 443.5MHz",
+                    "center_freq": 443500000,
+                    "samp_rate": 4000000,
+                    "start_freq": 444000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 5000
+                },
+                "am": {
+                    "name": "BC AM 1.1 MHz",
+                    "center_freq": 1100000,
+                    "samp_rate": 1000000,
+                    "start_freq": 1300000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "49m": {
+                    "name": "BC 49m 6MHz",
+                    "center_freq": 6050000,
+                    "samp_rate": 500000,
+                    "start_freq": 6070000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "41m": {
+                    "name": "BC 41m 7.3MHz",
+                    "center_freq": 7325000,
+                    "samp_rate": 250000,
+                    "start_freq": 7320000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "31m": {
+                    "name": "BC 31m 9.6MHz",
+                    "center_freq": 9650000,
+                    "samp_rate": 500000,
+                    "start_freq": 9700000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "25m": {
+                    "name": "BC 25m 11.8MHz",
+                    "center_freq": 11850000,
+                    "samp_rate": 500000,
+                    "start_freq": 12000000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "22m": {
+                    "name": "BC 22m 13.7MHz",
+                    "center_freq": 13720000,
+                    "samp_rate": 500000,
+                    "start_freq": 13800000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "FM87-97": {
+                    "name": "BC FM 87-97 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -90.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 92000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 85000000,
+                    "start_mod": "wfm",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF"
+                },
+                "FM97-107": {
+                    "name": "BC FM 97-107 MHz",
+                    "center_freq": 102000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 103200000,
+                    "start_mod": "wfm",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "dab_notch": true,
+                    "rf_notch": false,
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "bias_tee": false,
+                    "rfgain_sel": 4
+                },
+                "FM98-108": {
+                    "name": "BC FM 98-108 MHz",
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 103500000,
+                    "samp_rate": 10000000,
+                    "start_freq": 103200000,
+                    "start_mod": "wfm",
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "rfgain_sel": 7
+                },
+                "cb": {
+                    "name": "Rad CB 11m 27MHz",
+                    "center_freq": 27000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 26965000,
+                    "start_mod": "am",
+                    "tuning_step": 5000
+                },
+                "Airband": {
+                    "name": "Rad Airband 118-137MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -65.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 120000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 120000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "hdr_ctrl": false
+                },
+                "Marine": {
+                    "name": "Rad Marine  156-162 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -85.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 159000000,
+                    "samp_rate": 8000000,
+                    "start_freq": 156800000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": true,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "ACARS": {
+                    "name": "DIG ACARS 131.475MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -65.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 131475000,
+                    "samp_rate": 1000000,
+                    "start_freq": 131475000,
+                    "start_mod": "acars",
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "hdr_ctrl": true,
+                    "rfgain_sel": 0,
+                    "agc_setpoint": -10
+                },
+                "APRS": {
+                    "name": "DIG APRS 144.800 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -85.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 144800000,
+                    "samp_rate": 1000000,
+                    "start_freq": 144800000,
+                    "start_mod": "packet",
+                    "initial_nr_level": 0,
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "AIS": {
+                    "name": "DIG AIS 161.975 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -45.0
+                    },
+                    "center_freq": 161975000,
+                    "samp_rate": 1000000,
+                    "start_freq": 161975000,
+                    "start_mod": "ais",
+                    "tuning_step": 1,
+                    "antenna": "Antenna A",
+                    "bias_tee": true,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "ADS-B": {
+                    "name": "DIG ADS-B 1090 MHz",
+                    "center_freq": 1090000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 1090000000,
+                    "start_mod": "adsb",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "rf_notch": false,
+                    "dab_notch": true,
+                    "bias_tee": true,
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    }
+                }
+            }
+        }
+    },
+    "aprs_igate_enabled": true,
+    "aprs_callsign": "A6009SWL",
+    "aprs_igate_server": "asia.aprs2.net",
+    "aprs_igate_password": "27899",
+    "aprs_igate_beacon": true,
+    "aprs_igate_symbol": "R&",
+    "aprs_igate_comment": "Muth-OpenWebRX+ APRS ",
+    "pskreporter_enabled": true,
+    "pskreporter_callsign": "A6009SWL",
+    "wsprnet_enabled": true,
+    "wsprnet_callsign": "A6009SWL",
+    "aisreporter_enabled": true,
+    "aisreporter_udp_hosts": "ais.vesselfinder.com",
+    "aisreporter_udp_ports": "6919",
+    "mqtt_enabled": false,
+    "report_clients": false,
+    "report_radio": false,
+    "mqtt_host": "localhost",
+    "mqtt_use_ssl": false,
+    "mqtt_chat": false,
+    "mqtt_aircraft": false,
+    "mqtt_ais": false,
+    "mqtt_aprs": false,
+    "mqtt_wsjt": false,
+    "mqtt_sonde": false,
+    "rig_enabled": false,
+    "rig_model": 2,
+    "rig_device": "127.0.0.1:4533",
+    "rig_address": 0,
+    "services_enabled": true,
+    "services_decoders": [
+        "packet"
+    ],
+    "pskreporter_rig_information": "RPi5 with RSPdx",
+    "aprs_igate_height": "42",
+    "aprs_igate_gain": "4",
+    "geoip_url": "https://www.geolocation.com/?ip={}#ipresult",
+    "pskreporter_antenna_information": "Dipole",
+    "squelch_auto_margin": 10,
+    "digimodes_fft_size": 2048,
+    "ssb_agc_profile": "Fast",
+    "am_agc_profile": "Slow",
+    "nfm_agc_profile": "Slow",
+    "dab_output_rate": 48000,
+    "wfm_deemphasis_tau": 5e-05,
+    "wfm_rds_rbds": true,
+    "cw_showcw": true,
+    "dsc_show_errors": true,
+    "ism_report_levels": true,
+    "digital_voice_dmr_id_lookup": true,
+    "digital_voice_nxdn_id_lookup": true,
+    "rec_squelch": 20,
+    "rec_hang_time": 1000,
+    "rec_produce_silence": false,
+    "adsb_ttl": 900,
+    "vdl2_ttl": 1800,
+    "hfdl_ttl": 1800,
+    "acars_ttl": 1800,
+    "paging_charset": "US",
+    "paging_filter": true,
+    "fax_lpm": 120,
+    "fax_min_length": 200,
+    "fax_max_length": 1500,
+    "fax_postprocess": true,
+    "fax_color": false,
+    "fax_am": false,
+    "image_compress": true,
+    "image_compress_level": "7",
+    "image_compress_filter": "5",
+    "image_quantize": false,
+    "image_quantize_colors": "256",
+    "decoding_queue_workers": 2,
+    "decoding_queue_length": 10,
+    "wsjt_decoding_depth": 3,
+    "wsjt_decoding_depths": {
+        "ft4": 3,
+        "ft8": 3,
+        "wspr": 3
+    },
+    "js8_decoding_depth": 3,
+    "js8_enabled_profiles": [
+        "normal",
+        "slow"
+    ],
+    "fst4_enabled_intervals": [
+        15,
+        30
+    ],
+    "fst4w_enabled_intervals": [
+        120,
+        300
+    ],
+    "q65_enabled_combinations": [
+        "A30",
+        "C60",
+        "E120"
+    ],
+    "sondehub_enabled": true,
+    "sondehub_callsign": "A6009SWL",
+    "sondehub_antenna": "Dipole",
+    "vdl2_ignore_acks": false,
+    "acars_ignore_acks": false,
+    "lorawan_bw": "7",
+    "meshtastic_bw": "8",
+    "meshcore_bw": "6",
+    "meshcom_bw": "8"
+}
