@@ -440,7 +440,17 @@
                     "rf_notch": true,
                     "dab_notch": true
                 }
-            }
+            },
+            "scheduler": {
+                "type": "static",
+                "schedule": {
+                    "0000-0000": "12m"
+                }
+            },
+            "services": true,
+            "always-on": true,
+            "rf_notch": true,
+            "dab_notch": true
         }
     },
     "aprs_igate_enabled": true,
