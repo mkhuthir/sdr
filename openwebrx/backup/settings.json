@@ -249,14 +249,15 @@
                     "start_freq": 103200000,
                     "start_mod": "wfm",
                     "tuning_step": 1,
-                    "antenna": "Antenna A",
+                    "antenna": "Antenna B",
                     "dab_notch": true,
                     "rf_notch": true,
                     "waterfall_levels": {
                         "min": -70.0,
                         "max": 0.0
                     },
-                    "bias_tee": false
+                    "bias_tee": false,
+                    "if_mode": "Zero-IF"
                 },
                 "FM98-108": {
                     "name": "BC FM 98-108 MHz",
