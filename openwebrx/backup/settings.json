@@ -26,7 +26,7 @@
     "receiver_keys": [],
     "waterfall_scheme": "GoogleTurboWaterfall",
     "fft_fps": 15,
-    "fft_size": 4096,
+    "fft_size": 16384,
     "fft_voverlap_factor": 0.3,
     "waterfall_levels": {
         "min": -88.0,
@@ -422,7 +422,47 @@
                     "antenna": "Antenna B",
                     "bias_tee": false,
                     "rf_notch": true,
-                    "dab_notch": true
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF",
+                    "agc_setpoint": -10
+                },
+                "8afcaf9b-791c-4fe9-8907-56674d15abee": {
+                    "name": "DIG Tetra 450-460 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -85.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 455000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 455000000,
+                    "start_mod": "tetra",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF",
+                    "agc_setpoint": -10
+                },
+                "d249b03a-56a8-4b8a-9d22-81dabe8da8f7": {
+                    "name": "DIG Tetra 460-470 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -85.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 465000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 465000000,
+                    "start_mod": "tetra",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true,
+                    "if_mode": "Zero-IF",
+                    "agc_setpoint": -10
                 },
                 "ef569c84-a929-4bb3-89f0-4fac1c215d5e": {
                     "name": "DIG Meshtastic 869.525MHz",
@@ -485,7 +525,10 @@
     "rig_address": 0,
     "services_enabled": true,
     "services_decoders": [
-        "packet"
+        "ft4",
+        "ft8",
+        "packet",
+        "wspr"
     ],
     "pskreporter_rig_information": "RPi5 with RSPdx",
     "aprs_igate_height": "42",
