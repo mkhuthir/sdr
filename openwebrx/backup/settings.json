@@ -300,7 +300,7 @@
                     "name": "BC FM 87-97 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -70.0,
+                        "min": -80.0,
                         "max": 0.0
                     },
                     "center_freq": 92000000,
@@ -326,7 +326,7 @@
                     "dab_notch": true,
                     "rf_notch": true,
                     "waterfall_levels": {
-                        "min": -70.0,
+                        "min": -80.0,
                         "max": 0.0
                     },
                     "bias_tee": false,
@@ -336,7 +336,7 @@
                 "FM98-108": {
                     "name": "BC FM 98-108 MHz",
                     "waterfall_levels": {
-                        "min": -70.0,
+                        "min": -80.0,
                         "max": 0.0
                     },
                     "center_freq": 103500000,
