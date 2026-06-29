@@ -587,6 +587,142 @@
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
+                },
+                "ef7c4db2-a41b-4ccc-91a4-4fe2b65fa6f3": {
+                    "name": "DIG HFDL 21.982 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 21982000,
+                    "samp_rate": 1000000,
+                    "start_freq": 21982000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "e3f6d3ca-2f15-464b-b17d-973354c2aa7d": {
+                    "name": "DIG HFDL 17.967 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 17967000,
+                    "samp_rate": 1000000,
+                    "start_freq": 17967000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "d3784b30-b66f-4847-b63b-76e8f0c9cd63": {
+                    "name": "DIG HFDL 13.312 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 13312000,
+                    "samp_rate": 1000000,
+                    "start_freq": 13312000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "caae7ceb-3a34-4e2b-a000-6a64bdd96697": {
+                    "name": "DIG HFDL 10.030 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 10030000,
+                    "samp_rate": 1000000,
+                    "start_freq": 10030000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "24ebda6e-ce5c-49bf-8e12-737c81b00dea": {
+                    "name": "DIG HFDL 8.885 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 8885000,
+                    "samp_rate": 1000000,
+                    "start_freq": 8885000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "c06ba359-acef-4e36-bbe6-a7208ff6a6c2": {
+                    "name": "DIG HFDL 6.646 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 6646000,
+                    "samp_rate": 1000000,
+                    "start_freq": 6646000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "666d32c5-5308-4559-ae9c-03be34fc3029": {
+                    "name": "DIG HFDL 5.544 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 5544000,
+                    "samp_rate": 1000000,
+                    "start_freq": 5544000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
+                },
+                "512c9bdf-890b-442a-99a3-163816f6036d": {
+                    "name": "DIG HFDL 2.986 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -100.0,
+                        "max": -40.0
+                    },
+                    "center_freq": 2986000,
+                    "samp_rate": 1000000,
+                    "start_freq": 2986000,
+                    "start_mod": "hfdl",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": true
                 }
             },
             "scheduler": {
