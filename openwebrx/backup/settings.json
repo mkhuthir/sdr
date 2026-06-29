@@ -70,7 +70,11 @@
                     "samp_rate": 250000,
                     "start_freq": 1910000,
                     "start_mod": "lsb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "80m": {
                     "name": "HAM 80m 3.7MHz",
@@ -174,7 +178,11 @@
                     "samp_rate": 4000000,
                     "start_freq": 444000000,
                     "start_mod": "nfm",
-                    "tuning_step": 5000
+                    "tuning_step": 5000,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "am": {
                     "name": "BC AM 1.1 MHz",
@@ -485,7 +493,7 @@
             "scheduler": {
                 "type": "static",
                 "schedule": {
-                    "0000-0000": "12m"
+                    "0000-0000": "20m"
                 }
             },
             "services": true,
