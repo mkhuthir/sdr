@@ -82,7 +82,11 @@
                     "samp_rate": 500000,
                     "start_freq": 3570000,
                     "start_mod": "lsb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "60m": {
                     "name": "HAM 60m 5.3MHz",
@@ -90,7 +94,11 @@
                     "samp_rate": 250000,
                     "start_freq": 5357000,
                     "start_mod": "usb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "40m": {
                     "name": "HAM 40m 7.1MHz",
@@ -98,7 +106,11 @@
                     "samp_rate": 500000,
                     "start_freq": 7070000,
                     "start_mod": "lsb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "30m": {
                     "name": "HAM 30m 10.1MHz",
@@ -106,7 +118,11 @@
                     "samp_rate": 250000,
                     "start_freq": 10142000,
                     "start_mod": "usb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "20m": {
                     "name": "HAM 20m 14.1MHz",
@@ -130,7 +146,11 @@
                     "samp_rate": 500000,
                     "start_freq": 21220000,
                     "start_mod": "usb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "12m": {
                     "name": "HAM 12m 24.9MHz",
@@ -138,7 +158,11 @@
                     "samp_rate": 250000,
                     "start_freq": 24950000,
                     "start_mod": "usb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "10m": {
                     "name": "HAM 10m 28.8MHz",
@@ -146,7 +170,11 @@
                     "samp_rate": 2000000,
                     "start_freq": 29000000,
                     "start_mod": "usb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "6m": {
                     "name": "HAM 6m 52MHz",
@@ -154,7 +182,11 @@
                     "samp_rate": 4000000,
                     "start_freq": 53000000,
                     "start_mod": "usb",
-                    "tuning_step": 500
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "2m": {
                     "name": "HAM 2m 146MHz",
@@ -162,7 +194,11 @@
                     "samp_rate": 10000000,
                     "start_freq": 147000000,
                     "start_mod": "nfm",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "125cm": {
                     "name": "HAM 1.25m 223.5MHz",
@@ -170,7 +206,11 @@
                     "samp_rate": 4000000,
                     "start_freq": 224000000,
                     "start_mod": "nfm",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "HAM 70cm 443.5MHz": {
                     "name": "HAM 70cm 443.5MHz",
@@ -178,7 +218,7 @@
                     "samp_rate": 4000000,
                     "start_freq": 444000000,
                     "start_mod": "nfm",
-                    "tuning_step": 5000,
+                    "tuning_step": 500,
                     "waterfall_levels": {
                         "min": -70.0,
                         "max": 0.0
@@ -190,7 +230,11 @@
                     "samp_rate": 1000000,
                     "start_freq": 1300000,
                     "start_mod": "am",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "49m": {
                     "name": "BC 49m 6MHz",
@@ -198,7 +242,11 @@
                     "samp_rate": 500000,
                     "start_freq": 6070000,
                     "start_mod": "am",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "41m": {
                     "name": "BC 41m 7.3MHz",
@@ -206,7 +254,11 @@
                     "samp_rate": 250000,
                     "start_freq": 7320000,
                     "start_mod": "am",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "31m": {
                     "name": "BC 31m 9.6MHz",
@@ -214,7 +266,11 @@
                     "samp_rate": 500000,
                     "start_freq": 9700000,
                     "start_mod": "am",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "25m": {
                     "name": "BC 25m 11.8MHz",
@@ -222,7 +278,11 @@
                     "samp_rate": 500000,
                     "start_freq": 12000000,
                     "start_mod": "am",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "22m": {
                     "name": "BC 22m 13.7MHz",
@@ -230,7 +290,11 @@
                     "samp_rate": 500000,
                     "start_freq": 13800000,
                     "start_mod": "am",
-                    "tuning_step": 5000
+                    "tuning_step": 500,
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "FM87-97": {
                     "name": "BC FM 87-97 MHz",
