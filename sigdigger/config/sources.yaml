@@ -1,33 +1,14 @@
 %TAG ! tag:actinid.org,2022:suscan:
 ---
 - !source_config
-  type: soapysdr
-  format: AUTO
-  label: Default source
-  antenna: RX
-  freq: 433920000.0000000000000000
-  lnb_freq: 0.0000000000000000
-  bandwidth: 1000000.00000000
-  iq_balance: false
-  dc_remove: true
-  ppm: 12.00000000
-  start_time: 1782835279.111721
-  loop: true
-  samp_rate: 1000000
-  average: 1
-  channel: 0
-  device:
-    uri: local://soapysdr/audio
-    params: {}
-  gains: {}
-- !source_config
-  type: file
+  type: FILE
   format: WAV
-  label: My FT8
+  label: FT8
   path: /home/mkhuthir/rfdata/FT8/SDRuno_20200904_135545Z_7076kHz.wav
   antenna: RX
-  freq: 7076000.0000000000000000
-  lnb_freq: 0.0000000000000000
+  interface: local
+  freq: 7076000.00000000
+  lnb_freq: 0.00000000
   bandwidth: 1000000.00000000
   iq_balance: false
   dc_remove: true
@@ -37,28 +18,5 @@
   samp_rate: 62500
   average: 1
   channel: 0
-  device:
-    uri: local://soapysdr/audio
-    params: {}
-  gains: {}
-- !source_config
-  type: file
-  format: WAV
-  label: My FT8
-  path: /home/mkhuthir/rfdata/FT8/SDRuno_20200904_135545Z_7076kHz.wav
-  antenna: RX
-  freq: 7076000.0000000000000000
-  lnb_freq: 0.0000000000000000
-  bandwidth: 1000000.00000000
-  iq_balance: false
-  dc_remove: true
-  ppm: 12.00000000
-  start_time: 1599227745.000000
-  loop: true
-  samp_rate: 62500
-  average: 1
-  channel: 0
-  device:
-    uri: local://soapysdr/audio
-    params: {}
+  sdr_args: {}
   gains: {}
