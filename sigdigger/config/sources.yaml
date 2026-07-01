@@ -1,14 +1,13 @@
 %TAG ! tag:actinid.org,2022:suscan:
 ---
 - !source_config
-  type: FILE
+  type: file
   format: WAV
   label: FT8
   path: /home/mkhuthir/rfdata/FT8/SDRuno_20200904_135545Z_7076kHz.wav
   antenna: RX
-  interface: local
-  freq: 7076000.00000000
-  lnb_freq: 0.00000000
+  freq: 7076000.0000000000000000
+  lnb_freq: 0.0000000000000000
   bandwidth: 1000000.00000000
   iq_balance: false
   dc_remove: true
@@ -18,5 +17,7 @@
   samp_rate: 62500
   average: 1
   channel: 0
-  sdr_args: {}
+  device:
+    uri: local://soapysdr/
+    params: {}
   gains: {}

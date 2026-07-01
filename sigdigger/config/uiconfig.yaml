@@ -7,19 +7,21 @@
   x: 50
   y: 69
   fullScreen: false
-  sidePanelRatio: 2.352625937834940950e-01
+  sidePanelRatio: 2.320471596998928132e-01
   disableHighRateWarning: false
+  disableConnectionQualityWarning: false
   loFreq: -10828
-  bandwidth: 0
+  bandwidth: 2083
+  lastLoadedFile:
+  mainWindowState: AAAA/wAAAAD9AAAAAAAAB04AAANqAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAgAAAAQAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAALgBJAG4AcwBwAFQAbwBvAGwAVwBpAGQAZwBlAHQAOgA6AEEAYwB0AGkAbwBuAHMBAAAAkv////8AAAAAAAAAAAAAACgAQQB1AGQAaQBvAFcAaQBkAGcAZQB0ADoAOgBBAGMAdABpAG8AbgBzAQAAASb/////AAAAAAAAAAAAAAAWAGgAZQBsAHAAVABvAG8AbABCAGEAcgEAAAH8/////wAAAAAAAAAAAAAAAgAAAAIAAAAgAFMAbwB1AHIAYwBlAFQAaQBtAGUAVwBpAGQAZwBlAHQAAAAAAP////8AAAAAAAAAAAAAACIAVABpAG0AZQBTAGwAaQBkAGUAcgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
   source: !source_config
-    type: FILE
+    type: file
     format: WAV
     label: My FT8
     path: /home/mkhuthir/rfdata/FT8/SDRuno_20200904_135545Z_7076kHz.wav
     antenna: RX
-    interface: local
-    freq: 7075076.00000000
-    lnb_freq: 0.00000000
+    freq: 7075076.0000000000000000
+    lnb_freq: 0.0000000000000000
     bandwidth: 62500.00000000
     iq_balance: false
     dc_remove: true
@@ -29,7 +31,9 @@
     samp_rate: 62500
     average: 1
     channel: 0
-    sdr_args: {}
+    device:
+      uri: local://soapysdr/
+      params: {}
     gains: {}
   analyzerParams: !AnalyzerParams
     channelUpdateInterval: 0.10000000
@@ -65,6 +69,13 @@
     symViewBackground: '#134529'
     selection: '#384c1a'
     filterBox: '#49b67a'
+  audio: !AudioConfig
+    devStr:
+    description:
+  remoteCtl: !RemoteControlConfig
+    host: localhost
+    port: 1234
+    enabled: false
   guiConfig: !guicfg
     useLMBdrag: false
     noLimits: false
@@ -73,6 +84,8 @@
     useGlInWindows: true
     enableMsgTTL: true
     msgTTL: 15
+    infoText:
+    infoTextColor: '#3e80d1'
   tleSourceConfig: !tlesrccfg
     autoDownloadOnStartup: false
   panoramicSpectrum: !PanoramicDialogConfig
@@ -82,8 +95,9 @@
     panRangeMin: -90.00000000
     panRangeMax: 0.00000000
     lnbFreq: 0.000000000000000000e+00
-    sampRate: 20000000
     device: Audio input (default)
+    antenna:
+    sampRate: 20000000
     strategy: Stochastic
     partitioning: Continuous
     palette: Turbo (Gqrx)
@@ -92,6 +106,8 @@
     AudioWidget: !AudioWidgetConfig
       enabled: true
       collapsed: false
+      lockToFreq: false
+      agc: fast
       demod: USB
       rate: 44100
       cutOff: 22050.00000000
@@ -112,6 +128,8 @@
       iqRev: false
       agcEnabled: false
       gainPresetEnabled: false
+      allocHistory: false
+      replayAllocationMiB: 1.000000000000000000e+02
       dataSaverConfig: !DataSaverConfig
         path: /home/mkhuthir/Downloads
       savedPresets: []
@@ -125,7 +143,7 @@
       paletteContrast: 0
       autoSquelchTriggerSNR: 10.00000000
     FFTWidget: !FFTWidgetConfig
-      collapsed: false
+      collapsed: true
       averaging: 0.45400000
       panWfRatio: 0.50000000
       peakDetect: false
@@ -136,14 +154,17 @@
       wfRangeMin: -68.00000000
       wfRangeMax: 3.00000000
       palette: Gqrx
-      zoom: 1
+      zoom: 1.00000000
       rangeLock: true
+      channels: true
       timeSpan: 0
       timeStamps: false
+      utcTimeStamps: true
       bookmarks: true
       unitName: dBFS
       zeroPoint: 0.00000000
       gain: 50.00000000
+      clickResolution: 1
     SourceTimeWidget: !SourceTimeWidget
       visible: false
     GenericInspectorFactory: !GenericInspectorConfig
