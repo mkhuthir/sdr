@@ -592,15 +592,15 @@
                     "name": "DIG HFDL 21.982 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 21982000,
                     "samp_rate": 1000000,
                     "start_freq": 21982000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -609,15 +609,15 @@
                     "name": "DIG HFDL 17.967 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 17967000,
                     "samp_rate": 1000000,
                     "start_freq": 17967000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -626,15 +626,15 @@
                     "name": "DIG HFDL 13.312 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 13312000,
                     "samp_rate": 1000000,
                     "start_freq": 13312000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -643,15 +643,15 @@
                     "name": "DIG HFDL 10.030 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 10030000,
                     "samp_rate": 1000000,
                     "start_freq": 10030000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -660,15 +660,15 @@
                     "name": "DIG HFDL 8.885 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 8885000,
                     "samp_rate": 1000000,
                     "start_freq": 8885000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -677,15 +677,15 @@
                     "name": "DIG HFDL 6.646 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 6646000,
                     "samp_rate": 1000000,
                     "start_freq": 6646000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -694,15 +694,15 @@
                     "name": "DIG HFDL 5.544 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 5544000,
                     "samp_rate": 1000000,
                     "start_freq": 5544000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -711,15 +711,15 @@
                     "name": "DIG HFDL 2.986 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -100.0,
-                        "max": -40.0
+                        "min": -65.0,
+                        "max": 0.0
                     },
                     "center_freq": 2986000,
                     "samp_rate": 1000000,
                     "start_freq": 2986000,
                     "start_mod": "hfdl",
                     "tuning_step": 1,
-                    "antenna": "Antenna B",
+                    "antenna": "Antenna A",
                     "bias_tee": false,
                     "rf_notch": true,
                     "dab_notch": true
@@ -779,7 +779,7 @@
     "geoip_url": "https://www.geolocation.com/?ip={}#ipresult",
     "pskreporter_antenna_information": "Dipole",
     "squelch_auto_margin": 10,
-    "digimodes_fft_size": 2048,
+    "digimodes_fft_size": 4096,
     "ssb_agc_profile": "Fast",
     "am_agc_profile": "Slow",
     "nfm_agc_profile": "Slow",
