@@ -1,0 +1,582 @@
+** TagInfo scan (version 4.24.7) 2021-02-26 09:56:50 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+Infineon Technologies AG
+
+# IC type:
+Unknown IC implementing ISO/IEC 14443-4
+
+# MIFARE applications:
+No known MIFARE applications found
+
+# Application information:
+Electronic identity document (MRTD)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# MIFARE memory size:
+1 kB
+* 16 sectors, with 4 blocks per sector
+* 64 blocks, with 16 bytes per block
+
+# IC detailed information:
+MIFARE Classic emulation
+
+# File Control Information:
+Default selected AID
+0x6F69840CA000000243001300000001FFA559734A06072A864886FC6B01600C060A2A864886FC6B02020101630906072A864886FC6B03640B06092A864886FC6B040105650B06092B8510864864020103660C060A2B060104012A026E01029F6E061291928902009F6501FF |oi.␌.␀␀␂C␀␓␀␀␀␁..YsJ␆␇*.H..k␁`␌␆␊*.H..k␂␂␁␁c␉␆␇*.H..k␃d␋␆␉*.H..k␄␁␅e␋␆␉+.␐.Hd␂␁␃f␌␆␊+␆␁␄␁*␂n␁␂.n␆␒...␂␀.e␁.|
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NfcA, android.nfc.tech.MifareClassic, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 65279 bytes
+* Default maximum transceive time-out: 2000 ms
+* Extended length APDUs supported
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+
+# Detailed protocol information:
+ID: 87:CB:FA:A4
+ATQA: 0x0400
+SAK: 0x28
+ATS: 0x0F787795028065A20131013D72D64100
+* Max. accepted frame size: 256 bytes (FSCI: 8)
+* Supported receive rates:
+	- 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+* Supported send rates:
+	- 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+* Different send and receive rates supported
+* SFGT: 9.666 ms  (SFGI: 5)
+* FWT: 154.7 ms  (FWI: 9)
+* NAD not supported
+* CID supported
+* Historical bytes: 0x8065A20131013D72D641 |.e.␁1␁=r.A|
+
+# MIFARE memory content:
+Sector 0 (0x00)
+[00] r--  87 CB FA A4 12 28 04 00 0C 00 00 00 00 00 00 00 |....␒(␄␀␌␀␀␀␀␀␀␀|
+[01] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[02] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[03] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 1 (0x01)
+[04] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[05] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[06] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[07] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 2 (0x02)
+[08] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[09] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 3 (0x03)
+[0C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 4 (0x04)
+[10] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[11] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[12] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[13] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 5 (0x05)
+[14] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[15] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[16] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[17] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 6 (0x06)
+[18] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[19] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 7 (0x07)
+[1C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 8 (0x08)
+[20] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[21] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[22] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[23] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 9 (0x09)
+[24] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[25] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[26] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[27] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 10 (0x0A)
+[28] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[29] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 11 (0x0B)
+[2C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 12 (0x0C)
+[30] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[31] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[32] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[33] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 13 (0x0D)
+[34] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[35] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[36] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[37] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 14 (0x0E)
+[38] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[39] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 15 (0x0F)
+[3C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+r/R=read, w/W=write, i/I=increment,
+d=decr/transfer/restore, x=r+w, X=R+W
+data block: r/w/i/d:key A|B, R/W/I:key B only,
+  I/i implies d, *=value block
+trailer (order: key A, AC, key B): r/w:key A,
+  W:key B, R:key A|B, (r)=readable key
+AC: W implies R+r, R implies r
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:56:43 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+Infineon Technologies AG
+
+# IC type:
+Unknown IC implementing ISO/IEC 14443-4
+
+# MIFARE applications:
+No known MIFARE applications found
+
+# Application information:
+Electronic identity document (MRTD)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# MIFARE memory size:
+1 kB
+* 16 sectors, with 4 blocks per sector
+* 64 blocks, with 16 bytes per block
+
+# IC detailed information:
+MIFARE Classic emulation
+
+# File Control Information:
+Default selected AID
+0x6F69840CA000000243001300000001FFA559734A06072A864886FC6B01600C060A2A864886FC6B02020101630906072A864886FC6B03640B06092A864886FC6B040105650B06092B8510864864020103660C060A2B060104012A026E01029F6E061291928902009F6501FF |oi.␌.␀␀␂C␀␓␀␀␀␁..YsJ␆␇*.H..k␁`␌␆␊*.H..k␂␂␁␁c␉␆␇*.H..k␃d␋␆␉*.H..k␄␁␅e␋␆␉+.␐.Hd␂␁␃f␌␆␊+␆␁␄␁*␂n␁␂.n␆␒...␂␀.e␁.|
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NfcA, android.nfc.tech.MifareClassic, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 65279 bytes
+* Default maximum transceive time-out: 2000 ms
+* Extended length APDUs supported
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+
+# Detailed protocol information:
+ID: F1:1E:68:A3
+ATQA: 0x0400
+SAK: 0x28
+ATS: 0x0F787795028065A20131013D72D64100
+* Max. accepted frame size: 256 bytes (FSCI: 8)
+* Supported receive rates:
+	- 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+* Supported send rates:
+	- 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+* Different send and receive rates supported
+* SFGT: 9.666 ms  (SFGI: 5)
+* FWT: 154.7 ms  (FWI: 9)
+* NAD not supported
+* CID supported
+* Historical bytes: 0x8065A20131013D72D641 |.e.␁1␁=r.A|
+
+# MIFARE memory content:
+Sector 0 (0x00)
+[00] r--  F1 1E 68 A3 24 28 04 00 0C 00 00 00 00 00 00 00 |.␞h.$(␄␀␌␀␀␀␀␀␀␀|
+[01] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[02] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[03] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 1 (0x01)
+[04] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[05] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[06] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[07] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 2 (0x02)
+[08] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[09] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 3 (0x03)
+[0C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 4 (0x04)
+[10] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[11] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[12] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[13] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 5 (0x05)
+[14] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[15] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[16] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[17] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 6 (0x06)
+[18] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[19] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 7 (0x07)
+[1C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 8 (0x08)
+[20] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[21] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[22] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[23] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 9 (0x09)
+[24] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[25] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[26] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[27] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 10 (0x0A)
+[28] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[29] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 11 (0x0B)
+[2C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 12 (0x0C)
+[30] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[31] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[32] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[33] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 13 (0x0D)
+[34] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[35] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[36] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[37] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 14 (0x0E)
+[38] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[39] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 15 (0x0F)
+[3C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+r/R=read, w/W=write, i/I=increment,
+d=decr/transfer/restore, x=r+w, X=R+W
+data block: r/w/i/d:key A|B, R/W/I:key B only,
+  I/i implies d, *=value block
+trailer (order: key A, AC, key B): r/w:key A,
+  W:key B, R:key A|B, (r)=readable key
+AC: W implies R+r, R implies r
+
+--------------------------------------
+
+
+====================================
+** TagInfo scan (version 4.24.7) 2021-02-26 09:56:34 **
+Report Type: External
+
+-- IC INFO ------------------------------
+
+# IC manufacturer:
+Infineon Technologies AG
+
+# IC type:
+Unknown IC implementing ISO/IEC 14443-4
+
+# MIFARE applications:
+No known MIFARE applications found
+
+# Application information:
+Electronic identity document (MRTD)
+
+-- NDEF ------------------------------
+
+# No NDEF data storage populated:
+
+-- EXTRA ------------------------------
+
+# MIFARE memory size:
+1 kB
+* 16 sectors, with 4 blocks per sector
+* 64 blocks, with 16 bytes per block
+
+# IC detailed information:
+MIFARE Classic emulation
+
+# File Control Information:
+Default selected AID
+0x6F69840CA000000243001300000001FFA559734A06072A864886FC6B01600C060A2A864886FC6B02020101630906072A864886FC6B03640B06092A864886FC6B040105650B06092B8510864864020103660C060A2B060104012A026E01029F6E061291928902009F6501FF |oi.␌.␀␀␂C␀␓␀␀␀␁..YsJ␆␇*.H..k␁`␌␆␊*.H..k␂␂␁␁c␉␆␇*.H..k␃d␋␆␉*.H..k␄␁␅e␋␆␉+.␐.Hd␂␁␃f␌␆␊+␆␁␄␁*␂n␁␂.n␆␒...␂␀.e␁.|
+
+-- FULL SCAN ------------------------------
+
+# Technologies supported:
+ISO/IEC 7816-4 compatible
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible
+
+# Android technology information:
+Tag description:
+* TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NfcA, android.nfc.tech.MifareClassic, android.nfc.tech.NdefFormatable]
+* Maximum transceive length: 65279 bytes
+* Default maximum transceive time-out: 2000 ms
+* Extended length APDUs supported
+* Maximum transceive length: 253 bytes
+* Default maximum transceive time-out: 618 ms
+
+# Detailed protocol information:
+ID: 97:9B:5F:96
+ATQA: 0x0400
+SAK: 0x28
+ATS: 0x0F787795028065A20131013D72D64100
+* Max. accepted frame size: 256 bytes (FSCI: 8)
+* Supported receive rates:
+	- 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+* Supported send rates:
+	- 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+* Different send and receive rates supported
+* SFGT: 9.666 ms  (SFGI: 5)
+* FWT: 154.7 ms  (FWI: 9)
+* NAD not supported
+* CID supported
+* Historical bytes: 0x8065A20131013D72D641 |.e.␁1␁=r.A|
+
+# MIFARE memory content:
+Sector 0 (0x00)
+[00] r--  97 9B 5F 96 C5 28 04 00 0C 00 00 00 00 00 00 00 |.._..(␄␀␌␀␀␀␀␀␀␀|
+[01] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[02] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[03] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 1 (0x01)
+[04] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[05] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[06] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[07] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 2 (0x02)
+[08] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[09] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 3 (0x03)
+[0C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[0F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 4 (0x04)
+[10] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[11] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[12] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[13] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 5 (0x05)
+[14] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[15] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[16] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[17] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 6 (0x06)
+[18] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[19] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 7 (0x07)
+[1C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[1F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 8 (0x08)
+[20] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[21] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[22] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[23] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 9 (0x09)
+[24] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[25] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[26] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[27] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 10 (0x0A)
+[28] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[29] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 11 (0x0B)
+[2C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[2F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 12 (0x0C)
+[30] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[31] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[32] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[33] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 13 (0x0D)
+[34] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[35] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[36] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[37] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 14 (0x0E)
+[38] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[39] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3A] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3B] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+Sector 15 (0x0F)
+[3C] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3D] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3E] rwi  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 |␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀␀|
+[3F] wxx  FF:FF:FF:FF:FF:FF FF:07:80 69 FF:FF:FF:FF:FF:FF
+          Factory default key           Factory default key (readable)
+
+r/R=read, w/W=write, i/I=increment,
+d=decr/transfer/restore, x=r+w, X=R+W
+data block: r/w/i/d:key A|B, R/W/I:key B only,
+  I/i implies d, *=value block
+trailer (order: key A, AC, key B): r/w:key A,
+  W:key B, R:key A|B, (r)=readable key
+AC: W implies R+r, R implies r
+
+--------------------------------------
+
+
+====================================

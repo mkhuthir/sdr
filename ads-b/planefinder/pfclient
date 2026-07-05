@@ -1,0 +1,105 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          pfclient
+# Required-Start:    $local_fs $remote_fs $network $time $syslog
+# Required-Stop:     $local_fs $remote_fs $network $time $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: planefinder.net ads-b decoder
+# Description:       pfclient decodes ADS-B data and shares to planefinder.net
+### END INIT INFO
+
+. /lib/lsb/init-functions
+
+DAEMON=/usr/bin/pfclient
+
+PIDFILE=/var/run/pfclient.pid
+LOGFILE=/var/log/pfclient
+CONFIGFILE=/etc/pfclient-config.json
+
+get_pid() 
+{
+    cat "$PIDFILE"
+}
+
+is_running() 
+{
+    [ -f "$PIDFILE" ] && ps `get_pid` > /dev/null 2>&1
+}
+
+start() 
+{
+  log_daemon_msg "Starting pfclient" "pfclient"
+  log_daemon_msg ""
+
+  if [ ! -d /var/log/pfclient ]; then
+      mkdir /var/log/pfclient
+  fi
+
+  start-stop-daemon --start --exec $DAEMON -- -d -i $PIDFILE -z $CONFIGFILE -y $LOGFILE $ 2>/var/log/pfclient/error.log 
+
+  status=$?
+  log_end_msg $status
+}
+
+stop() {
+ log_daemon_msg "Stopping pfclient" "pfclient"
+ log_daemon_msg ""
+
+ PFPID=`cat ${PIDFILE} 2>/dev/null`
+  
+    if [ "${PFPID}" != "" ] && [ -e "/proc/${PFPID}" ]; then
+      kill $PFPID #2>/dev/null
+      ATTEMPT=0
+      while [ -e "/proc/${PFPID}" ] && [ "${ATTEMPT}" -le 80 ]; do
+        sleep 0.25
+        ATTEMPT=$((ATTEMPT+1))
+      done
+      
+      if [ -e "/proc/${PFPID}" ]; then
+        echo "Killing all children processes"
+        pkill -9 -P ${PFPID}
+        kill -9 ${PFPID}
+      fi
+    fi
+    
+    log_end_msg $?
+    return
+}
+
+status() 
+{
+  if is_running; then
+        echo "Running"
+    else
+        echo "Stopped"
+        exit 1
+    fi
+
+  return;
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+  status
+        ;;
+    restart)
+        stop && sleep 2 && start
+        ;;
+    reload)
+  exit 3
+  ;;
+    status)
+  status_of_proc $DAEMON "pfclient"
+  ;;
+    *)
+  echo "Usage: $0 {start|stop|restart|status}"
+  exit 2
+  ;;
+esac

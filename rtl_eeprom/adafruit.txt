@@ -1,0 +1,17 @@
+Found 1 device(s):
+  0:  Generic RTL2832U OEM
+
+Using device 0: Generic RTL2832U OEM
+Found Rafael Micro R820T tuner
+
+Current configuration:
+__________________________________________
+Vendor ID:		0x0bda
+Product ID:		0x2838
+Manufacturer:		Realtek
+Product:		RTL2838UHIDIR
+Serial number:		00000001
+Serial number enabled:	yes
+IR endpoint enabled:	yes
+Remote wakeup enabled:	no
+__________________________________________

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TetraSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogFileNameRules>date \ frequency \ mcc "_" mnc "_" la</LogFileNameRules>
+  <LogEntryRules>date + time + mcc + mnc + la + cc + carrier + slot + callid + type + from + to + encryption + duplex</LogEntryRules>
+  <LogSeparator> ; </LogSeparator>
+  <LogEnabled>false</LogEnabled>
+  <BlockedLevel>0</BlockedLevel>
+  <TopMostInfo>false</TopMostInfo>
+  <NetworkBase />
+  <AutoPlay>false</AutoPlay>
+  <IgnoreEncodedSpeech>false</IgnoreEncodedSpeech>
+  <UdpEnabled>false</UdpEnabled>
+  <UdpPort>20025</UdpPort>
+  <AfcDisabled>false</AfcDisabled>
+</TetraSettings>

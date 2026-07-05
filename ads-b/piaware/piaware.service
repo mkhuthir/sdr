@@ -1,0 +1,26 @@
+# piaware uploader service for systemd
+# install in /etc/systemd/system
+
+[Unit]
+Description=FlightAware ADS-B uploader
+Documentation=https://flightaware.com/adsb/piaware/
+Wants=network-online.target
+After=dump1090-fa.service network-online.target time-sync.target
+
+[Service]
+User=piaware
+RuntimeDirectory=piaware
+ExecStart=/usr/bin/piaware -p %t/piaware/piaware.pid -plainlog -statusfile %t/piaware/status.json
+ExecReload=/bin/kill -HUP $MAINPID
+Type=simple
+Restart=on-failure
+RestartSec=30
+# exit code 4 means login failed
+# exit code 6 means startup failed (bad args or missing MAC)
+RestartPreventExitStatus=4 6
+WatchdogSec=120
+WatchdogSignal=SIGKILL
+NotifyAccess=all
+
+[Install]
+WantedBy=default.target

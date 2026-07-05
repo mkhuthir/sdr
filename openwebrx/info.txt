@@ -1,0 +1,3 @@
+/etc/openwebrx
+/var/lib/openwebrx
+

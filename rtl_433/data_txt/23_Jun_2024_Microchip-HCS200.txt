@@ -1,0 +1,87 @@
+time      : 2024-06-23 00:25:13
+model     : Microchip-HCS200                       id        : 08174100
+id_rev    : 0082E810     encrypted : DADEBE8E      encrypted_rev: 717D7B5B   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:25
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:25
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:26
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:26
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:26
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:26
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:00:26
+model     : Microchip-HCS200                       id        : 055A2200
+id_rev    : 00445AA0     encrypted : 06158CD5      encrypted_rev: AB31A860   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:03:18
+model     : Microchip-HCS200                       id        : 01A99E00
+id_rev    : 00799580     encrypted : 1805E055      encrypted_rev: AA07A018   button1   : OFF           button2   : ON            button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:20:04
+model     : Microchip-HCS200                       id        : 08FD8D00
+id_rev    : 00B1BF10     encrypted : DBE6D23A      encrypted_rev: 5C4B67DB   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:37:42
+model     : Microchip-HCS200                       id        : 0F462200
+id_rev    : 004462F0     encrypted : F14BA743      encrypted_rev: C2E5D28F   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 0
+--
+time      : 2024-06-23 01:37:42
+model     : Microchip-HCS200                       id        : 0F462200
+id_rev    : 004462F0     encrypted : F14BA743      encrypted_rev: C2E5D28F   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 0
+--
+time      : 2024-06-23 01:37:45
+model     : Microchip-HCS200                       id        : 0F462200
+id_rev    : 004462F0     encrypted : 54F6AAD0      encrypted_rev: 0B556F2A   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 0
+--
+time      : 2024-06-23 01:37:45
+model     : Microchip-HCS200                       id        : 0F462200
+id_rev    : 004462F0     encrypted : 54F6AAD0      encrypted_rev: 0B556F2A   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 0
+--
+time      : 2024-06-23 01:41:45
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 450F9A38      encrypted_rev: 1C59F0A2   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:41:45
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 450F9A38      encrypted_rev: 1C59F0A2   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 01:41:46
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : FB3538BF      encrypted_rev: FD1CACDF   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 04:36:15
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 5FFD8C70      encrypted_rev: 0E31BFFA   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 04:36:15
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 5FFD8C70      encrypted_rev: 0E31BFFA   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 04:36:15
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 5D69FC09      encrypted_rev: 903F96BA   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 04:36:15
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 5D69FC09      encrypted_rev: 903F96BA   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1
+--
+time      : 2024-06-23 04:36:16
+model     : Microchip-HCS200                       id        : 0A5A2200
+id_rev    : 00445A50     encrypted : 842686FE      encrypted_rev: 7F616421   button1   : ON            button2   : OFF           button3   : OFF           button4   : OFF           misc      :               Battery   : 1

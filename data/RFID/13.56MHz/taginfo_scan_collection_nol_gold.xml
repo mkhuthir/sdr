@@ -1,0 +1,2631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scans><scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:01:36</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:5A:0A:B2:74:49:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA6550EA20
+Production date: week 50, 2015<hexoutput> (0x5015)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:5A:0A:B2:74:49:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 6F F8 18 04 99 20 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:01:29</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:3D:68:22:4B:4A:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA7415AE50
+Production date: week 05, 2016<hexoutput> (0x0516)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:3D:68:22:4B:4A:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 71 29 E0 04 99 20 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:01:23</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:50:5C:EA:A3:49:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA7415CD00
+Production date: week 05, 2016<hexoutput> (0x0516)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:50:5C:EA:A3:49:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 6F 8F 28 04 99 20 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:01:16</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:5B:17:BA:F7:3E:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA5517E710
+Production date: week 47, 2014<hexoutput> (0x4714)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:5B:17:BA:F7:3E:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 4B 1D 28 04 A8 80 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 1500
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:01:10</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:7B:2B:9A:79:49:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA7417B390
+Production date: week 07, 2016<hexoutput> (0x0716)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:7B:2B:9A:79:49:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 6F 90 B8 04 99 20 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:01:03</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:6A:79:6A:D0:4B:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA6512AE80
+Production date: week 42, 2015<hexoutput> (0x4215)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:6A:79:6A:D0:4B:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 6F 93 90 04 99 20 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:00:57</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:2A:36:EA:A3:49:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA7415CD00
+Production date: week 05, 2016<hexoutput> (0x0516)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:2A:36:EA:A3:49:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 6F 93 D0 04 99 20 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:00:51</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:5A:57:BA:F7:3E:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA5517E710
+Production date: week 47, 2014<hexoutput> (0x4714)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:5A:57:BA:F7:3E:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 4B 1C E8 04 A8 80 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 1500
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:00:44</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:9A:3E:12:08:3B:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA54908710
+Production date: week 21, 2014<hexoutput> (0x2114)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:9A:3E:12:08:3B:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BE 35 45 C8 04 18 C0 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 1500
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:00:37</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:25:5F:9A:4A:4A:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xBA7415AE50
+Production date: week 05, 2016<hexoutput> (0x0516)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:25:5F:9A:4A:4A:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 0B BF 5A 41 10 04 98 E0 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 750
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+<scan>
+	<version>4.24.7</version>
+	<date>2021-02-26 10:00:26</date>
+	<title>NXP Semiconductors MIFARE DESFire EV1 (MF3ICD41) tag</title>
+	<uid nxp="true">04:8B:4E:B2:0B:44:80</uid>
+	<hasndef>false</hasndef>
+	<section>
+		<subsection title="IC manufacturer">
+			<block type="text">
+	<content>NXP Semiconductors</content>
+</block>
+		</subsection>
+		<subsection title="IC type">
+			<block type="text">
+	<content>MIFARE DESFire EV1 (MF3ICD41)</content>
+</block>
+		</subsection>
+		<subsection title="DESFire Applications">
+			<block type="text">
+	<content>General issuer info<hexoutput> (0xFFFFFF)</hexoutput>
+Dubai Nol application<hexoutput> (0x784000)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Application information">
+			<block type="text">
+	<content>Dubai Nol card
+‣ No value information available</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="No NDEF data storage present">
+			<block type="text">
+	<content>Maximum NDEF storage size after format: 4094 bytes</content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Memory information">
+			<block type="text">
+	<content>Size: 4 kB
+Available: 1.5 kB<hexoutput> (1504 bytes)</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="IC detailed information">
+			<block type="text">
+	<content>Capacitance: 17 pF</content>
+</block>
+		</subsection>
+		<subsection title="Version information">
+			<block type="text">
+	<content>Vendor ID: NXP<hexoutput> (0x04)</hexoutput>
+Hardware info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.0
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Software info:
+‣ Type/subtype: 0x01/0x01
+‣ Version: 1.4
+‣ Storage size: 4096 bytes<hexoutput> (0x18)</hexoutput>
+‣ Protocol: ISO/IEC 14443-4<hexoutput> (0x05)</hexoutput>
+Batch no: 0xB90C174130
+Production date: week 03, 2017<hexoutput> (0x0317)</hexoutput></content>
+</block>
+		</subsection>
+	</section>
+	<section>
+		<subsection title="Technologies supported">
+			<block type="text">
+	<content>ISO/IEC 7816-4 compatible
+Native DESFire APDU framing
+ISO/IEC 14443-4 (Type A) compatible
+ISO/IEC 14443-3 (Type A) compatible
+ISO/IEC 14443-2 (Type A) compatible</content>
+</block>
+		</subsection>
+		<subsection title="Android technology information">
+			<block type="text">
+	<content>Tag description:
+‣ TAG: Tech [android.nfc.tech.IsoDep, android.nfc.tech.NfcA, android.nfc.tech.NdefFormatable]
+‣ Maximum transceive length: 65279 bytes
+‣ Default maximum transceive time-out: 2000 ms
+‣ Extended length APDUs supported
+‣ Maximum transceive length: 253 bytes
+‣ Default maximum transceive time-out: 618 ms
+<hexoutput>MIFARE Classic support present in Android</hexoutput></content>
+</block>
+		</subsection>
+		<subsection title="Detailed protocol information">
+			<block type="text">
+	<content>ID: 04:8B:4E:B2:0B:44:80
+ATQA: 0x4403
+SAK: 0x20
+ATS: 0x06757781028000
+‣ Max. accepted frame size: 64 bytes (FSCI: 5)
+‣ Supported receive rates:
+	• 106, 212, 424, 848 kbit/s (DR: 1, 2, 4, 8)
+‣ Supported send rates:
+	• 106, 212, 424, 848 kbit/s (DS: 1, 2, 4, 8)
+‣ Different send and receive rates supported
+‣ SFGT: 604.1 µs  (SFGI: 1)
+‣ FWT: 77.33 ms  (FWI: 8)
+‣ NAD not supported
+‣ CID supported
+‣ Historical bytes: 0x80 |·|</content>
+</block>
+		</subsection>
+		<subsection title="Memory content">
+			<block type="text">
+	<content>
+Application ID 0x000000 (PICC)
+‣ Key configuration:<hexoutput> (0x0B01)</hexoutput>
+  • 1 (3)DES key
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration changeable</content>
+</block>
+<block type="text">
+	<content>
+Application ID 0xFFFFFF (General issuer info)
+‣ Key configuration:<hexoutput> (0xF201)</hexoutput>
+  • 1 (3)DES key
+  • Master key frozen
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 64 bytes
+    ◦ Communication: plain
+    ◦ Read key: free access<hexoutput> (0x0E)</hexoutput>
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ Contents:
+</content>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">0</address>
+	<data>C4 00 00 00 DF B4 00 08 50 19 E8 00 04 95 40 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">16</address>
+	<data>04 00 00 40 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">32</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="DesFire">
+	<address addrwidth="4">48</address>
+	<data>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</data>
+</block>
+<block type="text">
+	<content>
+Application ID 0x004078 (Dubai Nol application)
+‣ Key configuration:<hexoutput> (0x0304)</hexoutput>
+  • 4 (3)DES keys
+  • Master key changeable
+  • Master key required for:
+    ◦ directory list access: no
+    ◦ create/delete files: yes
+  • Configuration frozen
+  • Master key required for changing a key</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x08: Standard data, 96 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: master key<hexoutput> (0x00)</hexoutput>
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x09: Standard data, 936 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x0A: Standard data, 1792 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x07: Value data file
+    ◦ Lower limit: 0
+    ◦ Upper limit: 2147483647
+    ◦ Limited credit allowed
+    ◦ Max. limited credit value: 500
+    ◦ Communication: with MAC
+    ◦ Read key: key #3
+    ◦ Write key: key #2
+    ◦ Read/Write key: key #1
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+<block type="text">
+	<content>
+  • File ID 0x00: Backup data, 32 bytes
+    ◦ Communication: plain
+    ◦ Read key: key #3
+    ◦ Write key: blocked<hexoutput> (0x0F)</hexoutput>
+    ◦ Read/Write key: key #2
+    ◦ Change key: master key<hexoutput> (0x00)</hexoutput></content>
+</block>
+<block type="text">
+	<content>    ◦ (No access)</content>
+</block>
+		</subsection>
+	</section>
+</scan>
+</scans>

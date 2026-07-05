@@ -1,0 +1,1 @@
+{"rPiAIS001":{"destinations":[{"desc":"AISHub","host":"data.aishub.net","port":"3649"}],"device":"/dev/ttyS0","downsamplingTime":"10","duplicatesTimeWindow":true,"enabled":true,"host":["","127.0.0.1"],"inactivityTimeout":"60","location":["25.31625","55.37508"],"mode":"udp-server","noneVDM":true,"port":["","34996"],"reconnectTimeout":"15","tag":false,"verbosity":"0"}}

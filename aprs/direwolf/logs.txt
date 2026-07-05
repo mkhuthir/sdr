@@ -1,0 +1,82 @@
+Dire Wolf version 1.6
+Includes optional support for:  cm108-ptt
+
+Reading config file direwolf.conf
+Audio device for both receive and transmit: default  (channel 0)
+Channel 0: 1200 baud, AFSK 1200 & 2200 Hz, E+, 44100 sample rate.
+Note: PTT not configured for channel 0. (Ignore this if using VOX.)
+Ready to accept AGW client application 0 on port 8000 ...
+Ready to accept KISS TCP client application 0 on port 8001 ...
+
+Digipeater A68AN-10 audio level = 23(12/9)   [NONE]   ||||||||_
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A62A>APDG02,TCPIP,A65FH-10*:!2515.88ND05534.60E&RNG0012 2m Voice 145.78750MHz -1.0000MHz
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+A68AN-10 audio level = 24(12/9)   [NONE]   _|||||___
+[0.3] A68AN-10>APDW15,WIDE1-1,WIDE2-1:!2431.46N/05426.12E#PHG5180New York University Abu Dhabi
+Position, DIGI (white center), DireWolf, WB2OSZ, 25 W height=20 8dBi omni
+N 24 31.4600, E 054 26.1200
+New York University Abu Dhabi
+
+Digipeater A68AN-10 audio level = 23(11/9)   [NONE]   __||||||_
+[0.4] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A65FH>APBM1S,TCPIP,A65FH-10*:@300300z2450.58N/05501.32EQPHG0100openSPOT 436.0000/436.0000 CC1
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 22(11/9)   [NONE]   __||||||_
+[0.4] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}AD0EC-13>WX,TCPIP,A65FH-10*:;OMDB     *300200z2515.00N/05519.00E_160/003g000t095h56b09950 Weather: widespread dust Visibility: 3 mile(s):0
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 23(12/9)   [NONE]   _|||||_|_
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-1:!2450.60NI05501.33E#PHG7120[FX.25]Al Ghadeer digipeater and iGate.
+Position, OVERLAY DIGI (green star) w/overlay I, DireWolf, WB2OSZ, 49 W height=20 2dBi omni
+N 24 50.6000, E 055 01.3300
+[FX.25]Al Ghadeer digipeater and iGate.
+
+Digipeater A68AN-10 audio level = 23(12/9)   [NONE]   ||||||||_
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A61QQ>APDG02,TCPIP,A65FH-10*:!2427.09ND05443.94E&RNG0001/A=000010 440 Voice 434.45000MHz +0.0000MHz
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+A68AN-10 audio level = 23(12/9)   [NONE]   |||||||__
+[0.3] A68AN-10>APDW15,WIDE1-1,WIDE2-1::A68AN-10 :PARM.CabinetTemp,CabinetHum
+Telemetry Parameter Name Message for "A68AN-10", motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 22(11/9)   [NONE]   __||||||_
+[0.4] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A65B>APDG02,TCPIP,A65FH-10*:!2505.12ND05508.95E&RNG0001/A=000010 440 Voice 434.75000MHz -2.0000MHz
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+A68AN-10 audio level = 23(11/9)   [NONE]   ||||||||_
+[0.3] A68AN-10>APDW15,WIDE1-1,WIDE2-1::A68AN-10 :EQNS.0,0.1,0,0,1,0,0,0,0,0,0,0,0,0,0
+Telemetry Equation Coefficents Message for "A68AN-10", motorcycle, DireWolf, WB2OSZ
+
+A68AN-10 audio level = 22(11/9)   [NONE]   ||||||||_
+[0.3] A68AN-10>APDW15,WIDE1-1,WIDE2-1:T#50,451,40,0,0,0,00000000
+Telemetry, motorcycle, DireWolf, WB2OSZ
+Seq=50, CabinetTemp=45.1, CabinetHum=40, A3=0, A4=0, A5=0, D1=0, D2=0, D3=0, D4=0, D5=0, D6=0, D7=0, D8=0
+
+Digipeater A68AN-10 audio level = 23(12/8)   [NONE]   ||||||||_
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A62A>APDG03,TCPIP,A65FH-10*:!2515.88ND05534.60E&/A=0000002m MMDVM Voice 145.78750MHz -1.0000MHz, A62A_Pi-Star
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 23(11/9)   [NONE]   _||||||__
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A68AN>APDG03,TCPIP,A65FH-10*:!2431.41ND05426.07E&/A=0000002m MMDVM Voice 144.97500MHz +0.0000MHz, A68AN_Pi-Star
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 23(11/9)   [NONE]   ||||||___
+[0.2] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A62A>APDG02,TCPIP,A65FH-10*:!2515.88ND05534.60E&RNG0012 2m Voice 145.78750MHz -1.0000MHz
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 23(12/9)   [NONE]   |||||||__
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-2,NOGATE:}A65GJ>APX5GJ,TCPIP,A65FH-10*:/031302z2524.48N\05525.95E-PHG5427145.525MHz Toff -000 N30k W30k | Andre in Ajman | working, resting or maybe QRV/A=000161
+Third Party Header, motorcycle, DireWolf, WB2OSZ
+
+Digipeater A68AN-10 audio level = 24(11/9)   [NONE]   ||||||||_
+[0.3] A65FH-10>APDW16,A68AN-10*,WIDE2-1:!2450.60NI05501.33E#PHG7120[FX.25]Al Ghadeer digipeater and iGate.
+Position, OVERLAY DIGI (green star) w/overlay I, DireWolf, WB2OSZ, 49 W height=20 2dBi omni
+N 24 50.6000, E 055 01.3300
+[FX.25]Al Ghadeer digipeater and iGate.
+
+A68AN-10 audio level = 24(12/9)   [NONE]   ||||||___
+[0.2] A68AN-10>APDW15,WIDE1-1,WIDE2-1:!2431.46N/05426.12E#PHG5180New York University Abu Dhabi
+Position, DIGI (white center), DireWolf, WB2OSZ, 25 W height=20 8dBi omni
+N 24 31.4600, E 054 26.1200
+New York University Abu Dhabi

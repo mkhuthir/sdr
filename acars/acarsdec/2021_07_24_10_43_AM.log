@@ -1,0 +1,3763 @@
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:44:03.596 --------------------------------
+Mode : 2 Label : Q0 Id : 9 Nak
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S28A
+
+[#4 (F:131.725 L:-20 E:0) 24/07/2021 06:44:06.872 --------------------------------
+Mode : D Label : Q0 Id : 2 Nak
+Aircraft reg: VP-BOI Flight id: FV5734
+No: S94A
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:44:08.675 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 9
+Aircraft reg: A6-EFM 
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:44:09.656 --------------------------------
+Mode : d Label : _d Id : Y Ack : 2
+Aircraft reg: VP-BOI 
+
+[#4 (F:131.725 L:-18 E:0) 24/07/2021 06:44:10.557 --------------------------------
+Mode : D Label : 16 Id : 3 Nak
+Aircraft reg: VP-BOI Flight id: FV5734
+No: M85A
+064403,34000,1055, 305,N 27.945 E 53.633
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:44:12.607 --------------------------------
+Mode : 2 Label : Q0 Id : 0 Nak
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S29A
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:44:13.091 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 0
+Aircraft reg: A6-EPF 
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:44:13.260 --------------------------------
+Mode : d Label : _d Id : Z Ack : 3
+Aircraft reg: VP-BOI 
+
+[#1 (F:131.475 L:-14 E:0) 24/07/2021 06:44:13.910 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-ECC Flight id: EK0229
+No: F02A
+#M1BPOSN26043E055475,GABKO,064412,198,RADEB,064516,KHM,M9,03524,2491BF71
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:44:17.932 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 0
+Aircraft reg: A6-EFM 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:44:18.915 --------------------------------
+Mode : 2 Label : SA Id : 1 Nak
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S30A
+0EV064417V
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:44:24.486 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 1
+Aircraft reg: A6-EFM 
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:44:25.379 --------------------------------
+Mode : 2 Label : SQ 
+01XASHJOMSJ1ARINC
+
+[#1 (F:131.475 L:-15 E:0) 24/07/2021 06:44:30.212 --------------------------------
+Mode : 2 Label : 11 Id : 3 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: M10A
+OUT01UAE209    /24240644OMDBLGAV
+0644 39906400641
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:44:34.554 --------------------------------
+Mode : 2 Label : SQ 
+01XADXBOMDB1ARINC
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:44:35.373 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 3
+Aircraft reg: A6-EGE 
+
+[#4 (F:131.725 L: -8 E:0) 24/07/2021 06:44:43.407 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:44:43.817 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:44:43.655 --------------------------------
+Mode : 2 Label : RA Id : Q Nak
+Aircraft reg: A6-ENH 
+QUDXBEGEK~1DIS01240644
+LOADSHEET
+FINAL01 EK123/24    DXBIST A6ENH 24JUL21
+CREW   3/13  PAX  42/276         TTL 328
+ZFW  206753  MAX   237682L
+TOF   36800
+TOW  243553  MAX   335000
+TIF   28100
+LAW  215453  MAX   2
+ETB
+
+[#5 (F:131.825 L:-20 E:0) 24/07/2021 06:44:45.621 --------------------------------
+Mode : 2 Label : _d Id : 0 Ack : Q
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S97A
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:44:47.012 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:44:47.259 --------------------------------
+Mode : 2 Label : 17 Id : 3 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: M30A
+ENT01UAE392    /24240644OMDBVVTS
+0644
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:44:47.743 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#4 (F:131.725 L:-17 E:0) 24/07/2021 06:44:47.831 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:44:50.700 --------------------------------
+Mode : 2 Label : RA Id : R Nak
+Aircraft reg: A6-ENH 
+51290
+BALANCE AND SEATING
+DOW    171506   DOI       36.7
+LIZFW    41.2   MACZFW    25.4
+LITOW    42.5   MACTOW    26.7
+A35.B111.C89.D83.               PW 22624
+0/0 1/666 2/4028 3/6086 4/1438 
+5/405                
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:44:51.683 --------------------------------
+Mode : 2 Label : H1 Id : J Nak
+Aircraft reg: A6-ECM 
+.DXBEGEK 240644
+CFD
+AN A6-ECM/FI EK358/MA 913A
+- #CFEFFDE
+
+[#5 (F:131.825 L:-20 E:0) 24/07/2021 06:44:52.666 --------------------------------
+Mode : 2 Label : _d Id : 1 Ack : R
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S98A
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:44:52.994 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 3
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:44:53.158 --------------------------------
+Mode : 2 Label : _d Id : 7 Ack : J
+Aircraft reg: A6-ECM Flight id: EK0358
+No: S85A
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:44:54.796 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C39A
+#CFBEFFDE 1 24JUL21 0644 EKA6-ECM UAE358 OMDB/WIII 3115-BCG-00W-17 L
+NCMM
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+MSG 3140202 A
+DB ACMF IN RIGHT AIMS
+MSG 3254361 A
+DB TIRE PRESSURE CHANNE
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:44:59.789 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 8
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-20 E:0) 24/07/2021 06:45:00.122 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : S
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S99A
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:45:00.776 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C39B
+#CFBL
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+EOR
+
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:45:05.609 --------------------------------
+Mode : 2 Label : RA Id : T Nak
+Aircraft reg: A6-ENH 
+NOTOC: NO
+CHKD BY LIC15681.NAEEM
+WEIGHT REPORT : 202B
+LP ED 01
+SERVICE WEIGHT ADJUSTMENT WEIGHT/INDEX
+ADD
+NIL
+DEDUCTIONS
+NIL
+PANTRY CODE  H  
+END OF LOADSHEET
+
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:45:06.511 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 9
+Aircraft reg: A6-ECM 
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:45:06.754 --------------------------------
+Mode : D Label : H1 Id : 6 Nak
+Aircraft reg: VP-CXN Flight id: XY0000
+No: C01A
+#CFBSMD
+          APU
+      SERVICE DATA
+        S/N : P4236       
+
+      HOURS : 24203  
+     CYCLES : 26682 
+
+
+  OIL LEVEL : OK 
+
+                    DMM   
+
+[#5 (F:131.825 L:-21 E:0) 24/07/2021 06:45:07.330 --------------------------------
+Mode : 2 Label : _d Id : 3 Ack : T
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S01A
+
+[#1 (F:131.475 L:-17 E:0) 24/07/2021 06:45:08.305 --------------------------------
+Mode : 2 Label : Q0 Id : 8 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: S26A
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:45:08.961 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 0
+Aircraft reg: A6-EPG 
+
+[#4 (F:131.725 L:-18 E:0) 24/07/2021 06:45:09.948 --------------------------------
+Mode : d Label : _d Id : Y Ack : 6
+Aircraft reg: VP-CXN 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:45:13.302 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 8
+Aircraft reg: P4-KGD 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:45:14.286 --------------------------------
+Mode : 2 Label : _d Id : T Ack : 8
+Aircraft reg: UK32023 
+
+[#1 (F:131.475 L:-17 E:0) 24/07/2021 06:45:14.695 --------------------------------
+Mode : 2 Label : QR Id : 9 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: M14A
+UTTTOMDB0642
+##########################
+Destination Airport : OMDB
+Departure Airport : UTTT
+Wheels on Time : 0642
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:45:16.334 --------------------------------
+Mode : 2 Label : _d Id : S Ack : 1
+Aircraft reg: A6-EPG 
+
+[#1 (F:131.475 L:-16 E:0) 24/07/2021 06:45:17.890 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-ECC Flight id: EK0229
+No: F03A
+#M1BPOSN26118E055476,RADEB,064516,211,KHM,064954,ASMUK,M12,03318,24840C82
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:45:19.528 --------------------------------
+Mode : 2 Label : :; Id : U Ack : 9
+Aircraft reg: UK32023 
+131825
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:45:19.856 --------------------------------
+Mode : 2 Label : _d Id : 0 Ack : U
+Aircraft reg: UK32023 Flight id: HY0333
+No: S27A
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:45:20.519 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D03A
+#DFBA320,011468,1,1,TB000000/REP001,85,01,1/CCK32023,JUL24,044604,UTTT,OMDB,0333/C0TFC04000000303/C106,14802,5000,44,0010,0,0100,44,X/CE-105,36012,259,781,6549,300,F22000/C22500M34P08     /C32590M00P11     /C42
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:45:22.315 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EFM Flight id: EK0000
+No: F01A
+#M1BREQFPN/CODD46
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:45:26.581 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 1
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:45:26.828 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76A
+#10BACM01ACM108BSAA6-ECM  UAE358  OMDBWIII240721  17PO054650 7831316FBSM79935
+ 36 16772753819436E  422  424
+  64144  75   45210)  342
+  74  120  118  1  2-180  000) 769OPEN
+ 103  130  218  1  2-180  000) 76
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:45:27.810 --------------------------------
+Mode : 2 Label : RA Id : Y Ack : 2
+Aircraft reg: A6-EFM 
+QUDXBEGEK~1INI01240645
+UAE9943   /24/OMDB/EGLL/354045/452998/      /      /
+
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:45:28.301 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D03B
+#DFB590M01P10     /C52474M65P05     /C62500M34P08     /C72590M00P11     /C82590M01P10     /C92474M65P05     /D100,781,73,259,0023,4900,-391,00523/D273,0024,4902,-392,00526/E159A082,01066,01063,00294,08488,08490
+ETB
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:45:29.530 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB22515N05525EV136975/ARINC
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:45:29.858 --------------------------------
+Mode : 2 Label : _d Id : 3 Ack : Y
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S31A
+
+[#4 (F:131.725 L:-11 E:0) 24/07/2021 06:45:30.020 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:45:32.561 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 0
+Aircraft reg: A6-ECM 
+
+[#4 (F:131.725 L:-18 E:0) 24/07/2021 06:45:32.559 --------------------------------
+Mode : D Label : _d Id : 5 Ack : O
+Aircraft reg: A7-BBI Flight id: QR028V
+No: S70A
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:45:33.462 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76B
+#10B9OPEN
+ 151  314  419  1  2-180  000) 769OPEN
+ 200  443  720  1  2-180  000) 768OPEN
+ 251  552 1221  1  2-180  000) 768OPEN
+ 307  675 1821  1  2-180  000) 768OPEN
+ 360  742 2322  1  2-180  000) 768OPEN
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:45:34.855 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 2
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:45:35.264 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: C00A
+#CFBMPF/ANUK32023/FIUZB333    /DM210724034300/DAUTTT/DSOMDB/210724NO WARNING OR FAULT MESSAGE 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:45:35.838 --------------------------------
+Mode : 2 Label : H1 Id : Z Nak
+Aircraft reg: A6-EFM 
+- #MDPER/PD,,340,1319,0144,34,,M35,,P15,,,,52287,0018,,CC40
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:45:37.067 --------------------------------
+Mode : 2 Label : _d Id : 4 Ack : Z
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S32A
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:45:39.189 --------------------------------
+Mode : 2 Label : AA Id : Z Nak
+Aircraft reg: SU-GCE 
+/BOMCAYA.AT1.SU-GCE0050803E33
+
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:45:40.180 --------------------------------
+Mode : 2 Label : _d Id : N Ack : 1
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:45:41.163 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 3
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:45:41.327 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76C
+#10B
+ 405  753 2722  1  2-180  000) 768OPEN
+ 460  749 3122  1  2-180  000) 768OPEN
+ 510  745 3425  1  2 -32  000) 768OPEN
+ 625  704 3925  1  2  60  000) 768OPEN
+ 720  656 4225  1  2  60  000) 768OPEN
+ 813 
+ETB
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:45:42.310 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D03C
+#DFB/E259A081,01067,01073,00294,08488,08490/F108488,10316,024,0000,0022,0027,278/F208488,10319,020,0000,0040,0041,149/G1----,00215,-----,02354,-013,0003/G21315,00209,-----,02364,-012,0002/H10249,00313,01003,001
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:45:43.375 --------------------------------
+Mode : 2 Label : H1 Id : A Nak
+Aircraft reg: A6-EFM 
+- #MDPOS/RFTUMAK.VEDOM.ORLUP.VELAK.LABOP.ALTOM.BOPOV.ALMOK.GITBO.VEDOS.MOGAS.TOLMO.EGLIT.TOKMA.ORSOL.ITNAS.DAMUR.ITEVO.DAVUS.BOXIK.RALKA.TASMI.SEPTU.ROXOP.NINVA.EFFEZ.SRT.NELPO.NEGEM.ARGES.BUDOP.PATAK.ODNEM.SOPGA.RAPET.M
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:45:45.259 --------------------------------
+Mode : 2 Label : _d Id : 5 Ack : A
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S33A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:45:47.471 --------------------------------
+Mode : 2 Label : _d Id : O Ack : 2
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:45:48.454 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76D
+#10B 616 4426  1  2  60  000) 768OPEN
+ 950  548 4626  1  2  60  000) 768OPEN
+  74 ) 9   00   25144  64  346  75 1
+ 103 ) 9 1000  321144  64  347  75 2
+ 151 ) 9  450  164144  64  350  7414
+ 200 ) 9  450  16
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:45:49.183 --------------------------------
+Mode : 2 Label : AA Id : Z Nak
+Aircraft reg: SU-GCE 
+/BOMCAYA.AT1.SU-GCE0050803E33
+
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:45:49.519 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 4
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:45:51.240 --------------------------------
+Mode : 2 Label : H1 Id : B Nak
+Aircraft reg: A6-EFM 
+- #MDASEK.GMH.ABNED129B
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:45:52.386 --------------------------------
+Mode : 2 Label : _d Id : 6 Ack : B
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S34A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:45:54.600 --------------------------------
+Mode : 2 Label : _d Id : P Ack : 3
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:45:55.082 --------------------------------
+Mode : 2 Label : H1 Id : S Nak
+Aircraft reg: A6-EGE 
+.DXBEGEK 240645
+CFD
+AN A6-EGE/FI EK209/MA 921A
+- #CFEFFDE
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:45:55.581 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76E
+#10B7144  63  479  7523
+ 251 ) 9  650  222144  61  624  7833
+ 307 ) 9 1020  328144  58  786  8144
+ 360 ) 9 1150  361144  57  857  7856
+ 405 ) 9 1160  363144  55  895  7767
+ 460 ) 9 1350  405144  54  914  7
+ETB
+
+[#1 (F:131.475 L:-13 E:0) 24/07/2021 06:45:56.393 --------------------------------
+Mode : 2 Label : _d Id : 4 Ack : S
+Aircraft reg: A6-EGE Flight id: EK0209
+No: S06A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:45:56.564 --------------------------------
+Mode : 2 Label : _d Id : Z Ack : 5
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:45:56.973 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D03E
+#DFB,0236,07711,07780,07887,07803/K20489,0236,07684,07672,07720,07773/L107702,07608,07654,07952,07870,1350/L207793,07716,07653,07921,07792,1300/M100209,00008,0023,0,01,046/M200233,00008,0023,00,047/N1000,000,00
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:45:58.604 --------------------------------
+Mode : 2 Label : AA Id : Z Nak
+Aircraft reg: SU-GCE 
+/BOMCAYA.AT1.SU-GCE0050803E33
+
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:45:58.612 --------------------------------
+Mode : 2 Label : H1 Id : C Nak
+Aircraft reg: A6-EFM 
+- #MDFPN/FNUAE9943/RI:DA:OMDB:AA:EGLL:F:RIDAP.M557..TUMAK.L602..DAVUS.L602..TASMI..SEPTU..ROXOP.UM860..NINVA.UM860..ODALI.UL852..NEGEM.T746..ARGES..BUDOP..PATAK..ODNEM..SOPGA..RAPET..MASEK..GMH,N51102E007535..ABNED.L980.
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:00.577 --------------------------------
+Mode : 2 Label : _d Id : 7 Ack : C
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S35A
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:46:01.308 --------------------------------
+Mode : 2 Label : _d Id : T Ack : 5
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:01.397 --------------------------------
+Mode : 2 Label : _d Id : Q Ack : 4
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:46:02.380 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76F
+#10B668
+ 510 ) 9 1560  449144  52  923  7668
+ 625 ) 9 1850  497144  51  974  7670
+ 720 ) 9 2320  564144  50 1006  7573
+ 813 ) 9 2820  619144  49 1027  7574
+ 950 ) 9 4170  730143  49  991  7577
+ 998  442  
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:04.018 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 6
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:04.346 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D03F
+#DFB00,0000,0000,0000,00000/N2000,000,0000,0000,0000,0000,00000/N3287,092,0000,0000,0000,0000,00000/N4156,315,0000,0000,0000,0000,00000/P102000,04100,040A4,00000,10000,00810/P202000,04100,040A4,00000,10001,0081
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:46:05.412 --------------------------------
+Mode : 2 Label : H1 Id : D Nak
+Aircraft reg: A6-EFM 
+- #MD.LOGAN,N51449E00136722E7
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:06.558 --------------------------------
+Mode : 2 Label : _d Id : 8 Ack : D
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S36A
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:08.770 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 5
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:46:08.844 --------------------------------
+Mode : 2 Label : AA Id : Z Nak
+Aircraft reg: SU-GCE 
+/BOMCAYA.AT1.SU-GCE0050803E33
+
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:46:09.671 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76G
+#10B46141 73  7578 450 398  0
+1011 4490  757  466  8541998316106  5
+0645021005  624  41141 80 10773  66 399101
+565 26 38 1192604 426059   46210)NORMA
+NORMAL NOPNCLSD    67  839  6500  617268
+ 6040 1144  00
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:10.654 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 7
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:46:12.047 --------------------------------
+Mode : 2 Label : H1 Id : E Nak
+Aircraft reg: A6-EFM 
+- #MDPWI/WD280,VEDOM,054009,280M21.VEDOS,068015,280M22.DAMUR,081015,280M23.TASMI,094011,280M22.SEPTU,197011,280M21.ROXOP,230032,280M22.SRT,224045,280M22.KONUK,223068,280M23.NELPO,227052,280M25.RUXEV,247022,280M31.BEDOP,2
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:14.095 --------------------------------
+Mode : 2 Label : _d Id : 9 Ack : E
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S37A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:46:16.143 --------------------------------
+Mode : 2 Label : H1 Id : S Ack : 6
+Aircraft reg: A6-ECM 
+.DXBEGEK 240646
+CFD
+AN A6-ECM/FI EK358/MA 923A
+- #CFEF
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:46:16.798 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 8
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:46:18.273 --------------------------------
+Mode : 2 Label : H1 Id : 7 Ack : S
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O76H
+#10B  00CLSDOPENOPENOPENONSPD  
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:46:19.501 --------------------------------
+Mode : 2 Label : H1 Id : F Nak
+Aircraft reg: A6-EFM 
+- #MD47010,280M33.NEGEM,216008,280M34.ARGES,124007,280M35.BUDOP,318006,280M35.PATAK,322019,280M34.ODNEM,309026,280M33.SOPGA,239022,280M32.RAPET,233023,280M32.GMH,196029,280M33.ABNED,149028,280M36.XAMAN,144031,280M37.LAM,
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:21.467 --------------------------------
+Mode : 2 Label : _d Id : 0 Ack : F
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S38A
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:46:24.007 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 9
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:46:24.417 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D03I
+#DFB0,00000/V200000,00000,00000,00000,00000,00000/W100000/W200000/:
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:25.319 --------------------------------
+Mode : 2 Label : _d Id : T Ack : 7
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:46:26.219 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C40A
+#CFBEF 1 24JUL21 0646 EKA6-ECM UAE358 OMDB/WIII 3115-BCG-00W-17 L
+ATA 231500
+MSG 2361661 A
+DB SATELLITE DATA UNIT HSDU (LEFT)
+ATA 232702
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+ATA 313500
+MSG 3140202 A
+DB A
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:46:27.284 --------------------------------
+Mode : 2 Label : H1 Id : G Nak
+Aircraft reg: A6-EFM 
+- #MD135033,280M38/WD310,VEDOM,171003,310M28.VEDOS,094009,310M29.DAMUR,084015,310M30.TASMI,086015,310M30.SEPTU,198008,310M28.ROXOP,229033,310M27.SRT,227046,310M28.KONUK,224074,310M28.NELPO,226071,310M29.RUXEV,234041,310M
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:29.250 --------------------------------
+Mode : 2 Label : _d Id : 1 Ack : G
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S39A
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:30.069 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 0
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:30.397 --------------------------------
+Mode : 2 Label : 5V Id : 1 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: S28A
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:46:32.363 --------------------------------
+Mode : 2 Label : _d Id : U Ack : 8
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:46:32.683 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:46:33.264 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C40B
+#CFBCMF IN RIGHT AIMS
+ATA 324900
+MSG 3254361 A
+DB TIRE PRESSURE CHANNEL
+ATA 342100
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+EOR
+
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:46:34.493 --------------------------------
+Mode : 2 Label : H1 Id : H Nak
+Aircraft reg: A6-EFM 
+- #MD34.BEDOP,246018,310M40.NEGEM,225010,310M42.ARGES,127008,310M43.BUDOP,322002,310M42.PATAK,329021,310M41.ODNEM,315029,310M41.SOPGA,235022,310M41.RAPET,230023,310M40.GMH,199034,310M41.ABNED,143036,310M44.XAMAN,139039,3
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:36.377 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : H
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S41A
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:46:38.753 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 9
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:46:41.456 --------------------------------
+Mode : 2 Label : H1 Id : I Nak
+Aircraft reg: A6-EFM 
+- #MD10M45.LAM,132040,310M46/WD340,VEDOM,202008,340M35.VEDOS,104006,340M36.DAMUR,081016,340M37.TASMI,099017,340M37.SEPTU,140007,340M35.ROXOP,228039,340M33.SRT,227054,340M34.KONUK,227073,340M34.NELPO,226077,340M34.RUXEV,2
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:43.505 --------------------------------
+Mode : 2 Label : _d Id : 3 Ack : I
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S43A
+
+[#4 (F:131.725 L: -8 E:0) 24/07/2021 06:46:44.403 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:46:44.813 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#1 (F:131.475 L:-14 E:0) 24/07/2021 06:46:45.627 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58A
+#10BACM01ACM108BSAA6-EGE  UAE209  OMDBLGAV240721 151PO05265815145316FBSM79935
+314 17682239016232E  36-  36-
+  61146  74   51-10-  337
+  83  131  118  2  1-180  000) 764OPEN
+ 110  140  218  2  1-180  000) 76
+ETB
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:46:48.008 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:46:48.747 --------------------------------
+Mode : 2 Label : H1 Id : J Nak
+Aircraft reg: A6-EFM 
+- #MD30065,340M35.BEDOP,236036,340M40.NEGEM,232019,340M44.ARGES,145005,340M47.BUDOP,340007,340M47.PATAK,328018,340M48.ODNEM,324029,340M48.SOPGA,241028,340M48.RAPET,238029,340M48.GMH,197040,340M49.ABNED,152039,340M51.XAMA
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:50.713 --------------------------------
+Mode : 2 Label : _d Id : 4 Ack : J
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S44A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:46:51.443 --------------------------------
+Mode : 2 Label : _d Id : U Ack : 6
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:46:55.789 --------------------------------
+Mode : 2 Label : H1 Id : K Nak
+Aircraft reg: A6-EFM 
+- #MDN,148040,340M51.LAM,140036,340M49/WD390,VEDOM,181018,390M47.VEDOS,142012,390M47.DAMUR,103016,390M48.TASMI,101022,390M47.SEPTU,124020,390M46.ROXOP,210038,390M45.SRT,221051,390M45.KONUK,228065,390M44.NELPO,229071,390M
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:46:57.758 --------------------------------
+Mode : 2 Label : _d Id : 5 Ack : K
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S45A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:46:58.406 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 7
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-17 E:0) 24/07/2021 06:46:59.389 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58C
+#10B
+ 409  751 2822  2  1-180  000) 765OPEN
+ 464  749 3222  2  1-180  000) 765OPEN
+ 515  744 3525  2  1  62  000) 765OPEN
+ 605  714 3925  3  1  62  000) 765OPEN
+ 731  646 4325  3  1  62  000) 764OPEN
+ 828 
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:47:02.756 --------------------------------
+Mode : 2 Label : H1 Id : L Nak
+Aircraft reg: A6-EFM 
+- #MD44.RUXEV,229067,390M42.BEDOP,231057,390M41.NEGEM,233040,390M42.ARGES,254016,390M45.BUDOP,307014,390M50.PATAK,313021,390M53.ODNEM,308029,390M55.SOPGA,240022,390M57.RAPET,235024,390M56.GMH,206051,390M55.ABNED,174024,3
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:47:04.804 --------------------------------
+Mode : 2 Label : _d Id : 6 Ack : L
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S46A
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:05.779 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 8
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:47:06.680 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58D
+#10B 602 4525  3  1  62  000) 764OPEN
+ 969  538 4725  3  1  62 76250 764OPEN
+  83 )10 1000  323146  61  341  74 3
+ 110 )10  600  207146  61  343  74 4
+ 159 )10  600  209146  60  345  73 8
+ 202 )10  450  16
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:47:10.128 --------------------------------
+Mode : 2 Label : H1 Id : M Nak
+Aircraft reg: A6-EFM 
+- #MD90M50.XAMAN,165021,390M49.LAM,150012,390M47/DD100127011.200138029.310130040.350139028.390146011C606
+
+[#1 (F:131.475 L:-18 E:0) 24/07/2021 06:47:10.529 --------------------------------
+Mode : 2 Label : SQ 
+02XADWCOMDW12454N05510EV136975/ARINC
+
+[#4 (F:131.725 L:-14 E:0) 24/07/2021 06:47:10.864 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:47:11.603 --------------------------------
+Mode : 2 Label : _d Id : 7 Ack : M
+Aircraft reg: A6-EFM Flight id: EK0000
+No: S47A
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:47:12.177 --------------------------------
+Mode : 2 Label : 11 Id : 4 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: M31A
+OUT01UAE392    /24240647OMDBVVTS
+0647 57406440638
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:47:12.578 --------------------------------
+Mode : 2 Label : H1 Id : X Ack : 9
+Aircraft reg: A6-EGE 
+.DXBEGEK 240647
+CFD
+AN A6-EGE/FI EK209/MA 927A
+- #CFEF
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:13.889 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#1 (F:131.475 L:-13 E:0) 24/07/2021 06:47:14.380 --------------------------------
+Mode : 2 Label : H1 Id : 0 Ack : X
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58E
+#10B6146  59  363  7515
+ 254 )10  660  226146  57  582  7823
+ 301 )10  940  304146  55  747  7930
+ 350 )10 1150  362146  54  836  7938
+ 409 )10 1130  356146  52  880  7847
+ 464 )10 1330  403146  51  906  7
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:47:17.665 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 4
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:47:20.286 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB22515N05525EV136975/ARINC
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:20.770 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 0
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-15 E:0) 24/07/2021 06:47:21.753 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58F
+#10B559
+ 515 )10 1560  449146  50  928  7365
+ 605 )10 1770  485146  49  972  7366
+ 731 )10 2360  565145  48 1005  7369
+ 828 )10 2940  632145  47 1020  7471
+ 9691012 3540  688144  46  978  7473
+ 999  411  
+ETB
+
+[#1 (F:131.475 L:-22 E:1) 24/07/2021 06:47:26.095 --------------------------------
+Mode : 2 Label : 5V Id : 2 Ack : 
+Aircraft reg: A6-EPG Flight id: EK0621
+No: S83A
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:27.897 --------------------------------
+Mode : 2 Label : _d Id : Z Ack : 1
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:47:28.799 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58G
+#10B45144 55  7474 764 400 27
+1012 3670  699  431  7971626124577  5
+0646211000  653  42141 63 11070  86 399 94
+549 38 372379 115 457269   46210)NORMA
+NORMAL NOPNCLSD    66  849  8625  644268
+ 6180 1196  00
+ETB
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:47:31.098 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:34.943 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 2
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-14 E:0) 24/07/2021 06:47:35.926 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O58H
+#10B  00OPENCLSDOPENOPENONSPD  
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:41.414 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 3
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-16 E:0) 24/07/2021 06:47:42.397 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: C52A
+#CFBEF 1 24JUL21 0647 EKA6-EGE UAE209 OMDB/LGAV 3115-BCG-00W-17 L
+ATA 232702
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+ATA 313500
+MSG 3140202 A
+DB ACMF IN RIGHT AIMS
+ATA 342100
+MSG 4517100 A
+DB CENTRAL MAINTE
+ETB
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:47:46.992 --------------------------------
+Mode : 2 Label : 2E Id : 7 Nak
+Aircraft reg: A6-EGJ Flight id: EK2543
+No: M60A
+FUE01UAE2543   /24240647OMDBEKCH
+/TRP  412/TAX   8/RMP  482/DEN  770/RTW -------
+/OFP SN  14
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:48.378 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 4
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:47:49.279 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: C52B
+#CFBNANCE COMPUTING FUNCTION
+EOR
+
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:47:50.924 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77A
+#10BSS0100DA_B777-300ER 15
+A6-ECM  UAE358  OMDBWIII240721  17TA06470411443
+316FBSM79935  1  1  6 20 20 310 310 310 310
+ 381647 785 21 37  9  0 53  3123 38 23  0  0
+ 391647 786 23 37 10  0 53  3123 38 23  0 
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:47:52.727 --------------------------------
+Mode : 2 Label : RA Id : R Ack : 7
+Aircraft reg: A6-EGJ 
+QUDXBEGEK~1DIS01240647
+FUEL FIGURES ACK
+TRIP FUEL: 41.2
+TAXI FUEL: 0.8
+RAMP FUEL: 48.2
+
+AUTO RESPONSE
+FUEL FIGURES REPORT
+RECEIVED FROM A6-EGJ
+SENT TO LOAD CONTROL
+
+
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:47:54.358 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 5
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:47:54.529 --------------------------------
+Mode : 2 Label : _d Id : 8 Ack : R
+Aircraft reg: A6-EGJ Flight id: EK2543
+No: S28A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:47:56.495 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 0
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:47:57.396 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77B
+#10B 0
+ 421647 786 24 37 14  0 52  3123 38 22  0  0
+ 441647 785 26 35  0  0 52  3123 38 22  0  0
+ 471648 786 28 38 25  0 52  3123 38 22  0  0
+ 511647 794 30 40  6  0 52  3123 38 22  0  0
+ 541647 808 32 37 
+ETB
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:48:00.747 --------------------------------
+Mode : 2 Label : SQ 
+01XASHJOMSJ1ARINC
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:03.868 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 1
+Aircraft reg: A6-ECM 
+
+[#2 (F:131.525 L:-22 E:3) 24/07/2021 06:48:04.845 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77C
+#10B 0  0 52  3123 38 24 40  0
+ 531647 816 32 34  0  0 52  3123 38 36  0  0
+ 53  31 830 33 34 13  0 53  3123 38 34  0  0
+ 53  28 832 39 32  1  0 52  3123 38 33  0  0
+ 53  27 832 39 30  1  0 52  3123 38 31  
+ETB
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:48:04.851 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77C
+#10B 0  0 52  3123 38 24 40  0
+ 531647 816 32 34  0  0 52  3123 38 36  0  0
+ 53  31 830 33 34 13  0 53  3123 38 34  0  0
+ 53  28 832 39 32  1  0 52  3123 38 33  0  0
+ 53  27 832 39 30  1  0 52  3123 38 31  
+ETB
+
+[#8 (F:132.125 L:-19 E:3) 24/07/2021 06:48:04.856 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77C
+#10B 0  0 52  3123 38 24 40  0
+ 531647 816 32 34  0  0 52  3123 38 36  0  0
+ 53  31 830 33 34 13  0 53  3123 38 34  0  0
+ 53  28 832 39 32  1  0 52  3123 38 33  0  0
+ 53  27 832 39 30  1  0 52  3123 38 31  
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:11.077 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 2
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:48:12.060 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77D
+#10B0  0
+ 53  27 831 39 25  0  0 52  3123 38 26 56  0
+ 53  271149 39 19  0  0 52  3123 38 20 82  0
+ 52  26  32 36 35 33242 50  3  3 33 27 26235
+ 53  26  32 38 38 11235 52  3  3 38 40  0236
+ 53  26  32 38 3
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:48:13.043 --------------------------------
+Mode : 2 Label : H1 Id : Z Nak
+Aircraft reg: A6-ECM 
+.DXBEGEK 240648
+CFD
+AN A6-ECM/FI EK358/MA 933A
+- #CFEFFDE
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:48:14.353 --------------------------------
+Mode : 2 Label : H1 Id : 3 Ack : Z
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77D
+#10B0  0
+ 53  27 831 39 25  0  0 52  3123 38 26 56  0
+ 53  271149 39 19  0  0 52  3123 38 20 82  0
+ 52  26  32 36 35 33242 50  3  3 33 27 26235
+ 53  26  32 38 38 11235 52  3  3 38 40  0236
+ 53  26  32 38 3
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:20.498 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 3
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:48:21.563 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77E
+#10B8 11234 52  3  3 38 40  0234
+ 53  26  32 38 39 13240 52  3  3 38 39  0235
+ 53  26  32 38 39 13234 52  3  3 38 39  0236
+ 53  26  32 38 39 12239 52  3  3 38 40  0234
+ 53  26  32 39 39 14232 52  3  3 38 40
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:48:23.119 --------------------------------
+Mode : 2 Label : H1 Id : Z Nak
+Aircraft reg: A6-EBK 
+.DXBEGEK 240648
+CFD
+AN A6-EBK/FI EK392/MA 935A
+- #CFEFFDE
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:48:24.430 --------------------------------
+Mode : 2 Label : _d Id : 5 Ack : Z
+Aircraft reg: A6-EBK Flight id: EK0392
+No: S09A
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:48:25.986 --------------------------------
+Mode : 2 Label : B9 Id : 8 Nak
+Aircraft reg: A6-EFM Flight id: EK9943
+No: L32A
+/OMDB.TI2/046OMDBD139B
+##########################
+Destination Airport : OMDB
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:48:26.560 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: C20A
+#CFBEFFDE 1 24JUL21 0648 EKA6-EBK UAE2516 LEZG/OMDB 3115-BCG-00W-17 L
+NCMM
+MSG 2219914 A
+DB AUTOPILOT FLIGHT DIRECTOR COMPUTERS
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+MSG 2717018 A
+DB PRIMARY FLIGHT COMPUTER
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:28.116 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 4
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:48:29.099 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77F
+#10B  0231
+ 53  26  32 39 39 14230 52  3  3 38 39  0235
+ 53  26  32 39 39 14232 52  3  3 38 39  0232
+ 53  26  32 39 39 11234 52  3  3 38 39  0230
+ 53  26  32 38 39 15231 52  3  3 38 39  0233
+ 53  25  31 38
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:48:30.329 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 6
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:48:32.048 --------------------------------
+Mode : 2 Label : A9 Id : N Ack : 8
+Aircraft reg: A6-EFM 
+/DXBATYA.TI2/OMDB DEP ATIS C
+0630Z OMDB DEP C AT TIME 0630 DEP RWY 12R
+AIRFIELD INFO 18009KT 140V230 6000 NSC 41/19
+Q0997 NOSIG ADZ ACFT TYPE ON FST CTC
+PILOTS REP READY FOR PUSHBACK DLV FREQ 120.35
+DRG PUSHBACK TAX
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:48:34.015 --------------------------------
+Mode : 2 Label : _d Id : 9 Ack : N
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S48A
+
+[#4 (F:131.725 L:-17 E:0) 24/07/2021 06:48:35.651 --------------------------------
+Mode : 2 Label : 5V Id : 6 Nak
+Aircraft reg: A6-FLR Flight id: XA0000
+No: M05A
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:48:35.899 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EFM Flight id: EK9943
+No: F02A
+#M1BREJPWI,064712,130,112,DD101,LAM.130,112,DD101,LAM.130,112,DD101,LAM.130,112,DD101,LAM195F
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:36.554 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 5
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:37.209 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 7
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:48:37.537 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77G
+#10B 39 11229 52  3  3 38 40  0234
+ 53  26  31 38 39 14232 51  3  3 36 36  0228
+ 53  26  31 38 39 12230 51  3  3 36 37  0232
+ 53  53  30 38 38 21  0 50  2  3 33 31183  0
+ 52 347  31 38 38 57  0 50  2  3 32 
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:48:39.749 --------------------------------
+Mode : 2 Label : A9 Id : O Ack : 0
+Aircraft reg: A6-EFM 
+I
+SQWK ASSIGNED TRANSPONDER CODE
+DEP REMAIN TWR FRQ AFT TK OFF
+PILOTS UNABLE TO ACCEPT
+K3, K4, K5 AND M7 B FOR DEP
+MUST INFORM DLV ON FST CTC
+DXB VFR FREQ 126,775
+EN WK TUR SEP IN FRC CTC ATC ADVS ATC COPIED CB546
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:48:41.715 --------------------------------
+Mode : 2 Label : _d Id : 1 Ack : O
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S49A
+
+[#4 (F:131.725 L:-17 E:0) 24/07/2021 06:48:43.434 --------------------------------
+Mode : d Label : SQ 
+00XS
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:48:43.517 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 6
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:48:44.500 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77H
+#10B30156  0
+ 52 434  30 38 38 57  0 50  2  3 33 31105  0
+ 52 522  31 37 37 54  0 50  2  3 34 32 79  0
+ 53 610  31 29 29 49  0 51  3  3 34 33 75  0
+ 53 401  32 20 20 43  0 50  3  3 34 33 73  0
+ 52  25  31 
+ETB
+
+[#4 (F:131.725 L: -8 E:0) 24/07/2021 06:48:45.400 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:48:45.891 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-19 E:0) 24/07/2021 06:48:46.382 --------------------------------
+Mode : D Label : Q0 Id : 5 Nak
+Aircraft reg: VP-BOI Flight id: FV5734
+No: S07A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:46.712 --------------------------------
+Mode : 2 Label : A9 Id : P Nak
+Aircraft reg: A6-EFM 
+
+
+
+[#4 (F:131.725 L:-14 E:0) 24/07/2021 06:48:47.693 --------------------------------
+Mode : d Label : SQ 
+00XS
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:48:47.695 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : P
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S50A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:48:50.562 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 7
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:48:51.545 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77I
+#10B25 25 73  0 50  3  3 34 33 75  0
+ 52  25  32 36 36 83  0 51  3  3 35 35 79  0
+ 52  25  31 37 37 82  0 51  3  3 36 36 79  0
+ 52  26  32 37 37 80  0 51  3  3 36 36 80  0
+ 52  26  32 37 37 77  0 51  3  3 3
+ETB
+
+[#1 (F:131.475 L:-18 E:0) 24/07/2021 06:48:56.042 --------------------------------
+Mode : 2 Label : SQ 
+02XADWCOMDW12454N05510EV136975/ARINC
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:48:57.935 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 8
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:48:58.918 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77J
+#10B5 35 76  0
+ 52  26  32 38 37 76  0 51  3  3 35 35 76  0
+ 52  26  32 38 37 73  0 51  3  3 35 35 76  0
+ 52  26  31 38 38 73  0 51  3  3 35 35 76  0
+ 52  26  31 38 38 73  0 51  3  3 35 34 76  0
+ 52  26  3
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:04.571 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 9
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:49:04.898 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB22515N05525EV136975/ARINC
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:49:05.390 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O77K
+#10B2 38 38 71  0 51  3  3 35 34 75  0
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:06.939 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59A
+#10BSS0101DA_B777-300ER100
+A6-EGE  UAE209  OMDBLGAV240721 151TA06482020025
+316FBSM79935  1  1  6 36 36 370 370 368 368
+ 371643 813 21 38  0  0 52  2123 38 32  0  0
+ 391643 812 22 38  0  0 52  2123 38 32  0 
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:08.004 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:10.469 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 0
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:49:11.288 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C41A
+#CFBRTE 1 24JUL21 0647 EKA6-ECM UAE358 OMDB/WIII 3115-BCG-00W-17 L 0644 24JUL21
+EOR
+
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:49:12.673 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 6
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:49:15.876 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42A
+#10BACM01ACM108BSAA6-EBK  UAE392  OMDBVVTS240721  33PO05463924317316FBSM79935
+ 63 18312308615954E   0(   0(
+  47146  44     (00(  313
+  50   50  117  1  1-180  000) 770OPEN
+ 106   56  318  1  1-180  000) 76
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:16.777 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 1
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:49:17.759 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: D74A
+#DFBACM01ACM109ASEKA6-ECMUAE358  OMDBWIII240721  17PO054650
+ 38 78313172EAD11707 167719436
+05465027538  619
+06484927539   00
+ 999  8475 78
+ 701  9369 78
+064442
+......
+......
+     555.1
+
+[#1 (F:131.475 L:-21 E:2) 24/07/2021 06:49:17.916 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECK Flight id: EK0723
+No: D09A
+#DFBREP511,44,02A240639OMDB  HAABN25252E0553652406490004P415N25250E0553670004P410133005G N25249E0553700003P410150004G N25247E0553740004P411130007G N25245E0553770004P405146004G N25243E0553810008P403204008G N2524
+ETB
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:49:21.774 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 8
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:23.487 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 2
+Aircraft reg: A6-ECK 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:49:22.757 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42B
+#10B9OPEN
+ 165  269  620  1  1-180  000) 768OPEN
+ 201  352  920  1  1-180  000) 768OPEN
+ 250  506 1421  1  1-180  000) 766OPEN
+ 309  668 2022  1  1-180  000) 764OPEN
+ 361  729 2522  1  1-180  000) 763OPEN
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:23.986 --------------------------------
+Mode : 2 Label : _d Id : J Ack : 2
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:24.224 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-ECK Flight id: EK0723
+No: D09B
+#DFB1E0553850015P402230007G N25239E0553890029P402233009G N25236E0553930043P398218009G N25234E0553980062P393219011G N25232E0554020083P387221012G N25229E0554060103P380203010G N25227E0554100124P372197011G N25225E0
+ETB
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:49:25.125 --------------------------------
+Mode : 2 Label : H1 Id : F Ack : 7
+Aircraft reg: A6-EGE 
+.DXBEGEK 240649
+CFD
+AN A6-EGE/FI EK209/MA 937A
+- #CFEFFDE
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:49:24.969 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C42A
+#CFBEFFDE 1 24JUL21 0649 EKA6-ECM UAE358 OMDB/WIII 3115-BCG-00W-17 L
+NCMM
+MSG 2361661 A
+DB SATELLITE DATA UNIT HSDU (LEFT)
+MSG 2360611 A
+DB SATELLITE DATA UNIT HSDU (LEFT)
+MSG 2360601 A
+DB SATELLITE DATA
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:49:26.354 --------------------------------
+Mode : 2 Label : H1 Id : 8 Ack : F
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59C
+#10B 0  0 52  2123 38 40  0  0
+ 521643 844 31 38  0  0 53  3123 38 38  0  0
+ 52  33 856 32 37  0  0 52  3123 38 38  0  0
+ 52  27 872 36 36  0  0 52  3123 38 37  0  0
+ 52  26 869 38 36  0  0 52  2123 38 36  
+ETB
+
+[#5 (F:131.825 L:-18 E:0) 24/07/2021 06:49:28.246 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 9
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:49:29.223 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42C
+#10B
+ 404  727 2922  1  1-180  000) 761OPEN
+ 459  728 3322  2  1-180  000) 761OPEN
+ 507  717 3625  2  1  51  000) 760OPEN
+ 621  674 4125  1  1  62  000) 759OPEN
+ 714  627 4425  1  1  62  000) 758OPEN
+ 804 
+ETB
+
+[#1 (F:131.475 L:-13 E:0) 24/07/2021 06:49:30.450 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 3
+Aircraft reg: A6-ECK 
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:49:30.458 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 3
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:49:31.433 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-ECK Flight id: EK0723
+No: D09C
+#DFB554140139P368190009G N25222E0554180147P365201011G N25220E0554230154P363214013G N25217E0554270161P358201011G /N25189E0554770280P323215011G N25158E0555340329P315222014G N25124E0555940412P298212011G N25083E055
+ETB
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:49:31.441 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C42B
+#CFB UNIT HSDU (LEFT)
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+MSG 3140202 A
+DB ACMF IN RIGHT AIMS
+MSG 3254361 A
+DB TIRE PRESSURE CHANNEL
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+EOR
+
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:32.498 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 8
+Aircraft reg: A6-EGE 
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:49:32.422 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:49:33.481 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59D
+#10B0  0
+ 52  26 871 38 35 35  0 52  2123 38 35  0  0
+ 53  25 776 38 30 32  0 52  2123 38 30 34  0
+ 51  25  29 37 31  0231 52  2  3 37 37  0223
+ 52  25  29 38 38  0235 52  2  3 38 39  0222
+ 53  25  29 38 3
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:35.537 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 0
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:49:36.437 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42D
+#10B 591 4625  1  1  62  000) 756OPEN
+ 934  529 4825  1  1  62  000) 758OPEN
+  50 ) 9   00   39146  47  316  44 0
+ 106 ) 9  600  205146  47  319  44 0
+ 165 ) 9  450  164146  47  322  44 0
+ 201 ) 9  510  18
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:37.339 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 4
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:37.495 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 4
+Aircraft reg: A6-ECK 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:38.314 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ECK Flight id: EK0723
+No: D09D
+#DFB6470599P241198004G N25034E0557020673P226312002G N24978E0557630803P218087002G N24914E0558160970P171133005G N24839E0558591105P130098012G N24773E0559201323P075101016G N24681E0559061535P033064033G   :
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:49:38.323 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78A
+#10BSS0071AA_B777-300ER 18
+A6-ECM  UAE358  OMDBWIII240721  17TA064704
+241236241236
+-40002200000000001000000000221
+-39002200000000001000000000221
+-38002200000000001000000000221
+-370022000000000010000000002
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:49:40.198 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 9
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-13 E:0) 24/07/2021 06:49:41.182 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59E
+#10B8  0230 52  2  3 38 39  0223
+ 52  25  29 38 38  0229 52  2  3 38 39  0217
+ 52  25  29 38 38  0233 53  2  3 38 39  0223
+ 52  25  29 38 38  0229 52  2  3 38 39  0220
+ 52  25  29 38 38  0231 53  2  3 38 39
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:42.828 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 1
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:49:43.484 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EFM Flight id: EK9943
+No: F03A
+#M1BREQPWI/WQ380.360.340.320:ASTES.DB451.DB460.DB465.DB466.DB468.ORLAD.KIXOG.RIDAP.OTIKI.TOTKU.GODKI.RALMI.TUMAK.VEDOM.ORLUP.VELAK.LABOP.ALTOM.BOPOV.ALMOK.GITBO.VEDOS.MOGAS.TOLMO.EGLIT.TOKMA.ORSOL.ITNAS.DAMUR.I
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:44.384 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 5
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:44.786 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 5
+Aircraft reg: A6-ECK 
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:49:44.630 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42E
+#10B0146  46  377  44 0
+ 250 ) 9  870  282146  46  574  4428
+ 309 ) 9 1130  352146  45  758  4544
+ 361 ) 9 1150  358146  45  846  4556
+ 404 ) 9 1270  386146  45  857  4666
+ 459 ) 9 1450  424146  44  885  4
+ETB
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:49:45.613 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78B
+#10B21
+-36002200000000001000000000221
+-35002200000000001000000000221
+-34002200000000001000000000221
+-33002200000000001000000000221
+-32002200000000001000000000221
+-31002200000000001000000000221
+-300022000
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:49:47.735 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 0
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-15 E:0) 24/07/2021 06:49:48.636 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59F
+#10B  0220
+ 52  25  29 38 38  0231 52  2  3 38 39  0217
+ 52  25  29 38 38  0226 52  2  3 38 39  0214
+ 52  25  28 38 38  0223 52  2  3 38 39  0219
+ 52  25  29 38 38  0227 53  2  3 38 39  0220
+ 52  25  28 38
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:49.710 --------------------------------
+Mode : 2 Label : _d Id : Q Ack : 3
+Aircraft reg: A6-EFM 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:49:50.693 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EFM Flight id: EK9943
+No: F03B
+#M1BTEVO.DAVUS.BOXIK.RALKA.TASMI.SEPTU.ROXOP.NINVA.EFFEZ.SRT.RENGI.NAREN.TALIL.KONUK.EBEDI.ODALI.NELPO.APVAS.USANU.ODPOT.RUXEV.EKSUK.UPKAG.VAXEB.ESOSU.TIVUG.EVPUV.DEVMU.EVPIM.BEDOP.MODAU.ODMAX.NEGEM.MATEL.ARGES
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:51.920 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 2
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:49:53.388 --------------------------------
+Mode : 2 Label : SQ 
+01XASHJOMSJ1ARINC
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:49:52.905 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42F
+#10B669
+ 507 ) 9 1690  468146  44  897  4770
+ 621 ) 9 2000  519146  44  945  4872
+ 714 ) 9 2500  581145  43  971  4973
+ 804 ) 9 3050  639145  43  994  4975
+ 934 ) 9 4400  744144  43  969  5077
+ 996  441  
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:49:54.698 --------------------------------
+Mode : 2 Label : _d Id : J Ack : 1
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:49:56.590 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 4
+Aircraft reg: A6-EFM 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:49:57.573 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EFM Flight id: EK9943
+No: F03C
+#M1B.BUDOP.PATAK.ODNEM.SOPGA.RAPET.MASEK.GMH.ABNED.IBNOS.XAMAN.LOGAN/DQ3400041
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:49:59.130 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 3
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:50:00.031 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42G
+#10B42143 55  5279 457 398  0
+1011 4970  782  461  85216012 6623  5
+0648521000  586  43143 63 10573  76 400 71
+565 37 37 1283089 437170   45510)NORMA
+NORMAL NOPNCLSD    67  848  7625  598269
+ 6170 1089  00
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:01.580 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 2
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:02.652 --------------------------------
+Mode : 2 Label : _d Id : S Ack : 5
+Aircraft reg: A6-EFM 
+
+[#1 (F:131.475 L:-16 E:0) 24/07/2021 06:50:02.563 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59H
+#10B37 77  0
+ 52  24  28 37 37 77  0 52 44  3 37 37 74  0
+ 51  24  28 37 37 72  0 52 53  3 32 32 61  0
+ 51  24  28 37 37 69  0 52 62  3 21 21 42  0
+ 52  24  28 37 37 69  0 51  2  3 25 25 64  0
+ 52  25  28 
+ETB
+
+[#5 (F:131.825 L: -5 E:0) 24/07/2021 06:50:04.455 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78B
+#10B21
+-36002200000000001000000000221
+-35002200000000001000000000221
+-34002200000000001000000000221
+-33002200000000001000000000221
+-32002200000000001000000000221
+-31002200000000001000000000221
+-300022000
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:05.437 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 4
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:50:06.339 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O42H
+#10B  00CLSDOPENOPENOPENONSPD  
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:50:08.379 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 3
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-14 E:0) 24/07/2021 06:50:09.362 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59I
+#10B37 37 70  0 51  2  3 33 34 73  0
+ 52  25  28 37 37 70  0 52  2  3 36 37 79  0
+ 52  25  28 37 37 70  0 52  2  3 37 37 80  0
+ 52  25  28 37 37 70  0 52  2  3 37 37 80  0
+ 52  25  28 37 37 72  0 52  2  3 3
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:10.189 --------------------------------
+Mode : 2 Label : H1 Id : T Nak
+Aircraft reg: A6-EFM 
+- #MDPWI/WD320,ASTES,233007,320M29.VEDOM,229004,320M30.VEDOS,095007,320M31.ITEVO,082015,320M32.TASMI,089015,320M32.SEPTU,200006,320M30.ROXOP,230035,320M29.EFFEZ,229044,320M30.NAREN,228059,320M30.EBEDI,224076,320M30.USANU
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:11.746 --------------------------------
+Mode : 2 Label : _d Id : O Ack : 6
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:12.073 --------------------------------
+Mode : 2 Label : H1 Id : J Ack : 5
+Aircraft reg: A6-EBK 
+.DXBEGEK 240650
+CFD
+AN A6-EBK/FI EK392/MA 939A
+- #CFEF
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:50:12.647 --------------------------------
+Mode : 2 Label : _d Id : 6 Ack : T
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S51A
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:50:12.974 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78C
+#10B00000001000000000221
+-29002200000000001000000000221
+-28002200000000001000000000221
+-27002200000000001000000000221
+-26002200000000001000000000221
+-25002200000000001000000000221
+-24002200000000001000000
+ETB
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:50:13.876 --------------------------------
+Mode : 2 Label : _d Id : 6 Ack : J
+Aircraft reg: A6-EBK Flight id: EK0392
+No: S10A
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:14.121 --------------------------------
+Mode : 2 Label : B9 Id : 1 Nak
+Aircraft reg: D-AALJ Flight id: 3S0513
+No: L01A
+/OMDB.TI2/046OMDBD139B
+##########################
+Destination Airport : OMDB
+
+[#5 (F:131.825 L:-21 E:0) 24/07/2021 06:50:14.449 --------------------------------
+Mode : 2 Label : 2C Id : 4 Nak
+Aircraft reg: A6-ENH Flight id: EK0123
+No: M02A
+LSA01UAE123    /24240650OMDBLTFM
+/LSH FINAL1/LAC 399514
+
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:15.588 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 4
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:50:15.268 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: C21A
+#CFBEF 1 24JUL21 0650 EKA6-EBK UAE392 OMDB/VVTS 3115-BCG-00W-17 L
+ATA 221100
+MSG 2219914 A
+DB AUTOPILOT FLIGHT DIRECTOR COMPUTERS
+ATA 232702
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+ATA 270200
+MSG 2717018 A
+
+ETB
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:50:15.998 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#1 (F:131.475 L:-16 E:0) 24/07/2021 06:50:16.489 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59J
+#10B7 37 79  0
+ 52  25  28 37 37 71  0 52  2  3 37 37 80  0
+ 52  25  29 37 37 73  0 52  2  3 37 38 79  0
+ 52  25  28 37 37 71  0 52  2  3 37 38 79  0
+ 52  25  29 37 37 73  0 52  2  3 37 38 78  0
+ 52  25  2
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:17.480 --------------------------------
+Mode : 2 Label : H1 Id : U Nak
+Aircraft reg: A6-EFM 
+- #MD,229063,320M32.VAXEB,239033,320M38.ODMAX,243017,320M42.MATEL,203008,320M44.ARGES,127008,320M45.BUDOP,339002,320M44.PATAK,331020,320M43.ODNEM,318029,320M43.SOPGA,233024,320M43.MASEK,210035,320M43.GMH,199035,320M44.AB
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:19.118 --------------------------------
+Mode : 2 Label : _d Id : P Ack : 7
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:19.529 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 7
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:19.939 --------------------------------
+Mode : 2 Label : RA Id : U Ack : 4
+Aircraft reg: A6-ENH 
+QUDXBEGEK~1DIS01240650
+LDSHT ACCEPT ACK
+FLIGHT NUMBER: UAE123    
+SECTOR: OMDB-LTFM
+FLIGHT DATE: 24
+
+LOADSHEET ID: FINAL1
+CREW CODE: 399514
+
+AUTO RESPONSE
+LOADSHEET ACCEPT REPORT
+RECEIVED FROM A6-ENH
+SENT TO 
+ETB
+
+[#5 (F:131.825 L: -6 E:1) 24/07/2021 06:50:21.003 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78D
+#10B000221
+-23002200000000001000000000221
+-22002200000000001000000000221
+-21002200000000001000000000221
+-20002200000000001000000000221
+-19002200000000001000000000221
+-18002200000000001000000000221
+-17002
+ETB
+
+[#5 (F:131.825 L:-20 E:0) 24/07/2021 06:50:21.904 --------------------------------
+Mode : 2 Label : _d Id : 5 Ack : U
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S02A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:50:22.306 --------------------------------
+Mode : 2 Label : _d Id : N Ack : 5
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:22.477 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 1
+Aircraft reg: D-AALJ 
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:50:23.207 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O59K
+#10B8 37 37 72  0 52  2  3 37 38 77  0
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:23.214 --------------------------------
+Mode : 2 Label : A9 Id : G Nak
+Aircraft reg: D-AALJ 
+/DXBATYA.TI2/OMDB DEP ATIS C
+0630Z OMDB DEP C AT TIME 0630 DEP RWY 12R
+AIRFIELD INFO 18009KT 140V230 6000 NSC 41/19
+Q0997 NOSIG ADZ ACFT TYPE ON FST CTC
+PILOTS REP READY FOR PUSHBACK DLV FREQ 120.35
+DRG PUSHBACK TAX
+ETB
+
+[#4 (F:131.725 L:-17 E:0) 24/07/2021 06:50:24.687 --------------------------------
+Mode : D Label : SA Id : 4 Nak
+Aircraft reg: VQ-BFU Flight id: RU0101
+No: M03A
+0LS065022V
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:25.099 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : G
+Aircraft reg: D-AALJ Flight id: 3S0513
+No: S22A
+
+[#4 (F:131.725 L:-19 E:0) 24/07/2021 06:50:27.226 --------------------------------
+Mode : d Label : _d Id : Z Ack : 4
+Aircraft reg: VQ-BFU 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:27.965 --------------------------------
+Mode : 2 Label : H1 Id : U Nak
+Aircraft reg: A6-EFM 
+- #MD,229063,320M32.VAXEB,239033,320M38.ODMAX,243017,320M42.MATEL,203008,320M44.ARGES,127008,320M45.BUDOP,339002,320M44.PATAK,331020,320M43.ODNEM,318029,320M43.SOPGA,233024,320M43.MASEK,210035,320M43.GMH,199035,320M44.AB
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:29.105 --------------------------------
+Mode : 2 Label : _d Id : O Ack : 6
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:29.112 --------------------------------
+Mode : 2 Label : RA Id : V Nak
+Aircraft reg: A6-ENH 
+LOAD CONTROL
+
+COMMENTS RECEIVED:
+
+
+
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:50:29.850 --------------------------------
+Mode : 2 Label : _d Id : 7 Ack : U
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S52A
+
+[#5 (F:131.825 L:-21 E:0) 24/07/2021 06:50:30.341 --------------------------------
+Mode : 2 Label : _d Id : 6 Ack : V
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S03A
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:30.751 --------------------------------
+Mode : 2 Label : A9 Id : H Nak
+Aircraft reg: D-AALJ 
+I
+SQWK ASSIGNED TRANSPONDER CODE
+DEP REMAIN TWR FRQ AFT TK OFF
+PILOTS UNABLE TO ACCEPT
+K3, K4, K5 AND M7 B FOR DEP
+MUST INFORM DLV ON FST CTC
+DXB VFR FREQ 126,775
+EN WK TUR SEP IN FRC CTC ATC ADVS ATC COPIED CB546
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:32.717 --------------------------------
+Mode : 2 Label : _d Id : 3 Ack : H
+Aircraft reg: D-AALJ Flight id: 3S0513
+No: S23A
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:50:33.372 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: C21B
+#CFBDB PRIMARY FLIGHT COMPUTER (RIGHT)
+DB PRIMARY FLIGHT COMPUTER (LEFT)
+DB PRIMARY FLIGHT COMPUTER (CENTER)
+ATA 342100
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+MSG 3420010 L
+DB AIR DATA I
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:34.437 --------------------------------
+Mode : 2 Label : H1 Id : V Nak
+Aircraft reg: A6-EFM 
+- #MDNED,143039,320M47.LOGAN,138042,320M48/WD340,ASTES,206008,340M35.VEDOM,202008,340M35.VEDOS,104006,340M36.ITEVO,083016,340M37.TASMI,099017,340M37.SEPTU,140007,340M35.ROXOP,228039,340M33.EFFEZ,228051,340M33.NAREN,22806
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:35.413 --------------------------------
+Mode : 2 Label : _d Id : P Ack : 7
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:50:35.502 --------------------------------
+Mode : 2 Label : Q0 Id : 2 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: S29A
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:50:36.404 --------------------------------
+Mode : 2 Label : _d Id : 8 Ack : V
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S53A
+
+[#5 (F:131.825 L:-21 E:1) 24/07/2021 06:50:36.731 --------------------------------
+Mode : 2 Label : B9 Id : 7 Nak
+Aircraft reg: A6-ENH Flight id: EK0123
+No: L14A
+/OMDB.TI2/046OMDBD139B
+##########################
+Destination Airport : OMDB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:36.396 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: D44A
+#DFBACM01ACM109ASEKA6-EGEUAE209  OMDBLGAV240721  46PO052658
+331151463172EAD11707 176816232
+05265822390  830
+06500522391   00
+1000  8771 62
+ 701  9766 62
+064602
+......
+......
+     739.4
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:37.632 --------------------------------
+Mode : 2 Label : A9 Id : I Nak
+Aircraft reg: D-AALJ 
+
+
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:38.697 --------------------------------
+Mode : 2 Label : _d Id : 4 Ack : I
+Aircraft reg: D-AALJ Flight id: 3S0513
+No: S24A
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:39.434 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 8
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:40.418 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 2
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:50:40.663 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: C21C
+#CFBNERTIAL REFERENCE UNIT
+EOR
+
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:50:41.073 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D04A
+#DFBA320,011469,1,1,TB000000/REP002,85,01,1/CCK32023,JUL24,051542,UTTT,OMDB,0333/C0TFC04000000303/C106,13202,5000,44,0010,0,0100,44,X/CE-108,36008,258,780,6447,303,F22000/CN-107,36031,259,781,6447,303/EC59A082,
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:50:42.458 --------------------------------
+Mode : 2 Label : _d Id : Q Ack : 8
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:41.974 --------------------------------
+Mode : 2 Label : H1 Id : W Nak
+Aircraft reg: A6-EFM 
+- #MD1,340M34.EBEDI,227076,340M34.USANU,228072,340M34.VAXEB,233051,340M37.ODMAX,237029,340M42.MATEL,218012,340M45.ARGES,146005,340M47.BUDOP,339006,340M47.PATAK,329018,340M48.ODNEM,324029,340M48.SOPGA,241028,340M48.MASEK,
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:43.441 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: C53B
+#CFBOR
+
+
+[#5 (F:131.825 L:-18 E:0) 24/07/2021 06:50:42.875 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78D
+#10B000221
+-23002200000000001000000000221
+-22002200000000001000000000221
+-21002200000000001000000000221
+-20002200000000001000000000221
+-19002200000000001000000000221
+-18002200000000001000000000221
+-17002
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:50:43.940 --------------------------------
+Mode : 2 Label : _d Id : 9 Ack : W
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S54A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:44.269 --------------------------------
+Mode : 2 Label : A9 Id : W Ack : 7
+Aircraft reg: A6-ENH 
+/DXBATYA.TI2/OMDB DEP ATIS C
+0630Z OMDB DEP C AT TIME 0630 DEP RWY 12R
+AIRFIELD INFO 18009KT 140V230 6000 NSC 41/19
+Q0997 NOSIG ADZ ACFT TYPE ON FST CTC
+PILOTS REP READY FOR PUSHBACK DLV FREQ 120.35
+DRG PUSHBACK TAX
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:45.661 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 9
+Aircraft reg: A6-EBK 
+
+[#4 (F:131.725 L: -9 E:0) 24/07/2021 06:50:46.396 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:50:46.806 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:46.889 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 3
+Aircraft reg: UK32023 
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:50:48.034 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#1 (F:131.475 L:-18 E:0) 24/07/2021 06:50:48.110 --------------------------------
+Mode : 2 Label : SQ 
+02XADWCOMDW12454N05510EV136975/ARINC
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:50:48.520 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 9
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:48.527 --------------------------------
+Mode : 2 Label : _d Id : Q Ack : 8
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-15 E:0) 24/07/2021 06:50:49.503 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60A
+#10BSS0071AA_B777-300ER157
+A6-EGE  UAE209  OMDBLGAV240721 151TA064820
+223235223235
+-40002200000000001000000000221
+-39002200000000001000000000221
+-38002200000000001000000000221
+-370022000000000010000000002
+ETB
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:50:49.429 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78E
+#10B200000000001000000000221
+-16002200000000001000000000221
+-15002200000000001000000000221
+-14002200000000001000000000221
+-13002200000000001000000000221
+-12002200000000001000000000221
+-1100220000000000100
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:50.412 --------------------------------
+Mode : 2 Label : H1 Id : X Nak
+Aircraft reg: A6-EFM 
+- #MD213038,340M48.GMH,197039,340M49.ABNED,152040,340M51.LOGAN,147040,340M50/WD360,ASTES,185010,360M39.VEDOM,190012,360M40.VEDOS,125009,360M41.ITEVO,087017,360M42.TASMI,101019,360M41.SEPTU,125013,360M40.ROXOP,221039,360M
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:51.805 --------------------------------
+Mode : 2 Label : A9 Id : X Nak
+Aircraft reg: A6-ENH 
+I
+SQWK ASSIGNED TRANSPONDER CODE
+DEP REMAIN TWR FRQ AFT TK OFF
+PILOTS UNABLE TO ACCEPT
+K3, K4, K5 AND M7 B FOR DEP
+MUST INFORM DLV ON FST CTC
+DXB VFR FREQ 126,775
+EN WK TUR SEP IN FRC CTC ATC ADVS ATC COPIED CB546
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:50:52.706 --------------------------------
+Mode : 2 Label : _d Id : 0 Ack : X
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S55A
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:50:53.197 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O04A
+#10BSB009BA_2406500
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:53.688 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 4
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-22 E:0) 24/07/2021 06:50:54.016 --------------------------------
+Mode : 2 Label : _d Id : 9 Ack : X
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S05A
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:50:54.344 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D04C
+#DFB2031,100,019,31,126,04898,0002/V105,04,282,067,01,03,00008/V205,01,151,291,04,04,00008/V300,00,000,000,0000/V400,00,000,000,0000/V507,04,287,092,0915/V607,02,156,315,0916/V7302,099,00081,22222222222111/V834
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:55.574 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB22515N05525EV136975/ARINC
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:50:55.811 --------------------------------
+Mode : 2 Label : _d Id : S Ack : 0
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:50:56.303 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 4
+Aircraft reg: A6-ENL 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:50:56.638 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 9
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-16 E:0) 24/07/2021 06:50:56.712 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60B
+#10B21
+-36002200000000001000000000221
+-35002200000000001000000000221
+-34002200000000001000000000221
+-33002200000000001000000000221
+-32002200000000001000000000221
+-31002200000000001000000000221
+-300022000
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:57.539 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78F
+#10B0000000221
+-10002200000000001000000000221
+-09002200000000001000000000221
+-08002200000000001000000000221
+-07002200000000001000000000221
+-06002200000000001000000000221
+-05002200000000001000000000221
+-0
+ETB
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:50:57.613 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ENL Flight id: EK0660
+No: D88B
+#DFB0E0553870020P398191009G N25238E0553910031P402195009G N25235E0553950048P393214008G N25233E0553990069P391203012G N25231E0554030092P381189010G N25228E0554080113P373206013G N25226E0554110132P368201014G N25224E0
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:50:58.931 --------------------------------
+Mode : 2 Label : H1 Id : Y Nak
+Aircraft reg: A6-EFM 
+- #MD39.EFFEZ,224051,360M38.NAREN,226062,360M39.EBEDI,228073,360M38.USANU,228074,360M37.VAXEB,230061,360M38.ODMAX,234042,360M41.MATEL,229019,360M45.ARGES,229008,360M47.BUDOP,341010,360M50.PATAK,324018,360M51.ODNEM,326029
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:50:59.914 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 9
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:51:00.816 --------------------------------
+Mode : 2 Label : _d Id : 1 Ack : Y
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S56A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:51:01.143 --------------------------------
+Mode : 2 Label : A9 Id : Y Nak
+Aircraft reg: A6-ENH 
+
+
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:01.799 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 5
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-22 E:1) 24/07/2021 06:51:02.126 --------------------------------
+Mode : 2 Label : _d Id : 0 Ack : Y
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S06A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:02.446 --------------------------------
+Mode : 2 Label : _d Id : T Ack : 1
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L: -8 E:1) 24/07/2021 06:51:02.454 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D04D
+#DFB0,086,00081,22222222222111/X102183,-003,0022,0001,00002,-001/X202195,0000,0022,0001,00003,-001/X3-002,0004,0010,0013,-010,0000,0000/X40000,0000,0000,0000,0000,0000/X50000,0000,0000,0000,0000,0000/X62211,E05
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:03.519 --------------------------------
+Mode : 2 Label : _d Id : S Ack : 0
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-14 E:0) 24/07/2021 06:51:03.348 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60C
+#10B00000001000000000221
+-29002200000000001000000000221
+-28002200000000001000000000221
+-27002200000000001000000000221
+-26002200000000001000000000221
+-25002200000000001000000000221
+-24002200000000001000000
+ETB
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:51:04.502 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78G
+#10B4112200000000111000000000221
+-03112200000000111000000000221
+-02112100000000111000000000221
+-01112100000000111200000000221
+ 00112100000000111200000000221
+ 01112200000000111200000000221
+ 021122000000001
+ETB
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:51:04.740 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ENL Flight id: EK0660
+No: D88C
+#DFB554160144P362189011G N25221E0554200152P358187012G N25219E0554240161P356182012G N25217E0554290169P355178013G /N25189E0554790267P337211015G N25156E0555370427P297195012G N25122E0555970622P242181002G N25079E055
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:51:06.878 --------------------------------
+Mode : 2 Label : H1 Id : Z Nak
+Aircraft reg: A6-EFM 
+- #MD,360M52.SOPGA,246030,360M52.MASEK,214042,360M53.GMH,198046,360M53.ABNED,166036,360M53.LOGAN,154029,360M50/WD380,ASTES,177014,380M44.VEDOM,183016,380M45.VEDOS,137011,380M45.ITEVO,095018,380M46.TASMI,101021,380M45.SEP
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:08.680 --------------------------------
+Mode : 2 Label : _d Id : J Ack : 6
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:51:09.008 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : Z
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S57A
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:51:09.410 --------------------------------
+Mode : 2 Label : _d Id : U Ack : 2
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:51:09.335 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: D04E
+#DFB82,N349,033,045,0145,----/X72211,E0582,N349,033,045,0158,1322/:
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:10.400 --------------------------------
+Mode : 2 Label : _d Id : T Ack : 1
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:51:10.393 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60D
+#10B000221
+-23002200000000001000000000221
+-22002200000000001000000000221
+-21002200000000001000000000221
+-20002200000000001000000000221
+-19002200000000001000000000221
+-18002200000000001000000000221
+-17002
+ETB
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:51:11.867 --------------------------------
+Mode : 2 Label : _d Id : N Ack : 0
+Aircraft reg: A6-EFI 
+
+[#4 (F:131.725 L:-17 E:0) 24/07/2021 06:51:11.873 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:51:11.383 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78H
+#10B11200000000221
+ 03112200000000111200000000221
+ 04112200000000111200000000221
+ 05112200000000111200000000221
+ 06112200000000111200000000221
+ 07112200000000111200000000221
+ 08112200000000111200000000221
+ETB
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:51:13.268 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05A
+#10BACM01ACM108BSAA6-EGY         )   )   )......  40PO31636315338316FBSM79935
+ 75 19711945015226E  39-  40-
+  59146  63   45-10-  333
+  56   99  116  0  1-180  000) 764OPEN
+ 111  168  318  0  1-180  000) 73
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:51:14.742 --------------------------------
+Mode : 2 Label : H1 Id : A Nak
+Aircraft reg: A6-EFM 
+- #MDTU,124017,380M44.ROXOP,213039,380M43.EFFEZ,219049,380M42.NAREN,225059,380M42.EBEDI,229069,380M42.USANU,228070,380M41.VAXEB,230063,380M40.ODMAX,232049,380M41.MATEL,233025,380M44.ARGES,248013,380M46.BUDOP,319012,380M5
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:16.054 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 7
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:51:16.380 --------------------------------
+Mode : 2 Label : 5V Id : 8 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: S30A
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:51:16.626 --------------------------------
+Mode : 2 Label : _d Id : 3 Ack : A
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S58A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:17.110 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 3
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:17.282 --------------------------------
+Mode : 2 Label : _d Id : U Ack : 2
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-13 E:0) 24/07/2021 06:51:18.093 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60E
+#10B200000000001000000000221
+-16002200000000001000000000221
+-15002200000000001000000000221
+-14002200000000001000000000221
+-13002200000000001000000000221
+-12002200000000001000000000221
+-1100220000000000100
+ETB
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:51:18.913 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 7
+Aircraft reg: A6-ENL 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:18.265 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78I
+#10B
+ 09112200000000111200000000221
+ 10112200000000111200000000221
+ 11112200000000111400000000221
+ 12112200000000111400000000221
+ 13112200000000111400000000221
+ 14112100000000111400000000221
+ 15111100000
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:19.493 --------------------------------
+Mode : 2 Label : _d Id : J Ack : 0
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:51:20.476 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05B
+#10B8OPEN
+ 153  351  519  1  1-180  000) 731OPEN
+ 205  474  920  1  2-180  000) 734OPEN
+ 254  621 1420  1  2-180  000) 733OPEN
+ 302  734 1921  1  2-180  000) 729OPEN
+ 352  792 2421  1  2-180  000) 729OPEN
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:51:22.115 --------------------------------
+Mode : 2 Label : H1 Id : B Nak
+Aircraft reg: A6-EFM 
+- #MD0.PATAK,317020,380M54.ODNEM,316029,380M55.SOPGA,242024,380M55.MASEK,219043,380M56.GMH,204053,380M56.ABNED,171028,380M51.LOGAN,160022,380M49/DD100127011.200138029.310130040.350139028.3901460110F90
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:23.418 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 4
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:51:23.999 --------------------------------
+Mode : 2 Label : _d Id : 4 Ack : B
+Aircraft reg: A6-EFM Flight id: EK9943
+No: S59A
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:51:24.409 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 3
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-16 E:0) 24/07/2021 06:51:24.401 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60F
+#10B0000000221
+-10002200000000001000000000221
+-09002200000000001000000000221
+-08002200000000001000000000221
+-07002200000000001000000000221
+-06002200000000001000000000221
+-05002200000000001000000000221
+-0
+ETB
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:51:25.310 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78J
+#10B000111400000000221
+ 16111100000000111400000000221
+ 17111100000000111400000000221
+ 18111100000000111400000000221
+ 19111100000000111000000000221
+ 20111100000000111000000000221
+ 2111110000000011100000000
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:27.030 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 1
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:51:28.013 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05C
+#10B
+ 409  789 2922  1  2-180  000) 729OPEN
+ 465  777 3322  2  2-180  000) 729OPEN
+ 516  762 3624  2  2  49  000) 729OPEN
+ 606  715 4025  2  3  62  000) 726OPEN
+ 731  642 4425  3  3  62  000) 726OPEN
+ 826 
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:30.791 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 5
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:51:31.454 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 4
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-16 E:1) 24/07/2021 06:51:31.774 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60G
+#10B4112200000000111000000000221
+-03112200000000111000000000221
+-02112100000000111000000000221
+-01111100000000111200000000221
+ 00112200000000111200000000221
+ 01112200000000111200000000221
+ 021122000000001
+ETB
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:51:32.356 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78K
+#10B0221
+ 22111100000000111000000000221
+ 23111100000000111000000000221
+ 24111100000000111000000000221
+ 25111100000000111000000000221
+ 26111100000000111000000000221
+ 27111100000000111000000000221
+ 2811110
+ETB
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:51:33.091 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:33.502 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 2
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:51:34.403 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05D
+#10B 592 4625  3  3  62  000) 725OPEN
+ 971  527 4825  3  4  62 76250 763OPEN
+  56 ) 9   00   35146  59  336  63 1
+ 111 ) 9  550  204146  59  339  63 2
+ 153 ) 9  450  165146  58  355  63 8
+ 205 ) 9  520  18
+ETB
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:36.288 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43A
+#10BSS0100DA_B777-300ER 24
+A6-EBK  UAE392  OMDBVVTS240721  33TA06504928166
+316FBSM79935  1  1  5 24 22 356 336 356 336
+ 371643 771 22 37 13  0 53  3123 38 20  0  0
+ 391643 771 23 37 13  0 53  3123 38 20  0 
+ETB
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:51:38.082 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:38.737 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 6
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:38.745 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 5
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:39.720 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60H
+#10B11200000000221
+ 03112200000000111200000000221
+ 04112200000000111200000000221
+ 05112200000000111200000000221
+ 06112200000000111200000000221
+ 07112200000000111200000000221
+ 08112200000000111200000000221
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:51:39.727 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78L
+#10B0000000111000000000221
+ 29111100000000111000000000221
+ 30111100000000111000000000221
+ 31111100000000111000000000221
+ 32111100000000111000000000221
+ 33111100000000111000000000221
+ 341111000000001110000
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:40.950 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 3
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:51:41.938 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05E
+#10B4146  57  504  6418
+ 254 ) 9  810  266146  55  695  6624
+ 302 ) 9 1080  342146  54  826  6631
+ 352 ) 9 1190  370146  52  913  6739
+ 409 ) 9 1210  373146  51  931  6848
+ 465 ) 9 1410  418145  50  961  6
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:51:43.243 --------------------------------
+Mode : 2 Label : _d Id : N Ack : 0
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:44.233 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43B
+#10B 0
+ 411643 770 24 37 13  0 52  3123 38 19  0  0
+ 441643 771 25 37 14  0 53  3123 38 19  0  0
+ 471643 771 26 38 20  0 52  3123 38 19  0  0
+ 511643 773 27 42 10  0 53  3123 38 19  0  0
+ 541643 785 29 41 
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:46.110 --------------------------------
+Mode : 2 Label : _d Id : Z Ack : 7
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:51:46.117 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 6
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:51:47.011 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60I
+#10B
+ 09112200000000111200000000221
+ 10112200000000111400000000221
+ 11112200000000111400000000221
+ 12112200000000111400000000221
+ 13112200000000111400000000221
+ 14111100000000111400000000221
+ 15111100000
+ETB
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:47.100 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O78M
+#10B00000221
+ 35111100000000111000000000221
+ 36111100000000111000000000221
+ 37111100000000111000000000221
+ 38111100000000111000000000221
+ 39111100000000111000000000221
+ 40111100000000111000000000221
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:51:48.240 --------------------------------
+Mode : 2 Label : SQ 
+01XASHJOMSJ1ARINC
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:48.248 --------------------------------
+Mode : 2 Label : _d Id : N Ack : 4
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:51:49.230 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05F
+#10B859
+ 516 ) 9 1630  461146  49  982  6966
+ 606 ) 9 1840  496146  48 1016  6968
+ 731 ) 9 2400  574145  47 1026  6969
+ 826 ) 9 2990  637144  46 1026  7071
+ 9711012 3450  682144  46  970  7073
+1001  413  
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:51:50.459 --------------------------------
+Mode : 2 Label : _d Id : O Ack : 1
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:51.442 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43C
+#10B11  0 52  3123 38 19  0  0
+ 531643 796 30 36 16  0 53  3123 38 36  0  0
+ 531643 801 30 34 11  0 53  3123 38 35  0  0
+ 53  26 811 40 34 12  0 53  3123 38 34  0  0
+ 53  28 811 40 33 13  0 52  3123 38 34  
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:52.426 --------------------------------
+Mode : 2 Label : _d Id : Z Ack : 7
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:51:53.073 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 8
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L: -9 E:0) 24/07/2021 06:51:53.974 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60J
+#10B000111400000000221
+ 16111100000000111400000000221
+ 17111100000000111400000000221
+ 18111100000000111000000000221
+ 19111100000000111000000000221
+ 20111100000000111000000000221
+ 2111110000000011100000000
+ETB
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:54.885 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O79A
+#10BSB009BA_2406480
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:55.540 --------------------------------
+Mode : 2 Label : _d Id : O Ack : 5
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:51:56.439 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05G
+#10B45144 66  7274 763 399 10
+1012 3520  686  432  8011533719327  5
+..........................................
+......................................
+........................................
+..............
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:51:57.669 --------------------------------
+Mode : 2 Label : _d Id : P Ack : 2
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:51:58.569 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43D
+#10B0  0
+ 53  24 812 40 31 12  0 52  3123 38 31 65  0
+ 53  24 812 40 25 12  0 52  3123 38 25 86  0
+ 52  23  28 39 31 23  0 51  3  3 34 30 14239
+ 53  23  29 40 39 13249 52  3  3 38 39  0239
+ 53  23  29 40 3
+ETB
+
+[#1 (F:131.475 L:-13 E:0) 24/07/2021 06:51:59.381 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 9
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:01.027 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 8
+Aircraft reg: A6-ECM 
+
+[#1 (F:131.475 L: -9 E:0) 24/07/2021 06:52:00.446 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60K
+#10B0221
+ 22111100000000111000000000221
+ 23111100000000111000000000221
+ 24111100000000111000000000221
+ 25111100000000111000000000221
+ 26111100000000111000000000221
+ 27111100000000111000000000221
+ 2811110
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:52:02.419 --------------------------------
+Mode : 2 Label : _d Id : P Ack : 6
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:52:03.320 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: O05H
+#10B...........................
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:52:04.714 --------------------------------
+Mode : 2 Label : _d Id : Q Ack : 3
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:52:05.696 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43E
+#10B9 13247 52  3  3 38 39  0237
+ 53  23  29 40 39 15245 52  3  3 38 39  0236
+ 53  23  29 40 39 15245 53  3  3 38 39  0233
+ 53  23  29 40 39 15248 53  3  3 38 39  0233
+ 53  23  29 40 39 13246 53  3  3 38 39
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:52:06.590 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 0
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L: -7 E:0) 24/07/2021 06:52:07.573 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60L
+#10B0000000111000000000221
+ 29111100000000111000000000221
+ 30111100000000111000000000221
+ 31111100000000111000000000221
+ 32111100000000111000000000221
+ 33111100000000111000000000221
+ 341111000000001110000
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:09.294 --------------------------------
+Mode : 2 Label : _d Id : Q Ack : 7
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:52:10.284 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EGY Flight id: EK0000
+No: D01A
+#DFBACM01ACM109ASEKA6-EGY       )   )   )240721  40PO063314
+ 79154843172EAD11707 197115226
+06331419450  176
+06505219450   00
+1000  8371 73
+ 700  8764 70
+......
+......
+......
+     132.8
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:52:10.932 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:52:11.669 --------------------------------
+Mode : 2 Label : H1 Id : R Ack : 4
+Aircraft reg: A6-EBK 
+.DXBEGEK 240652
+CFD
+AN A6-EBK/FI EK392/MA 950A
+- #CFEFFDE
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:52:13.306 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 1
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:12.980 --------------------------------
+Mode : 2 Label : H1 Id : 5 Ack : R
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43F
+#10B  0236
+ 53  23  29 40 39 15244 53  3  3 38 39  0230
+ 53  23  29 40 39 14242 53  3  3 38 39  0229
+ 53  23  29 40 39 15242 53  3  3 38 39  0230
+ 53  23  29 40 39 14249 51  3  3 36 36  0228
+ 53  23  29 40
+ETB
+
+[#1 (F:131.475 L: -8 E:0) 24/07/2021 06:52:14.291 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O60M
+#10B00000221
+ 35111100000000111000000000221
+ 36111100000000111000000000221
+ 37111100000000111000000000221
+ 38111100000000111000000000221
+ 39111100000000111000000000221
+ 40111100000000111000000000221
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:16.997 --------------------------------
+Mode : 2 Label : _d Id : R Ack : 8
+Aircraft reg: A6-EGY 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:19.295 --------------------------------
+Mode : 2 Label : _d Id : S Ack : 5
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:20.195 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43G
+#10B 39 14239 51  3  3 36 36  0223
+ 53  23  28 40 39 15241 52  3  3 37 36  0229
+ 53  23  28 40 39 15239 52  3  3 36 36  0228
+ 52  23  28 39 37 77235 50  3  3 33 31200  0
+ 52 294  28 39 37 78  0 50  3  3 33 
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:52:21.089 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 2
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:22.813 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O80A
+#10BACM01ACM301ESA6-ECM  UAE358  OMDBWIII240721  17TA06521811757316FBSM79935
+ 27A1C0   461 42210)  421   409    10  -7001
+1001001010
+ 51 35 33201155 2141100
+ 51 35 34200133 2181100
+   46110) 996  422   409
+ETB
+
+[#1 (F:131.475 L: -8 E:0) 24/07/2021 06:52:23.467 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O61A
+#10BSB009BA_2406500
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:26.423 --------------------------------
+Mode : 2 Label : _d Id : T Ack : 6
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:27.324 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43H
+#10B30156  0
+ 52 391  27 39 37 78  0 50  3  3 34 31104  0
+ 53 478  28 34 33 68  0 51  3  3 34 32 77  0
+ 53 565  28 24 22 50  0 51  3  3 35 34 76  0
+ 52 272  28 24 22 63  0 51  3  3 36 35 73  0
+ 52  23  28 
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:52:28.545 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 3
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:29.289 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 9
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:30.190 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O80B
+#10B23  72222
+   31472551184186  -4201 92148 45
+   11462524185185  -7201105158 43
+1001002002221  29 4000 354 1209
+1000002002221  2313001 354 1209
+ 12623  201310652  4222
+ 22522 130001  4056
+ 42622 110001
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:52:33.385 --------------------------------
+Mode : 2 Label : _d Id : U Ack : 7
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:34.287 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43I
+#10B37 35 81  0 51  3  3 36 35 74  0
+ 52  23  28 39 37 81  0 51  3  3 36 35 71  0
+ 52  23  28 39 37 82  0 51  3  3 35 34 71  0
+ 52  23  29 39 37 83  0 51  3  3 35 34 72  0
+ 52  23  28 39 37 83  0 51  3  3 3
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:52:36.578 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 0
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-13 E:0) 24/07/2021 06:52:37.481 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O80C
+#10B
+ 62722 100011
+ 32622 100011
+ 52622  90001
+ 72522  70011
+ 0XX1)1230160
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:52:40.431 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 8
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:41.408 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB22515N05525EV136975/ARINC
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:52:41.823 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43J
+#10B5 34 73  0
+ 52  23  29 39 37 83  0 51  3  3 35 34 71  0
+ 52  23  29 39 37 83  0 51  3  3 35 34 71  0
+ 52  23  28 39 37 83  0 51  3  3 35 34 71  0
+ 52  23  29 39 37 84  0 51  3  3 35 34 71  0
+ 52  23  2
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:43.298 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 1
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:47.388 --------------------------------
+Mode : 2 Label : _d Id : W Ack : 9
+Aircraft reg: A6-EBK 
+
+[#4 (F:131.725 L: -9 E:0) 24/07/2021 06:52:47.387 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:52:47.802 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:52:48.295 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O43K
+#10B9 39 37 83  0 51  3  3 35 34 70  0
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:52:48.698 --------------------------------
+Mode : d Label : SQ 
+00XS
+
+[#4 (F:131.725 L:-14 E:1) 24/07/2021 06:52:48.948 --------------------------------
+Mode : d Label : SQ 
+00XS
+
+[#4 (F:131.725 L: -9 E:0) 24/07/2021 06:52:49.272 --------------------------------
+Mode : d Label : SQ 
+00XS
+
+[#5 (F:131.825 L:-19 E:0) 24/07/2021 06:52:49.681 --------------------------------
+Mode : 2 Label : B3 Id : 1 Nak
+Aircraft reg: A6-ENH Flight id: EK0123
+No: L15A
+/OMDB.DC1/RCD 046
+UAE123-OMDB-GATE B17-LTFM
+ATIS C
+-TYP/B77W9FC2
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:52:53.449 --------------------------------
+Mode : 2 Label : _d Id : X Ack : 0
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:52:54.439 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: C22A
+#CFBEFFDE 1 24JUL21 0652 EKA6-EBK UAE392 OMDB/VVTS 3115-BCG-00W-17 L
+NCMM
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+MSG 3420010 L
+DB AIR DATA INERTIAL REFERENCE UNIT
+MSG 2717018 A
+DB PRIMAR
+ETB
+
+[#5 (F:131.825 L:-14 E:0) 24/07/2021 06:52:56.241 --------------------------------
+Mode : 2 Label : A4 Id : Z Ack : 1
+Aircraft reg: A6-ENH 
+/DXBDCYA.FS1/FSM 0652 210724 OMDB
+UAE123 RCD RECEIVED
+REQUEST BEING PROCESSED
+STANDBYC84B
+
+
+[#5 (F:131.825 L:-18 E:0) 24/07/2021 06:52:57.634 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : Z
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S07A
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:53:00.501 --------------------------------
+Mode : 2 Label : _d Id : Y Ack : 1
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:53:01.403 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: D38A
+#DFBACM01ACM109ASEKA6-EBKUAE392  OMDBVVTS240721  33PO054638
+ 65243173172EAD11707 183115954
+05463823086  659
+06523423087   00
+1000  7875 62
+ 701  9369 62
+064831
+......
+......
+     602.9
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:53:02.788 --------------------------------
+Mode : 2 Label : A3 Id : A Nak
+Aircraft reg: A6-ENH 
+/DXBDCYA.DC1/CLD 0652 210724 OMDB PDC 883
+UAE123 CLRD TO LTFM OFF 12R VIA RIDAP3G
+SQUAWK 6237 ADT 0710 ATIS C
+NO CTOT; SID ALTITUDE IS 4000. REPORT READY FOR PUSH 120.3523CF
+
+
+[#5 (F:131.825 L:-20 E:0) 24/07/2021 06:53:04.597 --------------------------------
+Mode : 2 Label : _d Id : 3 Ack : A
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S08A
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:53:07.461 --------------------------------
+Mode : 2 Label : _d Id : Z Ack : 2
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-18 E:0) 24/07/2021 06:53:07.456 --------------------------------
+Mode : 2 Label : SQ 
+02XADWCOMDW12454N05510EV136975/ARINC
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:53:08.447 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: C22B
+#CFBY FLIGHT COMPUTER (RIGHT)
+DB PRIMARY FLIGHT COMPUTER (LEFT)
+DB PRIMARY FLIGHT COMPUTER (CENTER)
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+EOR
+
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:53:12.126 --------------------------------
+Mode : 2 Label : H1 Id : E Nak
+Aircraft reg: A6-ECM 
+.DXBEGEK 240653
+CFD
+AN A6-ECM/FI EK358/MA 955A
+- #CFEFFDE
+
+[#4 (F:131.725 L:-19 E:0) 24/07/2021 06:53:12.869 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:53:13.363 --------------------------------
+Mode : 2 Label : _d Id : 2 Ack : E
+Aircraft reg: A6-ECM Flight id: EK0358
+No: S88A
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:14.840 --------------------------------
+Mode : 2 Label : _d Id : A Ack : 3
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:53:15.329 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C43A
+#CFBEFFDE 1 24JUL21 0653 EKA6-ECM UAE358 OMDB/WIII 3115-BCG-00W-17 L
+NCMM
+MSG 2361661 A
+DB SATELLITE DATA UNIT HSDU (LEFT)
+MSG 2360611 A
+DB SATELLITE DATA UNIT HSDU (LEFT)
+MSG 2360601 A
+DB SATELLITE DATA
+ETB
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:53:16.475 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44A
+#10BSS0071AA_B777-300ER 34
+A6-EBK  UAE392  OMDBVVTS240721  33TA065049
+249239249239
+-40002200000000001000000000221
+-39002200000000001000000000221
+-38002200000000001000000000221
+-370022000000000010000000002
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:18.442 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 3
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:53:19.426 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: C43B
+#CFB UNIT HSDU (LEFT)
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+MSG 3140202 A
+DB ACMF IN RIGHT AIMS
+MSG 3254361 A
+DB TIRE PRESSURE CHANNEL
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+EOR
+
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:22.784 --------------------------------
+Mode : 2 Label : _d Id : B Ack : 4
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:53:23.762 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44B
+#10B21
+-36002200000000001000000000221
+-35002200000000001000000000221
+-34002200000000001000000000221
+-33002200000000001000000000221
+-32002200000000001000000000221
+-31002200000000001000000000221
+-300022000
+ETB
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:25.323 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 4
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:53:29.665 --------------------------------
+Mode : 2 Label : _d Id : C Ack : 5
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:53:30.648 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44C
+#10B00000001000000000221
+-29002200000000001000000000221
+-28002200000000001000000000221
+-27002200000000001000000000221
+-26002200000000001000000000221
+-25002200000000001000000000221
+-24002200000000001000000
+ETB
+
+[#1 (F:131.475 L:-11 E:0) 24/07/2021 06:53:32.033 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:37.201 --------------------------------
+Mode : 2 Label : _d Id : D Ack : 6
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:53:38.266 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44D
+#10B000221
+-23002200000000001000000000221
+-22002200000000001000000000221
+-21002200000000001000000000221
+-20002200000000001000000000221
+-19002200000000001000000000221
+-18002200000000001000000000221
+-17002
+ETB
+
+[#1 (F:131.475 L: -6 E:0) 24/07/2021 06:53:38.832 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O62A
+#10BACM01ACM301ESA6-EGE  UAE209  OMDBLGAV240721 151TA06533420339316FBSM79935
+240A1C0   464 42410)  422   409    10  58001
+1001001010
+ 51 35 33200150 2281100
+ 51 35 32201147 2211100
+   46410) 996  422   409
+ETB
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:53:39.979 --------------------------------
+Mode : 2 Label : SQ 
+01XASHJOMSJ1ARINC
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:53:44.567 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 4
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:44.820 --------------------------------
+Mode : 2 Label : _d Id : E Ack : 7
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L: -7 E:0) 24/07/2021 06:53:45.550 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O62B
+#10B23  72222
+   31452554187185  -6198108155 43
+   31462543186185  -6200103156 42
+1001002002221  27 5000 354 1209
+1001002001221  27 5001 354 1209
+ 12423  202010653  4500
+ 22520 130001  3889
+ 42420 110011
+ETB
+
+[#5 (F:131.825 L:-11 E:0) 24/07/2021 06:53:45.721 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44E
+#10B200000000001000000000221
+-16002200000000001000000000221
+-15002200000000001000000000221
+-14002200000000001000000000221
+-13002200000000001000000000221
+-12002200000000001000000000221
+-1100220000000000100
+ETB
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:53:46.860 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 0
+Aircraft reg: A6-EPK 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:51.537 --------------------------------
+Mode : 2 Label : _d Id : F Ack : 8
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:53:51.858 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 5
+Aircraft reg: A6-EGE 
+
+[#1 (F:131.475 L: -8 E:0) 24/07/2021 06:53:52.841 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: O62C
+#10B
+ 62620 100011
+ 32720 120001
+ 52720  90011
+ 72720  80011
+ 0XX1)1230110
+
+[#5 (F:131.825 L: -6 E:0) 24/07/2021 06:53:52.521 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44F
+#10B0000000221
+-10002200000000001000000000221
+-09002200000000001000000000221
+-08002200000000001000000000221
+-07002200000000001000000000221
+-06002200000000011000000000221
+-05002200000000011000000000221
+-0
+ETB
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:53:53.496 --------------------------------
+Mode : 2 Label : _d Id : V Ack : 3
+Aircraft reg: A6-EUS 
+
+[#1 (F:131.475 L:-20 E:0) 24/07/2021 06:53:53.906 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 1
+Aircraft reg: A6-EPK 
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:53:58.493 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 6
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:53:59.074 --------------------------------
+Mode : 2 Label : _d Id : G Ack : 9
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:53:59.804 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:53:59.975 --------------------------------
+Mode : 2 Label : H1 Id : 0 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44G
+#10B4112200000000111000000000221
+-03112200000000111000000000221
+-02112100000000111000000000221
+-01112100000000111200000000221
+ 00112100000000111200000000221
+ 01112200000000111200000000221
+ 021122000000001
+ETB
+
+[#5 (F:131.825 L:-19 E:0) 24/07/2021 06:54:05.873 --------------------------------
+Mode : 2 Label : B4 Id : 4 Nak
+Aircraft reg: A6-ENH Flight id: EK0123
+No: L16A
+/DXBDCYA.DC1/CDA 0652 210724 OMDB PDC 883
+UAE123 CLRD TO LTFM OFF 12R VIA RIDAP3G
+SQUAWK 6237 ADT 0710 ATIS C
+NO CTOT; SID ALTITUDE IS 4000. REPORT READY FOR PUSH 120.3565BE
+
+[#5 (F:131.825 L:-18 E:0) 24/07/2021 06:54:06.693 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 0
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:54:07.675 --------------------------------
+Mode : 2 Label : H1 Id : 1 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44H
+#10B11200000000221
+ 03112200000000111200000000221
+ 04112200000000111200000000221
+ 05112200000000111200000000221
+ 06112200000000111200000000221
+ 07112200000000111200000000221
+ 08112200000000111200000000221
+ETB
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:54:12.182 --------------------------------
+Mode : 2 Label : A4 Id : B Ack : 4
+Aircraft reg: A6-ENH 
+/DXBDCYA.FS1/FSM 0654 210724 OMDB
+UAE123 CDA RECEIVED
+CLEARANCE CONFIRMEDA144
+
+
+[#5 (F:131.825 L:-20 E:0) 24/07/2021 06:54:13.574 --------------------------------
+Mode : 2 Label : _d Id : 5 Ack : B
+Aircraft reg: A6-ENH Flight id: EK0123
+No: S09A
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:54:14.147 --------------------------------
+Mode : 2 Label : _d Id : I Ack : 1
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:54:15.041 --------------------------------
+Mode : 2 Label : H1 Id : J Nak
+Aircraft reg: A6-EGE 
+.DXBEGEK 240654
+CFD
+AN A6-EGE/FI EK209/MA 956A
+- #CFEFFDE
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:54:15.130 --------------------------------
+Mode : 2 Label : H1 Id : 2 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44I
+#10B
+ 09112200000000111200000000221
+ 10102200000000111200000000221
+ 11112200000000111400000000221
+ 12112200000000111400000000221
+ 13112200000000111400000000221
+ 14111100000000111400000000221
+ 15111100000
+ETB
+
+[#1 (F:131.475 L:-15 E:0) 24/07/2021 06:54:16.351 --------------------------------
+Mode : 2 Label : _d Id : 7 Ack : J
+Aircraft reg: A6-EGE Flight id: EK0209
+No: S09A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:54:18.154 --------------------------------
+Mode : 2 Label : H1 Id : 8 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: C54A
+#CFBEFFDE 1 24JUL21 0654 EKA6-EGE UAE209 OMDB/LGAV 3115-BCG-00W-17 L
+NCMM
+MSG 4517100 A
+DB CENTRAL MAINTENANCE COMPUTING FUNCTION
+MSG 3140202 A
+DB ACMF IN RIGHT AIMS
+MSG 2375001 A
+DB FDCF IN LEFT AIMS
+E
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:54:21.676 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 8
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-18 E:0) 24/07/2021 06:54:21.684 --------------------------------
+Mode : 2 Label : _d Id : J Ack : 2
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-10 E:0) 24/07/2021 06:54:22.496 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGE Flight id: EK0209
+No: C54B
+#CFBOR
+
+
+[#5 (F:131.825 L:-10 E:0) 24/07/2021 06:54:22.667 --------------------------------
+Mode : 2 Label : H1 Id : 3 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44J
+#10B000111400000000221
+ 16111100000000111400000000221
+ 17111100000000111400000000221
+ 18111100000000111400000000221
+ 19111100000000111000000000221
+ 20111100000000111000000000221
+ 2111110000000011100000000
+ETB
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:54:27.820 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 9
+Aircraft reg: A6-EGE 
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:54:28.647 --------------------------------
+Mode : 2 Label : _d Id : K Ack : 3
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-15 E:0) 24/07/2021 06:54:29.630 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB22515N05525EV136975/ARINC
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:54:30.122 --------------------------------
+Mode : 2 Label : H1 Id : 4 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44K
+#10B0221
+ 22111100000000111000000000221
+ 23111100000000111000000000221
+ 24111100000000111000000000221
+ 25111100000000111000000000221
+ 26111100000000111000000000221
+ 27111100000000111000000000221
+ 2811110
+ETB
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:54:31.268 --------------------------------
+Mode : 2 Label : H1 Id : 9 Nak
+Aircraft reg: A6-EGJ Flight id: EK2543
+No: O75A
+#10BSB009BA_2406541
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:54:36.429 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 4
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:54:36.839 --------------------------------
+Mode : 2 Label : _d Id : S Ack : 9
+Aircraft reg: A6-EGJ 
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:54:37.331 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44L
+#10B0000000111000000000221
+ 29111100000000111000000000221
+ 30111100000000111000000000221
+ 31111100000000111000000000221
+ 32111100000000111000000000221
+ 33111100000000111000000000221
+ 341111000000001110000
+ETB
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:54:43.967 --------------------------------
+Mode : 2 Label : _d Id : M Ack : 5
+Aircraft reg: A6-EBK 
+
+[#5 (F:131.825 L: -8 E:0) 24/07/2021 06:54:44.949 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O44M
+#10B00000221
+ 35111100000000111000000000221
+ 36111100000000111000000000221
+ 37111100000000111000000000221
+ 38111100000000111000000000221
+ 39111100000000111000000000221
+ 40111100000000111000000000221
+
+[#4 (F:131.725 L:-13 E:0) 24/07/2021 06:54:49.043 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L: -8 E:0) 24/07/2021 06:54:49.371 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:54:49.781 --------------------------------
+Mode : d Label : SQ 
+02XSDXBOMDB02515N05522EV136975/
+
+[#4 (F:131.725 L:-12 E:0) 24/07/2021 06:54:50.272 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:54:50.521 --------------------------------
+Mode : 2 Label : _d Id : N Ack : 6
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:54:50.103 --------------------------------
+Mode : 2 Label : H1 Id : L Nak
+Aircraft reg: A6-EBM 
+- #MDPWI/WD350,N24079E064498,084021,350M36.N24082E067001,090022,350M36.TELEM,099018,350M36.SASRO,112018,350M35.ARADO,089021,350M35.PRA,079020,350M35.ATOBU,069021,350M35.DABKI,071019,350M35.ASOPO,076015,350M35.IBUDA,11401
+ETB
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:54:52.813 --------------------------------
+Mode : 2 Label : H1 Id : 7 Nak
+Aircraft reg: A6-EBK Flight id: EK0392
+No: O45A
+#10BSB009BA_2406520
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:54:59.040 --------------------------------
+Mode : 2 Label : _d Id : O Ack : 7
+Aircraft reg: A6-EBK 
+
+[#1 (F:131.475 L:-18 E:0) 24/07/2021 06:54:59.686 --------------------------------
+Mode : 2 Label : H1 Id : L Nak
+Aircraft reg: A6-EBM 
+- #MDPWI/WD350,N24079E064498,084021,350M36.N24082E067001,090022,350M36.TELEM,099018,350M36.SASRO,112018,350M35.ARADO,089021,350M35.PRA,079020,350M35.ATOBU,069021,350M35.DABKI,071019,350M35.ASOPO,076015,350M35.IBUDA,11401
+ETB
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:55:10.746 --------------------------------
+Mode : 2 Label : H1 Id : L Nak
+Aircraft reg: A6-EBM 
+- #MDPWI/WD350,N24079E064498,084021,350M36.N24082E067001,090022,350M36.TELEM,099018,350M36.SASRO,112018,350M35.ARADO,089021,350M35.PRA,079020,350M35.ATOBU,069021,350M35.DABKI,071019,350M35.ASOPO,076015,350M35.IBUDA,11401
+ETB
+
+[#4 (F:131.725 L:-19 E:0) 24/07/2021 06:55:13.865 --------------------------------
+Mode : d Label : SQ 
+02XSSHJOMSJ02519N05530EV136975/
+
+[#5 (F:131.825 L: -9 E:0) 24/07/2021 06:55:18.946 --------------------------------
+Mode : 2 Label : H1 Id : 5 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O81A
+#10BSB016BA_ 69101 427  6325   40002
+101 427  6400   20002
+TA065515  01 -02 35 424  473000000M03
+ 800 600 200  20    5 70
+1892  896 645 488 953....11388493.......1445
+1940  877 637 495 959.... 9622495.....
+ETB
+
+[#1 (F:131.475 L:-19 E:0) 24/07/2021 06:55:19.758 --------------------------------
+Mode : 2 Label : H1 Id : L Nak
+Aircraft reg: A6-EBM 
+- #MDPWI/WD350,N24079E064498,084021,350M36.N24082E067001,090022,350M36.TELEM,099018,350M36.SASRO,112018,350M35.ARADO,089021,350M35.PRA,079020,350M35.ATOBU,069021,350M35.DABKI,071019,350M35.ASOPO,076015,350M35.IBUDA,11401
+ETB
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:55:20.830 --------------------------------
+Mode : 2 Label : Q0 Id : 9 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: S31A
+
+[#1 (F:131.475 L:-12 E:0) 24/07/2021 06:55:23.854 --------------------------------
+Mode : 2 Label : SQ 
+02XADXBOMDB12515N05522EV136975/ARINC
+
+[#5 (F:131.825 L:-16 E:0) 24/07/2021 06:55:24.680 --------------------------------
+Mode : 2 Label : _d Id : H Ack : 5
+Aircraft reg: A6-ECM 
+
+[#5 (F:131.825 L:-12 E:0) 24/07/2021 06:55:25.663 --------------------------------
+Mode : 2 Label : H1 Id : 6 Nak
+Aircraft reg: A6-ECM Flight id: EK0358
+No: O81B
+#10B..1445
+  91  99 643  790  830    0    0000000000FA8
+  90  95 563  790  830    0    0000000000FA8
+106 95 97
+
+[#5 (F:131.825 L:-17 E:0) 24/07/2021 06:55:26.893 --------------------------------
+Mode : 2 Label : _d Id : L Ack : 9
+Aircraft reg: UK32023 
+
+[#5 (F:131.825 L: -7 E:0) 24/07/2021 06:55:27.138 --------------------------------
+Mode : 2 Label : QS Id : 0 Nak
+Aircraft reg: UK32023 Flight id: HY0333
+No: M15A
+UTTTOMDB0655   3  
+##########################
+Destination Airport : OMDB
+Departure Airport : UTTT
+Gate in Time : 0655

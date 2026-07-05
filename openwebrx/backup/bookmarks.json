@@ -1,0 +1,442 @@
+[
+    {
+        "name": "Quran",
+        "frequency": 87600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Pulse95",
+        "frequency": 95000000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Sharjah",
+        "frequency": 94400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Sharjah",
+        "frequency": 94400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "AM",
+        "frequency": 131600000,
+        "modulation": "am",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Channel 4",
+        "frequency": 104800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "AM",
+        "frequency": 131700000,
+        "modulation": "am",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "AlRabia",
+        "frequency": 107800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Luv1071",
+        "frequency": 107100000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Vibe FM",
+        "frequency": 105400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Talk1003",
+        "frequency": 100300000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Radio2",
+        "frequency": 99300000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Classic",
+        "frequency": 87900000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 88400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Noor Dubai",
+        "frequency": 93900000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Dubai93",
+        "frequency": 93000000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Dubai 93",
+        "scannable": false
+    },
+    {
+        "name": "Shama",
+        "frequency": 93400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Fujairah",
+        "frequency": 92600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Fujairah",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 92200000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Ch",
+        "scannable": false
+    },
+    {
+        "name": "ZayedFM",
+        "frequency": 97600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "Volna",
+        "frequency": 103200000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "",
+        "scannable": false
+    },
+    {
+        "name": "ShjQuran",
+        "frequency": 10270000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Sharjah Quran",
+        "scannable": false
+    },
+    {
+        "name": "ShjQuran",
+        "frequency": 102700000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Sharjah Quran",
+        "scannable": false
+    },
+    {
+        "name": "City",
+        "frequency": 101600030,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "City 101.6",
+        "scannable": false
+    },
+    {
+        "name": "RAK",
+        "frequency": 103500000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "RAK FM",
+        "scannable": false
+    },
+    {
+        "name": "Khalejya",
+        "frequency": 100900000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Khalejya",
+        "scannable": false
+    },
+    {
+        "name": "GoldFM",
+        "frequency": 101300000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Ch",
+        "scannable": false
+    },
+    {
+        "name": "DubaiFM",
+        "frequency": 102000000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "DubaiFM",
+        "scannable": false
+    },
+    {
+        "name": "Radio4",
+        "frequency": 89100000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Radio4",
+        "scannable": false
+    },
+    {
+        "name": "TamilFM",
+        "frequency": 89400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "TamilFM",
+        "scannable": false
+    },
+    {
+        "name": "KadakFM",
+        "frequency": 88800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "KadakFM",
+        "scannable": false
+    },
+    {
+        "name": "DxbQuran",
+        "frequency": 91400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "DxbQuran",
+        "scannable": false
+    },
+    {
+        "name": "Tag",
+        "frequency": 91100000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Tag",
+        "scannable": false
+    },
+    {
+        "name": "SkyNews",
+        "frequency": 90500000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "SkyNews",
+        "scannable": false
+    },
+    {
+        "name": "Dubai92",
+        "frequency": 92000000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Dubai92",
+        "scannable": false
+    },
+    {
+        "name": "UAQ",
+        "frequency": 95600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "UAQ",
+        "scannable": false
+    },
+    {
+        "name": "WaterFM",
+        "frequency": 96100000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "WaterFM",
+        "scannable": false
+    },
+    {
+        "name": "Hit",
+        "frequency": 96700000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Hit",
+        "scannable": false
+    },
+    {
+        "name": "EmaratFM",
+        "frequency": 97100000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "EmaratFM",
+        "scannable": false
+    },
+    {
+        "name": "Aloula",
+        "frequency": 97400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Aloula",
+        "scannable": false
+    },
+    {
+        "name": "Beat",
+        "frequency": 97800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Beat",
+        "scannable": false
+    },
+    {
+        "name": "AbuDhabi",
+        "frequency": 98400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "AbuDhabi",
+        "scannable": false
+    },
+    {
+        "name": "Alarabia",
+        "frequency": 99000000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Alarabia",
+        "scannable": false
+    },
+    {
+        "name": "ClubFM",
+        "frequency": 99600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "ClubFM",
+        "scannable": false
+    },
+    {
+        "name": "StarFM",
+        "frequency": 99900000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "StarFM",
+        "scannable": false
+    },
+    {
+        "name": "RadioMirchi",
+        "frequency": 102400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "RadioMirchi",
+        "scannable": false
+    },
+    {
+        "name": "DubaiEye",
+        "frequency": 103800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "DubaiEye",
+        "scannable": false
+    },
+    {
+        "name": "Radio 1",
+        "frequency": 104100000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Radio 1",
+        "scannable": false
+    },
+    {
+        "name": "VirginRadio",
+        "frequency": 104400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "VirginRadio",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 104600000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Ch",
+        "scannable": false
+    },
+    {
+        "name": "Big",
+        "frequency": 106200000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Big",
+        "scannable": false
+    },
+    {
+        "name": "RadioGilli",
+        "frequency": 106500000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "RadioGilli",
+        "scannable": false
+    },
+    {
+        "name": "Ch",
+        "frequency": 105800000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Ch",
+        "scannable": false
+    },
+    {
+        "name": "Shabab",
+        "frequency": 106900155,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "Shabab",
+        "scannable": false
+    },
+    {
+        "name": "AlOula",
+        "frequency": 107400000,
+        "modulation": "wfm",
+        "underlying": "",
+        "description": "AlOula",
+        "scannable": false
+    }
+]
