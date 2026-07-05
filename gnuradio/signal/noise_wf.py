@@ -8,36 +8,24 @@
 # Title: Noise Waterfall
 # Author: Muthanna A. Alwahash
 # Copyright: 2021
-# GNU Radio version: 3.10.1.1
-
-from packaging.version import Version as StrictVersion
-
-if __name__ == '__main__':
-    import ctypes
-    import sys
-    if sys.platform.startswith('linux'):
-        try:
-            x11 = ctypes.cdll.LoadLibrary('libX11.so')
-            x11.XInitThreads()
-        except:
-            print("Warning: failed to XInitThreads()")
+# GNU Radio version: 3.10.12.0
 
 from PyQt5 import Qt
 from gnuradio import qtgui
-from gnuradio.filter import firdes
-import sip
 from gnuradio import analog
 from gnuradio import gr
+from gnuradio.filter import firdes
 from gnuradio.fft import window
 import sys
 import signal
+from PyQt5 import Qt
 from argparse import ArgumentParser
 from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
+import sip
+import threading
 
 
-
-from gnuradio import qtgui
 
 class noise_wf(gr.top_block, Qt.QWidget):
 
@@ -48,8 +36,8 @@ class noise_wf(gr.top_block, Qt.QWidget):
         qtgui.util.check_set_qss()
         try:
             self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
-        except:
-            pass
+        except BaseException as exc:
+            print(f"Qt GUI: Could not set Icon: {str(exc)}", file=sys.stderr)
         self.top_scroll_layout = Qt.QVBoxLayout()
         self.setLayout(self.top_scroll_layout)
         self.top_scroll = Qt.QScrollArea()
@@ -62,15 +50,15 @@ class noise_wf(gr.top_block, Qt.QWidget):
         self.top_grid_layout = Qt.QGridLayout()
         self.top_layout.addLayout(self.top_grid_layout)
 
-        self.settings = Qt.QSettings("GNU Radio", "noise_wf")
+        self.settings = Qt.QSettings("gnuradio/flowgraphs", "noise_wf")
 
         try:
-            if StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
-                self.restoreGeometry(self.settings.value("geometry").toByteArray())
-            else:
-                self.restoreGeometry(self.settings.value("geometry"))
-        except:
-            pass
+            geometry = self.settings.value("geometry")
+            if geometry:
+                self.restoreGeometry(geometry)
+        except BaseException as exc:
+            print(f"Qt GUI: Could not restore geometry: {str(exc)}", file=sys.stderr)
+        self.flowgraph_started = threading.Event()
 
         ##################################################
         # Variables
@@ -84,6 +72,7 @@ class noise_wf(gr.top_block, Qt.QWidget):
         ##################################################
         # Blocks
         ##################################################
+
         self.qtgui_sink_x_0 = qtgui.sink_c(
             4096, #fftsize
             window.WIN_BLACKMAN_hARRIS, #wintype
@@ -112,7 +101,7 @@ class noise_wf(gr.top_block, Qt.QWidget):
 
 
     def closeEvent(self, event):
-        self.settings = Qt.QSettings("GNU Radio", "noise_wf")
+        self.settings = Qt.QSettings("gnuradio/flowgraphs", "noise_wf")
         self.settings.setValue("geometry", self.saveGeometry())
         self.stop()
         self.wait()
@@ -159,14 +148,12 @@ class noise_wf(gr.top_block, Qt.QWidget):
 
 def main(top_block_cls=noise_wf, options=None):
 
-    if StrictVersion("4.5.0") <= StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
-        style = gr.prefs().get_string('qtgui', 'style', 'raster')
-        Qt.QApplication.setGraphicsSystem(style)
     qapp = Qt.QApplication(sys.argv)
 
     tb = top_block_cls()
 
     tb.start()
+    tb.flowgraph_started.set()
 
     tb.show()
 
