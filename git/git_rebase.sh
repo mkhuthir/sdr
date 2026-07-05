@@ -6,6 +6,7 @@ git commit -am "rebase!" #Commit the changes
 git branch -D master #Delete main/master (default) branch
 git branch -m master #Rename the current branch to main/master
 git push -f origin master #Finally, all changes are completed on your local repository, and force update your remote repository
+git push --set-upstream origin master
 
 
 
