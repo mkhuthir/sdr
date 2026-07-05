@@ -1,2 +1,4 @@
 /etc/gnuradio/conf.d
-/home/mkhuthir/.gnuradio
+~/.gnuradio
+/usr/share/gnuradio/grc/blocks
+/usr/local/share/gnuradio/grc/blocks
