@@ -66,7 +66,7 @@ class noise_wf(gr.top_block, Qt.QWidget):
         self.freq = freq = 2000000
         self.samp_rate = samp_rate = freq*4
         self.ftt_size = ftt_size = 4096
-        self.bandwidth = bandwidth = 8e6
+        self.bandwidth = bandwidth = 16e6
         self.amp = amp = 0.05
 
         ##################################################
@@ -74,21 +74,21 @@ class noise_wf(gr.top_block, Qt.QWidget):
         ##################################################
 
         self.qtgui_sink_x_0 = qtgui.sink_c(
-            4096, #fftsize
+            16384, #fftsize
             window.WIN_BLACKMAN_hARRIS, #wintype
             0, #fc
             bandwidth, #bw
-            "", #name
+            "FFT", #name
             True, #plotfreq
-            False, #plotwaterfall
-            False, #plottime
-            False, #plotconst
+            True, #plotwaterfall
+            True, #plottime
+            True, #plotconst
             None # parent
         )
         self.qtgui_sink_x_0.set_update_time(1.0/10)
         self._qtgui_sink_x_0_win = sip.wrapinstance(self.qtgui_sink_x_0.qwidget(), Qt.QWidget)
 
-        self.qtgui_sink_x_0.enable_rf_freq(False)
+        self.qtgui_sink_x_0.enable_rf_freq(True)
 
         self.top_layout.addWidget(self._qtgui_sink_x_0_win)
         self.analog_sig_source_x_0 = analog.sig_source_c(samp_rate, analog.GR_SIN_WAVE, freq, amp, 0, 0)

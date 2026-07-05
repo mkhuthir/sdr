@@ -42,19 +42,19 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [376, 76.0]
+    coordinate: [376, 80.0]
     rotation: 0
     state: enabled
 - name: bandwidth
   id: variable
   parameters:
     comment: ''
-    value: 8e6
+    value: 16e6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [464, 76.0]
+    coordinate: [464, 80.0]
     rotation: 0
     state: true
 - name: freq
@@ -66,7 +66,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [296, 76.0]
+    coordinate: [296, 80.0]
     rotation: 0
     state: enabled
 - name: ftt_size
@@ -90,7 +90,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 76.0]
+    coordinate: [200, 80.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -113,7 +113,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [128, 276.0]
+    coordinate: [144, 272.0]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0
@@ -124,25 +124,25 @@ blocks:
     bw: bandwidth
     comment: ''
     fc: '0'
-    fftsize: '4096'
+    fftsize: '16384'
     gui_hint: ''
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '""'
-    plotconst: 'False'
+    name: '"FFT"'
+    plotconst: 'True'
     plotfreq: 'True'
-    plottime: 'False'
-    plotwaterfall: 'False'
+    plottime: 'True'
+    plotwaterfall: 'True'
     rate: '10'
-    showports: 'False'
-    showrf: 'False'
+    showports: 'True'
+    showrf: 'True'
     type: complex
     wintype: window.WIN_BLACKMAN_hARRIS
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [432, 284.0]
+    coordinate: [440, 296.0]
     rotation: 0
     state: true
 
