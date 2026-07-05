@@ -1,0 +1,2 @@
+/etc/gnuradio/conf.d
+/home/mkhuthir/.gnuradio
