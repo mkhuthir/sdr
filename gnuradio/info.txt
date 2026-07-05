@@ -1,4 +1,7 @@
-/etc/gnuradio/conf.d
 ~/.gnuradio
+~/.local/state/gnuradio
+
+
+/etc/gnuradio/conf.d
 /usr/share/gnuradio/grc/blocks
 /usr/local/share/gnuradio/grc/blocks
