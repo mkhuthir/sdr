@@ -1,0 +1,77 @@
+Aviation & Aerospace Protocols
+---------------------------------
+ACARS:	VHF (131.550 MHz – 136.975 MHz) and HF (2 MHz – 22 MHz)
+ADSB: 	1090 MHz (Commercial) and 978 MHz (Universal Access Transceiver)
+HFDL: 	HF Band (2 MHz – 22 MHz, shifting dynamically based on ionospheric conditions)
+VDL: 	VHF Aviation Band (117.975 MHz – 137.000 MHz)
+TACAN: 	UHF Band (962 MHz – 1213 MHz)
+VOR: 	VHF Aviation Navigation Band (108.00 MHz – 117.95 MHz)
+ILS:	Localizer: VHF (108.10 MHz – 111.95 MHz); Glideslope: UHF (329.15 MHz – 335.00 MHz)
+DME:	UHF Band (962 MHz – 1213 MHz)
+TCAS: 	Transmits at 1030 MHz; Receives at 1090 MHz
+SATVOX: L-Band Satellite (1.5 GHz – 1.6 GHz)
+
+Maritime & Marine Protocols
+---------------------------------
+AIS:	VHF Maritime Band (161.975 MHz and 162.025 MHz)
+DSC:	VHF (156.525 MHz / Ch 70) and MF/HF emergency frequencies (e.g., 2182 kHz, 8414.5 kHz)
+NAVTEX:	MF Band (518 kHz for English, 490 kHz for local languages)
+EPIRB:	UHF Satellite emergency frequency (406.0 MHz – 406.1 MHz)
+SART:	X-Band Radar frequencies (9.2 GHz – 9.5 GHz)
+
+Amateur Radio & Data Protocols
+---------------------------------
+SSTV:		HF (e.g., 14.230 MHz) and VHF (e.g., 145.500 MHz)
+APRS:		VHF (144.390 MHz in North America, 144.800 MHz in Europe)
+AX25:		VHF Packet Radio channels (typically 144 MHz – 148 MHz)
+FT8/FT4:	HF standard frequencies (e.g., 7.074 MHz, 14.074 MHz, 21.074 MHz)
+JS8Call:	HF standard frequencies (closely adjacent to FT8, e.g., 7.078 MHz, 14.078 MHz)
+WSPR:		HF beacon frequencies (e.g., 7.0386 MHz, 14.0956 MHz)
+RTTY:		HF digital allocations (e.g., 14.080 MHz – 14.099 MHz)
+PSK31:		HF standard frequencies (e.g., 7.070 MHz, 14.070 MHz)
+JT65/JT9:	HF weak-signal windows (e.g., 14.076 MHz)
+Echolink:	VHF/UHF Repeater links (typically 144 MHz – 148 MHz and 440 MHz – 450 MHz)
+FST4: 		LF/MF/HF ultra-weak signal bands (e.g., 2200m, 630m, and standard HF bands)
+LMR:		VHF (136 MHz – 174 MHz) and UHF (400 MHz – 470 MHz)
+VoiceDMR:	VHF (136 MHz – 174 MHz) and UHF (400 MHz – 470 MHz)
+P25:		Public Safety bands: VHF (150 MHz), UHF (450 MHz), 700 MHz, and 800 MHz
+TETRA:		UHF Public Safety (380 MHz – 400 MHz / 410 MHz – 430 MHz)
+NXDN:		VHF (136 MHz – 174 MHz) and UHF (400 MHz – 470 MHz)
+dMR:		UHF business bands (446 MHz PMR in Europe)System 
+Fusion: 	VHF (144 MHz – 148 MHz) and UHF (430 MHz – 450 MHz) ham bands
+D-STAR:		VHF (144 MHz), UHF (440 MHz), and SHF (1.2 GHz) ham bands
+MDC1200:	Standard VHF/UHF analog business/public safety voice frequencies
+
+Broadcast & Consumer Radio Protocols
+---------------------------------
+FM RDS: 	VHF FM Broadcast Band (87.5 MHz – 108.0 MHz)
+HD Radio: 	AM Band (535 kHz – 1705 kHz) and FM Band (88 MHz – 108 MHz)
+DAB/DAB+: 	VHF Band III (174 MHz – 240 MHz)
+DRM: 		Shortwave/Mediumwave HF (under 30 MHz) and VHF Band I/II (30 MHz – 174 MHz)
+AMSS:		LW (148.5 kHz – 283.5 kHz) and MW (526.5 kHz – 1606.5 kHz)
+ISM:		Global bands include 13.56 MHz, 433 MHz, 868 MHz (EU), 915 MHz (US), and 2.4 GHz
+LoRaWAN: 	Regional sub-GHz ISM bands: 915 MHz (US), 868 MHz (EU), 433 MHz (Asia)
+Zigbee: 	Primarily 2.4 GHz ISM band (with regional sub-GHz at 868/915 MHz)
+Z-Wave: 	Sub-GHz ISM bands: 908.42 MHz (US) and 868.42 MHz (EU)
+BLE: 		2.4 GHz ISM Band (2402 MHz – 2480 MHz)
+Thread: 	2.4 GHz ISM Band (utilizing IEEE 802.15.4 channels)
+Wi-Fi: 		2.4 GHz, 5 GHz, and 6 GHz (Wi-Fi 6E/7) bands
+Ant+:		2.4 GHz ISM Band (specifically 2457 MHz)
+EnOcean: 	868.3 MHz (EU) and 315 MHz / 902 MHz (US)
+WirelessHART: 	2.4 GHz ISM BandAutomotive, Sub-GHz, & Consumer Telemetry
+TPMS: 		315 MHz (primarily US/Asia) and 433.92 MHz (primarily Europe)
+RKE: 		315 MHz (US) and 433.92 MHz (EU)RFID: LF (125 kHz – 134 kHz), HF (13.56 MHz), and UHF (860 MHz – 960 MHz)
+NFC: 		HF Band (strictly 13.56 MHz)WM-Bus: Sub-GHz bands at 169 MHz, 433 MHz, and 868 MHz
+FlexNet:	Proprietary licensed bands in the 900 MHz range (typically 901 MHz – 941 MHz)
+Itron ERT: 	UHF ISM band (typically 902 MHz – 928 MHz)Cellular & Satellite Infrastructure
+GSM/GPRS/EDGE:	Legacy bands at 850 MHz, 900 MHz, 1800 MHz, and 1900 MHz
+UMTS/HSPA: 	850 MHz, 900 MHz, 1900 MHz, and 2100 MHzLTE: Spans multiple bands globally across 600 MHz to 3.8 GHz
+5G NR: 		FR1 (Sub-6 GHz: 410 MHz – 7125 MHz) and FR2 (mmWave: 24.25 GHz – 71.0 GHz)
+NB-IoT/LTE-M:	LTE guard bands (700 MHz to 2.1 GHz)
+GPS:		L-Band (L1: 1575.42 MHz, L2: 1227.60 MHz, L5: 1176.45 MHz)
+GLONASS:	L-Band (L1: 1575.42 MHz, L2: 1227.60 MHz, L5: 1176.45 MHz)
+Galileo:	L-Band (L1: 1575.42 MHz, L2: 1227.60 MHz, L5: 1176.45 MHz)
+BeiDou:		L-Band (L1: 1575.42 MHz, L2: 1227.60 MHz, L5: 1176.45 MHz)
+Inmarsat-C:	L-Band (Uplink: 1.626 GHz – 1.646 GHz; Downlink: 1.530 GHz – 1.545 GHz)
+Iridium SBD:	L-Band Satellite (1616 MHz – 1626.5 MHz)
+
