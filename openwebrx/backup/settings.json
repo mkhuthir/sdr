@@ -142,7 +142,11 @@
                     "start_mod": "usb",
                     "tuning_step": 500,
                     "rf_gain": "auto",
-                    "antenna": "Antenna A"
+                    "antenna": "Antenna A",
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "17m": {
                     "name": "HAM 17m 18.1MHz",
@@ -152,7 +156,11 @@
                     "start_mod": "usb",
                     "tuning_step": 500,
                     "rf_gain": "auto",
-                    "antenna": "Antenna A"
+                    "antenna": "Antenna A",
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    }
                 },
                 "15m": {
                     "name": "HAM 15m 21.2MHz",
