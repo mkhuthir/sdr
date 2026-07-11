@@ -191,12 +191,7 @@
             "start": 54000000,
             "end": 72000000
         },
-        {
-            "name": "TV Channels 5-6",
-            "type": "broadcast",
-            "start": 76000000,
-            "end": 88000000
-        },
+
         {
             "name": "FM Broadcast",
             "type": "broadcast",
