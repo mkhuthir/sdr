@@ -7718,7 +7718,7 @@
                     "mode": 7
                 }
             },
-            "showOnWaterfall": true
+            "showOnWaterfall": false
         },
         "Sat - GPS": {
             "bookmarks": {

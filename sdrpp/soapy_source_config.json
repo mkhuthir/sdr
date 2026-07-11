@@ -1,0 +1,15 @@
+{
+    "device": "SDRplay Dev0 RSPdx 210500B845",
+    "devices": {
+        "SDRplay Dev0 RSPdx 210500B845": {
+            "agc": false,
+            "antenna": 1,
+            "bandwidth": 0,
+            "gains": {
+                "IFGR": 31.16900062561035,
+                "RFGR": 7.39900016784668
+            },
+            "sampleRate": 2048000.0
+        }
+    }
+}

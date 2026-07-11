@@ -10,7 +10,7 @@
     "bandPlanEnabled": true,
     "bandPlanPos": 0,
     "centerTuning": false,
-    "colorMap": "Classic",
+    "colorMap": "GQRX",
     "decimation": 1,
     "fastFFT": false,
     "fftHeight": 531,
@@ -21,14 +21,14 @@
     "fftSmoothing": false,
     "fftSmoothingSpeed": 100,
     "fftWindow": 2,
-    "frequency": 396435000.0,
+    "frequency": 98200000.0,
     "fullWaterfallUpdate": false,
     "fullscreen": false,
     "invertIQ": false,
     "iqCorrection": false,
     "lockMenuOrder": false,
     "manualOffset": 0.0,
-    "max": -34.117652893066406,
+    "max": 0.0,
     "maximized": true,
     "menuElements": [
         {
@@ -53,11 +53,11 @@
         },
         {
             "name": "VFO Color",
-            "open": false
+            "open": true
         },
         {
             "name": "Band Plan",
-            "open": false
+            "open": true
         },
         {
             "name": "Display",
@@ -80,8 +80,8 @@
             "open": false
         }
     ],
-    "menuWidth": 317,
-    "min": -140.0,
+    "menuWidth": 318,
+    "min": -103.5294189453125,
     "moduleInstances": {
         "Audio Sink": {
             "enabled": true,
@@ -116,7 +116,7 @@
             "module": "rtl_tcp_source"
         },
         "Radio": {
-            "enabled": false,
+            "enabled": true,
             "module": "radio"
         },
         "SDRplay Source": {
@@ -124,7 +124,7 @@
             "module": "sdrplay_source"
         },
         "Tetra": {
-            "enabled": true,
+            "enabled": false,
             "module": "tetra_demodulator"
         }
     },
@@ -144,12 +144,12 @@
     "showWaterfall": true,
     "snrSmoothing": false,
     "snrSmoothingSpeed": 20,
-    "source": "SDRplay",
+    "source": "HackRF",
     "streams": {
         "Radio": {
             "muted": false,
             "sink": "Audio",
-            "volume": 1.0
+            "volume": 0.8214285969734192
         },
         "Tetra": {
             "muted": false,
@@ -160,11 +160,11 @@
     "theme": "Dark",
     "uiScale": 1.0,
     "vfoColors": {
-        "Radio": "#FFFFFF"
+        "Radio": "#00FF00"
     },
     "vfoOffsets": {
-        "Radio": -696000.0,
-        "Tetra": -60000.0
+        "Radio": -6800000.0,
+        "Tetra": 785000.0
     },
     "windowSize": {
         "h": 720,

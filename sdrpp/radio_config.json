@@ -12,7 +12,7 @@
         },
         "WFM": {
             "FMIFNREnabled": false,
-            "bandwidth": 200000.0,
+            "bandwidth": 250000.0,
             "deempMode": "50us",
             "highPass": false,
             "noiseBlankerEnabled": false,
@@ -22,6 +22,6 @@
             "squelchLevel": -100.0,
             "squelchMode": "off"
         },
-        "selectedDemodId": 7
+        "selectedDemodId": 1
     }
 }
