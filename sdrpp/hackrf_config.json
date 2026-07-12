@@ -6,8 +6,8 @@
             "bandwidth": 16,
             "biasT": false,
             "lnaGain": 0,
-            "sampleRate": 20000000,
-            "vgaGain": 20
+            "sampleRate": 2000000,
+            "vgaGain": 0
         }
     }
 }

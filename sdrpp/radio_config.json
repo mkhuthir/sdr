@@ -1,8 +1,23 @@
 {
     "Radio": {
-        "RAW": {
+        "DSB": {
             "FMIFNREnabled": false,
-            "bandwidth": 48000.0,
+            "bandwidth": 4600.0,
+            "deempMode": "None",
+            "highPass": false,
+            "noiseBlankerEnabled": false,
+            "noiseBlankerLevel": 1.0,
+            "snapInterval": 100.0,
+            "squelchEnabled": false,
+            "squelchLevel": -100.0,
+            "squelchMode": "off"
+        },
+        "FM": {
+            "FMIFNREnabled": false,
+            "bandwidth": 12500.0,
+            "deempMode": "None",
+            "fmifnrPreset": "Voice",
+            "highPass": false,
             "noiseBlankerEnabled": false,
             "noiseBlankerLevel": 1.0,
             "snapInterval": 2500.0,
@@ -15,6 +30,7 @@
             "bandwidth": 250000.0,
             "deempMode": "50us",
             "highPass": false,
+            "lowPass": false,
             "noiseBlankerEnabled": false,
             "noiseBlankerLevel": 1.0,
             "snapInterval": 100000.0,
