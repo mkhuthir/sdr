@@ -10,14 +10,14 @@
     "bandPlanEnabled": true,
     "bandPlanPos": 0,
     "centerTuning": false,
-    "colorMap": "Classic",
+    "colorMap": "GQRX",
     "decimation": 1,
     "fastFFT": false,
-    "fftHeight": 457,
+    "fftHeight": 469,
     "fftHold": false,
-    "fftHoldSpeed": 60,
-    "fftRate": 20,
-    "fftSize": 65536,
+    "fftHoldSpeed": 15,
+    "fftRate": 40,
+    "fftSize": 131072,
     "fftSmoothing": false,
     "fftSmoothingSpeed": 100,
     "fftWindow": 2,
@@ -28,12 +28,12 @@
     "iqCorrection": false,
     "lockMenuOrder": false,
     "manualOffset": 0.0,
-    "max": 0.0,
+    "max": -35.29411315917969,
     "maximized": true,
     "menuElements": [
         {
             "name": "Source",
-            "open": true
+            "open": false
         },
         {
             "name": "Radio",
@@ -81,7 +81,7 @@
         }
     ],
     "menuWidth": 299,
-    "min": -132.94117736816406,
+    "min": -105.88235473632813,
     "moduleInstances": {
         "Audio Sink": {
             "enabled": true,
@@ -168,7 +168,7 @@
     "showWaterfall": true,
     "snrSmoothing": false,
     "snrSmoothingSpeed": 20,
-    "source": "SoapySDR",
+    "source": "HackRF",
     "streams": {
         "Radio": {
             "muted": false,
@@ -182,7 +182,7 @@
         "Radio": "#FFFFFF"
     },
     "vfoOffsets": {
-        "Radio": 194200.0,
+        "Radio": 694200.0,
         "atv": -190000.0
     },
     "windowSize": {
