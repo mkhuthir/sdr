@@ -13,7 +13,7 @@
     "colorMap": "GQRX",
     "decimation": 1,
     "fastFFT": false,
-    "fftHeight": 469,
+    "fftHeight": 452,
     "fftHold": false,
     "fftHoldSpeed": 15,
     "fftRate": 40,
@@ -21,14 +21,14 @@
     "fftSmoothing": false,
     "fftSmoothingSpeed": 100,
     "fftWindow": 2,
-    "frequency": 93705800.0,
+    "frequency": 395550000.0,
     "fullWaterfallUpdate": false,
     "fullscreen": false,
     "invertIQ": false,
     "iqCorrection": false,
     "lockMenuOrder": false,
     "manualOffset": 0.0,
-    "max": -35.29411315917969,
+    "max": -64.70588684082031,
     "maximized": true,
     "menuElements": [
         {
@@ -78,10 +78,14 @@
         {
             "name": "atv",
             "open": true
+        },
+        {
+            "name": "tetra",
+            "open": false
         }
     ],
     "menuWidth": 299,
-    "min": -105.88235473632813,
+    "min": -120.0,
     "moduleInstances": {
         "Audio Sink": {
             "enabled": true,
@@ -132,7 +136,7 @@
             "module": "rtl_tcp_source"
         },
         "Radio": {
-            "enabled": true,
+            "enabled": false,
             "module": "radio"
         },
         "Recorder": {
@@ -143,13 +147,13 @@
             "enabled": true,
             "module": "sdrplay_source"
         },
-        "atv": {
-            "enabled": true,
-            "module": "atv_decoder"
-        },
         "soapy_source": {
             "enabled": true,
             "module": "soapy_source"
+        },
+        "tetra": {
+            "enabled": true,
+            "module": "tetra_demodulator"
         }
     },
     "modules": [],
@@ -168,9 +172,14 @@
     "showWaterfall": true,
     "snrSmoothing": false,
     "snrSmoothingSpeed": 20,
-    "source": "HackRF",
+    "source": "LimeSDR",
     "streams": {
         "Radio": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 1.0
+        },
+        "tetra": {
             "muted": false,
             "sink": "Audio",
             "volume": 1.0
@@ -182,8 +191,9 @@
         "Radio": "#FFFFFF"
     },
     "vfoOffsets": {
-        "Radio": 694200.0,
-        "atv": -190000.0
+        "Radio": 125000.0,
+        "atv": -190000.0,
+        "tetra": 1425000.0
     },
     "windowSize": {
         "h": 720,

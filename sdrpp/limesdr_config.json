@@ -1,4 +1,12 @@
 {
     "device": "",
-    "devices": {}
+    "devices": {
+        "LimeSDR-Mini [1D4C39B40242A1]": {
+            "antenna": "Auto",
+            "bandwidth": 130,
+            "channel": 0,
+            "gain": 26,
+            "sampleRate": 5000000
+        }
+    }
 }

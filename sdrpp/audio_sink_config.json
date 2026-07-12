@@ -4,5 +4,11 @@
         "devices": {
             "Built-in Audio": 48000
         }
+    },
+    "tetra": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
     }
 }
