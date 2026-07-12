@@ -1,8 +1,11 @@
-GitHub
-https://github.com/myriadrf/LimeSuite
 
-Find build and install instructions for Lime Suite on the wiki:
-* http://wiki.myriadrf.org/Lime_Suite
+GitHub:
+https://github.com/myriadrf/LimeSuite
+https://github.com/myriadrf/LimeSuiteNG
+
+Lime Suite wiki:
+http://wiki.myriadrf.org/Lime_Suite
 
 Information about LimeSDR boards:
-* https://wiki.myriadrf.org/LimeSDR
+https://wiki.myriadrf.org/LimeSDR
+https://wiki.myriadrf.org/LimeSDR-Mini
