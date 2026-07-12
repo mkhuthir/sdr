@@ -1,5 +1,11 @@
 {
     "user_interface": {
+        "recorder_floating_windows": {
+            "value": true
+        },
+        "advanced_mode": {
+            "value": true
+        },
         "remember_pos": {
             "value": true
         },
@@ -8,6 +14,9 @@
         }
     },
     "satdump_general": {
+        "opencl_device": {
+            "platform": 1
+        },
         "qth_lat": {
             "value": 25.31646
         },
@@ -19,6 +28,12 @@
         },
         "default_qth_label": {
             "value": "LL75QH"
+        },
+        "tle_space_track_login": {
+            "value": "mkhuthir@gmail.com"
+        },
+        "tle_space_track_password": {
+            "value": ""
         },
         "default_borders_color": {
             "value": [
@@ -54,12 +69,6 @@
                 0.0,
                 1.0
             ]
-        },
-        "tle_space_track_login": {
-            "value": "mkhuthir@gmail.com"
-        },
-        "tle_space_track_password": {
-            "value": ""
         }
     },
     "satdump_directories": {
@@ -99,7 +108,12 @@
             "hads_urls": [
                 "https://hads.ncep.noaa.gov/compressed_defs/all_dcp_defs.txt"
             ]
-        }
+        },
+        "sdrplay_support": "/usr/local/lib/libsdrplay_api.so",
+        "webhook_app": {
+            "webhooks": []
+        },
+        "aaronia_support": "/opt/aaronia-rtsa-suite/Aaronia-RTSA-Suite-PRO/libAaroniaRTSAAPI.so"
     },
     "user": {
         "recorder_state": {
