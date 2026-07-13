@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-SoapySDRUtil --probe="driver=sdrplay"
+SoapySDRUtil --probe

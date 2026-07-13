@@ -65,7 +65,7 @@
             "rf_gain": "auto",
             "profiles": {
                 "160m": {
-                    "name": "HAM 160m 1.9MHz",
+                    "name": "HAM 160m 1.8MHz",
                     "center_freq": 1900000,
                     "samp_rate": 250000,
                     "start_freq": 1910000,
@@ -79,7 +79,7 @@
                     "antenna": "Antenna A"
                 },
                 "80m": {
-                    "name": "HAM 80m 3.7MHz",
+                    "name": "HAM 80m 3.5MHz",
                     "center_freq": 3750000,
                     "samp_rate": 500000,
                     "start_freq": 3570000,
@@ -107,7 +107,7 @@
                     "antenna": "Antenna A"
                 },
                 "40m": {
-                    "name": "HAM 40m 7.1MHz",
+                    "name": "HAM 40m 7MHz",
                     "center_freq": 7150000,
                     "samp_rate": 500000,
                     "start_freq": 7070000,
@@ -135,7 +135,7 @@
                     "antenna": "Antenna A"
                 },
                 "20m": {
-                    "name": "HAM 20m 14.1MHz",
+                    "name": "HAM 20m 14MHz",
                     "center_freq": 14175000,
                     "samp_rate": 500000,
                     "start_freq": 14070000,
@@ -149,7 +149,7 @@
                     }
                 },
                 "17m": {
-                    "name": "HAM 17m 18.1MHz",
+                    "name": "HAM 17m 18MHz",
                     "center_freq": 18118000,
                     "samp_rate": 250000,
                     "start_freq": 18110000,
@@ -163,7 +163,7 @@
                     }
                 },
                 "15m": {
-                    "name": "HAM 15m 21.2MHz",
+                    "name": "HAM 15m 21MHz",
                     "center_freq": 21225000,
                     "samp_rate": 500000,
                     "start_freq": 21220000,
@@ -177,7 +177,7 @@
                     "antenna": "Antenna A"
                 },
                 "12m": {
-                    "name": "HAM 12m 24.9MHz",
+                    "name": "HAM 12m 24MHz",
                     "center_freq": 24940000,
                     "samp_rate": 250000,
                     "start_freq": 24950000,
@@ -191,7 +191,7 @@
                     "antenna": "Antenna A"
                 },
                 "10m": {
-                    "name": "HAM 10m 28.8MHz",
+                    "name": "HAM 10m 28MHz",
                     "center_freq": 28850000,
                     "samp_rate": 2000000,
                     "start_freq": 29000000,
@@ -205,7 +205,7 @@
                     "antenna": "Antenna A"
                 },
                 "6m": {
-                    "name": "HAM 6m 52MHz",
+                    "name": "HAM 6m 50MHz",
                     "center_freq": 52000000,
                     "samp_rate": 4000000,
                     "start_freq": 53000000,
@@ -218,8 +218,22 @@
                     "rf_gain": "auto",
                     "antenna": "Antenna A"
                 },
+                "44e78183-0237-4e00-8603-928ea670d483": {
+                    "name": "HAM 4m 70MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -70.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 70000000,
+                    "samp_rate": 10000000,
+                    "start_freq": 70000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 500,
+                    "antenna": "Antenna B"
+                },
                 "2m": {
-                    "name": "HAM 2m 146MHz",
+                    "name": "HAM 2m 144MHz",
                     "center_freq": 146000000,
                     "samp_rate": 10000000,
                     "start_freq": 147000000,
@@ -233,7 +247,7 @@
                     "antenna": "Antenna B"
                 },
                 "125cm": {
-                    "name": "HAM 1.25m 223.5MHz",
+                    "name": "HAM 1.25m 222MHz",
                     "center_freq": 223500000,
                     "samp_rate": 4000000,
                     "start_freq": 224000000,
@@ -247,7 +261,7 @@
                     "antenna": "Antenna B"
                 },
                 "HAM 70cm 443.5MHz": {
-                    "name": "HAM 70cm 443.5MHz",
+                    "name": "HAM 70cm 420MHz",
                     "center_freq": 443500000,
                     "samp_rate": 4000000,
                     "start_freq": 444000000,
