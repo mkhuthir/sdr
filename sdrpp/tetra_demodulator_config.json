@@ -1,5 +1,29 @@
 {
+    "Tetra-1": {
+        "hostname": "localhost",
+        "mode": 0,
+        "port": 8355,
+        "sending": false
+    },
+    "Tetra-2": {
+        "hostname": "localhost",
+        "mode": 0,
+        "port": 8355,
+        "sending": false
+    },
+    "t2": {
+        "hostname": "localhost",
+        "mode": 0,
+        "port": 8355,
+        "sending": false
+    },
     "tetra": {
+        "hostname": "localhost",
+        "mode": 0,
+        "port": 8355,
+        "sending": false
+    },
+    "tetra2": {
         "hostname": "localhost",
         "mode": 0,
         "port": 8355,

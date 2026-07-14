@@ -5,7 +5,31 @@
             "Built-in Audio": 48000
         }
     },
+    "Tetra-1": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
+    },
+    "Tetra-2": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
+    },
+    "t2": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
+    },
     "tetra": {
+        "device": "",
+        "devices": {
+            "Built-in Audio": 48000
+        }
+    },
+    "tetra2": {
         "device": "",
         "devices": {
             "Built-in Audio": 48000

@@ -5715,7 +5715,7 @@
             },
             "showOnWaterfall": false
         },
-        "Radio - Tetra": {
+        "Radio - Tetra 1": {
             "bookmarks": {
                 "3600": {
                     "bandwidth": 25000.0,
@@ -7720,6 +7720,46 @@
             },
             "showOnWaterfall": false
         },
+        "Radio - Tetra 2": {
+            "bookmarks": {
+                "DXB1": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395925000.0,
+                    "mode": 7
+                },
+                "DXB2": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396975000.0,
+                    "mode": 7
+                },
+                "DXB3": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396675000.0,
+                    "mode": 7
+                },
+                "DXB4": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396525000.0,
+                    "mode": 7
+                },
+                "SHJ1": {
+                    "bandwidth": 30000.0,
+                    "frequency": 391675000.0,
+                    "mode": 7
+                },
+                "SHJ2": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395350000.0,
+                    "mode": 7
+                },
+                "SHJ3": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395700000.0,
+                    "mode": 7
+                }
+            },
+            "showOnWaterfall": true
+        },
         "Sat - GPS": {
             "bookmarks": {
                 "GPS L1": {
@@ -9258,5 +9298,5 @@
             "showOnWaterfall": false
         }
     },
-    "selectedList": "Radio - Tetra"
+    "selectedList": "Radio - Tetra 2"
 }

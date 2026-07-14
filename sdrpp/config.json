@@ -21,14 +21,14 @@
     "fftSmoothing": false,
     "fftSmoothingSpeed": 100,
     "fftWindow": 2,
-    "frequency": 395550000.0,
+    "frequency": 395870800.0,
     "fullWaterfallUpdate": false,
     "fullscreen": false,
     "invertIQ": false,
     "iqCorrection": false,
     "lockMenuOrder": false,
     "manualOffset": 0.0,
-    "max": -64.70588684082031,
+    "max": -81.17646789550781,
     "maximized": true,
     "menuElements": [
         {
@@ -49,7 +49,7 @@
         },
         {
             "name": "Frequency Manager",
-            "open": false
+            "open": true
         },
         {
             "name": "VFO Color",
@@ -82,10 +82,26 @@
         {
             "name": "tetra",
             "open": false
+        },
+        {
+            "name": "t2",
+            "open": false
+        },
+        {
+            "name": "tetra2",
+            "open": false
+        },
+        {
+            "name": "Tetra-1",
+            "open": false
+        },
+        {
+            "name": "Tetra-2",
+            "open": false
         }
     ],
-    "menuWidth": 299,
-    "min": -120.0,
+    "menuWidth": 301,
+    "min": -131.76470947265625,
     "moduleInstances": {
         "Audio Sink": {
             "enabled": true,
@@ -147,13 +163,17 @@
             "enabled": true,
             "module": "sdrplay_source"
         },
+        "Tetra-1": {
+            "enabled": true,
+            "module": "tetra_demodulator"
+        },
+        "Tetra-2": {
+            "enabled": false,
+            "module": "tetra_demodulator"
+        },
         "soapy_source": {
             "enabled": true,
             "module": "soapy_source"
-        },
-        "tetra": {
-            "enabled": true,
-            "module": "tetra_demodulator"
         }
     },
     "modules": [],
@@ -172,14 +192,34 @@
     "showWaterfall": true,
     "snrSmoothing": false,
     "snrSmoothingSpeed": 20,
-    "source": "LimeSDR",
+    "source": "SoapySDR",
     "streams": {
         "Radio": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 0.47448980808258057
+        },
+        "Tetra-1": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 1.0
+        },
+        "Tetra-2": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 1.0
+        },
+        "t2": {
             "muted": false,
             "sink": "Audio",
             "volume": 1.0
         },
         "tetra": {
+            "muted": false,
+            "sink": "Audio",
+            "volume": 0.9897959232330322
+        },
+        "tetra2": {
             "muted": false,
             "sink": "Audio",
             "volume": 1.0
@@ -191,12 +231,16 @@
         "Radio": "#FFFFFF"
     },
     "vfoOffsets": {
-        "Radio": 125000.0,
+        "Radio": -214500.0,
+        "Tetra-1": 520800.0,
+        "Tetra-2": -520800.0,
         "atv": -190000.0,
-        "tetra": 1425000.0
+        "t2": -214500.0,
+        "tetra": 804200.0,
+        "tetra2": 55500.0
     },
     "windowSize": {
-        "h": 720,
-        "w": 1280
+        "h": 1011,
+        "w": 935
     }
 }

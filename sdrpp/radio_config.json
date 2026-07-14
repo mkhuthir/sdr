@@ -1,5 +1,17 @@
 {
     "Radio": {
+        "AM": {
+            "FMIFNREnabled": false,
+            "bandwidth": 10000.0,
+            "deempMode": "None",
+            "highPass": false,
+            "noiseBlankerEnabled": false,
+            "noiseBlankerLevel": 1.0,
+            "snapInterval": 1000.0,
+            "squelchEnabled": false,
+            "squelchLevel": -100.0,
+            "squelchMode": "off"
+        },
         "DSB": {
             "FMIFNREnabled": false,
             "bandwidth": 4600.0,
@@ -13,8 +25,8 @@
             "squelchMode": "off"
         },
         "FM": {
-            "FMIFNREnabled": false,
-            "bandwidth": 12500.0,
+            "FMIFNREnabled": true,
+            "bandwidth": 12439.5302734375,
             "deempMode": "None",
             "fmifnrPreset": "Voice",
             "highPass": false,
@@ -38,6 +50,6 @@
             "squelchLevel": -100.0,
             "squelchMode": "off"
         },
-        "selectedDemodId": 1
+        "selectedDemodId": 0
     }
 }
