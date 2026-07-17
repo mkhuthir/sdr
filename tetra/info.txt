@@ -1,0 +1,12 @@
+
+Osmocore
+https://osmocom.org/projects/libosmocore/wiki/Libosmocore
+git clone https://gitea.osmocom.org/osmocom/libosmocore.git
+
+Osmo-tetra
+https://osmocom.org/projects/tetra/wiki/OsmocomTETRA
+git clone https://gitea.osmocom.org/tetra/osmo-tetra
+
+sdrpp-tetra-demodulator
+https://cropinghigh.github.io/sdrpp-moduledb/headerguide.html
+
