@@ -7722,39 +7722,199 @@
         },
         "Radio - Tetra 2": {
             "bookmarks": {
-                "DXB1": {
+                "390050": {
                     "bandwidth": 30000.0,
-                    "frequency": 395925000.0,
+                    "frequency": 390050000.0,
                     "mode": 7
                 },
-                "DXB2": {
-                    "bandwidth": 30000.0,
-                    "frequency": 396975000.0,
+                "390700": {
+                    "bandwidth": 29000.0,
+                    "frequency": 390700000.0,
                     "mode": 7
                 },
-                "DXB3": {
-                    "bandwidth": 30000.0,
-                    "frequency": 396675000.0,
-                    "mode": 7
-                },
-                "DXB4": {
-                    "bandwidth": 30000.0,
-                    "frequency": 396525000.0,
-                    "mode": 7
-                },
-                "SHJ1": {
+                "391675": {
                     "bandwidth": 30000.0,
                     "frequency": 391675000.0,
                     "mode": 7
                 },
-                "SHJ2": {
+                "391875": {
+                    "bandwidth": 30000.0,
+                    "frequency": 391875000.0,
+                    "mode": 7
+                },
+                "392100": {
+                    "bandwidth": 29000.0,
+                    "frequency": 392100000.0,
+                    "mode": 7
+                },
+                "392650": {
+                    "bandwidth": 29000.0,
+                    "frequency": 392650000.0,
+                    "mode": 7
+                },
+                "392800": {
+                    "bandwidth": 29000.0,
+                    "frequency": 392800000.0,
+                    "mode": 7
+                },
+                "393400": {
+                    "bandwidth": 29000.0,
+                    "frequency": 393400000.0,
+                    "mode": 7
+                },
+                "393650": {
+                    "bandwidth": 29000.0,
+                    "frequency": 393650000.0,
+                    "mode": 7
+                },
+                "394050": {
+                    "bandwidth": 29000.0,
+                    "frequency": 394050000.0,
+                    "mode": 7
+                },
+                "394525": {
+                    "bandwidth": 29000.0,
+                    "frequency": 394525000.0,
+                    "mode": 7
+                },
+                "394700": {
+                    "bandwidth": 29000.0,
+                    "frequency": 394700000.0,
+                    "mode": 7
+                },
+                "395025": {
+                    "bandwidth": 29000.0,
+                    "frequency": 395025000.0,
+                    "mode": 7
+                },
+                "395100": {
+                    "bandwidth": 29000.0,
+                    "frequency": 395100000.0,
+                    "mode": 7
+                },
+                "395350": {
                     "bandwidth": 30000.0,
                     "frequency": 395350000.0,
                     "mode": 7
                 },
-                "SHJ3": {
+                "395400": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395400000.0,
+                    "mode": 7
+                },
+                "395525": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395525000.0,
+                    "mode": 7
+                },
+                "395700": {
                     "bandwidth": 30000.0,
                     "frequency": 395700000.0,
+                    "mode": 7
+                },
+                "395925": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395925000.0,
+                    "mode": 7
+                },
+                "395975": {
+                    "bandwidth": 29000.0,
+                    "frequency": 395975000.0,
+                    "mode": 7
+                },
+                "396100": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396100000.0,
+                    "mode": 7
+                },
+                "396400": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396400000.0,
+                    "mode": 7
+                },
+                "396525": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396525000.0,
+                    "mode": 7
+                },
+                "396675": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396675000.0,
+                    "mode": 7
+                },
+                "396975": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396975000.0,
+                    "mode": 7
+                },
+                "397475": {
+                    "bandwidth": 29000.0,
+                    "frequency": 397475000.0,
+                    "mode": 7
+                },
+                "397650": {
+                    "bandwidth": 29000.0,
+                    "frequency": 397650000.0,
+                    "mode": 7
+                },
+                "397875": {
+                    "bandwidth": 29000.0,
+                    "frequency": 397875000.0,
+                    "mode": 7
+                },
+                "397975": {
+                    "bandwidth": 29000.0,
+                    "frequency": 397975000.0,
+                    "mode": 7
+                },
+                "398150": {
+                    "bandwidth": 29000.0,
+                    "frequency": 398150000.0,
+                    "mode": 7
+                },
+                "398200": {
+                    "bandwidth": 29000.0,
+                    "frequency": 398200000.0,
+                    "mode": 7
+                },
+                "398475": {
+                    "bandwidth": 29000.0,
+                    "frequency": 398475000.0,
+                    "mode": 7
+                },
+                "398550": {
+                    "bandwidth": 29000.0,
+                    "frequency": 398550000.0,
+                    "mode": 7
+                },
+                "398625": {
+                    "bandwidth": 29000.0,
+                    "frequency": 398625000.0,
+                    "mode": 7
+                },
+                "399100": {
+                    "bandwidth": 29000.0,
+                    "frequency": 399100000.0,
+                    "mode": 7
+                },
+                "399200": {
+                    "bandwidth": 29000.0,
+                    "frequency": 399200000.0,
+                    "mode": 7
+                },
+                "399550": {
+                    "bandwidth": 30000.0,
+                    "frequency": 399550000.0,
+                    "mode": 7
+                },
+                "399850": {
+                    "bandwidth": 29000.0,
+                    "frequency": 399850000.0,
+                    "mode": 7
+                },
+                "399975": {
+                    "bandwidth": 29000.0,
+                    "frequency": 399975000.0,
                     "mode": 7
                 }
             },

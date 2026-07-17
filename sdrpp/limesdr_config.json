@@ -5,8 +5,8 @@
             "antenna": "Auto",
             "bandwidth": 130,
             "channel": 0,
-            "gain": 16,
-            "sampleRate": 2000000
+            "gain": 35,
+            "sampleRate": 1000000
         },
         "UNKNOWN [0]": {
             "antenna": "LNAW",

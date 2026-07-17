@@ -26,10 +26,20 @@
         },
         "FM": {
             "FMIFNREnabled": true,
-            "bandwidth": 12439.5302734375,
+            "bandwidth": 18018.017578125,
             "deempMode": "None",
             "fmifnrPreset": "Voice",
             "highPass": false,
+            "noiseBlankerEnabled": false,
+            "noiseBlankerLevel": 1.0,
+            "snapInterval": 2500.0,
+            "squelchEnabled": false,
+            "squelchLevel": -100.0,
+            "squelchMode": "off"
+        },
+        "RAW": {
+            "FMIFNREnabled": false,
+            "bandwidth": 48000.0,
             "noiseBlankerEnabled": false,
             "noiseBlankerLevel": 1.0,
             "snapInterval": 2500.0,
@@ -50,6 +60,6 @@
             "squelchLevel": -100.0,
             "squelchMode": "off"
         },
-        "selectedDemodId": 0
+        "selectedDemodId": 7
     }
 }

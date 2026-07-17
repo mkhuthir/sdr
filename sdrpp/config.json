@@ -6,7 +6,7 @@
         "marine": "#00FFFFFF",
         "military": "#FFFF00FF"
     },
-    "bandPlan": "General",
+    "bandPlan": "UAE",
     "bandPlanEnabled": true,
     "bandPlanPos": 0,
     "centerTuning": false,
@@ -16,19 +16,19 @@
     "fftHeight": 452,
     "fftHold": false,
     "fftHoldSpeed": 15,
-    "fftRate": 40,
-    "fftSize": 131072,
+    "fftRate": 60,
+    "fftSize": 65536,
     "fftSmoothing": false,
     "fftSmoothingSpeed": 100,
-    "fftWindow": 2,
-    "frequency": 395870800.0,
+    "fftWindow": 1,
+    "frequency": 397360500.0,
     "fullWaterfallUpdate": false,
     "fullscreen": false,
     "invertIQ": false,
     "iqCorrection": false,
     "lockMenuOrder": false,
     "manualOffset": 0.0,
-    "max": -81.17646789550781,
+    "max": -56.470584869384766,
     "maximized": true,
     "menuElements": [
         {
@@ -36,39 +36,7 @@
             "open": false
         },
         {
-            "name": "Radio",
-            "open": false
-        },
-        {
-            "name": "Recorder",
-            "open": false
-        },
-        {
             "name": "Sinks",
-            "open": false
-        },
-        {
-            "name": "Frequency Manager",
-            "open": true
-        },
-        {
-            "name": "VFO Color",
-            "open": false
-        },
-        {
-            "name": "Band Plan",
-            "open": false
-        },
-        {
-            "name": "Display",
-            "open": false
-        },
-        {
-            "name": "Theme",
-            "open": false
-        },
-        {
-            "name": "Module Manager",
             "open": false
         },
         {
@@ -92,16 +60,48 @@
             "open": false
         },
         {
+            "name": "Radio",
+            "open": false
+        },
+        {
             "name": "Tetra-1",
             "open": false
         },
         {
             "name": "Tetra-2",
             "open": false
+        },
+        {
+            "name": "Frequency Manager",
+            "open": false
+        },
+        {
+            "name": "Band Plan",
+            "open": false
+        },
+        {
+            "name": "VFO Color",
+            "open": false
+        },
+        {
+            "name": "Display",
+            "open": false
+        },
+        {
+            "name": "Module Manager",
+            "open": false
+        },
+        {
+            "name": "Recorder",
+            "open": false
+        },
+        {
+            "name": "Theme",
+            "open": false
         }
     ],
-    "menuWidth": 301,
-    "min": -131.76470947265625,
+    "menuWidth": 303,
+    "min": -135.2941131591797,
     "moduleInstances": {
         "Audio Sink": {
             "enabled": true,
@@ -228,12 +228,14 @@
     "theme": "Dark",
     "uiScale": 1.0,
     "vfoColors": {
-        "Radio": "#FFFFFF"
+        "Radio": "#FFFFFF",
+        "Tetra-1": "#00FD13",
+        "Tetra-2": "#FA0000"
     },
     "vfoOffsets": {
-        "Radio": -214500.0,
-        "Tetra-1": 520800.0,
-        "Tetra-2": -520800.0,
+        "Radio": 295500.0,
+        "Tetra-1": -385500.0,
+        "Tetra-2": 0.0,
         "atv": -190000.0,
         "t2": -214500.0,
         "tetra": 804200.0,
