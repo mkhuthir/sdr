@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Put configuration files
-cp *.json ~/.config/sdrpp/.
+cp backup/*.json ~/.config/sdrpp/.
