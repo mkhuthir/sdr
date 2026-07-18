@@ -9,4 +9,4 @@ git clone https://gitea.osmocom.org/tetra/osmo-tetra
 
 sdrpp-tetra-demodulator
 https://cropinghigh.github.io/sdrpp-moduledb/headerguide.html
-
+gh repo clone cropinghigh/sdrpp-tetra-demodulator
