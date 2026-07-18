@@ -7722,14 +7722,29 @@
         },
         "Radio - Tetra 2": {
             "bookmarks": {
+                "390000": {
+                    "bandwidth": 30000.0,
+                    "frequency": 390000000.0,
+                    "mode": 7
+                },
                 "390050": {
                     "bandwidth": 30000.0,
                     "frequency": 390050000.0,
                     "mode": 7
                 },
+                "390650": {
+                    "bandwidth": 30000.0,
+                    "frequency": 390650000.0,
+                    "mode": 7
+                },
                 "390700": {
                     "bandwidth": 29000.0,
                     "frequency": 390700000.0,
+                    "mode": 7
+                },
+                "390875": {
+                    "bandwidth": 30000.0,
+                    "frequency": 390875000.0,
                     "mode": 7
                 },
                 "391675": {
@@ -7782,6 +7797,11 @@
                     "frequency": 394700000.0,
                     "mode": 7
                 },
+                "394925": {
+                    "bandwidth": 30000.0,
+                    "frequency": 394925000.0,
+                    "mode": 7
+                },
                 "395025": {
                     "bandwidth": 29000.0,
                     "frequency": 395025000.0,
@@ -7790,6 +7810,11 @@
                 "395100": {
                     "bandwidth": 29000.0,
                     "frequency": 395100000.0,
+                    "mode": 7
+                },
+                "395255": {
+                    "bandwidth": 30000.0,
+                    "frequency": 395225000.0,
                     "mode": 7
                 },
                 "395350": {
@@ -7842,9 +7867,29 @@
                     "frequency": 396675000.0,
                     "mode": 7
                 },
+                "396850": {
+                    "bandwidth": 30000.0,
+                    "frequency": 396850000.0,
+                    "mode": 7
+                },
                 "396975": {
                     "bandwidth": 30000.0,
                     "frequency": 396975000.0,
+                    "mode": 7
+                },
+                "397075": {
+                    "bandwidth": 30000.0,
+                    "frequency": 397075000.0,
+                    "mode": 7
+                },
+                "397150": {
+                    "bandwidth": 30000.0,
+                    "frequency": 397150000.0,
+                    "mode": 7
+                },
+                "397275": {
+                    "bandwidth": 30000.0,
+                    "frequency": 397275000.0,
                     "mode": 7
                 },
                 "397475": {

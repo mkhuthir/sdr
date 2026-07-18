@@ -21,7 +21,7 @@
     "fftSmoothing": false,
     "fftSmoothingSpeed": 100,
     "fftWindow": 1,
-    "frequency": 397360500.0,
+    "frequency": 392035000.0,
     "fullWaterfallUpdate": false,
     "fullscreen": false,
     "invertIQ": false,
@@ -73,7 +73,7 @@
         },
         {
             "name": "Frequency Manager",
-            "open": false
+            "open": true
         },
         {
             "name": "Band Plan",
@@ -100,7 +100,7 @@
             "open": false
         }
     ],
-    "menuWidth": 303,
+    "menuWidth": 385,
     "min": -135.2941131591797,
     "moduleInstances": {
         "Audio Sink": {
@@ -234,7 +234,7 @@
     },
     "vfoOffsets": {
         "Radio": 295500.0,
-        "Tetra-1": -385500.0,
+        "Tetra-1": -160000.0,
         "Tetra-2": 0.0,
         "atv": -190000.0,
         "t2": -214500.0,
