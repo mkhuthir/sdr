@@ -7,6 +7,14 @@ Osmo-tetra
 https://osmocom.org/projects/tetra/wiki/OsmocomTETRA
 git clone https://gitea.osmocom.org/tetra/osmo-tetra
 
+patched Osmo-tetra to work with telive / telive2
+https://github.com/sq5bpf/osmo-tetra-sq5bpf
+gh repo clone sq5bpf/osmo-tetra-sq5bpf
+
+Telive repository
+https://github.com/sq5bpf/telive
+gh repo clone sq5bpf/telive
+
 sdrpp-tetra-demodulator
 https://cropinghigh.github.io/sdrpp-moduledb/headerguide.html
 gh repo clone cropinghigh/sdrpp-tetra-demodulator
