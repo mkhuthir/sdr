@@ -19,3 +19,7 @@ gh repo clone sq5bpf/telive-2
 sdrpp-tetra-demodulator
 https://cropinghigh.github.io/sdrpp-moduledb/headerguide.html
 gh repo clone cropinghigh/sdrpp-tetra-demodulator
+
+BRMLAB hackerspace prague
+https://brmlab.cz/project/sdr/tetra/howto
+https://github.com/itds-consulting/tetra-listener
