@@ -1,3 +1,4 @@
 #!/usr/bin/sh
 
-tetra-rx -d ~/Downloads/out ~/Downloads/in/%1
+echo "$1"
+tetra-rx -d ~/Downloads/out "$1"
