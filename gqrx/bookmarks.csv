@@ -322,207 +322,62 @@ _Mark_              ; #c0c0c0
     70000000; S                        ; Narrow FM           ;      10000; HAM4m
     70500000; E                        ; Narrow FM           ;      10000; HAM4m
     87600000; RAKQuran                 ; WFM (stereo)        ;     200000; BC FM
-    87700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    87800000; *                        ; WFM (stereo)        ;     200000; BC FM
     87900000; AD Classic Music         ; WFM (stereo)        ;     200000; BC FM
-    88000000; *                        ; WFM (stereo)        ;     200000; BC FM
-    88100000; *                        ; WFM (stereo)        ;     200000; BC FM
     88200000; AD Quran                 ; WFM (stereo)        ;     200000; BC FM
-    88300000; *                        ; WFM (stereo)        ;     200000; BC FM
-    88400000; *                        ; WFM (stereo)        ;     200000; BC FM
-    88500000; *                        ; WFM (stereo)        ;     200000; BC FM
-    88600000; *                        ; WFM (stereo)        ;     200000; BC FM
-    88700000; *                        ; WFM (stereo)        ;     200000; BC FM
     88800000; DXB Kadak FM             ; WFM (stereo)        ;     200000; BC FM
-    88900000; *                        ; WFM (stereo)        ;     200000; BC FM
-    89000000; *                        ; WFM (stereo)        ;     200000; BC FM
     89100000; AJM Radio 4              ; WFM (stereo)        ;     200000; BC FM
-    89200000; *                        ; WFM (stereo)        ;     200000; BC FM
-    89300000; *                        ; WFM (stereo)        ;     200000; BC FM
     89400000; RAK Tamil FM             ; WFM (stereo)        ;     200000; BC FM
-    89500000; *                        ; WFM (stereo)        ;     200000; BC FM
     89600000; Music                    ; WFM (stereo)        ;     200000; BC FM
-    89700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    89800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    89900000; *                        ; WFM (stereo)        ;     200000; BC FM
-    90000000; *                        ; WFM (stereo)        ;     200000; BC FM
-    90100000; *                        ; WFM (stereo)        ;     200000; BC FM
-    90200000; *                        ; WFM (stereo)        ;     200000; BC FM
     90300000; SkyNews                  ; WFM (stereo)        ;     200000; BC FM
-    90400000; *                        ; WFM (stereo)        ;     200000; BC FM
     90500000; SkyNews                  ; WFM (stereo)        ;     200000; BC FM
-    90600000; *                        ; WFM (stereo)        ;     200000; BC FM
     90700000; RockRadio                ; WFM (stereo)        ;     200000; BC FM
     90800000; FUJ Rock Radio           ; WFM (stereo)        ;     200000; BC FM
-    90900000; *                        ; WFM (stereo)        ;     200000; BC FM
-    91000000; *                        ; WFM (stereo)        ;     200000; BC FM
     91100000; DXB Tag 91.1             ; WFM (stereo)        ;     200000; BC FM
-    91200000; *                        ; WFM (stereo)        ;     200000; BC FM
-    91300000; *                        ; WFM (stereo)        ;     200000; BC FM
     91400000; DXB Quran                ; WFM (stereo)        ;     200000; BC FM
-    91500000; *                        ; WFM (stereo)        ;     200000; BC FM
-    91600000; *                        ; WFM (stereo)        ;     200000; BC FM
-    91700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    91800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    91900000; *                        ; WFM (stereo)        ;     200000; BC FM
     92000000; Dubai92                  ; WFM (stereo)        ;     200000; BC FM
-    92100000; *                        ; WFM (stereo)        ;     200000; BC FM
     92200000; Khushi                   ; WFM (stereo)        ;     200000; BC FM
-    92300000; *                        ; WFM (stereo)        ;     200000; BC FM
-    92400000; *                        ; WFM (stereo)        ;     200000; BC FM
-    92500000; *                        ; WFM (stereo)        ;     200000; BC FM
     92600000; FUJAIRAH                 ; WFM (stereo)        ;     200000; BC FM
-    92700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    92800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    92900000; *                        ; WFM (stereo)        ;     200000; BC FM
     93000000; Radio93                  ; WFM (stereo)        ;     200000; BC FM
-    93100000; *                        ; WFM (stereo)        ;     200000; BC FM
-    93200000; *                        ; WFM (stereo)        ;     200000; BC FM
-    93300000; *                        ; WFM (stereo)        ;     200000; BC FM
     93400000; SHOMA934                 ; WFM (stereo)        ;     200000; BC FM
-    93500000; *                        ; WFM (stereo)        ;     200000; BC FM
-    93600000; *                        ; WFM (stereo)        ;     200000; BC FM
-    93700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    93800000; *                        ; WFM (stereo)        ;     200000; BC FM
     93900000; DXB NOOR                 ; WFM (stereo)        ;     200000; BC FM
-    94000000; *                        ; WFM (stereo)        ;     200000; BC FM
-    94100000; *                        ; WFM (stereo)        ;     200000; BC FM
-    94200000; *                        ; WFM (stereo)        ;     200000; BC FM
-    94300000; *                        ; WFM (stereo)        ;     200000; BC FM
     94400000; Sharjah                  ; WFM (stereo)        ;     200000; BC FM
-    94500000; *                        ; WFM (stereo)        ;     200000; BC FM
-    94600000; *                        ; WFM (stereo)        ;     200000; BC FM
     94700000; Radio Asia               ; WFM (stereo)        ;     200000; BC FM
-    94800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    94900000; *                        ; WFM (stereo)        ;     200000; BC FM
     95000000; SHJ Pulse95              ; WFM (stereo)        ;     200000; BC FM
-    95100000; *                        ; WFM (stereo)        ;     200000; BC FM
-    95200000; *                        ; WFM (stereo)        ;     200000; BC FM
     95300000; Ibiza Global Radio       ; WFM (stereo)        ;     200000; BC FM
-    95400000; *                        ; WFM (stereo)        ;     200000; BC FM
-    95500000; *                        ; WFM (stereo)        ;     200000; BC FM
     95600000; UAQ Radio Hala           ; WFM (stereo)        ;     200000; BC FM
-    95700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    95800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    95900000; *                        ; WFM (stereo)        ;     200000; BC FM
-    96000000; *                        ; WFM (stereo)        ;     200000; BC FM
     96100000; WatarFM 96.1             ; WFM (stereo)        ;     200000; BC FM
-    96200000; *                        ; WFM (stereo)        ;     200000; BC FM
-    96300000; *                        ; WFM (stereo)        ;     200000; BC FM
-    96400000; *                        ; WFM (stereo)        ;     200000; BC FM
-    96500000; *                        ; WFM (stereo)        ;     200000; BC FM
-    96600000; *                        ; WFM (stereo)        ;     200000; BC FM
     96700000; DXB Hit967               ; WFM (stereo)        ;     200000; BC FM
-    96800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    96900000; *                        ; WFM (stereo)        ;     200000; BC FM
-    97000000; *                        ; WFM (stereo)        ;     200000; BC FM
     97100000; AD Emarat FM             ; WFM (stereo)        ;     200000; BC FM
-    97200000; *                        ; WFM (stereo)        ;     200000; BC FM
     97300000; Kadak FM 97.3            ; WFM (stereo)        ;     200000; BC FM
-    97400000; *                        ; WFM (stereo)        ;     200000; BC FM
-    97500000; *                        ; WFM (stereo)        ;     200000; BC FM
     97600000; AD Zayed Quran           ; WFM (stereo)        ;     200000; BC FM
-    97700000; *                        ; WFM (stereo)        ;     200000; BC FM
     97800000; Beat97.8                 ; WFM (stereo)        ;     200000; BC FM
-    97900000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98000000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98100000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98200000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98300000; *                        ; WFM (stereo)        ;     200000; BC FM
     98400000; AD Radio                 ; WFM (stereo)        ;     200000; BC FM
-    98500000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98600000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98800000; *                        ; WFM (stereo)        ;     200000; BC FM
-    98900000; *                        ; WFM (stereo)        ;     200000; BC FM
     99000000; DXB Arabiya              ; WFM (stereo)        ;     200000; BC FM
-    99100000; *                        ; WFM (stereo)        ;     200000; BC FM
-    99200000; *                        ; WFM (stereo)        ;     200000; BC FM
     99300000; Radio 2                  ; WFM (stereo)        ;     200000; BC FM
-    99400000; *                        ; WFM (stereo)        ;     200000; BC FM
-    99500000; *                        ; WFM (stereo)        ;     200000; BC FM
     99600000; DXB Club FM              ; WFM (stereo)        ;     200000; BC FM
-    99700000; *                        ; WFM (stereo)        ;     200000; BC FM
-    99800000; *                        ; WFM (stereo)        ;     200000; BC FM
     99900000; Star FM                  ; WFM (stereo)        ;     200000; BC FM
-   100000000; *                        ; WFM (stereo)        ;     200000; BC FM
-   100100000; *                        ; WFM (stereo)        ;     200000; BC FM
-   100200000; *                        ; WFM (stereo)        ;     200000; BC FM
    100300000; UAQ TALK1003             ; WFM (stereo)        ;     200000; BC FM
-   100400000; *                        ; WFM (stereo)        ;     200000; BC FM
-   100500000; *                        ; WFM (stereo)        ;     200000; BC FM
-   100600000; *                        ; WFM (stereo)        ;     200000; BC FM
-   100700000; *                        ; WFM (stereo)        ;     200000; BC FM
-   100800000; *                        ; WFM (stereo)        ;     200000; BC FM
    100900000; Khalejya                 ; WFM (stereo)        ;     200000; BC FM
-   101000000; *                        ; WFM (stereo)        ;     200000; BC FM
-   101100000; *                        ; WFM (stereo)        ;     200000; BC FM
-   101200000; *                        ; WFM (stereo)        ;     200000; BC FM
    101300000; AJM Gold FM              ; WFM (stereo)        ;     200000; BC FM
-   101400000; *                        ; WFM (stereo)        ;     200000; BC FM
-   101500000; *                        ; WFM (stereo)        ;     200000; BC FM
    101600000; City1016                 ; WFM (stereo)        ;     200000; BC FM
-   101700000; *                        ; WFM (stereo)        ;     200000; BC FM
-   101800000; *                        ; WFM (stereo)        ;     200000; BC FM
-   101900000; *                        ; WFM (stereo)        ;     200000; BC FM
    102000000; Pearl                    ; WFM (stereo)        ;     200000; BC FM
-   102100000; *                        ; WFM (stereo)        ;     200000; BC FM
-   102200000; *                        ; WFM (stereo)        ;     200000; BC FM
-   102300000; *                        ; WFM (stereo)        ;     200000; BC FM
    102400000; Mirchi 102.4             ; WFM (stereo)        ;     200000; BC FM
-   102500000; *                        ; WFM (stereo)        ;     200000; BC FM
-   102600000; *                        ; WFM (stereo)        ;     200000; BC FM
    102700000; SHJ Quran                ; WFM (stereo)        ;     200000; BC FM
-   102800000; *                        ; WFM (stereo)        ;     200000; BC FM
-   102900000; *                        ; WFM (stereo)        ;     200000; BC FM
-   103000000; *                        ; WFM (stereo)        ;     200000; BC FM
-   103100000; *                        ; WFM (stereo)        ;     200000; BC FM
    103200000; VOLNA.AE                 ; WFM (stereo)        ;     200000; BC FM
-   103300000; *                        ; WFM (stereo)        ;     200000; BC FM
-   103400000; *                        ; WFM (stereo)        ;     200000; BC FM
    103500000; RAK FM                   ; WFM (stereo)        ;     200000; BC FM
-   103600000; *                        ; WFM (stereo)        ;     200000; BC FM
-   103700000; *                        ; WFM (stereo)        ;     200000; BC FM
    103800000; DXB Eye                  ; WFM (stereo)        ;     200000; BC FM
-   103900000; *                        ; WFM (stereo)        ;     200000; BC FM
-   104000000; *                        ; WFM (stereo)        ;     200000; BC FM
    104100000; Radio 1                  ; WFM (stereo)        ;     200000; BC FM
-   104200000; *                        ; WFM (stereo)        ;     200000; BC FM
-   104300000; *                        ; WFM (stereo)        ;     200000; BC FM
    104400000; DXB Virgin               ; WFM (stereo)        ;     200000; BC FM
-   104500000; *                        ; WFM (stereo)        ;     200000; BC FM
    104600000; AD SEHA                  ; WFM (stereo)        ;     200000; BC FM
-   104700000; *                        ; WFM (stereo)        ;     200000; BC FM
    104800000; AJM Channel 4            ; WFM (stereo)        ;     200000; BC FM
-   104900000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105000000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105100000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105200000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105300000; *                        ; WFM (stereo)        ;     200000; BC FM
    105400000; Vibe FM                  ; WFM (stereo)        ;     200000; BC FM
-   105500000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105600000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105700000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105800000; *                        ; WFM (stereo)        ;     200000; BC FM
-   105900000; *                        ; WFM (stereo)        ;     200000; BC FM
    106000000; Radio 2                  ; WFM (stereo)        ;     200000; BC FM
-   106100000; *                        ; WFM (stereo)        ;     200000; BC FM
    106200000; UAQ Big 106.2            ; WFM (stereo)        ;     200000; BC FM
-   106300000; *                        ; WFM (stereo)        ;     200000; BC FM
-   106400000; *                        ; WFM (stereo)        ;     200000; BC FM
    106500000; UAQ Radio Gilli          ; WFM (stereo)        ;     200000; BC FM
-   106600000; *                        ; WFM (stereo)        ;     200000; BC FM
-   106700000; *                        ; WFM (stereo)        ;     200000; BC FM
-   106800000; *                        ; WFM (stereo)        ;     200000; BC FM
    106900000; Shabab Net               ; WFM (stereo)        ;     200000; BC FM
-   107000000; *                        ; WFM (stereo)        ;     200000; BC FM
    107100000; UAQ LUV 107.1            ; WFM (stereo)        ;     200000; BC FM
-   107200000; *                        ; WFM (stereo)        ;     200000; BC FM
-   107300000; *                        ; WFM (stereo)        ;     200000; BC FM
    107400000; DXB ALOula               ; WFM (stereo)        ;     200000; BC FM
-   107500000; *                        ; WFM (stereo)        ;     200000; BC FM
    107600000; ClubFM                   ; WFM (stereo)        ;     200000; BC FM
-   107700000; *                        ; WFM (stereo)        ;     200000; BC FM
    107800000; AJM Al Rabia FM          ; WFM (stereo)        ;     200000; BC FM
    108000000; 1 VOR                    ; AM                  ;      50000; VOR_ILS
    108050000; 2 VOR                    ; AM                  ;      50000; VOR_ILS
