@@ -1,3 +1,10 @@
-/etc/openwebrx
-/var/lib/openwebrx
 
+/var/lib/openwebrx/settings.json
+/var/lib/openwebrx/bookmarks.json
+/var/lib/openwebrx/users.json
+
+/etc/openwebrx/openwebrx.conf
+/etc/openwebrx/bands.json
+/etc/openwebrx/bands-r1.json
+/etc/openwebrx/bands-r2.json
+/etc/openwebrx/bands-r3.json
