@@ -61,7 +61,7 @@
         "sdrplay": {
             "name": "RSPdx",
             "type": "sdrplay",
-            "antenna": "Antenna A",
+            "antenna": "Antenna B",
             "rf_gain": "auto",
             "profiles": {
                 "160m": {
@@ -416,9 +416,66 @@
                     "tuning_step": 1,
                     "antenna": "Antenna B",
                     "bias_tee": false,
-                    "rf_notch": true,
+                    "rf_notch": false,
                     "dab_notch": true,
                     "rf_gain": "auto",
+                    "if_mode": "Zero-IF"
+                },
+                "feaf58b5-720a-4593-9930-e067bed94d16": {
+                    "name": "BC DAB+ 9A 204.640 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 204640000,
+                    "samp_rate": 2500000,
+                    "start_freq": 204640000,
+                    "start_mod": "dab",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": false,
+                    "hdr_ctrl": false,
+                    "if_mode": "Zero-IF"
+                },
+                "fe67350c-f8cd-405c-b2fa-cf6286319b58": {
+                    "name": "BC DAB+ 11A 218.64MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 218640000,
+                    "samp_rate": 2500000,
+                    "start_freq": 218640000,
+                    "start_mod": "dab",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": false,
+                    "if_mode": "Zero-IF",
+                    "hdr_ctrl": false
+                },
+                "4f101be7-5460-47d7-9d12-5680f7b96768": {
+                    "name": "BC DAB+ 11D 222.064 MHz",
+                    "rf_gain": "auto",
+                    "waterfall_levels": {
+                        "min": -75.0,
+                        "max": 0.0
+                    },
+                    "center_freq": 222064000,
+                    "samp_rate": 3000000,
+                    "start_freq": 222064000,
+                    "start_mod": "dab",
+                    "tuning_step": 1,
+                    "antenna": "Antenna B",
+                    "bias_tee": false,
+                    "rf_notch": true,
+                    "dab_notch": false,
+                    "hdr_ctrl": false,
                     "if_mode": "Zero-IF"
                 },
                 "Airband": {
@@ -480,7 +537,7 @@
                     "name": "DIG APRS 144.800 MHz",
                     "rf_gain": "auto",
                     "waterfall_levels": {
-                        "min": -80.0,
+                        "min": -65.0,
                         "max": -40.0
                     },
                     "center_freq": 144800000,
@@ -807,7 +864,7 @@
             "scheduler": {
                 "type": "static",
                 "schedule": {
-                    "0000-0000": "20m"
+                    "0000-0000": "APRS"
                 }
             },
             "services": true,
@@ -847,10 +904,7 @@
     "rig_address": 0,
     "services_enabled": true,
     "services_decoders": [
-        "ft4",
-        "ft8",
-        "packet",
-        "wspr"
+        "packet"
     ],
     "pskreporter_rig_information": "RPi5 with RSPdx",
     "aprs_igate_height": "42",
