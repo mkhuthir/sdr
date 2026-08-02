@@ -122,7 +122,7 @@ blocks:
     scaleFactor: '1'
     showvalue: 'True'
     type: int
-    value: '0'
+    value: '20'
   states:
     bus_sink: false
     bus_source: false
@@ -377,7 +377,7 @@ blocks:
     fftsize: '4096'
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 0,4,15,12
+    gui_hint: 0,2,12,12
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -420,7 +420,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [256, 80.0]
+    coordinate: [248, 16.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
