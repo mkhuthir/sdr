@@ -6,12 +6,12 @@ options:
     cmake_opt: ''
     comment: ''
     copyright: (c) 2026
-    description: LimeSDR Mini 1 FM Receiver
+    description: LimeSDR Mini 1.2 FM Receiver
     gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: top_block
+    id: LimeSDR_FM_RX
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -28,123 +28,186 @@ options:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [8, 12.0]
+    coordinate: [16, 16.0]
     rotation: 0
     state: enabled
 
 blocks:
 - name: GFIR_bandwidth
-  id: variable_qtgui_range
+  id: qtgui_msgdigitalnumbercontrol
   parameters:
+    ThousandsSeparator: ','
+    affinity: ''
+    alias: ''
     comment: ''
-    gui_hint: 1,0,1,1
-    label: GFIR bandwidth Hz
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: '0'
-    step: 1e3
-    stop: samp_rate
+    gui_hint: 1,0,1,2
+    lbl: GFIR Bandwidth Hz
+    maxFreqHz: samp_rate
+    maxoutbuf: '0'
+    minFreqHz: '0'
+    minoutbuf: '0'
+    outputmsgname: freq
+    readOnly: 'False'
+    relBackgroundColor: gray
+    relFontColor: white
     value: 300e3
-    widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [400, 496.0]
+    coordinate: [192, 352.0]
     rotation: 0
-    state: true
+    state: enabled
+- name: LO_freq
+  id: qtgui_msgdigitalnumbercontrol
+  parameters:
+    ThousandsSeparator: .
+    affinity: ''
+    alias: ''
+    comment: ''
+    gui_hint: 3,0,1,2
+    lbl: LO Frequency Hz
+    maxFreqHz: 109e+6
+    maxoutbuf: '0'
+    minFreqHz: 86e+6
+    minoutbuf: '0'
+    outputmsgname: LO_freq
+    readOnly: 'False'
+    relBackgroundColor: black
+    relFontColor: green
+    value: '95000000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 352.0]
+    rotation: 0
+    state: enabled
+- name: NCO_offset
+  id: qtgui_msgdigitalnumbercontrol
+  parameters:
+    ThousandsSeparator: ','
+    affinity: ''
+    alias: ''
+    comment: ''
+    gui_hint: 4,0,1,2
+    lbl: NCO Offset Hz
+    maxFreqHz: samp_rate
+    maxoutbuf: '0'
+    minFreqHz: -samp_rate
+    minoutbuf: '0'
+    outputmsgname: freq
+    readOnly: 'False'
+    relBackgroundColor: black
+    relFontColor: green
+    value: '0'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 472.0]
+    rotation: 0
+    state: enabled
 - name: RF_gain
-  id: variable_qtgui_range
+  id: variable_qtgui_dial_control
   parameters:
     comment: ''
-    gui_hint: 3,0,1,1
+    gui_hint: 5,0,1,1
     label: RF Gain dB
-    min_len: '70'
-    orient: QtCore.Qt.Horizontal
-    rangeType: int
-    start: '0'
-    step: '1'
-    stop: '70'
-    value: '30'
-    widget: counter_slider
+    maximum: '100'
+    minimum: '0'
+    minsize: '100'
+    outputmsgname: value
+    relBackgroundColor: yellow
+    scaleFactor: '1'
+    showvalue: 'True'
+    type: int
+    value: '0'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [128, 432.0]
+    coordinate: [728, 368.0]
     rotation: 0
-    state: true
+    state: enabled
 - name: RX_LPF_cutoff
-  id: variable_qtgui_range
+  id: qtgui_msgdigitalnumbercontrol
   parameters:
+    ThousandsSeparator: ','
+    affinity: ''
+    alias: ''
     comment: ''
-    gui_hint: 2,0,1,1
-    label: LPF cutoff Hz
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: 4e6
-    step: '1'
-    stop: 160e6
+    gui_hint: 2,0,1,2
+    lbl: RX Low Pass Filter cutoff frequency Hz
+    maxFreqHz: 130e6
+    maxoutbuf: '0'
+    minFreqHz: 4e6
+    minoutbuf: '0'
+    outputmsgname: freq
+    readOnly: 'False'
+    relBackgroundColor: gray
+    relFontColor: white
     value: 4e6
-    widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [400, 360.0]
+    coordinate: [192, 472.0]
     rotation: 0
-    state: true
+    state: enabled
+- name: VFO_freq
+  id: qtgui_msgdigitalnumbercontrol
+  parameters:
+    ThousandsSeparator: ','
+    affinity: ''
+    alias: ''
+    comment: ''
+    gui_hint: 6,0,1,2
+    lbl: VFO Freq Hz
+    maxFreqHz: 6e12
+    maxoutbuf: '0'
+    minFreqHz: '0'
+    minoutbuf: '0'
+    outputmsgname: freq
+    readOnly: 'True'
+    relBackgroundColor: black
+    relFontColor: white
+    value: LO_freq
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 592.0]
+    rotation: 0
+    state: enabled
 - name: antenna
   id: variable_qtgui_chooser
   parameters:
     comment: ''
-    gui_hint: 0,0,1,1
+    gui_hint: 0,0,1,2
     label: LNA Path
     label0: LNAW
     label1: LNAH
     label2: LNAL
-    label3: Auto
+    label3: auto
     label4: ''
     labels: '[]'
     num_opts: '4'
     option0: LNAW
     option1: LNAH
     option2: LNAL
-    option3: Auto
+    option3: auto
     option4: '4'
     options: '[0, 1, 2]'
     orient: Qt.QHBoxLayout
     type: string
-    value: Auto
+    value: auto
     widget: radio_buttons
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [560, 356.0]
-    rotation: 0
-    state: true
-- name: baseband
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 4,0,1,1
-    label: Center Freq MHz
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: '87'
-    step: '0.1'
-    stop: '109'
-    value: '95'
-    widget: counter_slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1016, 384.0]
+    coordinate: [16, 436.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -156,7 +219,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1200, 40.0]
+    coordinate: [16, 360.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio
@@ -168,20 +231,20 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1312, 56.0]
+    coordinate: [1032, 368.0]
     rotation: 0
     state: enabled
 - name: volume
   id: variable_qtgui_dial_control
   parameters:
     comment: ''
-    gui_hint: 5,0,2,1
+    gui_hint: 5,1,1,1
     label: Volume
     maximum: '100'
     minimum: '0'
-    minsize: '50'
+    minsize: '100'
     outputmsgname: value
-    relBackgroundColor: default
+    relBackgroundColor: orange
     scaleFactor: '0.1'
     showvalue: 'True'
     type: real
@@ -190,7 +253,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1016, 520.0]
+    coordinate: [880, 368.0]
     rotation: 0
     state: enabled
 - name: analog_wfm_rcv_0
@@ -267,16 +330,16 @@ blocks:
     lpf: RX_LPF_cutoff
     maxoutbuf: '0'
     minoutbuf: '0'
-    nco_offset: '0.0'
+    nco_offset: NCO_offset
     override_lms7002m_rx_gains: Disabled
-    rf_freq: baseband*1e6
+    rf_freq: LO_freq
     rf_oversampling: auto
     sample_rate: samp_rate
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [0, 188.0]
+    coordinate: [16, 200.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -310,11 +373,11 @@ blocks:
     color9: '"dark green"'
     comment: ''
     ctrlpanel: 'True'
-    fc: baseband*1e6
+    fc: LO_freq
     fftsize: '4096'
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 0,2,15,8
+    gui_hint: 0,4,15,12
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -329,7 +392,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: FFT
+    name: ''
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -377,7 +440,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [544, 216.0]
+    coordinate: [392, 216.0]
     rotation: 0
     state: true
 

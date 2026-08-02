@@ -25,4 +25,4 @@
 # r 8000        : rate 8000 Hz
 # c 1           : Mono
 
-cat ~/Downloads/out/*.out | cdecoder /dev/stdin /dev/stdout | sdecoder /dev/stdin /dev/stdout | aplay -f S16_LE -r 8000 -c 1
+cat $* | cdecoder /dev/stdin /dev/stdout | sdecoder /dev/stdin /dev/stdout | aplay -f S16_LE -r 8000 -c 1
