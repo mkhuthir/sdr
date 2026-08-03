@@ -11,7 +11,7 @@ options:
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: noise_wf
+    id: signal_fft
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -22,7 +22,7 @@ options:
     run_options: prompt
     sizing_mode: fixed
     thread_safe_setters: ''
-    title: Noise Waterfall
+    title: Signal to FFT
     window_size: (1000,1000)
   states:
     bus_sink: false
@@ -42,9 +42,21 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [376, 76.0]
+    coordinate: [376, 80.0]
     rotation: 0
     state: enabled
+- name: bandwidth
+  id: variable
+  parameters:
+    comment: ''
+    value: 16e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 80.0]
+    rotation: 0
+    state: true
 - name: freq
   id: variable
   parameters:
@@ -54,7 +66,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [296, 76.0]
+    coordinate: [296, 80.0]
     rotation: 0
     state: enabled
 - name: ftt_size
@@ -66,7 +78,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [384, 12.0]
+    coordinate: [560, 80.0]
     rotation: 0
     state: enabled
 - name: samp_rate
@@ -78,7 +90,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 76.0]
+    coordinate: [200, 80.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -94,13 +106,14 @@ blocks:
     offset: '0'
     phase: '0'
     samp_rate: samp_rate
+    showports: 'False'
     type: complex
     waveform: analog.GR_SIN_WAVE
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [128, 276.0]
+    coordinate: [144, 272.0]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0
@@ -108,28 +121,28 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    bw: samp_rate
+    bw: bandwidth
     comment: ''
     fc: '0'
-    fftsize: '1024'
+    fftsize: '16384'
     gui_hint: ''
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '""'
+    name: '"FFT"'
     plotconst: 'True'
     plotfreq: 'True'
     plottime: 'True'
     plotwaterfall: 'True'
     rate: '10'
-    showports: 'False'
-    showrf: 'False'
+    showports: 'True'
+    showrf: 'True'
     type: complex
     wintype: window.WIN_BLACKMAN_hARRIS
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [432, 284.0]
+    coordinate: [440, 296.0]
     rotation: 0
     state: true
 
@@ -138,3 +151,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: 3.10.12.0

@@ -11,7 +11,7 @@ options:
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: noise_wf
+    id: noise_fft_wf
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -22,7 +22,7 @@ options:
     run_options: prompt
     sizing_mode: fixed
     thread_safe_setters: ''
-    title: Noise Waterfall
+    title: Noise to FFT and Waterfall
     window_size: (1000,1000)
   states:
     bus_sink: false
@@ -42,7 +42,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [376, 76.0]
+    coordinate: [384, 88.0]
     rotation: 0
     state: enabled
 - name: bandwidth
@@ -78,7 +78,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [296, 76.0]
+    coordinate: [288, 88.0]
     rotation: 0
     state: enabled
 - name: ftt_size
@@ -102,7 +102,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 76.0]
+    coordinate: [200, 88.0]
     rotation: 0
     state: enabled
 - name: analog_fastnoise_source_x_0
@@ -274,3 +274,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: 3.10.12.0

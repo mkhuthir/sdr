@@ -58,6 +58,7 @@ blocks:
     offset: '0'
     phase: '0'
     samp_rate: samp_rate
+    showports: 'False'
     type: complex
     waveform: analog.GR_SIN_WAVE
   states:
@@ -81,7 +82,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [744, 148.0]
+    coordinate: [744, 144.0]
     rotation: 0
     state: true
 - name: blocks_complex_to_float_0
@@ -189,3 +190,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: 3.10.12.0
