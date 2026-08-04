@@ -6,12 +6,12 @@ options:
     cmake_opt: ''
     comment: ''
     copyright: (c) 2026
-    description: LimeSDR Mini 1.2 FM Receiver
+    description: RDS receiver from wave file
     gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: LimeSDR_FM_RX
+    id: wav_file_FM_RDS_RX
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -22,7 +22,7 @@ options:
     run_options: prompt
     sizing_mode: fixed
     thread_safe_setters: ''
-    title: LimeSDR FM Receiver
+    title: Wave file FM RDS RX
     window_size: ''
   states:
     bus_sink: false
@@ -33,168 +33,28 @@ options:
     state: enabled
 
 blocks:
-- name: GFIR_bandwidth
-  id: qtgui_msgdigitalnumbercontrol
+- name: center_freq
+  id: variable
   parameters:
-    ThousandsSeparator: ','
-    affinity: ''
-    alias: ''
     comment: ''
-    gui_hint: 1,0,1,2
-    lbl: GFIR Bandwidth Hz
-    maxFreqHz: samp_rate
-    maxoutbuf: '0'
-    minFreqHz: '0'
-    minoutbuf: '0'
-    outputmsgname: freq
-    readOnly: 'False'
-    relBackgroundColor: gray
-    relFontColor: white
-    value: 300e3
+    value: 88.1e6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 368.0]
+    coordinate: [376, 368.0]
     rotation: 0
     state: enabled
-- name: LO_freq
-  id: qtgui_msgdigitalnumbercontrol
-  parameters:
-    ThousandsSeparator: .
-    affinity: ''
-    alias: ''
-    comment: ''
-    gui_hint: 3,0,1,2
-    lbl: LO Frequency Hz
-    maxFreqHz: 109e+6
-    maxoutbuf: '0'
-    minFreqHz: 86e+6
-    minoutbuf: '0'
-    outputmsgname: LO_freq
-    readOnly: 'False'
-    relBackgroundColor: black
-    relFontColor: green
-    value: '95000000'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [544, 368.0]
-    rotation: 0
-    state: enabled
-- name: NCO_offset
-  id: qtgui_msgdigitalnumbercontrol
-  parameters:
-    ThousandsSeparator: ','
-    affinity: ''
-    alias: ''
-    comment: ''
-    gui_hint: 4,0,1,2
-    lbl: NCO Offset Hz
-    maxFreqHz: samp_rate
-    maxoutbuf: '0'
-    minFreqHz: -samp_rate
-    minoutbuf: '0'
-    outputmsgname: freq
-    readOnly: 'False'
-    relBackgroundColor: black
-    relFontColor: green
-    value: '0'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [544, 488.0]
-    rotation: 0
-    state: enabled
-- name: RF_gain
-  id: variable_qtgui_dial_control
-  parameters:
-    comment: ''
-    gui_hint: 5,0,1,1
-    label: RF Gain dB
-    maximum: '100'
-    minimum: '0'
-    minsize: '100'
-    outputmsgname: value
-    relBackgroundColor: yellow
-    scaleFactor: '1'
-    showvalue: 'True'
-    type: int
-    value: '20'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [136, 360.0]
-    rotation: 0
-    state: enabled
-- name: RX_LPF_cutoff
-  id: qtgui_msgdigitalnumbercontrol
-  parameters:
-    ThousandsSeparator: ','
-    affinity: ''
-    alias: ''
-    comment: ''
-    gui_hint: 2,0,1,2
-    lbl: RX Low Pass Filter cutoff frequency Hz
-    maxFreqHz: 130e6
-    maxoutbuf: '0'
-    minFreqHz: 4e6
-    minoutbuf: '0'
-    outputmsgname: freq
-    readOnly: 'False'
-    relBackgroundColor: gray
-    relFontColor: white
-    value: 4e6
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [288, 488.0]
-    rotation: 0
-    state: enabled
-- name: antenna
-  id: variable_qtgui_chooser
-  parameters:
-    comment: ''
-    gui_hint: 0,0,1,2
-    label: LNA Path
-    label0: LNAW
-    label1: LNAH
-    label2: LNAL
-    label3: auto
-    label4: ''
-    labels: '[]'
-    num_opts: '4'
-    option0: LNAW
-    option1: LNAH
-    option2: LNAL
-    option3: auto
-    option4: '4'
-    options: '[0, 1, 2]'
-    orient: Qt.QHBoxLayout
-    type: string
-    value: auto
-    widget: radio_buttons
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [16, 436.0]
-    rotation: 0
-    state: true
 - name: samp_rate
   id: variable
   parameters:
     comment: ''
-    value: 5e6
+    value: 250e3
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [48, 360.0]
+    coordinate: [376, 296.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio
@@ -206,20 +66,20 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1032, 368.0]
+    coordinate: [1056, 304.0]
     rotation: 0
     state: enabled
 - name: volume
   id: variable_qtgui_dial_control
   parameters:
     comment: ''
-    gui_hint: 5,1,1,1
+    gui_hint: 0,0,2,2
     label: Volume
     maximum: '100'
     minimum: '0'
     minsize: '100'
     outputmsgname: value
-    relBackgroundColor: orange
+    relBackgroundColor: default
     scaleFactor: '0.1'
     showvalue: 'True'
     type: real
@@ -228,7 +88,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [816, 368.0]
+    coordinate: [904, 296.0]
     rotation: 0
     state: enabled
 - name: analog_wfm_rcv_0
@@ -245,7 +105,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [544, 232.0]
+    coordinate: [728, 224.0]
     rotation: 0
     state: enabled
 - name: audio_sink_0
@@ -262,9 +122,25 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1032, 240.0]
+    coordinate: [1056, 232.0]
     rotation: 0
     state: true
+- name: blocks_float_to_complex_0
+  id: blocks_float_to_complex
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 224.0]
+    rotation: 0
+    state: enabled
 - name: blocks_multiply_const_vxx_0
   id: blocks_multiply_const_vxx
   parameters:
@@ -280,41 +156,59 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [816, 240.0]
+    coordinate: [904, 232.0]
     rotation: 0
     state: enabled
-- name: limesuiteng_sdrdevice_source_0
-  id: limesuiteng_sdrdevice_source
+- name: blocks_throttle2_0
+  id: blocks_throttle2
   parameters:
     affinity: ''
     alias: ''
-    antenna: antenna
-    calibrate_dciq: Enabled
-    channel_indexes: '[0]'
-    chip_index: '0'
     comment: ''
-    custom_config_file: ''
-    data_format: fc32
-    deviceHandleHint: ''
-    gain_generic: RF_gain
-    gfir_bandwidth: GFIR_bandwidth
-    link_format: i16
-    lms7002m_gain_lna: '0'
-    lms7002m_gain_pga: '0'
-    lms7002m_gain_tia: '-3'
-    lpf: RX_LPF_cutoff
+    ignoretag: 'True'
+    limit: auto
+    maximum: '0.1'
     maxoutbuf: '0'
     minoutbuf: '0'
-    nco_offset: NCO_offset
-    override_lms7002m_rx_gains: Disabled
-    rf_freq: LO_freq
-    rf_oversampling: auto
-    sample_rate: samp_rate
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [16, 200.0]
+    coordinate: [376, 224.0]
+    rotation: 0
+    state: enabled
+- name: blocks_wavfile_source_0
+  id: blocks_wavfile_source
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    file: /home/mkhuthir/rfdata/wav/FM_RDS/SDRuno_20200907_184033Z_88110kHz_FM_RDS.wav
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nchan: '2'
+    repeat: 'True'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 224.0]
+    rotation: 0
+    state: enabled
+- name: import_0
+  id: import
+  parameters:
+    alias: ''
+    comment: ''
+    imports: import numpy as np
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 16.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -348,7 +242,7 @@ blocks:
     color9: '"dark green"'
     comment: ''
     ctrlpanel: 'True'
-    fc: LO_freq
+    fc: center_freq
     fftsize: '4096'
     freqhalf: 'True'
     grid: 'True'
@@ -395,7 +289,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 120.0]
+    coordinate: [560, 104.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -415,15 +309,18 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 216.0]
+    coordinate: [560, 208.0]
     rotation: 0
     state: true
 
 connections:
 - [analog_wfm_rcv_0, '0', blocks_multiply_const_vxx_0, '0']
+- [blocks_float_to_complex_0, '0', blocks_throttle2_0, '0']
 - [blocks_multiply_const_vxx_0, '0', audio_sink_0, '0']
-- [limesuiteng_sdrdevice_source_0, '0', qtgui_freq_sink_x_0, '0']
-- [limesuiteng_sdrdevice_source_0, '0', rational_resampler_xxx_0, '0']
+- [blocks_throttle2_0, '0', qtgui_freq_sink_x_0, '0']
+- [blocks_throttle2_0, '0', rational_resampler_xxx_0, '0']
+- [blocks_wavfile_source_0, '0', blocks_float_to_complex_0, '0']
+- [blocks_wavfile_source_0, '1', blocks_float_to_complex_0, '1']
 - [rational_resampler_xxx_0, '0', analog_wfm_rcv_0, '0']
 
 metadata:
