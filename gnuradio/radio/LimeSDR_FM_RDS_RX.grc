@@ -33,11 +33,11 @@ options:
     state: enabled
 
 blocks:
-- name: FM_Y_max
+- name: Ch_FFT_Y_max
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 5,200,2,1
+    gui_hint: 0,200,3,1
     label: '"Max"'
     min_len: '200'
     orient: QtCore.Qt.Vertical
@@ -51,14 +51,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1480, 16.0]
+    coordinate: [1224, 16.0]
     rotation: 0
     state: enabled
-- name: FM_Y_min
+- name: Ch_FFT_Y_min
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 7,200,2,1
+    gui_hint: 3,200,3,1
     label: '"Min"'
     min_len: '200'
     orient: QtCore.Qt.Vertical
@@ -72,14 +72,116 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1584, 16.0]
+    coordinate: [1328, 16.0]
+    rotation: 0
+    state: enabled
+- name: Ch_LPF_taps
+  id: variable_low_pass_filter_taps
+  parameters:
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: 135e3
+    gain: '1.0'
+    samp_rate: samp_rate
+    value: ''
+    width: 1e3
+    win: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [952, 696.0]
+    rotation: 0
+    state: enabled
+- name: FM_WF_I_max
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 10,200,4,1
+    label: '"Max"'
+    min_len: '200'
+    orient: QtCore.Qt.Vertical
+    rangeType: int
+    start: '-60'
+    step: '10'
+    stop: '10'
+    value: '0'
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1672, 16.0]
+    rotation: 0
+    state: enabled
+- name: FM_WF_I_min
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 14,200,4,1
+    label: '"Min"'
+    min_len: '200'
+    orient: QtCore.Qt.Vertical
+    rangeType: float
+    start: '-200'
+    step: '10'
+    stop: '-70'
+    value: '-160'
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1776, 16.0]
+    rotation: 0
+    state: enabled
+- name: FM_Y_max
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 6,200,2,1
+    label: '"Max"'
+    min_len: '200'
+    orient: QtCore.Qt.Vertical
+    rangeType: int
+    start: '-60'
+    step: '10'
+    stop: '10'
+    value: '0'
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1448, 16.0]
+    rotation: 0
+    state: enabled
+- name: FM_Y_min
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 8,200,2,1
+    label: '"Min"'
+    min_len: '200'
+    orient: QtCore.Qt.Vertical
+    rangeType: float
+    start: '-200'
+    step: '10'
+    stop: '-70'
+    value: '-160'
+    widget: slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1552, 16.0]
     rotation: 0
     state: enabled
 - name: LO_freq
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 0, 0,1, 100
+    gui_hint: 0, 0,1, 50
     label: LO Freq.
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -87,7 +189,7 @@ blocks:
     start: '87'
     step: '0.1'
     stop: '108'
-    value: '92.6'
+    value: '94.4'
     widget: counter_slider
   states:
     bus_sink: false
@@ -96,86 +198,91 @@ blocks:
     coordinate: [776, 16.0]
     rotation: 0
     state: true
-- name: NCO_offset
-  id: variable_qtgui_range
+- name: LR_LPF_taps
+  id: variable_low_pass_filter_taps
   parameters:
+    beta: '6.76'
     comment: ''
-    gui_hint: 1, 0,1, 100
-    label: NCO Offset
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: -samp_rate/2
-    step: 100e3
-    stop: samp_rate/2
-    value: '0'
-    widget: counter_slider
+    cutoff_freq: 15e3
+    gain: '1.0'
+    samp_rate: samp_rate_audio_band
+    value: ''
+    width: 1e3
+    win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [904, 16.0]
+    coordinate: [1560, 704.0]
+    rotation: 0
+    state: enabled
+- name: Pilot_BPF_taps
+  id: variable_band_pass_filter_taps
+  parameters:
+    beta: '6.76'
+    comment: ''
+    gain: '1.0'
+    high_cutoff_freq: '19020'
+    low_cutoff_freq: '18980'
+    samp_rate: samp_rate_audio_band
+    type: complex_band_pass
+    value: ''
+    width: 1e3
+    win: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1248, 700.0]
     rotation: 0
     state: true
-- name: baseband_Y_max
-  id: variable_qtgui_range
+- name: RDS_LPF_taps
+  id: variable_low_pass_filter_taps
   parameters:
+    beta: '6.76'
     comment: ''
-    gui_hint: 0,200,2,1
-    label: '"Max"'
-    min_len: '200'
-    orient: QtCore.Qt.Vertical
-    rangeType: int
-    start: '-60'
-    step: '10'
-    stop: '10'
-    value: '0'
-    widget: slider
+    cutoff_freq: 7.5e3
+    gain: '1.0'
+    samp_rate: samp_rate_FM
+    value: ''
+    width: 1e3
+    win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 16.0]
+    coordinate: [1104, 696.0]
     rotation: 0
     state: enabled
-- name: baseband_Y_min
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 2,200,2,1
-    label: '"Min"'
-    min_len: '200'
-    orient: QtCore.Qt.Vertical
-    rangeType: float
-    start: '-200'
-    step: '10'
-    stop: '-70'
-    value: '-160'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1360, 16.0]
-    rotation: 0
-    state: enabled
-- name: decimation
+- name: RDS_freq
   id: variable
   parameters:
     comment: ''
-    value: '5'
+    value: '57000'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [552, 16.0]
+    coordinate: [376, 160.0]
     rotation: 0
-    state: true
+    state: enabled
+- name: fft_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '2048'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [656, 16.0]
+    rotation: 0
+    state: enabled
 - name: freq_tune
   id: variable
   parameters:
     comment: ''
-    value: LO_freq*1e6 +NCO_offset
+    value: LO_freq*1e6
   states:
     bus_sink: false
     bus_source: false
@@ -187,7 +294,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3, 0,1, 100
+    gui_hint: 2, 0,1, 50
     label: RF Gain
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -201,27 +308,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1136, 16.0]
-    rotation: 0
-    state: true
-- name: pilot_taps
-  id: variable_band_pass_filter_taps
-  parameters:
-    beta: '6.76'
-    comment: ''
-    gain: '1.0'
-    high_cutoff_freq: '19020'
-    low_cutoff_freq: '18980'
-    samp_rate: '240000'
-    type: complex_band_pass
-    value: ''
-    width: '1000'
-    win: window.WIN_HAMMING
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [192, 524.0]
+    coordinate: [1000, 16.0]
     rotation: 0
     state: true
 - name: rrc_taps
@@ -230,15 +317,15 @@ blocks:
     alpha: '1.0'
     comment: ''
     gain: '1.0'
-    ntaps: '151'
-    samp_rate: '19000'
-    sym_rate: 19000/8
+    ntaps: 11*sps_RDS
+    samp_rate: samp_rate_RDS
+    sym_rate: samp_rate_RDS/sps_RDS
     value: ''
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [48, 528.0]
+    coordinate: [1416, 704.0]
     rotation: 0
     state: true
 - name: rrc_taps_manchester
@@ -250,14 +337,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [48, 664.0]
+    coordinate: [1416, 840.0]
     rotation: 0
     state: true
 - name: samp_rate
   id: variable
   parameters:
     comment: ''
-    value: '1920000'
+    value: 2e6
   states:
     bus_sink: false
     bus_source: false
@@ -265,11 +352,71 @@ blocks:
     coordinate: [376, 16.0]
     rotation: 0
     state: enabled
+- name: samp_rate_FM
+  id: variable
+  parameters:
+    comment: ''
+    value: int(200e3)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [552, 16.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_RDS
+  id: variable
+  parameters:
+    comment: ''
+    value: '19000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 160.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_audio_band
+  id: variable
+  parameters:
+    comment: ''
+    value: int(samp_rate_audio_sink*5)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [456, 88.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_audio_sink
+  id: variable
+  parameters:
+    comment: ''
+    value: 48e3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [608, 88.0]
+    rotation: 0
+    state: enabled
+- name: sps_RDS
+  id: variable
+  parameters:
+    comment: ''
+    value: '8'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [376, 88.0]
+    rotation: 0
+    state: enabled
 - name: volume
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 2, 0,1, 100
+    gui_hint: 1, 0,1, 50
     label: Volume
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -283,7 +430,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1024, 16.0]
+    coordinate: [896, 16.0]
     rotation: 0
     state: true
 - name: analog_agc_xx_0
@@ -314,7 +461,7 @@ blocks:
     comment: 75us = US, 50us = EUR
     maxoutbuf: '0'
     minoutbuf: '0'
-    samp_rate: '48000'
+    samp_rate: samp_rate_audio_sink
     tau: 50e-6
   states:
     bus_sink: false
@@ -331,7 +478,7 @@ blocks:
     comment: 75us = US, 50us = EUR
     maxoutbuf: '0'
     minoutbuf: '0'
-    samp_rate: '48000'
+    samp_rate: samp_rate_audio_sink
     tau: 50e-6
   states:
     bus_sink: false
@@ -345,10 +492,10 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
-    max_freq: 2 * math.pi * 19020 / 240000
+    comment: Phase Lock on 19KHz
+    max_freq: 2 * math.pi * 19020 / samp_rate_audio_band
     maxoutbuf: '0'
-    min_freq: 2 * math.pi * 18980 / 240000
+    min_freq: 2 * math.pi * 18980 / samp_rate_audio_band
     minoutbuf: '0'
     w: '0.001'
   states:
@@ -364,14 +511,14 @@ blocks:
     affinity: ''
     alias: ''
     comment: FM Demodulator
-    gain: (samp_rate / decimation) / (2*math.pi*75000)
+    gain: samp_rate_FM / (2*math.pi*75e3)
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 416.0]
+    coordinate: [520, 376.0]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -379,7 +526,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Audio Output
     device_name: ''
     num_inputs: '2'
     ok_to_block: 'True'
@@ -396,7 +543,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: L+R
+    comment: (L+R)+(L-R)=2L
     maxoutbuf: '0'
     minoutbuf: '0'
     num_inputs: '2'
@@ -430,8 +577,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
-    delay: (len(pilot_taps) - 1) // 2
+    comment: Pilot PBF delay
+    delay: (len(Pilot_BPF_taps) - 1) // 2
     maxoutbuf: '0'
     minoutbuf: '0'
     num_ports: '1'
@@ -442,7 +589,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1448, 272.0]
+    coordinate: [1320, 272.0]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -450,7 +597,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: Volume
+    comment: L Volume
     const: 10**(1.*(volume)/10)
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -468,7 +615,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: Volume
+    comment: R Volume
     const: 10**(1.*(volume)/10)
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -486,7 +633,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: 19KHz > 38KHz
     maxoutbuf: '0'
     minoutbuf: '0'
     num_inputs: '2'
@@ -504,7 +651,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Shift back to 0KHz
     maxoutbuf: '0'
     minoutbuf: '0'
     num_inputs: '2'
@@ -539,7 +686,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: L-R
+    comment: (L+R)-(L-R)=2R
     maxoutbuf: '0'
     minoutbuf: '0'
     num_inputs: '2'
@@ -621,12 +768,12 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: Pilot
+    comment: Pilot PBF @ 19 KHz
     decim: '1'
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_delay: '0'
-    taps: pilot_taps
+    taps: Pilot_BPF_taps
     type: fcc
   states:
     bus_sink: false
@@ -640,12 +787,12 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: L+R
-    decim: '5'
+    comment: L+R (Mono)
+    decim: int(samp_rate_audio_band/samp_rate_audio_sink)
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_delay: '0'
-    taps: firdes.low_pass(1.0,240000,15e3,2e3)
+    taps: LR_LPF_taps
     type: fff
   states:
     bus_sink: false
@@ -659,12 +806,12 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: L-R
+    comment: L-R (Stereo)
     decim: '5'
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_delay: '0'
-    taps: firdes.low_pass(-2.1,240000,15e3,2e3)
+    taps: LR_LPF_taps
     type: fff
   states:
     bus_sink: false
@@ -699,11 +846,11 @@ blocks:
     alias: ''
     center_freq: '0'
     comment: Channel Selector
-    decim: decimation
+    decim: int(samp_rate/samp_rate_FM)
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_rate: samp_rate
-    taps: firdes.low_pass(1, samp_rate, 135000, 20000)
+    taps: Ch_LPF_taps
     type: ccc
   states:
     bus_sink: false
@@ -717,13 +864,13 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    center_freq: 57e3
+    center_freq: RDS_freq
     comment: RDS
-    decim: '10'
+    decim: '1'
     maxoutbuf: '0'
     minoutbuf: '0'
-    samp_rate: samp_rate / decimation
-    taps: firdes.low_pass(1.0, samp_rate / decimation, 7.5e3, 5e3)
+    samp_rate: samp_rate_FM
+    taps: RDS_LPF_taps
     type: fcc
   states:
     bus_sink: false
@@ -742,7 +889,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [232, 16.0]
+    coordinate: [184, 16.0]
     rotation: 0
     state: enabled
 - name: limesuiteng_sdrdevice_source_0
@@ -751,7 +898,7 @@ blocks:
     affinity: ''
     alias: ''
     antenna: auto
-    calibrate_dciq: Disabled
+    calibrate_dciq: Enabled
     channel_indexes: '[0]'
     chip_index: '0'
     comment: ''
@@ -760,14 +907,14 @@ blocks:
     deviceHandleHint: ''
     gain_generic: gain
     gfir_bandwidth: '0'
-    link_format: i12
+    link_format: i16
     lms7002m_gain_lna: '0'
     lms7002m_gain_pga: '0'
     lms7002m_gain_tia: '-3'
     lpf: 20e6
     maxoutbuf: '0'
     minoutbuf: '0'
-    nco_offset: NCO_offset
+    nco_offset: '0'
     override_lms7002m_rx_gains: Disabled
     rf_freq: LO_freq*1e6
     rf_oversampling: auto
@@ -777,6 +924,20 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [48, 328.0]
+    rotation: 0
+    state: enabled
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: "L+R    > 50 Hz - 15 kHz  Mono\nPilot  > 19 kHz \nL-R     > 23 kHz -\
+      \ 53 kHz Stereo\nRDS   > 57 kHz\nSCA   > 64 kHz - 99 kHz"
+    note: FM Ch Baseband
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 144.0]
     rotation: 0
     state: enabled
 - name: qtgui_const_sink_x_0
@@ -808,7 +969,7 @@ blocks:
     color9: '"dark green"'
     comment: ''
     grid: 'True'
-    gui_hint: 5,0,6,20
+    gui_hint: 6,0,5,20
     label1: ''
     label10: ''
     label2: ''
@@ -889,7 +1050,7 @@ blocks:
     autoscale: 'False'
     average: '1.0'
     axislabels: 'True'
-    bw: samp_rate/decimation
+    bw: samp_rate_FM
     color1: '"green"'
     color10: '"dark blue"'
     color2: '"red"'
@@ -903,10 +1064,10 @@ blocks:
     comment: Channel FFT
     ctrlpanel: 'False'
     fc: freq_tune
-    fftsize: '1024'
+    fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 0,100,5,100
+    gui_hint: 0,50,6,150
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -943,13 +1104,13 @@ blocks:
     width8: '1'
     width9: '1'
     wintype: window.WIN_BLACKMAN_hARRIS
-    ymax: baseband_Y_max
-    ymin: baseband_Y_min
+    ymax: Ch_FFT_Y_max
+    ymin: Ch_FFT_Y_min
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 264.0]
+    coordinate: [520, 656.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -970,7 +1131,7 @@ blocks:
     autoscale: 'False'
     average: '1.0'
     axislabels: 'True'
-    bw: samp_rate / decimation
+    bw: samp_rate_FM
     color1: '"blue"'
     color10: '"dark blue"'
     color2: '"red"'
@@ -984,10 +1145,10 @@ blocks:
     comment: FM FFT
     ctrlpanel: 'False'
     fc: '0'
-    fftsize: '1024'
+    fftsize: fft_size
     freqhalf: 'False'
     grid: 'True'
-    gui_hint: 5,20,4,180
+    gui_hint: 6,20,4,180
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -1049,7 +1210,7 @@ blocks:
     alpha8: '1.0'
     alpha9: '1.0'
     axislabels: 'False'
-    bw: samp_rate / decimation
+    bw: samp_rate_FM
     color1: '0'
     color10: '0'
     color2: '0'
@@ -1062,12 +1223,12 @@ blocks:
     color9: '0'
     comment: FM Waterfall
     fc: '0'
-    fftsize: '1024'
+    fftsize: fft_size
     freqhalf: 'False'
     grid: 'True'
-    gui_hint: 9,25,8,175
-    int_max: '-10'
-    int_min: '-100'
+    gui_hint: 10,25,8,175
+    int_max: FM_WF_I_max
+    int_min: FM_WF_I_min
     label1: ''
     label10: ''
     label2: ''
@@ -1086,7 +1247,7 @@ blocks:
     showports: 'False'
     type: float
     update_time: '0.10'
-    wintype: window.WIN_HAMMING
+    wintype: window.WIN_BLACKMAN_hARRIS
   states:
     bus_sink: false
     bus_source: false
@@ -1100,9 +1261,9 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    decim: samp_rate // decimation
+    decim: samp_rate_FM
     fbw: '0'
-    interp: '240000'
+    interp: samp_rate_audio_band
     maxoutbuf: '0'
     minoutbuf: '0'
     taps: '[]'
@@ -1120,9 +1281,9 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    decim: samp_rate // decimation // 10
+    decim: samp_rate_FM
     fbw: '0'
-    interp: '19000'
+    interp: samp_rate_RDS
     maxoutbuf: '0'
     minoutbuf: '0'
     taps: '[]'
@@ -1156,9 +1317,9 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
-    freq: freq_tune
-    gui_hint: 4,0,1,100
+    comment: RDS output
+    freq: freq_tune/1e6
+    gui_hint: 4,0,1,50
   states:
     bus_sink: false
     bus_source: false
