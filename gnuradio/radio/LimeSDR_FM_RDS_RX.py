@@ -89,13 +89,13 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.RDS_LPF_taps = RDS_LPF_taps = firdes.low_pass(1.0, samp_rate_FM, 7.5e3, 1e3, window.WIN_HAMMING, 6.76)
         self.Pilot_BPF_taps = Pilot_BPF_taps = firdes.complex_band_pass(1.0, samp_rate_audio_band, 18980, 19020, 1e3, window.WIN_HAMMING, 6.76)
         self.LR_LPF_taps = LR_LPF_taps = firdes.low_pass(1.0, samp_rate_audio_band, 15e3, 1e3, window.WIN_HAMMING, 6.76)
-        self.FM_Y_min = FM_Y_min = -160
-        self.FM_Y_max = FM_Y_max = 0
+        self.FM_Y_min = FM_Y_min = -100
+        self.FM_Y_max = FM_Y_max = (-20)
         self.FM_WF_I_min = FM_WF_I_min = -160
         self.FM_WF_I_max = FM_WF_I_max = 0
         self.Ch_LPF_taps = Ch_LPF_taps = firdes.low_pass(1.0, samp_rate, 135e3, 1e3, window.WIN_HAMMING, 6.76)
-        self.Ch_FFT_Y_min = Ch_FFT_Y_min = -160
-        self.Ch_FFT_Y_max = Ch_FFT_Y_max = 0
+        self.Ch_FFT_Y_min = Ch_FFT_Y_min = -100
+        self.Ch_FFT_Y_max = Ch_FFT_Y_max = (-20)
 
         ##################################################
         # Blocks
@@ -122,14 +122,14 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(0, 50):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self._FM_Y_min_range = qtgui.Range(-200, -70, 10, -160, 200)
+        self._FM_Y_min_range = qtgui.Range(-200, -70, 10, -100, 200)
         self._FM_Y_min_win = qtgui.RangeWidget(self._FM_Y_min_range, self.set_FM_Y_min, "Min", "slider", float, QtCore.Qt.Vertical)
         self.top_grid_layout.addWidget(self._FM_Y_min_win, 8, 200, 2, 1)
         for r in range(8, 10):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(200, 201):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self._FM_Y_max_range = qtgui.Range((-60), 10, 10, 0, 200)
+        self._FM_Y_max_range = qtgui.Range((-60), 10, 10, (-20), 200)
         self._FM_Y_max_win = qtgui.RangeWidget(self._FM_Y_max_range, self.set_FM_Y_max, "Max", "slider", int, QtCore.Qt.Vertical)
         self.top_grid_layout.addWidget(self._FM_Y_max_win, 6, 200, 2, 1)
         for r in range(6, 8):
@@ -150,14 +150,14 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(200, 201):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self._Ch_FFT_Y_min_range = qtgui.Range(-200, -70, 10, -160, 200)
+        self._Ch_FFT_Y_min_range = qtgui.Range(-200, -70, 10, -100, 200)
         self._Ch_FFT_Y_min_win = qtgui.RangeWidget(self._Ch_FFT_Y_min_range, self.set_Ch_FFT_Y_min, "Min", "slider", float, QtCore.Qt.Vertical)
         self.top_grid_layout.addWidget(self._Ch_FFT_Y_min_win, 3, 200, 3, 1)
         for r in range(3, 6):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(200, 201):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self._Ch_FFT_Y_max_range = qtgui.Range((-60), 10, 10, 0, 200)
+        self._Ch_FFT_Y_max_range = qtgui.Range((-60), 10, 10, (-20), 200)
         self._Ch_FFT_Y_max_win = qtgui.RangeWidget(self._Ch_FFT_Y_max_range, self.set_Ch_FFT_Y_max, "Max", "slider", int, QtCore.Qt.Vertical)
         self.top_grid_layout.addWidget(self._Ch_FFT_Y_max_win, 0, 200, 3, 1)
         for r in range(0, 3):
@@ -167,8 +167,8 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.rds_parser_0 = rds.parser(False, False, 0)
         self.rds_panel_0 = rds.rdsPanel((freq_tune/1e6))
         self._rds_panel_0_win = self.rds_panel_0
-        self.top_grid_layout.addWidget(self._rds_panel_0_win, 4, 0, 1, 50)
-        for r in range(4, 5):
+        self.top_grid_layout.addWidget(self._rds_panel_0_win, 4, 0, 2, 50)
+        for r in range(4, 6):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(0, 50):
             self.top_grid_layout.setColumnStretch(c, 1)
@@ -229,7 +229,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             window.WIN_BLACKMAN_hARRIS, #wintype
             0, #fc
             samp_rate_FM, #bw
-            "", #name
+            "Demodulated FM", #name
             1,
             None # parent
         )
@@ -239,7 +239,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.qtgui_freq_sink_x_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
         self.qtgui_freq_sink_x_0_0.enable_autoscale(False)
         self.qtgui_freq_sink_x_0_0.enable_grid(True)
-        self.qtgui_freq_sink_x_0_0.set_fft_average(1.0)
+        self.qtgui_freq_sink_x_0_0.set_fft_average(0.2)
         self.qtgui_freq_sink_x_0_0.enable_axis_labels(True)
         self.qtgui_freq_sink_x_0_0.enable_control_panel(False)
         self.qtgui_freq_sink_x_0_0.set_fft_window_normalized(False)
@@ -277,7 +277,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             window.WIN_BLACKMAN_hARRIS, #wintype
             freq_tune, #fc
             samp_rate_FM, #bw
-            "", #name
+            "FM Channel", #name
             1,
             None # parent
         )
@@ -321,7 +321,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
             1024, #size
-            "", #name
+            "RDS Constellation", #name
             1, #number of inputs
             None # parent
         )

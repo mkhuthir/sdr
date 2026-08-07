@@ -45,13 +45,13 @@ blocks:
     start: '-60'
     step: '10'
     stop: '10'
-    value: '0'
+    value: '-20'
     widget: slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1224, 16.0]
+    coordinate: [1216, 16.0]
     rotation: 0
     state: enabled
 - name: Ch_FFT_Y_min
@@ -66,7 +66,7 @@ blocks:
     start: '-200'
     step: '10'
     stop: '-70'
-    value: '-160'
+    value: '-100'
     widget: slider
   states:
     bus_sink: false
@@ -147,7 +147,7 @@ blocks:
     start: '-60'
     step: '10'
     stop: '10'
-    value: '0'
+    value: '-20'
     widget: slider
   states:
     bus_sink: false
@@ -168,7 +168,7 @@ blocks:
     start: '-200'
     step: '10'
     stop: '-70'
-    value: '-160'
+    value: '-100'
     widget: slider
   states:
     bus_sink: false
@@ -991,7 +991,7 @@ blocks:
     marker7: '0'
     marker8: '0'
     marker9: '0'
-    name: '""'
+    name: '"RDS Constellation"'
     nconnections: '1'
     size: '1024'
     style1: '0'
@@ -1029,7 +1029,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2040, 600.0]
+    coordinate: [2040, 592.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -1082,7 +1082,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '""'
+    name: '"FM Channel"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -1129,7 +1129,7 @@ blocks:
     alpha8: '1.0'
     alpha9: '1.0'
     autoscale: 'False'
-    average: '1.0'
+    average: '0.2'
     axislabels: 'True'
     bw: samp_rate_FM
     color1: '"blue"'
@@ -1163,7 +1163,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '""'
+    name: '"Demodulated FM"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -1252,7 +1252,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [736, 768.0]
+    coordinate: [736, 784.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -1319,7 +1319,7 @@ blocks:
     alias: ''
     comment: RDS output
     freq: freq_tune/1e6
-    gui_hint: 4,0,1,50
+    gui_hint: 4,0,2,50
   states:
     bus_sink: false
     bus_source: false
