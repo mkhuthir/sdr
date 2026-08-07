@@ -33,6 +33,18 @@ options:
     state: enabled
 
 blocks:
+- name: CSA_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '76000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [376, 232.0]
+    rotation: 0
+    state: enabled
 - name: Ch_FFT_Y_max
   id: variable_qtgui_range
   parameters:
@@ -392,7 +404,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 48e3
+    value: '48000'
   states:
     bus_sink: false
     bus_source: false

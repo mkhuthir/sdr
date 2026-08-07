@@ -33,6 +33,27 @@ options:
     state: enabled
 
 blocks:
+- name: LO_freq
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 0, 0,1, 50
+    label: LO Freq.
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '100'
+    step: '0.1'
+    stop: '200'
+    value: '155.321'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [400, 520.0]
+    rotation: 0
+    state: true
 - name: channel_filter
   id: variable_band_pass_filter_taps
   parameters:
@@ -50,38 +71,83 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 12.0]
+    coordinate: [240, 524.0]
     rotation: 0
     state: true
-- name: rf_decim
+- name: freq_tune
   id: variable
   parameters:
     comment: ''
-    value: '3'
+    value: LO_freq*1e6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 12.0]
+    coordinate: [152, 520.0]
+    rotation: 0
+    state: enabled
+- name: gain
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: 2, 0,1, 50
+    label: RF Gain
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '1'
+    stop: '49.6'
+    value: '25'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [640, 520.0]
     rotation: 0
     state: true
 - name: samp_rate
   id: variable
   parameters:
     comment: ''
-    value: '576000'
+    value: 2e6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 12.0]
+    coordinate: [64, 520.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_audio_band
+  id: variable
+  parameters:
+    comment: ''
+    value: int(samp_rate_audio_sink*5)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 592.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_audio_sink
+  id: variable
+  parameters:
+    comment: ''
+    value: '48000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [64, 664.0]
     rotation: 0
     state: enabled
 - name: sq_lvl
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: ''
+    gui_hint: 3, 0,1, 50
     label: Squelch
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -95,14 +161,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [536, 12.0]
+    coordinate: [744, 520.0]
     rotation: 0
     state: enabled
 - name: volume
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: ''
+    gui_hint: 1, 0,1, 50
     label: Volume
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -116,7 +182,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 12.0]
+    coordinate: [520, 520.0]
     rotation: 0
     state: enabled
 - name: analog_nbfm_rx_0
@@ -124,18 +190,18 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    audio_rate: '48000'
+    audio_rate: samp_rate_audio_sink
     comment: ''
     max_dev: 5e3
     maxoutbuf: '0'
     minoutbuf: '0'
-    quad_rate: (int)(samp_rate/rf_decim)
+    quad_rate: samp_rate_audio_band
     tau: 75e-6
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [608, 200.0]
+    coordinate: [648, 200.0]
     rotation: 0
     state: enabled
 - name: analog_simple_squelch_cc_0
@@ -152,7 +218,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [424, 216.0]
+    coordinate: [472, 216.0]
     rotation: 0
     state: enabled
 - name: audio_sink_0
@@ -169,7 +235,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1008, 224.0]
+    coordinate: [992, 224.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0_0
@@ -187,7 +253,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [808, 224.0]
+    coordinate: [840, 224.0]
     rotation: 0
     state: enabled
 - name: fft_filter_xxx_0_0
@@ -196,7 +262,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    decim: rf_decim
+    decim: int(samp_rate/samp_rate_audio_band)
     maxoutbuf: '0'
     minoutbuf: '0'
     nthreads: '1'
@@ -208,6 +274,121 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [256, 208.0]
+    rotation: 0
+    state: enabled
+- name: limesuiteng_sdrdevice_source_0
+  id: limesuiteng_sdrdevice_source
+  parameters:
+    affinity: ''
+    alias: ''
+    antenna: auto
+    calibrate_dciq: Enabled
+    channel_indexes: '[0]'
+    chip_index: '0'
+    comment: ''
+    custom_config_file: ''
+    data_format: fc32
+    deviceHandleHint: ''
+    gain_generic: gain
+    gfir_bandwidth: '0'
+    link_format: i16
+    lms7002m_gain_lna: '0'
+    lms7002m_gain_pga: '0'
+    lms7002m_gain_tia: '-3'
+    lpf: 20e6
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nco_offset: '0'
+    override_lms7002m_rx_gains: Disabled
+    rf_freq: LO_freq*1e6
+    rf_oversampling: auto
+    sample_rate: samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [40, 192.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '1.0'
+    axislabels: 'True'
+    bw: samp_rate_audio_band
+    color1: '"blue"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    ctrlpanel: 'False'
+    fc: freq_tune
+    fftsize: '1024'
+    freqhalf: 'True'
+    grid: 'False'
+    gui_hint: 4, 0,6, 50
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '-10'
+    ymin: '-180'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [472, 296.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -225,8 +406,8 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    axislabels: 'True'
-    bw: samp_rate
+    axislabels: 'False'
+    bw: samp_rate_audio_band
     color1: '0'
     color10: '0'
     color2: '0'
@@ -238,13 +419,13 @@ blocks:
     color8: '0'
     color9: '0'
     comment: ''
-    fc: '0'
+    fc: freq_tune
     fftsize: '1024'
     freqhalf: 'True'
     grid: 'False'
-    gui_hint: ''
-    int_max: '10'
-    int_min: '-140'
+    gui_hint: 10, 2,4, 48
+    int_max: '-10'
+    int_min: '-180'
     label1: ''
     label10: ''
     label2: ''
@@ -255,7 +436,7 @@ blocks:
     label7: ''
     label8: ''
     label9: ''
-    legend: 'True'
+    legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
     name: '""'
@@ -268,7 +449,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 328.0]
+    coordinate: [472, 384.0]
     rotation: 0
     state: true
 
@@ -277,6 +458,9 @@ connections:
 - [analog_simple_squelch_cc_0, '0', analog_nbfm_rx_0, '0']
 - [blocks_multiply_const_vxx_0_0, '0', audio_sink_0, '0']
 - [fft_filter_xxx_0_0, '0', analog_simple_squelch_cc_0, '0']
+- [fft_filter_xxx_0_0, '0', qtgui_freq_sink_x_0, '0']
+- [fft_filter_xxx_0_0, '0', qtgui_waterfall_sink_x_0, '0']
+- [limesuiteng_sdrdevice_source_0, '0', fft_filter_xxx_0_0, '0']
 
 metadata:
   file_format: 1
