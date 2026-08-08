@@ -1,11 +1,9 @@
 ~/.gnuradio
 ~/.local/state/gnuradio
 
-
 /etc/gnuradio/conf.d
 /usr/share/gnuradio/grc/blocks
 /usr/local/share/gnuradio/grc/blocks
-
 
 https://github.com/dl1ksv/gr-ax25
 https://github.com/osmocom/gr-fosphor
