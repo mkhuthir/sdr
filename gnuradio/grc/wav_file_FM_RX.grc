@@ -42,25 +42,25 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 96.0]
+    coordinate: [952, 88.0]
     rotation: 0
     state: enabled
-- name: LPF_taps
+- name: RDS_LPF_taps
   id: variable_low_pass_filter_taps
   parameters:
     beta: '6.76'
     comment: ''
     cutoff_freq: 7.5e3
-    gain: '1.0'
+    gain: '1'
     samp_rate: samp_rate_FM_band
     value: ''
-    width: 1e3
+    width: 1.8e3
     win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1216, 24.0]
+    coordinate: [1240, 232.0]
     rotation: 0
     state: enabled
 - name: RDS_freq
@@ -72,7 +72,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 24.0]
+    coordinate: [1240, 160.0]
     rotation: 0
     state: enabled
 - name: RDS_sps
@@ -84,7 +84,25 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1056, 24.0]
+    coordinate: [1240, 88.0]
+    rotation: 0
+    state: enabled
+- name: SCA_LPF_taps
+  id: variable_low_pass_filter_taps
+  parameters:
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: 7.5e3
+    gain: '1'
+    samp_rate: samp_rate_FM_band
+    value: ''
+    width: 1.8e3
+    win: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 232.0]
     rotation: 0
     state: enabled
 - name: SCA_freq
@@ -96,19 +114,19 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1136, 24.0]
+    coordinate: [1088, 160.0]
     rotation: 0
     state: enabled
 - name: SCA_fsk_deviation_hz
   id: variable
   parameters:
     comment: ''
-    value: 5e3
+    value: 7.5e3
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 168.0]
+    coordinate: [1088, 88.0]
     rotation: 0
     state: enabled
 - name: center_freq
@@ -120,9 +138,50 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [192, 24.0]
+    coordinate: [856, 88.0]
     rotation: 0
     state: enabled
+- name: fft_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [768, 16.0]
+    rotation: 0
+    state: enabled
+- name: rrc_taps
+  id: variable_rrc_filter_taps
+  parameters:
+    alpha: '1.0'
+    comment: ''
+    gain: '1.0'
+    ntaps: 11*RDS_sps
+    samp_rate: samp_rate_RDS
+    sym_rate: samp_rate_RDS/RDS_sps
+    value: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1240, 368.0]
+    rotation: 0
+    state: true
+- name: rrc_taps_manchester
+  id: variable
+  parameters:
+    comment: ''
+    value: '[rrc_taps[n] - rrc_taps[n+8] for n in range(len(rrc_taps)-8)]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1240, 504.0]
+    rotation: 0
+    state: true
 - name: samp_rate
   id: variable
   parameters:
@@ -132,34 +191,46 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [288, 24.0]
+    coordinate: [856, 16.0]
     rotation: 0
     state: enabled
 - name: samp_rate_FM_band
   id: variable
   parameters:
     comment: ''
-    value: 5*samp_rate_audio
+    value: samp_rate_audio_FM*5
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [376, 24.0]
+    coordinate: [952, 16.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_RDS
+  id: variable
+  parameters:
+    comment: ''
+    value: '10000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1240, 16.0]
     rotation: 0
     state: enabled
 - name: samp_rate_SCA
   id: variable
   parameters:
     comment: ''
-    value: samp_rate_audio*5
+    value: samp_rate_audio_SCA*4
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [512, 24.0]
+    coordinate: [1088, 16.0]
     rotation: 0
     state: enabled
-- name: samp_rate_audio
+- name: samp_rate_audio_FM
   id: variable
   parameters:
     comment: ''
@@ -168,7 +239,19 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 24.0]
+    coordinate: [952, 160.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_audio_SCA
+  id: variable
+  parameters:
+    comment: ''
+    value: '8000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1088, 368.0]
     rotation: 0
     state: enabled
 - name: volume
@@ -189,7 +272,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [752, 24.0]
+    coordinate: [184, 16.0]
     rotation: 0
     state: enabled
 - name: volume2
@@ -210,7 +293,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [856, 24.0]
+    coordinate: [288, 16.0]
     rotation: 0
     state: enabled
 - name: analog_nbfm_rx_0
@@ -218,8 +301,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    audio_rate: samp_rate_audio
-    comment: ''
+    audio_rate: samp_rate_audio_SCA
+    comment: SCA NBFM
     max_dev: SCA_fsk_deviation_hz
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -229,7 +312,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [808, 440.0]
+    coordinate: [440, 824.0]
     rotation: 0
     state: enabled
 - name: analog_quadrature_demod_cf_0
@@ -237,15 +320,15 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
-    gain: samp_rate/(2*math.pi*FM_fsk_deviation_hz)
+    comment: FM Demod
+    gain: samp_rate_FM_band/(2*math.pi*FM_fsk_deviation_hz)
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 448.0]
+    coordinate: [368, 496.0]
     rotation: 0
     state: enabled
 - name: analog_wfm_rcv_0
@@ -253,8 +336,8 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    audio_decimation: int(samp_rate_FM_band/samp_rate_audio)
-    comment: Wideband FM
+    audio_decimation: int(samp_rate_FM_band/samp_rate_audio_FM)
+    comment: Wideband FM Demod
     maxoutbuf: '0'
     minoutbuf: '0'
     quad_rate: samp_rate_FM_band
@@ -262,7 +345,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [344, 320.0]
+    coordinate: [368, 392.0]
     rotation: 0
     state: enabled
 - name: audio_sink_0
@@ -274,12 +357,12 @@ blocks:
     device_name: ''
     num_inputs: '1'
     ok_to_block: 'True'
-    samp_rate: samp_rate_audio
+    samp_rate: samp_rate_audio_FM
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [680, 328.0]
+    coordinate: [704, 400.0]
     rotation: 0
     state: true
 - name: audio_sink_0_0
@@ -291,12 +374,12 @@ blocks:
     device_name: ''
     num_inputs: '1'
     ok_to_block: 'False'
-    samp_rate: '48000'
+    samp_rate: samp_rate_audio_SCA
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1136, 464.0]
+    coordinate: [768, 848.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -312,7 +395,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [256, 192.0]
+    coordinate: [224, 192.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0
@@ -330,7 +413,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [528, 328.0]
+    coordinate: [552, 400.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0_0
@@ -348,7 +431,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [984, 464.0]
+    coordinate: [616, 848.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle2_0
@@ -369,7 +452,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [432, 192.0]
+    coordinate: [376, 192.0]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -397,17 +480,129 @@ blocks:
     alias: ''
     center_freq: SCA_freq
     comment: SCA LPF
-    decim: '1'
+    decim: int(samp_rate_FM_band/samp_rate_SCA)
     maxoutbuf: '0'
     minoutbuf: '0'
-    samp_rate: samp_rate_SCA
-    taps: LPF_taps
+    samp_rate: samp_rate_FM_band
+    taps: SCA_LPF_taps
     type: fcc
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [576, 440.0]
+    coordinate: [184, 824.0]
+    rotation: 0
+    state: enabled
+- name: freq_xlating_fir_filter_xxx_1_0_0
+  id: freq_xlating_fir_filter_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    center_freq: RDS_freq
+    comment: RDS LPF
+    decim: int(samp_rate_FM_band/samp_rate_RDS)
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate_FM_band
+    taps: RDS_LPF_taps
+    type: fcc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 1208.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_const_sink_x_0
+  id: qtgui_const_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    axislabels: 'True'
+    color1: '"green"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: ''
+    grid: 'True'
+    gui_hint: 5,200,4,100
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'False'
+    marker1: '0'
+    marker10: '0'
+    marker2: '0'
+    marker3: '0'
+    marker4: '0'
+    marker5: '0'
+    marker6: '0'
+    marker7: '0'
+    marker8: '0'
+    marker9: '0'
+    name: '"RDS Constellation"'
+    nconnections: '1'
+    size: '1024'
+    style1: '0'
+    style10: '0'
+    style2: '0'
+    style3: '0'
+    style4: '0'
+    style5: '0'
+    style6: '0'
+    style7: '0'
+    style8: '0'
+    style9: '0'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_slope: qtgui.TRIG_SLOPE_POS
+    tr_tag: '""'
+    type: complex
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    xmax: '2'
+    xmin: '-2'
+    ymax: '2'
+    ymin: '-2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [608, 1336.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -442,7 +637,7 @@ blocks:
     comment: Baseband Freq
     ctrlpanel: 'False'
     fc: center_freq
-    fftsize: '4096'
+    fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
     gui_hint: 5,0,4,100
@@ -460,7 +655,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: ''
+    name: '"Baseband"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -488,7 +683,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [184, 544.0]
+    coordinate: [560, 256.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -520,10 +715,10 @@ blocks:
     color7: '"yellow"'
     color8: '"dark red"'
     color9: '"dark green"'
-    comment: SCA Freq
+    comment: FM Freq
     ctrlpanel: 'False'
     fc: '0'
-    fftsize: '4096'
+    fftsize: fft_size
     freqhalf: 'False'
     grid: 'True'
     gui_hint: 9,0,4,100
@@ -541,7 +736,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: ''
+    name: FM Demod
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -569,7 +764,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [576, 568.0]
+    coordinate: [592, 552.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_1
@@ -590,7 +785,7 @@ blocks:
     autoscale: 'False'
     average: '0.2'
     axislabels: 'True'
-    bw: samp_rate_FM_band
+    bw: samp_rate_SCA
     color1: '"green"'
     color10: '"dark blue"'
     color2: '"red"'
@@ -601,13 +796,13 @@ blocks:
     color7: '"yellow"'
     color8: '"dark red"'
     color9: '"dark green"'
-    comment: SCA Freq
+    comment: SCA Freq LPF
     ctrlpanel: 'False'
     fc: '0'
-    fftsize: '4096'
+    fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: ''
+    gui_hint: 9,100,4,100
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -622,7 +817,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: ''
+    name: '"SCA"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -645,12 +840,93 @@ blocks:
     width9: '1'
     wintype: window.WIN_BLACKMAN_hARRIS
     ymax: '-40'
-    ymin: '-180'
+    ymin: '-100'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [808, 568.0]
+    coordinate: [440, 952.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_freq_sink_x_0_1_0
+  id: qtgui_freq_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    autoscale: 'False'
+    average: '0.2'
+    axislabels: 'True'
+    bw: samp_rate_RDS
+    color1: '"green"'
+    color10: '"dark blue"'
+    color2: '"red"'
+    color3: '"green"'
+    color4: '"black"'
+    color5: '"cyan"'
+    color6: '"magenta"'
+    color7: '"yellow"'
+    color8: '"dark red"'
+    color9: '"dark green"'
+    comment: RDS Freq LPF
+    ctrlpanel: 'False'
+    fc: '0'
+    fftsize: fft_size
+    freqhalf: 'True'
+    grid: 'True'
+    gui_hint: 9,200,4,100
+    label: Relative Gain
+    label1: ''
+    label10: ''''''
+    label2: ''''''
+    label3: ''''''
+    label4: ''''''
+    label5: ''''''
+    label6: ''''''
+    label7: ''''''
+    label8: ''''''
+    label9: ''''''
+    legend: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '"RDS"'
+    nconnections: '1'
+    norm_window: 'False'
+    showports: 'False'
+    tr_chan: '0'
+    tr_level: '0.0'
+    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_tag: '""'
+    type: complex
+    units: dB
+    update_time: '0.10'
+    width1: '1'
+    width10: '1'
+    width2: '1'
+    width3: '1'
+    width4: '1'
+    width5: '1'
+    width6: '1'
+    width7: '1'
+    width8: '1'
+    width9: '1'
+    wintype: window.WIN_BLACKMAN_hARRIS
+    ymax: '-40'
+    ymin: '-90'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 1336.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -680,12 +956,12 @@ blocks:
     color7: '0'
     color8: '0'
     color9: '0'
-    comment: SCA Waterfall
+    comment: FM Waterfall
     fc: '0'
-    fftsize: '1024'
+    fftsize: fft_size
     freqhalf: 'False'
     grid: 'False'
-    gui_hint: 13,4,4,96
+    gui_hint: 13,8,4,92
     int_max: '-10'
     int_min: '-100'
     label1: ''
@@ -711,7 +987,129 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [576, 672.0]
+    coordinate: [592, 680.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_waterfall_sink_x_0_0
+  id: qtgui_waterfall_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    axislabels: 'False'
+    bw: samp_rate_SCA
+    color1: '0'
+    color10: '0'
+    color2: '0'
+    color3: '0'
+    color4: '0'
+    color5: '0'
+    color6: '0'
+    color7: '0'
+    color8: '0'
+    color9: '0'
+    comment: SCA Waterfall LPF
+    fc: '0'
+    fftsize: fft_size
+    freqhalf: 'False'
+    grid: 'False'
+    gui_hint: 13,108,4,92
+    int_max: '-40'
+    int_min: '-100'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    showports: 'False'
+    type: complex
+    update_time: '0.10'
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 1080.0]
+    rotation: 0
+    state: enabled
+- name: qtgui_waterfall_sink_x_0_0_0
+  id: qtgui_waterfall_sink_x
+  parameters:
+    affinity: ''
+    alias: ''
+    alpha1: '1.0'
+    alpha10: '1.0'
+    alpha2: '1.0'
+    alpha3: '1.0'
+    alpha4: '1.0'
+    alpha5: '1.0'
+    alpha6: '1.0'
+    alpha7: '1.0'
+    alpha8: '1.0'
+    alpha9: '1.0'
+    axislabels: 'False'
+    bw: samp_rate_RDS
+    color1: '0'
+    color10: '0'
+    color2: '0'
+    color3: '0'
+    color4: '0'
+    color5: '0'
+    color6: '0'
+    color7: '0'
+    color8: '0'
+    color9: '0'
+    comment: RDS Waterfall LPF
+    fc: '0'
+    fftsize: fft_size
+    freqhalf: 'False'
+    grid: 'False'
+    gui_hint: 13,208,4,92
+    int_max: '-40'
+    int_min: '-90'
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
+    legend: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    name: '""'
+    nconnections: '1'
+    showports: 'False'
+    type: complex
+    update_time: '0.10'
+    wintype: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [440, 1464.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -731,27 +1129,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [184, 304.0]
-    rotation: 0
-    state: true
-- name: rational_resampler_xxx_0_0
-  id: rational_resampler_xxx
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    decim: samp_rate
-    fbw: '0'
-    interp: samp_rate_SCA
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    taps: ''
-    type: ccc
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [184, 424.0]
+    coordinate: [176, 416.0]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -759,47 +1137,91 @@ blocks:
   parameters:
     alias: ''
     comment: ''
-    stream_id: file1
+    stream_id: Baseband
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [616, 200.0]
+    coordinate: [560, 200.0]
+    rotation: 0
+    state: enabled
+- name: virtual_sink_1
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: ''
+    stream_id: FM_demod
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [592, 496.0]
     rotation: 0
     state: enabled
 - name: virtual_source_0
   id: virtual_source
   parameters:
     alias: ''
-    comment: ''
-    stream_id: file1
+    comment: For FM Audio
+    stream_id: Baseband
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [16, 368.0]
+    coordinate: [16, 440.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: for SCA
+    stream_id: FM_demod
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 832.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_1_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: for RDS
+    stream_id: FM_demod
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [16, 1216.0]
     rotation: 0
     state: enabled
 
 connections:
 - [analog_nbfm_rx_0, '0', blocks_multiply_const_vxx_0_0, '0']
-- [analog_quadrature_demod_cf_0, '0', freq_xlating_fir_filter_xxx_1_0, '0']
 - [analog_quadrature_demod_cf_0, '0', qtgui_freq_sink_x_0_0, '0']
 - [analog_quadrature_demod_cf_0, '0', qtgui_waterfall_sink_x_0, '0']
+- [analog_quadrature_demod_cf_0, '0', virtual_sink_1, '0']
 - [analog_wfm_rcv_0, '0', blocks_multiply_const_vxx_0, '0']
 - [blocks_float_to_complex_0, '0', blocks_throttle2_0, '0']
 - [blocks_multiply_const_vxx_0, '0', audio_sink_0, '0']
 - [blocks_multiply_const_vxx_0_0, '0', audio_sink_0_0, '0']
+- [blocks_throttle2_0, '0', qtgui_freq_sink_x_0, '0']
 - [blocks_throttle2_0, '0', virtual_sink_0, '0']
 - [blocks_wavfile_source_0, '0', blocks_float_to_complex_0, '0']
 - [blocks_wavfile_source_0, '1', blocks_float_to_complex_0, '1']
 - [freq_xlating_fir_filter_xxx_1_0, '0', analog_nbfm_rx_0, '0']
 - [freq_xlating_fir_filter_xxx_1_0, '0', qtgui_freq_sink_x_0_1, '0']
+- [freq_xlating_fir_filter_xxx_1_0, '0', qtgui_waterfall_sink_x_0_0, '0']
+- [freq_xlating_fir_filter_xxx_1_0_0, '0', qtgui_const_sink_x_0, '0']
+- [freq_xlating_fir_filter_xxx_1_0_0, '0', qtgui_freq_sink_x_0_1_0, '0']
+- [freq_xlating_fir_filter_xxx_1_0_0, '0', qtgui_waterfall_sink_x_0_0_0, '0']
+- [rational_resampler_xxx_0, '0', analog_quadrature_demod_cf_0, '0']
 - [rational_resampler_xxx_0, '0', analog_wfm_rcv_0, '0']
-- [rational_resampler_xxx_0_0, '0', analog_quadrature_demod_cf_0, '0']
-- [virtual_source_0, '0', qtgui_freq_sink_x_0, '0']
 - [virtual_source_0, '0', rational_resampler_xxx_0, '0']
-- [virtual_source_0, '0', rational_resampler_xxx_0_0, '0']
+- [virtual_source_1, '0', freq_xlating_fir_filter_xxx_1_0, '0']
+- [virtual_source_1_0, '0', freq_xlating_fir_filter_xxx_1_0_0, '0']
 
 metadata:
   file_format: 1
