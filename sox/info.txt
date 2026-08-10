@@ -1,0 +1,19 @@
+
+View all header metadata		soxi file.wav
+Get sample rate				soxi -r file.wav
+Get bit depth				soxi -p file.wav
+Get number of channels			soxi -c file.wav
+Get duration in seconds			soxi -D file.wav
+
+Modify audio format			sox [global_options] input_file output_file [effects]
+Convert WAV to MP3			sox input.wav output.mp3
+Change sample rate to 44.1 kHz		sox input.wav -r 44100 output.wav
+Change bit depth to 16-bit		sox input.wav -b 16 output.wav
+Convert Stereo to Mono			sox stereo.wav -c 1 mono.wav
+Convert Mono to Stereo			sox mono.wav -c 2 stereo.wav
+Change volume / Gain			sox input.wav output.wav gain -v 1.5
+Trim audio Start at 10s, last for 5s	sox input.wav output.wav trim 10 5
+Reverse the audio track			sox input.wav output.wav reverse
+
+Play in the terminal			play file.wav
+Record directly				rec -b 16 -c 1 microphone.wav

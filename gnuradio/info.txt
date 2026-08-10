@@ -1,11 +1,52 @@
+Folders:
+--------------------
 ~/.gnuradio
 ~/.local/state/gnuradio
-
 /etc/gnuradio/conf.d
 /usr/share/gnuradio/grc/blocks
 /usr/local/share/gnuradio/grc/blocks
 
+Tools:
+--------------------
+https://github.com/MITHaystack/digital_rf
+
+Decoders:
+--------------------
 https://github.com/bastibl/gr-rds
 https://github.com/dl1ksv/gr-ax25
-https://github.com/osmocom/gr-fosphor
 https://github.com/daniestevez/gr-satellites
+
+GUI:
+--------------------
+https://github.com/osmocom/gr-fosphor
+https://github.com/drmpeg/gr-paint.git
+
+Recordings:
+--------------------
+https://github.com/daniestevez/satellite-recordings
+
+Tutorials and Examples: 
+--------------------
+https://github.com/daniestevez/reu-2026
+
+
+
+- gnuradio-adsb
+- gnuradio-dect2
+- gnuradio-filerepeater
+- gnuradio-foo
+- gnuradio-funcube
+- gnuradio-hermeslite2
+- gnuradio-hpsdr
+- gnuradio-ieee802_11
+- gnuradio-ieee802_15_4
+- gnuradio-inspector
+- gnuradio-iqbalance
+- gnuradio-iridium
+- gnuradio-leo
+- gnuradio-lora_sdr
+- gnuradio-m2k
+- gnuradio-osmosdr
+- gnuradio-paint
+- gnuradio-radar
+- gnuradio-gpredict-doppler
