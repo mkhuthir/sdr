@@ -1,17 +1,17 @@
 options:
   parameters:
-    author: Barry Duggan
+    author: Muthanna Alwahash
     catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
-    copyright: ''
-    description: NB FM receiver
+    copyright: '2026'
+    description: NBFM receiver
     gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
     hier_block_src_path: '.:'
-    id: NFM_rcv
+    id: LimeSDR_NBFM_RX
     max_nouts: '0'
     output_language: python
     placement: (0,0)
@@ -22,7 +22,7 @@ options:
     run_options: prompt
     sizing_mode: fixed
     thread_safe_setters: ''
-    title: NFM_rcv
+    title: NBFM Receiver
     window_size: ''
   states:
     bus_sink: false
@@ -51,7 +51,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [400, 520.0]
+    coordinate: [656, 24.0]
     rotation: 0
     state: true
 - name: channel_filter
@@ -71,7 +71,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [240, 524.0]
+    coordinate: [496, 20.0]
     rotation: 0
     state: true
 - name: freq_tune
@@ -83,7 +83,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [152, 520.0]
+    coordinate: [208, 96.0]
     rotation: 0
     state: enabled
 - name: gain
@@ -104,7 +104,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [640, 520.0]
+    coordinate: [912, 24.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -116,7 +116,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [64, 520.0]
+    coordinate: [208, 24.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio_band
@@ -128,7 +128,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [64, 592.0]
+    coordinate: [320, 24.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio_sink
@@ -140,7 +140,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [64, 664.0]
+    coordinate: [320, 96.0]
     rotation: 0
     state: enabled
 - name: sq_lvl
@@ -161,7 +161,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [744, 520.0]
+    coordinate: [1016, 24.0]
     rotation: 0
     state: enabled
 - name: volume
@@ -182,7 +182,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 520.0]
+    coordinate: [792, 24.0]
     rotation: 0
     state: enabled
 - name: analog_nbfm_rx_0
@@ -201,7 +201,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [648, 200.0]
+    coordinate: [640, 248.0]
     rotation: 0
     state: enabled
 - name: analog_simple_squelch_cc_0
@@ -218,7 +218,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [472, 216.0]
+    coordinate: [464, 264.0]
     rotation: 0
     state: enabled
 - name: audio_sink_0
@@ -235,7 +235,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [992, 224.0]
+    coordinate: [984, 272.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0_0
@@ -253,7 +253,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [840, 224.0]
+    coordinate: [832, 272.0]
     rotation: 0
     state: enabled
 - name: fft_filter_xxx_0_0
@@ -273,7 +273,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [256, 208.0]
+    coordinate: [248, 256.0]
     rotation: 0
     state: enabled
 - name: limesuiteng_sdrdevice_source_0
@@ -307,7 +307,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 192.0]
+    coordinate: [32, 240.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -388,7 +388,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [472, 296.0]
+    coordinate: [464, 344.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -449,7 +449,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [472, 384.0]
+    coordinate: [464, 432.0]
     rotation: 0
     state: true
 
