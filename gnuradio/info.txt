@@ -12,6 +12,7 @@ https://github.com/Nuand/gr-osmosdr
 https://github.com/dl1ksv/gr-funcube
 https://github.com/Tom-McDermott/gr-hpsdr
 https://github.com/daniestevez/gr-hermeslite2
+https://github.com/analogdevicesinc/gr-m2k
 
 Tools:
 --------------------
@@ -28,6 +29,7 @@ https://github.com/mhostetter/gr-adsb
 https://github.com/bastibl/gr-rds
 https://github.com/dl1ksv/gr-ax25
 https://github.com/daniestevez/gr-satellites
+https://github.com/bastibl/gr-ieee802-11
 
 GUI:
 --------------------
@@ -46,14 +48,10 @@ https://wiki.gnuradio.org/index.php?title=Tutorials
 
 
 - gnuradio-dect2
-- gnuradio-ieee802_11
 - gnuradio-ieee802_15_4
-
-- gnuradio-inspector
-
 - gnuradio-iridium
 - gnuradio-leo
 - gnuradio-lora_sdr
-- gnuradio-m2k
 - gnuradio-radar
+
 - gnuradio-gpredict-doppler
