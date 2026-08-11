@@ -6,10 +6,19 @@ Folders:
 /usr/share/gnuradio/grc/blocks
 /usr/local/share/gnuradio/grc/blocks
 
+
+
+Drivers:
+--------------------
+https://github.com/Nuand/gr-osmosdr
+https://github.com/dl1ksv/gr-funcube
+
 Tools:
 --------------------
 https://github.com/MITHaystack/digital_rf
 https://github.com/bastibl/gr-foo
+https://github.com/drmpeg/gr-paint.git
+https://github.com/ghostop14/gr-filerepeater
 
 Decoders:
 --------------------
@@ -30,13 +39,11 @@ https://github.com/daniestevez/satellite-recordings
 Tutorials and Examples: 
 --------------------
 https://github.com/daniestevez/reu-2026
-
+https://wiki.gnuradio.org/index.php?title=Tutorials
 
 
 
 - gnuradio-dect2
-- gnuradio-filerepeater
-- gnuradio-funcube
 - gnuradio-hermeslite2
 - gnuradio-hpsdr
 - gnuradio-ieee802_11
@@ -47,7 +54,5 @@ https://github.com/daniestevez/reu-2026
 - gnuradio-leo
 - gnuradio-lora_sdr
 - gnuradio-m2k
-- gnuradio-osmosdr
-- gnuradio-paint
 - gnuradio-radar
 - gnuradio-gpredict-doppler
