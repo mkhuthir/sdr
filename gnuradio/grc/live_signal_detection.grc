@@ -1,0 +1,198 @@
+options:
+  parameters:
+    author: ''
+    catch_exceptions: 'True'
+    category: Custom
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: live_signal_detection
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: Inspector Live Signal Detection
+    window_size: ''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: cent_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: 95e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 80.0]
+    rotation: 0
+    state: enabled
+- name: fft_size
+  id: variable
+  parameters:
+    comment: ''
+    value: '1024'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 152.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: 4e6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [216, 8.0]
+    rotation: 0
+    state: enabled
+- name: thres
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: Threshold
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '-120'
+    step: '1'
+    stop: '50'
+    value: '-65'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [304, 8.0]
+    rotation: 0
+    state: enabled
+- name: blocks_message_debug_0
+  id: blocks_message_debug
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    en_uvec: 'True'
+    log_level: info
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1784, 452.0]
+    rotation: 0
+    state: disabled
+- name: inspector_qtgui_sink_vf_0
+  id: inspector_qtgui_sink_vf
+  parameters:
+    affinity: ''
+    alias: ''
+    cfreq: cent_freq
+    comment: ''
+    fft_len: fft_size
+    gui_hint: ''
+    manual: 'False'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    msgports: '1'
+    rf_unit: '1'
+    samp_rate: samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [952, 236.0]
+    rotation: 0
+    state: enabled
+- name: inspector_signal_detector_cvf_0
+  id: inspector_signal_detector_cvf
+  parameters:
+    affinity: ''
+    alias: ''
+    auto: 'False'
+    avg: '0.2'
+    comment: ''
+    fft_len: fft_size
+    logfile: ''
+    maxoutbuf: '0'
+    min_bw: '10000'
+    minoutbuf: '0'
+    quant: '0.001'
+    samp_rate: samp_rate
+    sensitivity: ' 0.2'
+    threshold: thres
+    window: window.WIN_BLACKMAN_hARRIS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [680, 232.0]
+    rotation: 0
+    state: enabled
+- name: limesuiteng_sdrdevice_source_0
+  id: limesuiteng_sdrdevice_source
+  parameters:
+    affinity: ''
+    alias: ''
+    antenna: auto
+    calibrate_dciq: Disabled
+    channel_indexes: '[0]'
+    chip_index: '0'
+    comment: ''
+    custom_config_file: ''
+    data_format: fc32
+    deviceHandleHint: ''
+    gain_generic: '20'
+    gfir_bandwidth: '0'
+    link_format: i12
+    lms7002m_gain_lna: '0'
+    lms7002m_gain_pga: '0'
+    lms7002m_gain_tia: '-3'
+    lpf: 20e6
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nco_offset: '0'
+    override_lms7002m_rx_gains: Disabled
+    rf_freq: cent_freq
+    rf_oversampling: auto
+    sample_rate: samp_rate
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [400, 240.0]
+    rotation: 0
+    state: enabled
+
+connections:
+- [inspector_qtgui_sink_vf_0, map_out, blocks_message_debug_0, print]
+- [inspector_signal_detector_cvf_0, '0', inspector_qtgui_sink_vf_0, '0']
+- [inspector_signal_detector_cvf_0, map_out, inspector_qtgui_sink_vf_0, map_in]
+- [limesuiteng_sdrdevice_source_0, '0', inspector_signal_detector_cvf_0, '0']
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.12.0

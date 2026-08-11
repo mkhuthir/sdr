@@ -6,15 +6,17 @@ Folders:
 /usr/share/gnuradio/grc/blocks
 /usr/local/share/gnuradio/grc/blocks
 
-
-
 Drivers:
 --------------------
 https://github.com/Nuand/gr-osmosdr
 https://github.com/dl1ksv/gr-funcube
+https://github.com/Tom-McDermott/gr-hpsdr
+https://github.com/daniestevez/gr-hermeslite2
 
 Tools:
 --------------------
+https://github.com/gnuradio/gr-inspector
+https://github.com/osmocom/gr-iqbal
 https://github.com/MITHaystack/digital_rf
 https://github.com/bastibl/gr-foo
 https://github.com/drmpeg/gr-paint.git
@@ -44,12 +46,11 @@ https://wiki.gnuradio.org/index.php?title=Tutorials
 
 
 - gnuradio-dect2
-- gnuradio-hermeslite2
-- gnuradio-hpsdr
 - gnuradio-ieee802_11
 - gnuradio-ieee802_15_4
+
 - gnuradio-inspector
-- gnuradio-iqbalance
+
 - gnuradio-iridium
 - gnuradio-leo
 - gnuradio-lora_sdr
