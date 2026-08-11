@@ -17,16 +17,16 @@ https://github.com/analogdevicesinc/gr-m2k
 Tools:
 --------------------
 https://github.com/gnuradio/gr-inspector
-https://github.com/osmocom/gr-iqbal
-https://github.com/MITHaystack/digital_rf
 https://github.com/bastibl/gr-foo
-https://github.com/drmpeg/gr-paint.git
 https://github.com/ghostop14/gr-filerepeater
+https://github.com/kit-cel/gr-radar
+https://github.com/MITHaystack/digital_rf
 
 Decoders:
 --------------------
 https://github.com/mhostetter/gr-adsb
 https://github.com/bastibl/gr-rds
+https://github.com/tapparelj/gr-lora_sdr
 https://github.com/dl1ksv/gr-ax25
 https://github.com/daniestevez/gr-satellites
 https://github.com/bastibl/gr-ieee802-11
@@ -51,7 +51,4 @@ https://wiki.gnuradio.org/index.php?title=Tutorials
 - gnuradio-ieee802_15_4
 - gnuradio-iridium
 - gnuradio-leo
-- gnuradio-lora_sdr
-- gnuradio-radar
-
 - gnuradio-gpredict-doppler
