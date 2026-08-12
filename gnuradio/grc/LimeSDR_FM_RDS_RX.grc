@@ -42,49 +42,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 160.0]
-    rotation: 0
-    state: enabled
-- name: Ch_FFT_Y_max
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 1,200,2,1
-    label: '"Max"'
-    min_len: '10'
-    orient: QtCore.Qt.Vertical
-    rangeType: int
-    start: '-60'
-    step: '10'
-    stop: '10'
-    value: '-20'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1216, 16.0]
-    rotation: 0
-    state: enabled
-- name: Ch_FFT_Y_min
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 3,200,2,1
-    label: '"Min"'
-    min_len: '10'
-    orient: QtCore.Qt.Vertical
-    rangeType: float
-    start: '-200'
-    step: '10'
-    stop: '-70'
-    value: '-100'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1328, 16.0]
+    coordinate: [1304, 216.0]
     rotation: 0
     state: enabled
 - name: Ch_LPF_taps
@@ -102,98 +60,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [920, 784.0]
-    rotation: 0
-    state: enabled
-- name: FM_WF_I_max
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 9,200,1,1
-    label: '"Max"'
-    min_len: '10'
-    orient: QtCore.Qt.Vertical
-    rangeType: int
-    start: '-60'
-    step: '10'
-    stop: '10'
-    value: '0'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1680, 16.0]
-    rotation: 0
-    state: enabled
-- name: FM_WF_I_min
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 10,200,1,1
-    label: '"Min"'
-    min_len: '10'
-    orient: QtCore.Qt.Vertical
-    rangeType: float
-    start: '-200'
-    step: '10'
-    stop: '-70'
-    value: '-160'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1784, 16.0]
-    rotation: 0
-    state: enabled
-- name: FM_Y_max
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 7,200,1,1
-    label: '"Max"'
-    min_len: '10'
-    orient: QtCore.Qt.Vertical
-    rangeType: int
-    start: '-60'
-    step: '10'
-    stop: '10'
-    value: '-20'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1448, 16.0]
-    rotation: 0
-    state: enabled
-- name: FM_Y_min
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: 8,200,1,1
-    label: '"Min"'
-    min_len: '10'
-    orient: QtCore.Qt.Vertical
-    rangeType: float
-    start: '-200'
-    step: '10'
-    stop: '-70'
-    value: '-100'
-    widget: slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1560, 16.0]
+    coordinate: [912, 8.0]
     rotation: 0
     state: enabled
 - name: LO_freq
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 1, 0,1, 20
+    gui_hint: 1, 0,1, 100
     label: LO Freq.
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -207,7 +81,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [776, 16.0]
+    coordinate: [456, 8.0]
     rotation: 0
     state: true
 - name: LR_LPF_taps
@@ -225,7 +99,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1528, 792.0]
+    coordinate: [1056, 168.0]
     rotation: 0
     state: enabled
 - name: Pilot_BPF_taps
@@ -245,7 +119,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1216, 788.0]
+    coordinate: [1056, 12.0]
     rotation: 0
     state: true
 - name: RDS_LPF_taps
@@ -253,7 +127,7 @@ blocks:
   parameters:
     beta: '6.76'
     comment: ''
-    cutoff_freq: 5e3
+    cutoff_freq: 7.5e3
     gain: '1.0'
     samp_rate: samp_rate_FM
     value: ''
@@ -263,7 +137,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 784.0]
+    coordinate: [1224, 8.0]
     rotation: 0
     state: enabled
 - name: RDS_freq
@@ -275,7 +149,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 992.0]
+    coordinate: [1224, 216.0]
     rotation: 0
     state: enabled
 - name: RDS_sps
@@ -287,7 +161,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 920.0]
+    coordinate: [1224, 144.0]
     rotation: 0
     state: enabled
 - name: fft_size
@@ -299,7 +173,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 16.0]
+    coordinate: [184, 80.0]
     rotation: 0
     state: enabled
 - name: freq_tune
@@ -311,14 +185,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 80.0]
+    coordinate: [816, 80.0]
     rotation: 0
     state: enabled
 - name: rf_gain
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3, 0,1, 20
+    gui_hint: 3, 0,1, 100
     label: RF Gain
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -332,7 +206,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1000, 16.0]
+    coordinate: [680, 8.0]
     rotation: 0
     state: true
 - name: rrc_taps
@@ -349,7 +223,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1384, 792.0]
+    coordinate: [1368, 8.0]
     rotation: 0
     state: true
 - name: rrc_taps_manchester
@@ -361,7 +235,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1384, 928.0]
+    coordinate: [1368, 144.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -373,7 +247,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 8.0]
+    coordinate: [816, 8.0]
     rotation: 0
     state: enabled
 - name: samp_rate_FM
@@ -385,7 +259,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [552, 16.0]
+    coordinate: [912, 144.0]
     rotation: 0
     state: enabled
 - name: samp_rate_RDS
@@ -397,7 +271,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 1064.0]
+    coordinate: [1224, 288.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio_band
@@ -409,7 +283,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 88.0]
+    coordinate: [1056, 304.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio_sink
@@ -421,14 +295,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [608, 88.0]
+    coordinate: [1056, 376.0]
     rotation: 0
     state: enabled
 - name: volume
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 2, 0,1, 20
+    gui_hint: 2, 0,1, 100
     label: Volume
     min_len: '200'
     orient: QtCore.Qt.Horizontal
@@ -442,7 +316,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 16.0]
+    coordinate: [576, 8.0]
     rotation: 0
     state: true
 - name: analog_agc_xx_0
@@ -462,7 +336,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1296, 528.0]
+    coordinate: [760, 872.0]
     rotation: 0
     state: true
 - name: analog_fm_deemph_0_0
@@ -479,7 +353,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2040, 368.0]
+    coordinate: [1504, 688.0]
     rotation: 0
     state: enabled
 - name: analog_fm_deemph_0_0_0
@@ -496,7 +370,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2040, 280.0]
+    coordinate: [1504, 600.0]
     rotation: 0
     state: enabled
 - name: analog_pll_refout_cc_0
@@ -514,7 +388,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1096, 392.0]
+    coordinate: [560, 712.0]
     rotation: 0
     state: true
 - name: analog_quadrature_demod_cf_0
@@ -530,7 +404,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 376.0]
+    coordinate: [464, 368.0]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -547,7 +421,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2360, 328.0]
+    coordinate: [1824, 648.0]
     rotation: 0
     state: enabled
 - name: blocks_add_xx_0
@@ -565,7 +439,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1928, 280.0]
+    coordinate: [1392, 600.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_imag_0
@@ -581,7 +455,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1432, 416.0]
+    coordinate: [896, 736.0]
     rotation: 0
     state: enabled
 - name: blocks_delay_0
@@ -601,7 +475,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1320, 272.0]
+    coordinate: [784, 592.0]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -619,7 +493,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2184, 288.0]
+    coordinate: [1648, 608.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0_0
@@ -637,7 +511,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2184, 376.0]
+    coordinate: [1648, 696.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_xx_0
@@ -655,7 +529,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1328, 400.0]
+    coordinate: [792, 720.0]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_1
@@ -663,7 +537,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: Shift back to 0KHz
+    comment: Shift (L-R) to 0KHz
     maxoutbuf: '0'
     minoutbuf: '0'
     num_inputs: '2'
@@ -673,7 +547,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1592, 384.0]
+    coordinate: [1056, 704.0]
     rotation: 0
     state: true
 - name: blocks_null_sink_0
@@ -690,7 +564,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1960, 520.0]
+    coordinate: [1424, 864.0]
     rotation: 0
     state: enabled
 - name: blocks_sub_xx_0
@@ -708,7 +582,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1928, 368.0]
+    coordinate: [1392, 688.0]
     rotation: 0
     state: enabled
 - name: digital_constellation_receiver_cb_0
@@ -728,7 +602,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1752, 488.0]
+    coordinate: [1216, 832.0]
     rotation: 0
     state: true
 - name: digital_diff_decoder_bb_0
@@ -745,7 +619,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2040, 472.0]
+    coordinate: [1504, 816.0]
     rotation: 0
     state: enabled
 - name: digital_symbol_sync_xx_0
@@ -772,7 +646,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1448, 492.0]
+    coordinate: [912, 836.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_0
@@ -791,7 +665,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [928, 400.0]
+    coordinate: [392, 720.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_1
@@ -810,7 +684,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1704, 264.0]
+    coordinate: [1168, 584.0]
     rotation: 0
     state: enabled
 - name: fir_filter_xxx_1_0
@@ -829,7 +703,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1704, 384.0]
+    coordinate: [1168, 704.0]
     rotation: 0
     state: enabled
 - name: fir_filter_xxx_2
@@ -848,7 +722,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1104, 544.0]
+    coordinate: [568, 888.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -868,7 +742,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [296, 352.0]
+    coordinate: [240, 344.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_1_0
@@ -888,7 +762,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [736, 528.0]
+    coordinate: [200, 872.0]
     rotation: 0
     state: enabled
 - name: import_0
@@ -935,7 +809,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [48, 328.0]
+    coordinate: [32, 320.0]
     rotation: 0
     state: enabled
 - name: note_0
@@ -949,7 +823,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [16, 144.0]
+    coordinate: [288, 16.0]
     rotation: 0
     state: enabled
 - name: qtgui_const_sink_x_0
@@ -1041,7 +915,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2040, 592.0]
+    coordinate: [1504, 936.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -1079,7 +953,7 @@ blocks:
     fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 1,20,4,180
+    gui_hint: 0,100,4,100
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -1094,7 +968,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '"FM Channel"'
+    name: '"Selected FM Channel"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -1116,13 +990,13 @@ blocks:
     width8: '1'
     width9: '1'
     wintype: window.WIN_BLACKMAN_hARRIS
-    ymax: Ch_FFT_Y_max
-    ymin: Ch_FFT_Y_min
+    ymax: '-10'
+    ymin: '-100'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [520, 656.0]
+    coordinate: [464, 216.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -1175,7 +1049,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '"Demodulated FM"'
+    name: '"FM MPX"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -1197,13 +1071,13 @@ blocks:
     width8: '1'
     width9: '1'
     wintype: window.WIN_BLACKMAN_hARRIS
-    ymax: FM_Y_max
-    ymin: FM_Y_min
+    ymax: '-10'
+    ymin: '-100'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [736, 656.0]
+    coordinate: [696, 216.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_1
@@ -1284,7 +1158,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1104, 624.0]
+    coordinate: [568, 968.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -1319,9 +1193,9 @@ blocks:
     fftsize: fft_size
     freqhalf: 'False'
     grid: 'True'
-    gui_hint: 9,25,2,175
-    int_max: FM_WF_I_max
-    int_min: FM_WF_I_min
+    gui_hint: 9,27,2,173
+    int_max: '-10'
+    int_min: '-100'
     label1: ''
     label10: ''
     label2: ''
@@ -1345,7 +1219,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [736, 784.0]
+    coordinate: [696, 336.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -1353,7 +1227,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: FM MPX
     decim: samp_rate_FM
     fbw: '0'
     interp: samp_rate_audio_band
@@ -1365,7 +1239,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [736, 248.0]
+    coordinate: [200, 568.0]
     rotation: 0
     state: true
 - name: rational_resampler_xxx_1
@@ -1385,7 +1259,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [944, 528.0]
+    coordinate: [408, 872.0]
     rotation: 0
     state: true
 - name: rds_decoder_0
@@ -1402,7 +1276,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2216, 472.0]
+    coordinate: [1680, 816.0]
     rotation: 0
     state: true
 - name: rds_panel_0
@@ -1412,12 +1286,12 @@ blocks:
     alias: ''
     comment: RDS output
     freq: freq_tune/1e6
-    gui_hint: 0,0,1,200
+    gui_hint: 0,0,1,100
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2520, 488.0]
+    coordinate: [1984, 832.0]
     rotation: 0
     state: true
 - name: rds_parser_0
@@ -1436,9 +1310,61 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [2360, 464.0]
+    coordinate: [1824, 808.0]
     rotation: 0
     state: true
+- name: virtual_sink_0
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: FM MPX
+    stream_id: FM_MPX
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 440.0]
+    rotation: 0
+    state: enabled
+- name: virtual_sink_1
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: RDS
+    stream_id: FM_RDS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [696, 512.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_0
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: FM MPX
+    stream_id: FM_MPX
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 592.0]
+    rotation: 0
+    state: enabled
+- name: virtual_source_1
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: RDS
+    stream_id: FM_RDS
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 880.0]
+    rotation: 0
+    state: enabled
 
 connections:
 - [analog_agc_xx_0, '0', digital_symbol_sync_xx_0, '0']
@@ -1446,10 +1372,10 @@ connections:
 - [analog_fm_deemph_0_0_0, '0', blocks_multiply_const_vxx_0, '0']
 - [analog_pll_refout_cc_0, '0', blocks_multiply_xx_0, '0']
 - [analog_pll_refout_cc_0, '0', blocks_multiply_xx_0, '1']
-- [analog_quadrature_demod_cf_0, '0', freq_xlating_fir_filter_xxx_1_0, '0']
 - [analog_quadrature_demod_cf_0, '0', qtgui_freq_sink_x_0_0, '0']
 - [analog_quadrature_demod_cf_0, '0', qtgui_waterfall_sink_x_0, '0']
-- [analog_quadrature_demod_cf_0, '0', rational_resampler_xxx_0, '0']
+- [analog_quadrature_demod_cf_0, '0', virtual_sink_0, '0']
+- [analog_quadrature_demod_cf_0, '0', virtual_sink_1, '0']
 - [blocks_add_xx_0, '0', analog_fm_deemph_0_0_0, '0']
 - [blocks_complex_to_imag_0, '0', blocks_multiply_xx_1, '1']
 - [blocks_delay_0, '0', blocks_multiply_xx_1, '0']
@@ -1482,6 +1408,8 @@ connections:
 - [rational_resampler_xxx_1, '0', qtgui_freq_sink_x_1, '0']
 - [rds_decoder_0, out, rds_parser_0, in]
 - [rds_parser_0, out, rds_panel_0, in]
+- [virtual_source_0, '0', rational_resampler_xxx_0, '0']
+- [virtual_source_1, '0', freq_xlating_fir_filter_xxx_1_0, '0']
 
 metadata:
   file_format: 1
