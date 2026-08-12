@@ -90,21 +90,6 @@ blocks:
     coordinate: [304, 8.0]
     rotation: 0
     state: enabled
-- name: blocks_message_debug_0
-  id: blocks_message_debug
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    en_uvec: 'True'
-    log_level: info
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1784, 452.0]
-    rotation: 0
-    state: disabled
 - name: inspector_qtgui_sink_vf_0
   id: inspector_qtgui_sink_vf
   parameters:
@@ -124,7 +109,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [952, 236.0]
+    coordinate: [632, 268.0]
     rotation: 0
     state: enabled
 - name: inspector_signal_detector_cvf_0
@@ -149,7 +134,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [680, 232.0]
+    coordinate: [360, 264.0]
     rotation: 0
     state: enabled
 - name: limesuiteng_sdrdevice_source_0
@@ -183,12 +168,11 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [400, 240.0]
+    coordinate: [80, 272.0]
     rotation: 0
     state: enabled
 
 connections:
-- [inspector_qtgui_sink_vf_0, map_out, blocks_message_debug_0, print]
 - [inspector_signal_detector_cvf_0, '0', inspector_qtgui_sink_vf_0, '0']
 - [inspector_signal_detector_cvf_0, map_out, inspector_qtgui_sink_vf_0, map_in]
 - [limesuiteng_sdrdevice_source_0, '0', inspector_signal_detector_cvf_0, '0']
