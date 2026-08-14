@@ -35,6 +35,7 @@ https://github.com/dl1ksv/gr-ax25
 GUI:
 --------------------
 https://github.com/osmocom/gr-fosphor
+https://github.com/dl1ksv/gr-display
 https://github.com/drmpeg/gr-paint.git
 
 Recordings:
