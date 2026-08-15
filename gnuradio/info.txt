@@ -25,6 +25,7 @@ https://github.com/MITHaystack/digital_rf
 Decoders:
 --------------------
 https://github.com/mhostetter/gr-adsb
+https://github.com/bistromath/gr-air-modes
 https://github.com/bastibl/gr-rds
 https://github.com/tapparelj/gr-lora_sdr
 https://github.com/pavelyazev/gr-dect2

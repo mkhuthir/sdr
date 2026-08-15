@@ -49,7 +49,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '0.01'
+    value: '0.19'
   states:
     bus_sink: false
     bus_source: false
@@ -109,7 +109,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '2000000'
+    value: '6000000'
   states:
     bus_sink: false
     bus_source: false
@@ -123,16 +123,16 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    error_corr: '"None"'
+    error_corr: '"Conservative"'
     maxoutbuf: '0'
     minoutbuf: '0'
-    msg_filter: '"Extended Squitter Only"'
-    print_level: '"Verbose"'
+    msg_filter: '"All Messages"'
+    print_level: '"Brief"'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 528.0]
+    coordinate: [936, 528.0]
     rotation: 0
     state: enabled
 - name: adsb_demod_0
@@ -148,10 +148,10 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [784, 552.0]
+    coordinate: [760, 552.0]
     rotation: 0
     state: enabled
-- name: adsb_framer_0
+- name: adsb_framer_1
   id: adsb_framer
   parameters:
     affinity: ''
@@ -165,7 +165,24 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [584, 552.0]
+    coordinate: [552, 552.0]
+    rotation: 0
+    state: enabled
+- name: analog_const_source_x_0
+  id: analog_const_source_x
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: Draw threshold line
+    const: detect_thre
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [776, 664.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_mag_squared_0
@@ -173,7 +190,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Phase info not required
     maxoutbuf: '0'
     minoutbuf: '0'
     vlen: '1'
@@ -181,7 +198,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [408, 568.0]
+    coordinate: [392, 568.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -189,7 +206,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: 2 channels > Complex
+    comment: 2 channels > IQ Complex
     maxoutbuf: '0'
     minoutbuf: '0'
     vlen: '1'
@@ -231,30 +248,12 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '2'
-    repeat: 'True'
+    repeat: 'False'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
     coordinate: [24, 256.0]
-    rotation: 0
-    state: enabled
-- name: display_text_msg_0
-  id: display_text_msg
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    gui_hint: ''
-    label: ' ""'
-    maxlines: '100'
-    messagekey: text
-    splitlength: '80'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1272, 408.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -292,7 +291,7 @@ blocks:
     fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 0,0,1,200
+    gui_hint: 0,0,1,100
     label: Relative Gain
     label1: ''
     label10: ''''''
@@ -368,20 +367,20 @@ blocks:
     comment: ''
     ctrlpanel: 'False'
     entags: 'True'
-    grid: 'False'
-    gui_hint: 2,0,1,200
-    label1: Signal 1
-    label10: Signal 10
-    label2: Signal 2
-    label3: Signal 3
-    label4: Signal 4
-    label5: Signal 5
-    label6: Signal 6
-    label7: Signal 7
-    label8: Signal 8
-    label9: Signal 9
+    grid: 'True'
+    gui_hint: 0,100,1,100
+    label1: ''
+    label10: ''
+    label2: ''
+    label3: ''
+    label4: ''
+    label5: ''
+    label6: ''
+    label7: ''
+    label8: ''
+    label9: ''
     legend: 'False'
-    marker1: '-1'
+    marker1: '2'
     marker10: '-1'
     marker2: '-1'
     marker3: '-1'
@@ -392,9 +391,9 @@ blocks:
     marker8: '-1'
     marker9: '-1'
     name: '""'
-    nconnections: '1'
-    size: '2048'
-    srate: samp_rate_ADSB
+    nconnections: '2'
+    size: int(samp_rate_ADSB*150e-6)
+    srate: int(samp_rate_ADSB)
     stemplot: 'False'
     style1: '1'
     style10: '1'
@@ -407,13 +406,13 @@ blocks:
     style8: '1'
     style9: '1'
     tr_chan: '0'
-    tr_delay: '0'
-    tr_level: '0.0'
-    tr_mode: qtgui.TRIG_MODE_FREE
+    tr_delay: '1.25e-6'
+    tr_level: '0'
+    tr_mode: qtgui.TRIG_MODE_TAG
     tr_slope: qtgui.TRIG_SLOPE_POS
-    tr_tag: '""'
+    tr_tag: '"burst"'
     type: float
-    update_time: '0.10'
+    update_time: '0.01'
     width1: '1'
     width10: '1'
     width2: '1'
@@ -426,13 +425,13 @@ blocks:
     width9: '1'
     ylabel: Amplitude
     ymax: '4'
-    ymin: '-0.5'
-    yunit: '""'
+    ymin: '0'
+    yunit: '"Demod Data"'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 656.0]
+    coordinate: [936, 632.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -467,7 +466,7 @@ blocks:
     fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 1,4,1,196
+    gui_hint: 1,5,1,95
     int_max: fft_y_max
     int_min: fft_y_min
     label1: ''
@@ -501,7 +500,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: "Int. multiple of \nADSB 1Mbps data rate"
     decim: samp_rate
     fbw: '0'
     interp: samp_rate_ADSB
@@ -555,17 +554,17 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1272, 520.0]
+    coordinate: [1192, 520.0]
     rotation: 0
     state: enabled
 
 connections:
-- [adsb_decoder_0, decoded, display_text_msg_0, text]
 - [adsb_decoder_0, decoded, zeromq_pub_msg_sink_0, in]
 - [adsb_demod_0, '0', qtgui_time_sink_x_0, '0']
 - [adsb_demod_0, demodulated, adsb_decoder_0, demodulated]
-- [adsb_framer_0, '0', adsb_demod_0, '0']
-- [blocks_complex_to_mag_squared_0, '0', adsb_framer_0, '0']
+- [adsb_framer_1, '0', adsb_demod_0, '0']
+- [analog_const_source_x_0, '0', qtgui_time_sink_x_0, '1']
+- [blocks_complex_to_mag_squared_0, '0', adsb_framer_1, '0']
 - [blocks_float_to_complex_0, '0', blocks_throttle2_0, '0']
 - [blocks_throttle2_0, '0', qtgui_freq_sink_x_0, '0']
 - [blocks_throttle2_0, '0', qtgui_waterfall_sink_x_0, '0']

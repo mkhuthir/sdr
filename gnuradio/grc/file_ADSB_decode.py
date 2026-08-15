@@ -13,9 +13,7 @@
 
 from PyQt5 import Qt
 from gnuradio import qtgui
-from PyQt5 import Qt
-import display
-import sip
+from gnuradio import analog
 from gnuradio import blocks
 from gnuradio import filter
 from gnuradio.filter import firdes
@@ -23,10 +21,13 @@ from gnuradio import gr
 from gnuradio.fft import window
 import sys
 import signal
+from PyQt5 import Qt
 from argparse import ArgumentParser
 from gnuradio.eng_arg import eng_float, intx
 from gnuradio import eng_notation
+from gnuradio import zeromq
 import gnuradio.adsb as adsb
+import sip
 import threading
 
 
@@ -67,18 +68,19 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
-        self.samp_rate_ADSB = samp_rate_ADSB = 2000000
+        self.samp_rate_ADSB = samp_rate_ADSB = 6000000
         self.samp_rate = samp_rate = 2400000
         self.fft_y_min = fft_y_min = -70
         self.fft_y_max = fft_y_max = -30
         self.fft_size = fft_size = 2048
-        self.detect_thre = detect_thre = 0.01
+        self.detect_thre = detect_thre = 0.19
         self.center_freq = center_freq = 1090e6
 
         ##################################################
         # Blocks
         ##################################################
 
+        self.zeromq_pub_msg_sink_0 = zeromq.pub_msg_sink('tcp://127.0.0.1:5001', 10, True)
         self.rational_resampler_xxx_0 = filter.rational_resampler_ccc(
                 interpolation=samp_rate_ADSB,
                 decimation=samp_rate,
@@ -119,35 +121,35 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
 
         self._qtgui_waterfall_sink_x_0_win = sip.wrapinstance(self.qtgui_waterfall_sink_x_0.qwidget(), Qt.QWidget)
 
-        self.top_grid_layout.addWidget(self._qtgui_waterfall_sink_x_0_win, 1, 4, 1, 196)
+        self.top_grid_layout.addWidget(self._qtgui_waterfall_sink_x_0_win, 1, 5, 1, 95)
         for r in range(1, 2):
             self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(4, 200):
+        for c in range(5, 100):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-            2048, #size
-            samp_rate_ADSB, #samp_rate
+            (int(samp_rate_ADSB*150e-6)), #size
+            int(samp_rate_ADSB), #samp_rate
             "", #name
-            1, #number of inputs
+            2, #number of inputs
             None # parent
         )
-        self.qtgui_time_sink_x_0.set_update_time(0.10)
-        self.qtgui_time_sink_x_0.set_y_axis(-0.5, 4)
+        self.qtgui_time_sink_x_0.set_update_time(0.01)
+        self.qtgui_time_sink_x_0.set_y_axis(0, 4)
 
-        self.qtgui_time_sink_x_0.set_y_label('Amplitude', "")
+        self.qtgui_time_sink_x_0.set_y_label('Amplitude', "Demod Data")
 
         self.qtgui_time_sink_x_0.enable_tags(True)
-        self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
+        self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_TAG, qtgui.TRIG_SLOPE_POS, 0, 1.25e-6, 0, "burst")
         self.qtgui_time_sink_x_0.enable_autoscale(False)
-        self.qtgui_time_sink_x_0.enable_grid(False)
+        self.qtgui_time_sink_x_0.enable_grid(True)
         self.qtgui_time_sink_x_0.enable_axis_labels(True)
         self.qtgui_time_sink_x_0.enable_control_panel(False)
         self.qtgui_time_sink_x_0.enable_stem_plot(False)
 
         self.qtgui_time_sink_x_0.disable_legend()
 
-        labels = ['Signal 1', 'Signal 2', 'Signal 3', 'Signal 4', 'Signal 5',
-            'Signal 6', 'Signal 7', 'Signal 8', 'Signal 9', 'Signal 10']
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
             1, 1, 1, 1, 1]
         colors = ['green', 'red', 'green', 'black', 'cyan',
@@ -156,11 +158,11 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
             1.0, 1.0, 1.0, 1.0, 1.0]
         styles = [1, 1, 1, 1, 1,
             1, 1, 1, 1, 1]
-        markers = [-1, -1, -1, -1, -1,
+        markers = [2, -1, -1, -1, -1,
             -1, -1, -1, -1, -1]
 
 
-        for i in range(1):
+        for i in range(2):
             if len(labels[i]) == 0:
                 self.qtgui_time_sink_x_0.set_line_label(i, "Data {0}".format(i))
             else:
@@ -172,10 +174,10 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
             self.qtgui_time_sink_x_0.set_line_alpha(i, alphas[i])
 
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.qwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_win, 2, 0, 1, 200)
-        for r in range(2, 3):
+        self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_win, 0, 100, 1, 100)
+        for r in range(0, 1):
             self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 200):
+        for c in range(100, 200):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_0 = qtgui.freq_sink_c(
             fft_size, #size
@@ -219,37 +221,36 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
             self.qtgui_freq_sink_x_0.set_line_alpha(i, alphas[i])
 
         self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.qwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_freq_sink_x_0_win, 0, 0, 1, 200)
+        self.top_grid_layout.addWidget(self._qtgui_freq_sink_x_0_win, 0, 0, 1, 100)
         for r in range(0, 1):
             self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 200):
+        for c in range(0, 100):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self.display_text_msg_0 = display.text_msg( "", 'text', 80)
-        self._display_text_msg_0_win = sip.wrapinstance(self.display_text_msg_0.qwidget(), Qt.QWidget)
-        self.top_layout.addWidget(self._display_text_msg_0_win)
-        self.blocks_wavfile_source_0 = blocks.wavfile_source('/home/mkhuthir/rfdata/wav/ADSB/adsb.2021-11-26T15_03_30_573.wav', True)
+        self.blocks_wavfile_source_0 = blocks.wavfile_source('/home/mkhuthir/rfdata/wav/ADSB/adsb.2021-11-26T15_03_30_573.wav', False)
         self.blocks_throttle2_0 = blocks.throttle( gr.sizeof_gr_complex*1, samp_rate, True, 0 if "auto" == "auto" else max( int(float(0.1) * samp_rate) if "auto" == "time" else int(0.1), 1) )
         self.blocks_float_to_complex_0 = blocks.float_to_complex(1)
         self.blocks_complex_to_mag_squared_0 = blocks.complex_to_mag_squared(1)
-        self.adsb_framer_0 = adsb.framer(samp_rate_ADSB, detect_thre)
+        self.analog_const_source_x_0 = analog.sig_source_f(0, analog.GR_CONST_WAVE, 0, 0, detect_thre)
+        self.adsb_framer_1 = adsb.framer(samp_rate_ADSB, detect_thre)
         self.adsb_demod_0 = adsb.demod(samp_rate_ADSB)
-        self.adsb_decoder_0 = adsb.decoder("Extended Squitter Only", "None", "Verbose")
+        self.adsb_decoder_0 = adsb.decoder("All Messages", "Conservative", "Brief")
 
 
         ##################################################
         # Connections
         ##################################################
-        self.msg_connect((self.adsb_decoder_0, 'decoded'), (self.display_text_msg_0, 'text'))
+        self.msg_connect((self.adsb_decoder_0, 'decoded'), (self.zeromq_pub_msg_sink_0, 'in'))
         self.msg_connect((self.adsb_demod_0, 'demodulated'), (self.adsb_decoder_0, 'demodulated'))
         self.connect((self.adsb_demod_0, 0), (self.qtgui_time_sink_x_0, 0))
-        self.connect((self.adsb_framer_0, 0), (self.adsb_demod_0, 0))
-        self.connect((self.blocks_complex_to_mag_squared_0, 0), (self.adsb_framer_0, 0))
+        self.connect((self.adsb_framer_1, 0), (self.adsb_demod_0, 0))
+        self.connect((self.analog_const_source_x_0, 0), (self.qtgui_time_sink_x_0, 1))
+        self.connect((self.blocks_complex_to_mag_squared_0, 0), (self.adsb_framer_1, 0))
         self.connect((self.blocks_float_to_complex_0, 0), (self.blocks_throttle2_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.qtgui_freq_sink_x_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.qtgui_waterfall_sink_x_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.rational_resampler_xxx_0, 0))
-        self.connect((self.blocks_wavfile_source_0, 0), (self.blocks_float_to_complex_0, 0))
         self.connect((self.blocks_wavfile_source_0, 1), (self.blocks_float_to_complex_0, 1))
+        self.connect((self.blocks_wavfile_source_0, 0), (self.blocks_float_to_complex_0, 0))
         self.connect((self.rational_resampler_xxx_0, 0), (self.blocks_complex_to_mag_squared_0, 0))
 
 
@@ -266,7 +267,7 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
 
     def set_samp_rate_ADSB(self, samp_rate_ADSB):
         self.samp_rate_ADSB = samp_rate_ADSB
-        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate_ADSB)
+        self.qtgui_time_sink_x_0.set_samp_rate(int(self.samp_rate_ADSB))
 
     def get_samp_rate(self):
         return self.samp_rate
@@ -304,7 +305,8 @@ class file_ADSB_decode(gr.top_block, Qt.QWidget):
 
     def set_detect_thre(self, detect_thre):
         self.detect_thre = detect_thre
-        self.adsb_framer_0.set_threshold(self.detect_thre)
+        self.adsb_framer_1.set_threshold(self.detect_thre)
+        self.analog_const_source_x_0.set_offset(self.detect_thre)
 
     def get_center_freq(self):
         return self.center_freq
