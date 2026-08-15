@@ -9,7 +9,7 @@ options:
     description: ADSB Decoder
     gen_cmake: 'On'
     gen_linking: dynamic
-    generate_options: qt_gui
+    generate_options: no_gui
     hier_block_src_path: '.:'
     id: file_ADSB_decode
     max_nouts: '0'
@@ -122,17 +122,17 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Decode bits
     error_corr: '"Conservative"'
     maxoutbuf: '0'
     minoutbuf: '0'
-    msg_filter: '"All Messages"'
+    msg_filter: '"Extended Squitter Only"'
     print_level: '"Brief"'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [936, 528.0]
+    coordinate: [944, 528.0]
     rotation: 0
     state: enabled
 - name: adsb_demod_0
@@ -140,7 +140,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Generate bits
     fs: samp_rate_ADSB
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -156,7 +156,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: Detect Preambles
     fs: samp_rate_ADSB
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -182,9 +182,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [776, 664.0]
+    coordinate: [776, 720.0]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: blocks_complex_to_mag_squared_0
   id: blocks_complex_to_mag_squared
   parameters:
@@ -215,6 +215,23 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [216, 256.0]
+    rotation: 0
+    state: enabled
+- name: blocks_null_sink_0
+  id: blocks_null_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    bus_structure_sink: '[[0,],]'
+    comment: ''
+    num_inputs: '1'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [944, 648.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle2_0
@@ -336,7 +353,7 @@ blocks:
     bus_structure: null
     coordinate: [584, 320.0]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: qtgui_time_sink_x_0
   id: qtgui_time_sink_x
   parameters:
@@ -431,9 +448,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [936, 632.0]
+    coordinate: [944, 688.0]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: qtgui_waterfall_sink_x_0
   id: qtgui_waterfall_sink_x
   parameters:
@@ -494,7 +511,7 @@ blocks:
     bus_structure: null
     coordinate: [584, 424.0]
     rotation: 0
-    state: enabled
+    state: disabled
 - name: rational_resampler_xxx_0
   id: rational_resampler_xxx
   parameters:
@@ -560,6 +577,7 @@ blocks:
 
 connections:
 - [adsb_decoder_0, decoded, zeromq_pub_msg_sink_0, in]
+- [adsb_demod_0, '0', blocks_null_sink_0, '0']
 - [adsb_demod_0, '0', qtgui_time_sink_x_0, '0']
 - [adsb_demod_0, demodulated, adsb_decoder_0, demodulated]
 - [adsb_framer_1, '0', adsb_demod_0, '0']
