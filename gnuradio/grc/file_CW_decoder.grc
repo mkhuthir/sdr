@@ -37,7 +37,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3,50,1,50
+    gui_hint: 2,150,1,50
     label: AGC Gain
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -76,7 +76,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '20'
+    value: '14'
   states:
     bus_sink: false
     bus_source: false
@@ -165,14 +165,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1032, 80.0]
+    coordinate: [1032, 16.0]
     rotation: 0
     state: enabled
 - name: thresh_high
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3,150,1,50
+    gui_hint: 4,150,1,50
     label: Threshold High
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -193,7 +193,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3,100,1,50
+    gui_hint: 3,150,1,50
     label: Threshold Low
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -214,7 +214,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3,0,1,50
+    gui_hint: 1,150,1,50
     label: Tune Freq
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -222,7 +222,7 @@ blocks:
     start: center_freq-samp_rate/2
     step: '1'
     stop: center_freq+samp_rate/2
-    value: '7047713'
+    value: '7037764'
     widget: counter_slider
   states:
     bus_sink: false
@@ -374,21 +374,6 @@ blocks:
     coordinate: [24, 256.0]
     rotation: 0
     state: enabled
-- name: display_utils_text_terminal_sink_0
-  id: display_utils_text_terminal_sink
-  parameters:
-    alias: ''
-    comment: ''
-    gui_hint: ''
-    max_lines: '100'
-    title: '"Text Terminal"'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1296, 520.0]
-    rotation: 0
-    state: enabled
 - name: epy_block_0
   id: epy_block
   parameters:
@@ -396,52 +381,52 @@ blocks:
       \ GRC will instantiate the first class it finds\nto get ports and parameters\
       \ of your block. The arguments to __init__  will\nbe the parameters. All of\
       \ them are required to have default values!\n\"\"\"\n\nimport numpy as np\n\
-      from gnuradio import gr\nimport pmt\n\nclass blk(gr.sync_block): # other base\
-      \ classes are basic_block, decim_block, interp_block\n    def __init__(self,\
-      \ sample_rate=800, wpm=20): # only default arguments here\n        \"\"\"Accepts\
-      \ morse code signal and emits decoded charcters\n        Sample rate: Morse\
-      \ signal sample rate in Hz, default is 800Hz\n        WPM: Words per minute,\
-      \ default is 20\n        \"\"\"\n        gr.sync_block.__init__(\n         \
-      \   self,\n            name='Morse Decoder GUI',\n            in_sig=[np.float32],\n\
-      \            out_sig=None\n        )\n        self.sample_rate = sample_rate\n\
-      \        self.wpm = wpm\n        \n        # Register a message output port\
-      \ for text strings\n        self.message_port_register_out(gr.pmt.mp(\"text_out\"\
-      ))\n        \n        # Morse timing variables\n        self.dit_len = int((1.2\
-      \ / self.wpm) * self.sample_rate)\n        self.max_dit = int(self.dit_len *\
-      \ 2.0)\n        self.min_space = int(self.dit_len * 2.0)\n        self.min_word\
+      from gnuradio import gr\n\n# Changed to gr.basic_block to handle mismatched\
+      \ input and output rates\nclass blk(gr.basic_block): \n    def __init__(self,\
+      \ sample_rate=800, wpm=20):\n        \"\"\"Accepts morse code signal and emits\
+      \ decoded streaming bytes (Integer 8)\"\"\"\n        gr.basic_block.__init__(\n\
+      \            self,\n            name='Morse Decoder GUI',\n            in_sig=[np.float32],\n\
+      \            out_sig=[np.int8]  # FIX: Set to np.int8 to turn your output port\
+      \ PURPLE\n        )\n        self.sample_rate = sample_rate\n        self.wpm\
+      \ = wpm\n        \n        # Morse timing variables\n        self.dit_len =\
+      \ int((1.2 / self.wpm) * self.sample_rate)\n        self.max_dit = int(self.dit_len\
+      \ * 2.0)\n        self.min_space = int(self.dit_len * 2.0)\n        self.min_word\
       \ = int(self.dit_len * 5.0)\n\n        # State tracking\n        self.current_state\
-      \ = 0\n        self.state_duration = 0\n        self.current_char = \"\"\n\n\
-      \        self.morse_dict = {\n            '.-': 'A', '-...': 'B', '-.-.': 'C',\
-      \ '-..': 'D', '.': 'E',\n            '..-.': 'F', '--.': 'G', '....': 'H', '..':\
-      \ 'I', '.---': 'J',\n            '-.-': 'K', '.-..': 'L', '--': 'M', '-.': 'N',\
-      \ '---': 'O',\n            '.--.': 'P', '--.-': 'Q', '.-.': 'R', '...': 'S',\
-      \ '-': 'T',\n            '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X', '-.--':\
-      \ 'Y',\n            '--..': 'Z', '-----': '0', '.----': '1', '..---': '2', '...--':\
-      \ '3',\n            '....-': '4', '.....': '5', '-....': '6', '--...': '7',\
-      \ '---..': '8',\n            '----.': '9', '.-.-.-': '.', '--..--': ',', '..--..':\
-      \ '?', '-....-': '-'\n        }\n        \n\n    def emit_string(self, text):\n\
-      \        \"\"\"Broadcast text via PMT message.\"\"\"\n        # Convert standard\
-      \ Python string to a GNU Radio PMT object and publish it\n        pmt_msg =\
-      \ pmt.string_to_symbol(text)\n        self.message_port_pub(pmt.mp(\"text_out\"\
-      ), pmt_msg)\n\n    def decode_element(self):\n        \"\"\"Translates accumulated\
-      \ dits/dahs into a character.\"\"\"\n        if self.current_char:\n       \
-      \     char = self.morse_dict.get(self.current_char, '[?]')\n            self.emit_string(char)\n\
-      \            self.current_char = \"\"\n\n    def work(self, input_items, output_items):\n\
-      \        in0 = input_items[0]\n        \n        for sample in in0:\n      \
-      \      sample_state = 1 if sample > 0.5 else 0\n            \n            if\
-      \ sample_state == self.current_state:\n                self.state_duration +=\
-      \ 1\n                \n                # Check for word space timeout\n    \
-      \            if self.current_state == 0 and self.state_duration > self.min_word:\n\
+      \ = 0\n        self.state_duration = 0\n        self.current_char = \"\"\n \
+      \       self.output_queue = []  # Buffer to store decoded characters before\
+      \ outputting\n\n        self.morse_dict = {\n            '.-': 'A', '-...':\
+      \ 'B', '-.-.': 'C', '-..': 'D', '.': 'E',\n            '..-.': 'F', '--.': 'G',\
+      \ '....': 'H', '..': 'I', '.---': 'J',\n            '-.-': 'K', '.-..': 'L',\
+      \ '--': 'M', '-.': 'N', '---': 'O',\n            '.--.': 'P', '--.-': 'Q', '.-.':\
+      \ 'R', '...': 'S', '-': 'T',\n            '..-': 'U', '...-': 'V', '.--': 'W',\
+      \ '-..-': 'X', '-.--': 'Y',\n            '--..': 'Z', '-----': '0', '.----':\
+      \ '1', '..---': '2', '...--': '3',\n            '....-': '4', '.....': '5',\
+      \ '-....': '6', '--...': '7', '---..': '8',\n            '----.': '9', '.-.-.-':\
+      \ '.', '--..--': ',', '..--..': '?', '-....-': '-'\n        }\n\n    def decode_element(self):\n\
+      \        \"\"\"Translates accumulated dits/dahs into a character byte.\"\"\"\
+      \n        if self.current_char:\n            char = self.morse_dict.get(self.current_char,\
+      \ '*')\n            self.output_queue.append(ord(char))\n            self.current_char\
+      \ = \"\"\n\n    def general_work(self, input_items, output_items):\n       \
+      \ in0 = input_items[0]\n        out0 = output_items[0]\n        \n        #\
+      \ 1. Process all incoming high-speed audio samples\n        for sample in in0:\n\
+      \            sample_state = 1 if sample > 0.5 else 0\n            \n       \
+      \     if sample_state == self.current_state:\n                self.state_duration\
+      \ += 1\n                \n                # Check for word space timeout\n \
+      \               if self.current_state == 0 and self.state_duration == self.min_word:\n\
       \                    if self.current_char:\n                        self.decode_element()\n\
-      \                        self.emit_string(\" \")\n                    self.state_duration\
-      \ = 0 \n            else:\n                if self.current_state == 1:\n   \
-      \                 if self.state_duration < self.max_dit:\n                 \
-      \       self.current_char += \".\"\n                    else:\n            \
-      \            self.current_char += \"-\"\n                else:\n           \
-      \         if self.state_duration >= self.min_space:\n                      \
-      \  self.decode_element()\n                \n                self.current_state\
-      \ = sample_state\n                self.state_duration = 1\n                \n\
-      \        return len(in0)\n\n"
+      \                    self.output_queue.append(ord(\" \"))\n            else:\n\
+      \                if self.current_state == 1:\n                    if self.state_duration\
+      \ < self.max_dit:\n                        self.current_char += \".\"\n    \
+      \                else:\n                        self.current_char += \"-\"\n\
+      \                else:\n                    if self.state_duration >= self.min_space:\n\
+      \                        self.decode_element()\n                \n         \
+      \       self.current_state = sample_state\n                self.state_duration\
+      \ = 1\n\n        # 2. Tell the scheduler how many input samples we processed\n\
+      \        self.consume(0, len(in0))\n\n        # 3. Write decoded text bytes\
+      \ out to the purple port buffer\n        n_output = min(len(out0), len(self.output_queue))\n\
+      \        if n_output > 0:\n            for i in range(n_output):\n         \
+      \       out0[i] = self.output_queue.pop(0)\n            return n_output\n  \
+      \      else:\n            return 0\n"
     affinity: ''
     alias: ''
     comment: ''
@@ -450,82 +435,13 @@ blocks:
     sample_rate: samp_rate_CW
     wpm: CW_wpm
   states:
-    _io_cache: '(''Morse Decoder GUI'', ''blk'', [(''sample_rate'', ''800''), (''wpm'',
-      ''20'')], [(''0'', ''float'', 1)], [(''text_out'', ''message'', 1)], ''Accepts
-      morse code signal and emits decoded charcters\n        Sample rate: Morse signal
-      sample rate in Hz, default is 800Hz\n        WPM: Words per minute, default
-      is 20\n        '', [''sample_rate'', ''wpm''])'
+    _io_cache: ('Morse Decoder GUI', 'blk', [('sample_rate', '800'), ('wpm', '20')],
+      [('0', 'float', 1)], [('0', 'byte', 1)], 'Accepts morse code signal and emits
+      decoded streaming bytes (Integer 8)', ['sample_rate', 'wpm'])
     bus_sink: false
     bus_source: false
     bus_structure: null
     coordinate: [728, 640.0]
-    rotation: 0
-    state: enabled
-- name: epy_block_1
-  id: epy_block
-  parameters:
-    _source_code: "import numpy as np\nfrom gnuradio import gr\nimport pmt\n\n# Import\
-      \ PyQt5 classes for UI structure\nfrom PyQt5.QtWidgets import QWidget, QVBoxLayout,\
-      \ QTextEdit\nfrom PyQt5.QtCore import pyqtSignal, QObject\n\nclass TextSignalEmitter(QObject):\n\
-      \    \"\"\"\n    Helper class to emit safe signals across threads.\n    GNU\
-      \ Radio message handlers run on their own thread, \n    so updating Qt components\
-      \ must go through pyqtSignal.\n    \"\"\"\n    append_text = pyqtSignal(str)\n\
-      \nclass blk(gr.basic_block):\n    def __init__(self, title=\"Text Terminal\"\
-      , max_lines=100):\n        gr.basic_block.__init__(\n            self,\n   \
-      \         name='QT Text Display Sink',\n            in_sig=None,   # No streaming\
-      \ inputs\n            out_sig=None   # No streaming outputs\n        )\n   \
-      \     \n        # Register an incoming message port for text packages\n    \
-      \    self.message_port_register_in(pmt.intern('text_in'))\n        self.set_msg_handler(pmt.intern('text_in'),\
-      \ self.handle_msg)\n        \n        # Store configuration parameters safely\n\
-      \        self.title = title\n        self.max_lines = max_lines\n        \n\
-      \        # CRITICAL FIX: Set GUI placeholders as None initially.\n        #\
-      \ This keeps GRC background compilation happy on save!\n        self.win = None\n\
-      \        self.text_edit = None\n        self.emitter = None\n\n    def _setup_gui(self):\n\
-      \        \"\"\"Lazy initialization routine triggered safely at block runtime\
-      \ startup.\"\"\"\n        if self.win is not None:\n            return  # Already\
-      \ built\n            \n        self.win = QWidget()\n        self.win.setWindowTitle(self.title)\n\
-      \        layout = QVBoxLayout()\n        \n        self.text_edit = QTextEdit()\n\
-      \        self.text_edit.setReadOnly(True)  # Terminal style (Display only)\n\
-      \        layout.addWidget(self.text_edit)\n        self.win.setLayout(layout)\n\
-      \        \n        # Wire up our custom thread-safe signaling mechanism\n  \
-      \      self.emitter = TextSignalEmitter()\n        self.emitter.append_text.connect(self._safe_append_text)\n\
-      \n    def handle_msg(self, msg):\n        \"\"\"Processes incoming PMT messages\
-      \ from the flowgraph thread.\"\"\"\n        # Ensure UI exists the absolute\
-      \ moment the first packet drops\n        if self.win is None:\n            return\n\
-      \            \n        try:\n            # Extract plain text string from the\
-      \ Polymorphic Type (PMT) message\n            if pmt.is_pair(msg):\n       \
-      \         text_content = str(pmt.to_python(pmt.cdr(msg)))\n            elif\
-      \ pmt.is_symbol(msg):\n                text_content = pmt.symbol_to_string(msg)\n\
-      \            else:\n                text_content = str(pmt.to_python(msg))\n\
-      \                \n            # Emit the signal safely to the main Qt application\
-      \ thread\n            self.emitter.append_text.emit(text_content)\n        except\
-      \ Exception as e:\n            if self.emitter:\n                self.emitter.append_text.emit(f\"\
-      [Error parsing message: {str(e)}]\")\n\n    def _safe_append_text(self, text):\n\
-      \        \"\"\"Appends the arriving string text straight onto the screen layout\
-      \ safely.\"\"\"\n        if self.text_edit:\n            self.text_edit.append(text)\n\
-      \            \n            # Keep window clean by tracking total line limit\
-      \ constraints\n            document = self.text_edit.document()\n          \
-      \  if document.blockCount() > self.max_lines:\n                cursor = self.text_edit.textCursor()\n\
-      \                cursor.movePosition(cursor.Start)\n                cursor.select(cursor.LineUnderCursor)\n\
-      \                cursor.removeSelectedText()\n                cursor.deleteChar()\
-      \ # Deletes leftover newline character\n\n    def work(self, input_items, output_items):\n\
-      \        # Trigger layout setup seamlessly during runtime thread startup phases\n\
-      \        if self.win is None:\n            self._setup_gui()\n        return\
-      \ 0\n"
-    affinity: ''
-    alias: ''
-    comment: ''
-    max_lines: '12'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    title: '"Decoded Text"'
-  states:
-    _io_cache: ('QT Text Display Sink', 'blk', [('title', "'Text Terminal'"), ('max_lines',
-      '100')], [('text_in', 'message', 1)], [], '', ['max_lines', 'title'])
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [968, 640.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -741,7 +657,7 @@ blocks:
     ctrlpanel: 'False'
     entags: 'True'
     grid: 'True'
-    gui_hint: 2,0,1,200
+    gui_hint: 6,0,1,200
     label1: Signal
     label10: Signal 10
     label2: Demod
@@ -839,7 +755,7 @@ blocks:
     fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 1,5,1,145
+    gui_hint: 1,8,4,142
     int_max: fft_y_max
     int_min: fft_y_min
     label1: ''
@@ -888,6 +804,23 @@ blocks:
     coordinate: [808, 256.0]
     rotation: 0
     state: enabled
+- name: show_text_0
+  id: show_text
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    gui_hint: 7,1,1,200
+    label: Decoded Text
+    maxlines: '3'
+    splitlength: '225'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [920, 632.0]
+    rotation: 0
+    state: enabled
 - name: virtual_sink_0
   id: virtual_sink
   parameters:
@@ -929,7 +862,7 @@ connections:
 - [blocks_throttle2_0, '0', qtgui_waterfall_sink_x_0, '0']
 - [blocks_wavfile_source_0, '0', blocks_float_to_complex_0, '0']
 - [blocks_wavfile_source_0, '1', blocks_float_to_complex_0, '1']
-- [epy_block_0, text_out, epy_block_1, text_in]
+- [epy_block_0, '0', show_text_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', rational_resampler_xxx_0, '0']
 - [rational_resampler_xxx_0, '0', qtgui_freq_sink_x_0_0, '0']
 - [rational_resampler_xxx_0, '0', virtual_sink_0, '0']
