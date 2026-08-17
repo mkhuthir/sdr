@@ -37,7 +37,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 2,150,1,50
+    gui_hint: 3,150,1,50
     label: AGC Gain
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -51,7 +51,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [664, 16.0]
+    coordinate: [768, 16.0]
     rotation: 0
     state: enabled
 - name: CW_LPF
@@ -76,7 +76,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: '14'
+    value: '20'
   states:
     bus_sink: false
     bus_source: false
@@ -156,58 +156,67 @@ blocks:
     coordinate: [368, 152.0]
     rotation: 0
     state: enabled
-- name: samp_rate_audio
-  id: variable
+- name: sig_gain
+  id: variable_qtgui_range
   parameters:
     comment: ''
-    value: '48000'
+    gui_hint: 2,150,1,50
+    label: Sig. Gain
+    min_len: '10'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '1'
+    step: '1'
+    stop: '100'
+    value: '2'
+    widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1032, 16.0]
+    coordinate: [664, 16.0]
     rotation: 0
     state: enabled
 - name: thresh_high
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 4,150,1,50
+    gui_hint: 5,150,1,50
     label: Threshold High
     min_len: '10'
     orient: QtCore.Qt.Horizontal
     rangeType: float
     start: '0.02'
     step: '0.01'
-    stop: '1'
+    stop: '2'
     value: '0.1'
     widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [904, 16.0]
+    coordinate: [1008, 16.0]
     rotation: 0
     state: enabled
 - name: thresh_low
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 3,150,1,50
+    gui_hint: 4,150,1,50
     label: Threshold Low
     min_len: '10'
     orient: QtCore.Qt.Horizontal
     rangeType: float
     start: '0.00'
     step: '0.01'
-    stop: '0.10'
+    stop: '0.50'
     value: '0.05'
     widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [776, 16.0]
+    coordinate: [880, 16.0]
     rotation: 0
     state: enabled
 - name: tune_freq
@@ -222,7 +231,7 @@ blocks:
     start: center_freq-samp_rate/2
     step: '1'
     stop: center_freq+samp_rate/2
-    value: '7037764'
+    value: '7047713'
     widget: counter_slider
   states:
     bus_sink: false
@@ -248,7 +257,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [376, 680.0]
+    coordinate: [528, 680.0]
     rotation: 0
     state: enabled
 - name: analog_const_source_x_0
@@ -265,7 +274,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [528, 800.0]
+    coordinate: [680, 800.0]
     rotation: 0
     state: enabled
 - name: analog_const_source_x_1
@@ -282,7 +291,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [528, 744.0]
+    coordinate: [680, 744.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_mag_squared_0
@@ -314,7 +323,25 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [216, 256.0]
+    coordinate: [240, 256.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: sig_gain
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [360, 704.0]
     rotation: 0
     state: enabled
 - name: blocks_threshold_ff_0
@@ -332,7 +359,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [544, 632.0]
+    coordinate: [696, 632.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle2_0
@@ -353,7 +380,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 256.0]
+    coordinate: [408, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -441,7 +468,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [728, 640.0]
+    coordinate: [880, 640.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -461,7 +488,28 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [600, 256.0]
+    coordinate: [624, 256.0]
+    rotation: 0
+    state: enabled
+- name: note_0
+  id: note
+  parameters:
+    alias: ''
+    comment: 'Freq        WPM
+
+      7027706    20
+
+      7037763    12
+
+      7047713    20
+
+      7054461    15'
+    note: Morse Freqs
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 344.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -542,7 +590,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [600, 360.0]
+    coordinate: [624, 360.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -623,7 +671,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1000, 336.0]
+    coordinate: [1024, 336.0]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -657,7 +705,7 @@ blocks:
     ctrlpanel: 'False'
     entags: 'True'
     grid: 'True'
-    gui_hint: 6,0,1,200
+    gui_hint: 7,0,1,200
     label1: Signal
     label10: Signal 10
     label2: Demod
@@ -681,7 +729,7 @@ blocks:
     marker9: '-1'
     name: '"CW Signal"'
     nconnections: '4'
-    size: samp_rate_CW*5
+    size: samp_rate_CW*2
     srate: samp_rate_CW
     stemplot: 'False'
     style1: '1'
@@ -720,7 +768,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [728, 712.0]
+    coordinate: [880, 712.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -755,7 +803,7 @@ blocks:
     fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
-    gui_hint: 1,8,4,142
+    gui_hint: 1,8,5,142
     int_max: fft_y_max
     int_min: fft_y_min
     label1: ''
@@ -781,7 +829,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [600, 464.0]
+    coordinate: [624, 464.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -801,7 +849,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [808, 256.0]
+    coordinate: [840, 256.0]
     rotation: 0
     state: enabled
 - name: show_text_0
@@ -810,7 +858,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    gui_hint: 7,1,1,200
+    gui_hint: 8,1,1,200
     label: Decoded Text
     maxlines: '3'
     splitlength: '225'
@@ -818,7 +866,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [920, 632.0]
+    coordinate: [1072, 632.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_0
@@ -831,7 +879,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1000, 280.0]
+    coordinate: [1024, 280.0]
     rotation: 0
     state: enabled
 - name: virtual_source_0
@@ -853,8 +901,9 @@ connections:
 - [analog_agc_xx_0, '0', qtgui_time_sink_x_0, '0']
 - [analog_const_source_x_0, '0', qtgui_time_sink_x_0, '3']
 - [analog_const_source_x_1, '0', qtgui_time_sink_x_0, '2']
-- [blocks_complex_to_mag_squared_0, '0', analog_agc_xx_0, '0']
+- [blocks_complex_to_mag_squared_0, '0', blocks_multiply_const_vxx_0, '0']
 - [blocks_float_to_complex_0, '0', blocks_throttle2_0, '0']
+- [blocks_multiply_const_vxx_0, '0', analog_agc_xx_0, '0']
 - [blocks_threshold_ff_0, '0', epy_block_0, '0']
 - [blocks_threshold_ff_0, '0', qtgui_time_sink_x_0, '1']
 - [blocks_throttle2_0, '0', freq_xlating_fir_filter_xxx_0, '0']
