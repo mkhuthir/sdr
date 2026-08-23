@@ -1,29 +1,25 @@
 options:
   parameters:
+    alias: ''
     author: Muthanna Alwahash
     catch_exceptions: 'True'
-    category: '[GRC Hier Blocks]'
-    cmake_opt: ''
     comment: ''
     copyright: (c) 2026
     description: RDS receiver from wave file
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
+    generator_class_name: PythonQtGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_qt_gui
     hier_block_src_path: '.:'
     id: file_FM_RDS_SCA_RX
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
     qt_qss_theme: ''
     realtime_scheduling: ''
     run: 'True'
     run_command: '{python} -u {filename}'
-    run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: Wave file FM/RDS/SCA RX
-    window_size: ''
   states:
     bus_sink: false
     bus_source: false
@@ -498,7 +494,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: Wave file
-    file: /home/mkhuthir/rfdata/wav/FM_RDS/SDRuno_20200907_184033Z_88110kHz_FM_RDS.wav
+    file: /home/mkhuthir/rfdata/wav/WBFM/SDRuno_20200907_184033Z_88110kHz_FM_RDS.wav
     maxoutbuf: '0'
     minoutbuf: '0'
     nchan: '2'
