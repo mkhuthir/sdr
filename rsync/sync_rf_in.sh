@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -rtv --modify-window=1 --delete /media/mkhuthir/RFDATA/rfdata/ ~/rfdata/
+rsync -rtv --modify-window=1 --delete /run/media/mkhuthir/RFDATA/rfdata/ ~/rfdata/
