@@ -1,29 +1,24 @@
 options:
   parameters:
+    alias: ''
     author: Muthanna Alwahash
     catch_exceptions: 'True'
-    category: Custom
-    cmake_opt: ''
     comment: ''
     copyright: (c) 2026
     description: ADSB Decoder
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: no_gui
+    generator_class_name: PythonNoGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_nogui
     hier_block_src_path: '.:'
     id: file_ADSB_decoder
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
-    qt_qss_theme: ''
     realtime_scheduling: ''
-    run: 'True'
     run_command: '{python} -u {filename}'
     run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: ADSB Decoder
-    window_size: (1000,1000)
   states:
     bus_sink: false
     bus_source: false
@@ -132,7 +127,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [944, 528.0]
+    coordinate: [1304, 528.0]
     rotation: 0
     state: enabled
 - name: adsb_demod_0
@@ -148,7 +143,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 552.0]
+    coordinate: [872, 552.0]
     rotation: 0
     state: enabled
 - name: adsb_framer_1
@@ -165,7 +160,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [552, 552.0]
+    coordinate: [632, 552.0]
     rotation: 0
     state: enabled
 - name: analog_const_source_x_0
@@ -182,7 +177,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [776, 720.0]
+    coordinate: [920, 720.0]
     rotation: 0
     state: disabled
 - name: blocks_complex_to_mag_squared_0
@@ -198,7 +193,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [392, 568.0]
+    coordinate: [440, 568.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -214,7 +209,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [216, 256.0]
+    coordinate: [280, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_null_sink_0
@@ -231,7 +226,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [944, 648.0]
+    coordinate: [1120, 584.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle2_0
@@ -252,7 +247,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 256.0]
+    coordinate: [488, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -351,7 +346,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [584, 320.0]
+    coordinate: [704, 320.0]
     rotation: 0
     state: disabled
 - name: qtgui_time_sink_x_0
@@ -448,7 +443,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [944, 688.0]
+    coordinate: [1112, 688.0]
     rotation: 0
     state: disabled
 - name: qtgui_waterfall_sink_x_0
@@ -509,7 +504,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [584, 424.0]
+    coordinate: [704, 424.0]
     rotation: 0
     state: disabled
 - name: rational_resampler_xxx_0
@@ -542,7 +537,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [584, 264.0]
+    coordinate: [704, 264.0]
     rotation: 0
     state: enabled
 - name: virtual_source_0

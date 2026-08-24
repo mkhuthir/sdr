@@ -1,29 +1,25 @@
 options:
   parameters:
+    alias: ''
     author: Muthanna Alwahash
     catch_exceptions: 'True'
-    category: Custom
-    cmake_opt: ''
     comment: ''
     copyright: (c) 2026
     description: CW Decoder
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
+    generator_class_name: PythonQtGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_qt_gui
     hier_block_src_path: '.:'
     id: file_CW_decoder
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
     qt_qss_theme: ''
     realtime_scheduling: ''
     run: 'True'
     run_command: '{python} -u {filename}'
-    run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: CW Decoder
-    window_size: (1000,1000)
   states:
     bus_sink: false
     bus_source: false
@@ -257,7 +253,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [528, 680.0]
+    coordinate: [568, 680.0]
     rotation: 0
     state: enabled
 - name: analog_const_source_x_0
@@ -274,7 +270,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [680, 800.0]
+    coordinate: [720, 800.0]
     rotation: 0
     state: enabled
 - name: analog_const_source_x_1
@@ -291,7 +287,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [680, 744.0]
+    coordinate: [720, 744.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_mag_squared_0
@@ -307,7 +303,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [192, 712.0]
+    coordinate: [208, 712.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -323,7 +319,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [240, 256.0]
+    coordinate: [280, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0
@@ -341,7 +337,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [360, 704.0]
+    coordinate: [400, 704.0]
     rotation: 0
     state: enabled
 - name: blocks_threshold_ff_0
@@ -359,7 +355,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 632.0]
+    coordinate: [736, 632.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle2_0
@@ -380,7 +376,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [408, 256.0]
+    coordinate: [448, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -468,7 +464,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 640.0]
+    coordinate: [920, 640.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -488,7 +484,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 256.0]
+    coordinate: [664, 256.0]
     rotation: 0
     state: enabled
 - name: note_0
@@ -590,7 +586,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 360.0]
+    coordinate: [664, 360.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -671,7 +667,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1024, 336.0]
+    coordinate: [1112, 336.0]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -768,7 +764,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 712.0]
+    coordinate: [920, 712.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -829,7 +825,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 464.0]
+    coordinate: [664, 464.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -849,7 +845,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [840, 256.0]
+    coordinate: [904, 256.0]
     rotation: 0
     state: enabled
 - name: show_text_0
@@ -866,7 +862,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 632.0]
+    coordinate: [1112, 632.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_0
@@ -879,7 +875,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1024, 280.0]
+    coordinate: [1112, 280.0]
     rotation: 0
     state: enabled
 - name: virtual_source_0

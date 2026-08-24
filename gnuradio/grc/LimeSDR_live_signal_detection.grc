@@ -1,29 +1,25 @@
 options:
   parameters:
+    alias: ''
     author: ''
     catch_exceptions: 'True'
-    category: Custom
-    cmake_opt: ''
     comment: ''
     copyright: ''
     description: ''
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
+    generator_class_name: PythonQtGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_qt_gui
     hier_block_src_path: '.:'
     id: LimeSDR_live_signal_detection
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
     qt_qss_theme: ''
     realtime_scheduling: ''
     run: 'True'
     run_command: '{python} -u {filename}'
-    run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: Inspector Live Signal Detection
-    window_size: ''
   states:
     bus_sink: false
     bus_source: false
@@ -109,7 +105,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [632, 268.0]
+    coordinate: [720, 296.0]
     rotation: 0
     state: enabled
 - name: inspector_signal_detector_cvf_0
@@ -134,7 +130,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [360, 264.0]
+    coordinate: [384, 296.0]
     rotation: 0
     state: enabled
 - name: limesuiteng_sdrdevice_source_0

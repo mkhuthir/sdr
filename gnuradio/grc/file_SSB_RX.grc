@@ -1,29 +1,25 @@
 options:
   parameters:
+    alias: ''
     author: Muthanna Alwahash
     catch_exceptions: 'True'
-    category: Custom
-    cmake_opt: ''
     comment: ''
     copyright: (c) 2026
     description: SSB Receiver
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
+    generator_class_name: PythonQtGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_qt_gui
     hier_block_src_path: '.:'
     id: file_SSB_RX
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
     qt_qss_theme: ''
     realtime_scheduling: ''
     run: 'True'
     run_command: '{python} -u {filename}'
-    run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: SSB Receiver
-    window_size: (1000,1000)
   states:
     bus_sink: false
     bus_source: false
@@ -191,7 +187,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1384, 264.0]
+    coordinate: [1464, 264.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_float_0
@@ -207,7 +203,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 272.0]
+    coordinate: [1112, 272.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -223,7 +219,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [240, 256.0]
+    coordinate: [280, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0
@@ -241,7 +237,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1240, 264.0]
+    coordinate: [1296, 264.0]
     rotation: 0
     state: enabled
 - name: blocks_throttle2_0
@@ -262,7 +258,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [408, 256.0]
+    coordinate: [448, 256.0]
     rotation: 0
     state: enabled
 - name: blocks_wavfile_source_0
@@ -300,14 +296,20 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 256.0]
+    coordinate: [664, 256.0]
     rotation: 0
     state: enabled
 - name: note_0
   id: note
   parameters:
     alias: ''
-    comment: Freq
+    comment: 'Freq
+
+      7070250
+
+      7110000
+
+      7125240'
     note: SSB Freqs
   states:
     bus_sink: false
@@ -394,7 +396,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 360.0]
+    coordinate: [664, 360.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -475,7 +477,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 368.0]
+    coordinate: [920, 368.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -536,7 +538,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 464.0]
+    coordinate: [664, 464.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -556,7 +558,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 256.0]
+    coordinate: [920, 256.0]
     rotation: 0
     state: enabled
 

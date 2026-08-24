@@ -1,29 +1,25 @@
 options:
   parameters:
+    alias: ''
     author: Muthanna Alwahash
     catch_exceptions: 'True'
-    category: Custom
-    cmake_opt: ''
     comment: ''
     copyright: (c) 2026
     description: LimeSDR Stereo FM receiver and RDS Decoder
-    gen_cmake: 'On'
     gen_linking: dynamic
     generate_options: qt_gui
+    generator_class_name: PythonQtGuiGenerator
+    generator_module: gnuradio.grc.workflows.python_qt_gui
     hier_block_src_path: '.:'
     id: LimeSDR_FM_RDS_RX
     max_nouts: '0'
     output_language: python
-    placement: (0,0)
     qt_qss_theme: ''
     realtime_scheduling: ''
     run: 'True'
     run_command: '{python} -u {filename}'
-    run_options: prompt
-    sizing_mode: fixed
     thread_safe_setters: ''
     title: LimeSDR Stereo FM receiver and RDS Decoder
-    window_size: (1000,1000)
   states:
     bus_sink: false
     bus_source: false
@@ -336,7 +332,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 872.0]
+    coordinate: [856, 872.0]
     rotation: 0
     state: true
 - name: analog_fm_deemph_0_0
@@ -353,7 +349,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1504, 688.0]
+    coordinate: [1648, 688.0]
     rotation: 0
     state: enabled
 - name: analog_fm_deemph_0_0_0
@@ -370,7 +366,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1504, 600.0]
+    coordinate: [1648, 600.0]
     rotation: 0
     state: enabled
 - name: analog_pll_refout_cc_0
@@ -388,7 +384,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [560, 712.0]
+    coordinate: [592, 712.0]
     rotation: 0
     state: true
 - name: analog_quadrature_demod_cf_0
@@ -404,7 +400,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [464, 368.0]
+    coordinate: [520, 368.0]
     rotation: 0
     state: true
 - name: audio_sink_0
@@ -421,7 +417,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1824, 648.0]
+    coordinate: [2016, 648.0]
     rotation: 0
     state: enabled
 - name: blocks_add_xx_0
@@ -439,7 +435,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1392, 600.0]
+    coordinate: [1520, 600.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_imag_0
@@ -455,7 +451,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 736.0]
+    coordinate: [976, 736.0]
     rotation: 0
     state: enabled
 - name: blocks_delay_0
@@ -475,7 +471,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [784, 592.0]
+    coordinate: [896, 592.0]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -493,7 +489,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1648, 608.0]
+    coordinate: [1816, 608.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0_0
@@ -511,7 +507,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1648, 696.0]
+    coordinate: [1816, 696.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_xx_0
@@ -529,7 +525,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [792, 720.0]
+    coordinate: [856, 720.0]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_1
@@ -547,7 +543,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1056, 704.0]
+    coordinate: [1152, 704.0]
     rotation: 0
     state: true
 - name: blocks_null_sink_0
@@ -564,7 +560,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1424, 864.0]
+    coordinate: [1648, 864.0]
     rotation: 0
     state: enabled
 - name: blocks_sub_xx_0
@@ -582,7 +578,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1392, 688.0]
+    coordinate: [1520, 688.0]
     rotation: 0
     state: enabled
 - name: digital_constellation_receiver_cb_0
@@ -602,7 +598,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1216, 832.0]
+    coordinate: [1360, 832.0]
     rotation: 0
     state: true
 - name: digital_diff_decoder_bb_0
@@ -619,7 +615,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1504, 816.0]
+    coordinate: [1744, 816.0]
     rotation: 0
     state: enabled
 - name: digital_symbol_sync_xx_0
@@ -646,7 +642,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [912, 836.0]
+    coordinate: [1016, 836.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_0
@@ -665,7 +661,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [392, 720.0]
+    coordinate: [400, 720.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_1
@@ -684,7 +680,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1168, 584.0]
+    coordinate: [1296, 584.0]
     rotation: 0
     state: enabled
 - name: fir_filter_xxx_1_0
@@ -703,7 +699,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1168, 704.0]
+    coordinate: [1296, 704.0]
     rotation: 0
     state: enabled
 - name: fir_filter_xxx_2
@@ -722,7 +718,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [568, 888.0]
+    coordinate: [648, 888.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -742,7 +738,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [240, 344.0]
+    coordinate: [272, 344.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_1_0
@@ -762,7 +758,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 872.0]
+    coordinate: [208, 872.0]
     rotation: 0
     state: enabled
 - name: import_0
@@ -809,7 +805,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [32, 320.0]
+    coordinate: [16, 320.0]
     rotation: 0
     state: enabled
 - name: note_0
@@ -915,7 +911,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1504, 936.0]
+    coordinate: [1744, 936.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -996,7 +992,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [464, 216.0]
+    coordinate: [520, 216.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -1077,7 +1073,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 216.0]
+    coordinate: [768, 216.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_1
@@ -1158,7 +1154,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [568, 968.0]
+    coordinate: [648, 968.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -1219,7 +1215,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 336.0]
+    coordinate: [768, 336.0]
     rotation: 0
     state: enabled
 - name: rational_resampler_xxx_0
@@ -1259,7 +1255,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [408, 872.0]
+    coordinate: [440, 872.0]
     rotation: 0
     state: true
 - name: rds_decoder_0
@@ -1276,7 +1272,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1680, 816.0]
+    coordinate: [1928, 816.0]
     rotation: 0
     state: true
 - name: rds_panel_0
@@ -1291,7 +1287,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1984, 832.0]
+    coordinate: [2232, 832.0]
     rotation: 0
     state: true
 - name: rds_parser_0
@@ -1310,7 +1306,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1824, 808.0]
+    coordinate: [2072, 808.0]
     rotation: 0
     state: true
 - name: virtual_sink_0
@@ -1323,7 +1319,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 440.0]
+    coordinate: [768, 440.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_1
@@ -1336,7 +1332,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 512.0]
+    coordinate: [768, 512.0]
     rotation: 0
     state: enabled
 - name: virtual_source_0
