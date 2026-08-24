@@ -2,8 +2,12 @@ Folders:
 --------------------
 ~/.gnuradio
 ~/.local/state/gnuradio
+
 /etc/gnuradio/conf.d
+
 /usr/share/gnuradio/grc/blocks
+/usr/share/gnuradio/examples/
+
 /usr/local/share/gnuradio/grc/blocks
 
 Drivers:
