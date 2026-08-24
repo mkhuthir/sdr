@@ -1,0 +1,7 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore compiled C extensions
+*.so
