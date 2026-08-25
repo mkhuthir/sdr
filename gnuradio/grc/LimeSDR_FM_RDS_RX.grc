@@ -1189,7 +1189,7 @@ blocks:
     fftsize: fft_size
     freqhalf: 'False'
     grid: 'True'
-    gui_hint: 9,27,2,173
+    gui_hint: 9,28,2,172
     int_max: '-10'
     int_min: '-100'
     label1: ''
