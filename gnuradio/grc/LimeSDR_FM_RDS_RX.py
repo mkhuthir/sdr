@@ -78,14 +78,15 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.RDS_sps = RDS_sps = 8
         self.samp_rate_audio_band = samp_rate_audio_band = int(samp_rate_audio_sink*5)
         self.samp_rate_FM = samp_rate_FM = int(200e3)
-        self.samp_rate = samp_rate = 2e6
+        self.samp_rate = samp_rate = 4e6
         self.rrc_taps = rrc_taps = firdes.root_raised_cosine(1.0, samp_rate_RDS,samp_rate_RDS/RDS_sps, 1.0, (11*RDS_sps))
         self.LO_freq = LO_freq = 94.4
         self.volume = volume = -6
+        self.update_period = update_period = 0.0100
         self.rrc_taps_manchester = rrc_taps_manchester = [rrc_taps[n] - rrc_taps[n+8] for n in range(len(rrc_taps)-8)]
         self.rf_gain = rf_gain = 25
         self.freq_tune = freq_tune = LO_freq*1e6
-        self.fft_size = fft_size = 1024
+        self.fft_size = fft_size = 2048
         self.RDS_freq = RDS_freq = 57000
         self.RDS_LPF_taps = RDS_LPF_taps = firdes.low_pass(1.0, samp_rate_FM, 7.5e3, 1e3, window.WIN_HAMMING, 6.76)
         self.Pilot_BPF_taps = Pilot_BPF_taps = firdes.complex_band_pass(1.0, samp_rate_audio_band, 18980, 19020, 1e3, window.WIN_HAMMING, 6.76)
@@ -97,35 +98,59 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         # Blocks
         ##################################################
 
-        self._volume_range = qtgui.Range(-20, 10, 1, -6, 200)
+        self._volume_range = qtgui.Range(-20, 10, 1, -6, 10)
         self._volume_win = qtgui.RangeWidget(self._volume_range, self.set_volume, "Volume", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._volume_win, 2, 0, 1, 100)
-        for r in range(2, 3):
+        self.top_grid_layout.addWidget(self._volume_win, 0, 100, 1, 100)
+        for r in range(0, 1):
             self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 100):
+        for c in range(100, 200):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self._rf_gain_range = qtgui.Range(0, 49.6, 1, 25, 200)
-        self._rf_gain_win = qtgui.RangeWidget(self._rf_gain_range, self.set_rf_gain, "RF Gain", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._rf_gain_win, 3, 0, 1, 100)
-        for r in range(3, 4):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 100):
-            self.top_grid_layout.setColumnStretch(c, 1)
-        self._LO_freq_range = qtgui.Range(87, 108, 0.1, 94.4, 200)
-        self._LO_freq_win = qtgui.RangeWidget(self._LO_freq_range, self.set_LO_freq, "LO Freq.", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._LO_freq_win, 1, 0, 1, 100)
+        self._update_period_range = qtgui.Range(0.0001, 0.0500, 0.0001, 0.0100, 10)
+        self._update_period_win = qtgui.RangeWidget(self._update_period_range, self.set_update_period, "Update", "counter_slider", float, QtCore.Qt.Horizontal)
+        self.top_grid_layout.addWidget(self._update_period_win, 1, 0, 1, 100)
         for r in range(1, 2):
+            self.top_grid_layout.setRowStretch(r, 1)
+        for c in range(0, 100):
+            self.top_grid_layout.setColumnStretch(c, 1)
+        self._rf_gain_range = qtgui.Range(0, 49.6, 1, 25, 10)
+        self._rf_gain_win = qtgui.RangeWidget(self._rf_gain_range, self.set_rf_gain, "RF Gain", "counter_slider", float, QtCore.Qt.Horizontal)
+        self.top_grid_layout.addWidget(self._rf_gain_win, 1, 100, 1, 100)
+        for r in range(1, 2):
+            self.top_grid_layout.setRowStretch(r, 1)
+        for c in range(100, 200):
+            self.top_grid_layout.setColumnStretch(c, 1)
+        self.main = Qt.QTabWidget()
+        self.main_widget_0 = Qt.QWidget()
+        self.main_layout_0 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.main_widget_0)
+        self.main_grid_layout_0 = Qt.QGridLayout()
+        self.main_layout_0.addLayout(self.main_grid_layout_0)
+        self.main.addTab(self.main_widget_0, 'FM MPX')
+        self.main_widget_1 = Qt.QWidget()
+        self.main_layout_1 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.main_widget_1)
+        self.main_grid_layout_1 = Qt.QGridLayout()
+        self.main_layout_1.addLayout(self.main_grid_layout_1)
+        self.main.addTab(self.main_widget_1, 'RDS')
+        self.main_widget_2 = Qt.QWidget()
+        self.main_layout_2 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.main_widget_2)
+        self.main_grid_layout_2 = Qt.QGridLayout()
+        self.main_layout_2.addLayout(self.main_grid_layout_2)
+        self.main.addTab(self.main_widget_2, 'Audio')
+        self.top_layout.addWidget(self.main)
+        self._LO_freq_range = qtgui.Range(87, 108, 0.1, 94.4, 10)
+        self._LO_freq_win = qtgui.RangeWidget(self._LO_freq_range, self.set_LO_freq, "LO Freq.", "counter_slider", float, QtCore.Qt.Horizontal)
+        self.top_grid_layout.addWidget(self._LO_freq_win, 0, 0, 1, 100)
+        for r in range(0, 1):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(0, 100):
             self.top_grid_layout.setColumnStretch(c, 1)
         self.rds_parser_0 = rds.parser(False, False, 0)
         self.rds_panel_0 = rds.rdsPanel((freq_tune/1e6))
         self._rds_panel_0_win = self.rds_panel_0
-        self.top_grid_layout.addWidget(self._rds_panel_0_win, 0, 0, 1, 100)
+        self.main_grid_layout_1.addWidget(self._rds_panel_0_win, 0, 0, 1, 200)
         for r in range(0, 1):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(0, 100):
-            self.top_grid_layout.setColumnStretch(c, 1)
+            self.main_grid_layout_1.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.main_grid_layout_1.setColumnStretch(c, 1)
         self.rds_decoder_0 = rds.decoder(False, False)
         self.rational_resampler_xxx_1 = filter.rational_resampler_ccc(
                 interpolation=samp_rate_RDS,
@@ -137,6 +162,46 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
                 decimation=samp_rate_FM,
                 taps=[],
                 fractional_bw=0)
+        self.qtgui_waterfall_sink_x_0_0 = qtgui.waterfall_sink_c(
+            fft_size, #size
+            window.WIN_BLACKMAN_hARRIS, #wintype
+            0, #fc
+            samp_rate_audio_sink, #bw
+            "", #name
+            1, #number of inputs
+            None # parent
+        )
+        self.qtgui_waterfall_sink_x_0_0.set_update_time(update_period)
+        self.qtgui_waterfall_sink_x_0_0.enable_grid(True)
+        self.qtgui_waterfall_sink_x_0_0.enable_axis_labels(False)
+
+        self.qtgui_waterfall_sink_x_0_0.disable_legend()
+
+
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        colors = [0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+                  1.0, 1.0, 1.0, 1.0, 1.0]
+
+        for i in range(1):
+            if len(labels[i]) == 0:
+                self.qtgui_waterfall_sink_x_0_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_waterfall_sink_x_0_0.set_line_label(i, labels[i])
+            self.qtgui_waterfall_sink_x_0_0.set_color_map(i, colors[i])
+            self.qtgui_waterfall_sink_x_0_0.set_line_alpha(i, alphas[i])
+
+        self.qtgui_waterfall_sink_x_0_0.set_intensity_range(-120, -10)
+
+        self._qtgui_waterfall_sink_x_0_0_win = sip.wrapinstance(self.qtgui_waterfall_sink_x_0_0.qwidget(), Qt.QWidget)
+
+        self.main_grid_layout_2.addWidget(self._qtgui_waterfall_sink_x_0_0_win, 1, 4, 1, 196)
+        for r in range(1, 2):
+            self.main_grid_layout_2.setRowStretch(r, 1)
+        for c in range(4, 200):
+            self.main_grid_layout_2.setColumnStretch(c, 1)
         self.qtgui_waterfall_sink_x_0 = qtgui.waterfall_sink_f(
             fft_size, #size
             window.WIN_BLACKMAN_hARRIS, #wintype
@@ -146,7 +211,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             1, #number of inputs
             None # parent
         )
-        self.qtgui_waterfall_sink_x_0.set_update_time(0.10)
+        self.qtgui_waterfall_sink_x_0.set_update_time(update_period)
         self.qtgui_waterfall_sink_x_0.enable_grid(True)
         self.qtgui_waterfall_sink_x_0.enable_axis_labels(False)
 
@@ -173,22 +238,116 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
 
         self._qtgui_waterfall_sink_x_0_win = sip.wrapinstance(self.qtgui_waterfall_sink_x_0.qwidget(), Qt.QWidget)
 
-        self.top_grid_layout.addWidget(self._qtgui_waterfall_sink_x_0_win, 9, 28, 2, 172)
+        self.main_grid_layout_0.addWidget(self._qtgui_waterfall_sink_x_0_win, 4, 4, 2, 196)
+        for r in range(4, 6):
+            self.main_grid_layout_0.setRowStretch(r, 1)
+        for c in range(4, 200):
+            self.main_grid_layout_0.setColumnStretch(c, 1)
+        self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
+            104, #size
+            samp_rate_RDS, #samp_rate
+            'RDS Bits', #name
+            1, #number of inputs
+            None # parent
+        )
+        self.qtgui_time_sink_x_0.set_update_time(update_period)
+        self.qtgui_time_sink_x_0.set_y_axis(-0.1, 1.1)
+
+        self.qtgui_time_sink_x_0.set_y_label("", "")
+
+        self.qtgui_time_sink_x_0.enable_tags(False)
+        self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
+        self.qtgui_time_sink_x_0.enable_autoscale(True)
+        self.qtgui_time_sink_x_0.enable_grid(True)
+        self.qtgui_time_sink_x_0.enable_axis_labels(True)
+        self.qtgui_time_sink_x_0.enable_control_panel(False)
+        self.qtgui_time_sink_x_0.enable_stem_plot(False)
+
+        self.qtgui_time_sink_x_0.disable_legend()
+
+        labels = ['Signal 1', 'Signal 2', 'Signal 3', 'Signal 4', 'Signal 5',
+            'Signal 6', 'Signal 7', 'Signal 8', 'Signal 9', 'Signal 10']
+        widths = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        colors = ['green', 'red', 'green', 'black', 'cyan',
+            'magenta', 'yellow', 'dark red', 'dark green', 'dark blue']
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0]
+        styles = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        markers = [-1, -1, -1, -1, -1,
+            -1, -1, -1, -1, -1]
+
+
+        for i in range(1):
+            if len(labels[i]) == 0:
+                self.qtgui_time_sink_x_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_time_sink_x_0.set_line_label(i, labels[i])
+            self.qtgui_time_sink_x_0.set_line_width(i, widths[i])
+            self.qtgui_time_sink_x_0.set_line_color(i, colors[i])
+            self.qtgui_time_sink_x_0.set_line_style(i, styles[i])
+            self.qtgui_time_sink_x_0.set_line_marker(i, markers[i])
+            self.qtgui_time_sink_x_0.set_line_alpha(i, alphas[i])
+
+        self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.qwidget(), Qt.QWidget)
+        self.main_grid_layout_1.addWidget(self._qtgui_time_sink_x_0_win, 7, 20, 2, 171)
+        for r in range(7, 9):
+            self.main_grid_layout_1.setRowStretch(r, 1)
+        for c in range(20, 191):
+            self.main_grid_layout_1.setColumnStretch(c, 1)
+        self.qtgui_time_raster_sink_x_0 = qtgui.time_raster_sink_f(
+            samp_rate_RDS,
+            25,
+            104,
+            [],
+            [],
+            "",
+            1,
+            None
+        )
+
+        self.qtgui_time_raster_sink_x_0.set_update_time(update_period)
+        self.qtgui_time_raster_sink_x_0.set_intensity_range((-1), 1)
+        self.qtgui_time_raster_sink_x_0.enable_grid(True)
+        self.qtgui_time_raster_sink_x_0.enable_axis_labels(True)
+        self.qtgui_time_raster_sink_x_0.set_x_label("")
+        self.qtgui_time_raster_sink_x_0.set_x_range(0.0, 0.0)
+        self.qtgui_time_raster_sink_x_0.set_y_label("")
+        self.qtgui_time_raster_sink_x_0.set_y_range(0.0, 0.0)
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [2, 0, 0, 0, 0,
+            0, 0, 0, 0, 0]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0]
+
+        for i in range(1):
+            if len(labels[i]) == 0:
+                self.qtgui_time_raster_sink_x_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_time_raster_sink_x_0.set_line_label(i, labels[i])
+            self.qtgui_time_raster_sink_x_0.set_color_map(i, colors[i])
+            self.qtgui_time_raster_sink_x_0.set_line_alpha(i, alphas[i])
+
+        self._qtgui_time_raster_sink_x_0_win = sip.wrapinstance(self.qtgui_time_raster_sink_x_0.qwidget(), Qt.QWidget)
+        self.main_grid_layout_1.addWidget(self._qtgui_time_raster_sink_x_0_win, 9, 23, 2, 175)
         for r in range(9, 11):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(28, 200):
-            self.top_grid_layout.setColumnStretch(c, 1)
+            self.main_grid_layout_1.setRowStretch(r, 1)
+        for c in range(23, 198):
+            self.main_grid_layout_1.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_1 = qtgui.freq_sink_c(
             fft_size, #size
             window.WIN_BLACKMAN_hARRIS, #wintype
-            0, #fc
+            RDS_freq, #fc
             samp_rate_RDS, #bw
             '', #name
             1,
             None # parent
         )
-        self.qtgui_freq_sink_x_1.set_update_time(0.10)
-        self.qtgui_freq_sink_x_1.set_y_axis((-100), (-55))
+        self.qtgui_freq_sink_x_1.set_update_time(update_period)
+        self.qtgui_freq_sink_x_1.set_y_axis((-120), (-20))
         self.qtgui_freq_sink_x_1.set_y_label('Relative Gain', 'dB')
         self.qtgui_freq_sink_x_1.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
         self.qtgui_freq_sink_x_1.enable_autoscale(False)
@@ -220,11 +379,58 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.qtgui_freq_sink_x_1.set_line_alpha(i, alphas[i])
 
         self._qtgui_freq_sink_x_1_win = sip.wrapinstance(self.qtgui_freq_sink_x_1.qwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_freq_sink_x_1_win, 9, 0, 2, 20)
+        self.main_grid_layout_1.addWidget(self._qtgui_freq_sink_x_1_win, 9, 0, 2, 20)
         for r in range(9, 11):
-            self.top_grid_layout.setRowStretch(r, 1)
+            self.main_grid_layout_1.setRowStretch(r, 1)
         for c in range(0, 20):
-            self.top_grid_layout.setColumnStretch(c, 1)
+            self.main_grid_layout_1.setColumnStretch(c, 1)
+        self.qtgui_freq_sink_x_0_1 = qtgui.freq_sink_c(
+            fft_size, #size
+            window.WIN_BLACKMAN_hARRIS, #wintype
+            freq_tune, #fc
+            samp_rate, #bw
+            "Baseband Signal", #name
+            1,
+            None # parent
+        )
+        self.qtgui_freq_sink_x_0_1.set_update_time(update_period)
+        self.qtgui_freq_sink_x_0_1.set_y_axis((-100), (-10))
+        self.qtgui_freq_sink_x_0_1.set_y_label('Relative Gain', 'dB')
+        self.qtgui_freq_sink_x_0_1.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
+        self.qtgui_freq_sink_x_0_1.enable_autoscale(False)
+        self.qtgui_freq_sink_x_0_1.enable_grid(True)
+        self.qtgui_freq_sink_x_0_1.set_fft_average(0.2)
+        self.qtgui_freq_sink_x_0_1.enable_axis_labels(True)
+        self.qtgui_freq_sink_x_0_1.enable_control_panel(False)
+        self.qtgui_freq_sink_x_0_1.set_fft_window_normalized(False)
+
+        self.qtgui_freq_sink_x_0_1.disable_legend()
+
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        widths = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        colors = ["green", "red", "green", "black", "cyan",
+            "magenta", "yellow", "dark red", "dark green", "dark blue"]
+        alphas = [1, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0]
+
+        for i in range(1):
+            if len(labels[i]) == 0:
+                self.qtgui_freq_sink_x_0_1.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_freq_sink_x_0_1.set_line_label(i, labels[i])
+            self.qtgui_freq_sink_x_0_1.set_line_width(i, widths[i])
+            self.qtgui_freq_sink_x_0_1.set_line_color(i, colors[i])
+            self.qtgui_freq_sink_x_0_1.set_line_alpha(i, alphas[i])
+
+        self._qtgui_freq_sink_x_0_1_win = sip.wrapinstance(self.qtgui_freq_sink_x_0_1.qwidget(), Qt.QWidget)
+        self.main_grid_layout_0.addWidget(self._qtgui_freq_sink_x_0_1_win, 0, 0, 2, 200)
+        for r in range(0, 2):
+            self.main_grid_layout_0.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.main_grid_layout_0.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_0_0 = qtgui.freq_sink_f(
             fft_size, #size
             window.WIN_BLACKMAN_hARRIS, #wintype
@@ -234,9 +440,9 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             1,
             None # parent
         )
-        self.qtgui_freq_sink_x_0_0.set_update_time(0.10)
+        self.qtgui_freq_sink_x_0_0.set_update_time(update_period)
         self.qtgui_freq_sink_x_0_0.set_y_axis((-100), (-10))
-        self.qtgui_freq_sink_x_0_0.set_y_label('Relative Gain', 'dB')
+        self.qtgui_freq_sink_x_0_0.set_y_label("", 'dB')
         self.qtgui_freq_sink_x_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
         self.qtgui_freq_sink_x_0_0.enable_autoscale(False)
         self.qtgui_freq_sink_x_0_0.enable_grid(True)
@@ -268,22 +474,22 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.qtgui_freq_sink_x_0_0.set_line_alpha(i, alphas[i])
 
         self._qtgui_freq_sink_x_0_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0_0.qwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_freq_sink_x_0_0_win, 7, 20, 2, 180)
-        for r in range(7, 9):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(20, 200):
-            self.top_grid_layout.setColumnStretch(c, 1)
+        self.main_grid_layout_0.addWidget(self._qtgui_freq_sink_x_0_0_win, 2, 0, 2, 200)
+        for r in range(2, 4):
+            self.main_grid_layout_0.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.main_grid_layout_0.setColumnStretch(c, 1)
         self.qtgui_freq_sink_x_0 = qtgui.freq_sink_c(
             fft_size, #size
             window.WIN_BLACKMAN_hARRIS, #wintype
-            freq_tune, #fc
-            samp_rate_FM, #bw
-            "Selected FM Channel", #name
+            0, #fc
+            samp_rate_audio_sink, #bw
+            "", #name
             1,
             None # parent
         )
-        self.qtgui_freq_sink_x_0.set_update_time(0.10)
-        self.qtgui_freq_sink_x_0.set_y_axis((-100), (-10))
+        self.qtgui_freq_sink_x_0.set_update_time(update_period)
+        self.qtgui_freq_sink_x_0.set_y_axis((-120), (-10))
         self.qtgui_freq_sink_x_0.set_y_label('Relative Gain', 'dB')
         self.qtgui_freq_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
         self.qtgui_freq_sink_x_0.enable_autoscale(False)
@@ -300,9 +506,9 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             '', '', '', '', '']
         widths = [1, 1, 1, 1, 1,
             1, 1, 1, 1, 1]
-        colors = ["green", "red", "green", "black", "cyan",
+        colors = ["blue", "red", "green", "black", "cyan",
             "magenta", "yellow", "dark red", "dark green", "dark blue"]
-        alphas = [1, 1.0, 1.0, 1.0, 1.0,
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
             1.0, 1.0, 1.0, 1.0, 1.0]
 
         for i in range(1):
@@ -315,11 +521,11 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.qtgui_freq_sink_x_0.set_line_alpha(i, alphas[i])
 
         self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.qwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_freq_sink_x_0_win, 0, 100, 4, 100)
-        for r in range(0, 4):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(100, 200):
-            self.top_grid_layout.setColumnStretch(c, 1)
+        self.main_grid_layout_2.addWidget(self._qtgui_freq_sink_x_0_win, 0, 0, 1, 200)
+        for r in range(0, 1):
+            self.main_grid_layout_2.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.main_grid_layout_2.setColumnStretch(c, 1)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
             1024, #size
             "RDS Constellation", #name
@@ -361,11 +567,11 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.qtgui_const_sink_x_0.set_line_alpha(i, alphas[i])
 
         self._qtgui_const_sink_x_0_win = sip.wrapinstance(self.qtgui_const_sink_x_0.qwidget(), Qt.QWidget)
-        self.top_grid_layout.addWidget(self._qtgui_const_sink_x_0_win, 7, 0, 2, 20)
+        self.main_grid_layout_1.addWidget(self._qtgui_const_sink_x_0_win, 7, 0, 2, 20)
         for r in range(7, 9):
-            self.top_grid_layout.setRowStretch(r, 1)
+            self.main_grid_layout_1.setRowStretch(r, 1)
         for c in range(0, 20):
-            self.top_grid_layout.setColumnStretch(c, 1)
+            self.main_grid_layout_1.setColumnStretch(c, 1)
         self.limesuiteng_sdrdevice_source_0 = limesuiteng.sdrdevice_source('', '', 0, [0], "complex32f_t", "complex16_t", samp_rate, 0)
         self.limesuiteng_sdrdevice_source_0.set_lo_frequency(LO_freq*1e6)
         self.limesuiteng_sdrdevice_source_0.set_gfir_bandwidth(0)
@@ -409,8 +615,10 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.blocks_multiply_xx_0 = blocks.multiply_vcc(1)
         self.blocks_multiply_const_vxx_0_0 = blocks.multiply_const_ff((10**(1.*(volume)/10)))
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_ff((10**(1.*(volume)/10)))
+        self.blocks_float_to_complex_0 = blocks.float_to_complex(1)
         self.blocks_delay_0 = blocks.delay(gr.sizeof_float*1, ((len(Pilot_BPF_taps) - 1) // 2))
         self.blocks_complex_to_imag_0 = blocks.complex_to_imag(1)
+        self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
         self.blocks_add_xx_0 = blocks.add_vff(1)
         self.audio_sink_0 = audio.sink(48000, '', True)
         self.analog_quadrature_demod_cf_0 = analog.quadrature_demod_cf((samp_rate_FM / (2*math.pi*75e3)))
@@ -426,28 +634,36 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.msg_connect((self.rds_decoder_0, 'out'), (self.rds_parser_0, 'in'))
         self.msg_connect((self.rds_parser_0, 'out'), (self.rds_panel_0, 'in'))
         self.connect((self.analog_agc_xx_0, 0), (self.digital_symbol_sync_xx_0, 0))
+        self.connect((self.analog_agc_xx_0, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.analog_fm_deemph_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
         self.connect((self.analog_fm_deemph_0_0_0, 0), (self.blocks_multiply_const_vxx_0, 0))
-        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
         self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
+        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_1_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_waterfall_sink_x_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.rational_resampler_xxx_0, 0))
         self.connect((self.blocks_add_xx_0, 0), (self.analog_fm_deemph_0_0_0, 0))
+        self.connect((self.blocks_char_to_float_0, 0), (self.qtgui_time_raster_sink_x_0, 0))
+        self.connect((self.blocks_char_to_float_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_complex_to_imag_0, 0), (self.blocks_multiply_xx_1, 1))
         self.connect((self.blocks_delay_0, 0), (self.blocks_multiply_xx_1, 0))
         self.connect((self.blocks_delay_0, 0), (self.fir_filter_xxx_1, 0))
+        self.connect((self.blocks_float_to_complex_0, 0), (self.qtgui_freq_sink_x_0, 0))
+        self.connect((self.blocks_float_to_complex_0, 0), (self.qtgui_waterfall_sink_x_0_0, 0))
         self.connect((self.blocks_multiply_const_vxx_0, 0), (self.audio_sink_0, 0))
+        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.blocks_float_to_complex_0, 0))
         self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.audio_sink_0, 1))
+        self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.blocks_float_to_complex_0, 1))
         self.connect((self.blocks_multiply_xx_0, 0), (self.blocks_complex_to_imag_0, 0))
         self.connect((self.blocks_multiply_xx_1, 0), (self.fir_filter_xxx_1_0, 0))
         self.connect((self.blocks_sub_xx_0, 0), (self.analog_fm_deemph_0_0, 0))
-        self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
         self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
+        self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
         self.connect((self.digital_constellation_receiver_cb_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 4), (self.qtgui_const_sink_x_0, 0))
+        self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_char_to_float_0, 0))
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.rds_decoder_0, 0))
         self.connect((self.digital_symbol_sync_xx_0, 0), (self.digital_constellation_receiver_cb_0, 0))
         self.connect((self.fir_filter_xxx_0, 0), (self.analog_pll_refout_cc_0, 0))
@@ -457,13 +673,12 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.fir_filter_xxx_1_0, 0), (self.blocks_sub_xx_0, 1))
         self.connect((self.fir_filter_xxx_2, 0), (self.analog_agc_xx_0, 0))
         self.connect((self.freq_xlating_fir_filter_xxx_0, 0), (self.analog_quadrature_demod_cf_0, 0))
-        self.connect((self.freq_xlating_fir_filter_xxx_0, 0), (self.qtgui_freq_sink_x_0, 0))
         self.connect((self.freq_xlating_fir_filter_xxx_1_0, 0), (self.rational_resampler_xxx_1, 0))
         self.connect((self.limesuiteng_sdrdevice_source_0, 0), (self.freq_xlating_fir_filter_xxx_0, 0))
+        self.connect((self.limesuiteng_sdrdevice_source_0, 0), (self.qtgui_freq_sink_x_0_1, 0))
         self.connect((self.rational_resampler_xxx_0, 0), (self.blocks_delay_0, 0))
         self.connect((self.rational_resampler_xxx_0, 0), (self.fir_filter_xxx_0, 0))
         self.connect((self.rational_resampler_xxx_1, 0), (self.fir_filter_xxx_2, 0))
-        self.connect((self.rational_resampler_xxx_1, 0), (self.qtgui_freq_sink_x_1, 0))
 
 
     def closeEvent(self, event):
@@ -480,6 +695,8 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_samp_rate_audio_sink(self, samp_rate_audio_sink):
         self.samp_rate_audio_sink = samp_rate_audio_sink
         self.set_samp_rate_audio_band(int(self.samp_rate_audio_sink*5))
+        self.qtgui_freq_sink_x_0.set_frequency_range(0, self.samp_rate_audio_sink)
+        self.qtgui_waterfall_sink_x_0_0.set_frequency_range(0, self.samp_rate_audio_sink)
 
     def get_samp_rate_RDS(self):
         return self.samp_rate_RDS
@@ -487,7 +704,8 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_samp_rate_RDS(self, samp_rate_RDS):
         self.samp_rate_RDS = samp_rate_RDS
         self.set_rrc_taps(firdes.root_raised_cosine(1.0, self.samp_rate_RDS, self.samp_rate_RDS/self.RDS_sps, 1.0, (11*self.RDS_sps)))
-        self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate_RDS)
+        self.qtgui_freq_sink_x_1.set_frequency_range(self.RDS_freq, self.samp_rate_RDS)
+        self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate_RDS)
 
     def get_RDS_sps(self):
         return self.RDS_sps
@@ -513,7 +731,6 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.samp_rate_FM = samp_rate_FM
         self.set_RDS_LPF_taps(firdes.low_pass(1.0, self.samp_rate_FM, 7.5e3, 1e3, window.WIN_HAMMING, 6.76))
         self.analog_quadrature_demod_cf_0.set_gain((self.samp_rate_FM / (2*math.pi*75e3)))
-        self.qtgui_freq_sink_x_0.set_frequency_range(self.freq_tune, self.samp_rate_FM)
         self.qtgui_freq_sink_x_0_0.set_frequency_range(0, self.samp_rate_FM)
         self.qtgui_waterfall_sink_x_0.set_frequency_range(0, self.samp_rate_FM)
 
@@ -523,6 +740,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self.set_Ch_LPF_taps(firdes.low_pass(1.0, self.samp_rate, 135e3, 1e3, window.WIN_HAMMING, 6.76))
+        self.qtgui_freq_sink_x_0_1.set_frequency_range(self.freq_tune, self.samp_rate)
 
     def get_rrc_taps(self):
         return self.rrc_taps
@@ -547,6 +765,20 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.blocks_multiply_const_vxx_0.set_k((10**(1.*(self.volume)/10)))
         self.blocks_multiply_const_vxx_0_0.set_k((10**(1.*(self.volume)/10)))
 
+    def get_update_period(self):
+        return self.update_period
+
+    def set_update_period(self, update_period):
+        self.update_period = update_period
+        self.qtgui_freq_sink_x_0.set_update_time(self.update_period)
+        self.qtgui_freq_sink_x_0_0.set_update_time(self.update_period)
+        self.qtgui_freq_sink_x_0_1.set_update_time(self.update_period)
+        self.qtgui_freq_sink_x_1.set_update_time(self.update_period)
+        self.qtgui_time_raster_sink_x_0.set_update_time(self.update_period)
+        self.qtgui_time_sink_x_0.set_update_time(self.update_period)
+        self.qtgui_waterfall_sink_x_0.set_update_time(self.update_period)
+        self.qtgui_waterfall_sink_x_0_0.set_update_time(self.update_period)
+
     def get_rrc_taps_manchester(self):
         return self.rrc_taps_manchester
 
@@ -566,7 +798,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
 
     def set_freq_tune(self, freq_tune):
         self.freq_tune = freq_tune
-        self.qtgui_freq_sink_x_0.set_frequency_range(self.freq_tune, self.samp_rate_FM)
+        self.qtgui_freq_sink_x_0_1.set_frequency_range(self.freq_tune, self.samp_rate)
         self.rds_panel_0.set_frequency((self.freq_tune/1e6))
         self.rds_parser_0.reset() # self.freq_tune
 
@@ -582,6 +814,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_RDS_freq(self, RDS_freq):
         self.RDS_freq = RDS_freq
         self.freq_xlating_fir_filter_xxx_1_0.set_center_freq(self.RDS_freq)
+        self.qtgui_freq_sink_x_1.set_frequency_range(self.RDS_freq, self.samp_rate_RDS)
 
     def get_RDS_LPF_taps(self):
         return self.RDS_LPF_taps
