@@ -89,36 +89,59 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.fft_size = fft_size = 2048
         self.RDS_freq = RDS_freq = 57000
         self.RDS_LPF_taps = RDS_LPF_taps = firdes.low_pass(1.0, samp_rate_FM, 7.5e3, 1e3, window.WIN_HAMMING, 6.76)
+        self.RDS2_DS3 = RDS2_DS3 = 76000
+        self.RDS2_DS2 = RDS2_DS2 = 71250
+        self.RDS2_DS1 = RDS2_DS1 = 66500
         self.Pilot_BPF_taps = Pilot_BPF_taps = firdes.complex_band_pass(1.0, samp_rate_audio_band, 18980, 19020, 1e3, window.WIN_HAMMING, 6.76)
         self.LR_LPF_taps = LR_LPF_taps = firdes.low_pass(1.0, samp_rate_audio_band, 15e3, 1e3, window.WIN_HAMMING, 6.76)
         self.Ch_LPF_taps = Ch_LPF_taps = firdes.low_pass(1.0, samp_rate, 135e3, 1e3, window.WIN_HAMMING, 6.76)
-        self.CSA_freq = CSA_freq = 76000
 
         ##################################################
         # Blocks
         ##################################################
 
-        self._volume_range = qtgui.Range(-20, 1, 0.5, -6, 10)
-        self._volume_win = qtgui.RangeWidget(self._volume_range, self.set_volume, "Volume", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._volume_win, 0, 100, 1, 100)
+        self.ctrl = Qt.QTabWidget()
+        self.ctrl_widget_0 = Qt.QWidget()
+        self.ctrl_layout_0 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.ctrl_widget_0)
+        self.ctrl_grid_layout_0 = Qt.QGridLayout()
+        self.ctrl_layout_0.addLayout(self.ctrl_grid_layout_0)
+        self.ctrl.addTab(self.ctrl_widget_0, 'Tuining')
+        self.ctrl_widget_1 = Qt.QWidget()
+        self.ctrl_layout_1 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.ctrl_widget_1)
+        self.ctrl_grid_layout_1 = Qt.QGridLayout()
+        self.ctrl_layout_1.addLayout(self.ctrl_grid_layout_1)
+        self.ctrl.addTab(self.ctrl_widget_1, 'SDR')
+        self.ctrl_widget_2 = Qt.QWidget()
+        self.ctrl_layout_2 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.ctrl_widget_2)
+        self.ctrl_grid_layout_2 = Qt.QGridLayout()
+        self.ctrl_layout_2.addLayout(self.ctrl_grid_layout_2)
+        self.ctrl.addTab(self.ctrl_widget_2, 'GUI')
+        self.top_grid_layout.addWidget(self.ctrl, 0, 0, 1, 200)
         for r in range(0, 1):
             self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(100, 200):
+        for c in range(0, 200):
             self.top_grid_layout.setColumnStretch(c, 1)
-        self._update_period_range = qtgui.Range(0.0001, 0.0500, 0.0001, 0.0100, 10)
-        self._update_period_win = qtgui.RangeWidget(self._update_period_range, self.set_update_period, "Update", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._update_period_win, 1, 0, 1, 100)
+        self._volume_range = qtgui.Range(-20, 1, 0.5, -6, 10)
+        self._volume_win = qtgui.RangeWidget(self._volume_range, self.set_volume, "Volume", "counter_slider", float, QtCore.Qt.Horizontal)
+        self.ctrl_grid_layout_0.addWidget(self._volume_win, 1, 0, 1, 100)
         for r in range(1, 2):
-            self.top_grid_layout.setRowStretch(r, 1)
+            self.ctrl_grid_layout_0.setRowStretch(r, 1)
         for c in range(0, 100):
-            self.top_grid_layout.setColumnStretch(c, 1)
+            self.ctrl_grid_layout_0.setColumnStretch(c, 1)
+        self._update_period_range = qtgui.Range(0.0001, 0.0500, 0.0001, 0.0100, 10)
+        self._update_period_win = qtgui.RangeWidget(self._update_period_range, self.set_update_period, "Update", "eng_slider", float, QtCore.Qt.Horizontal)
+        self.ctrl_grid_layout_2.addWidget(self._update_period_win, 0, 0, 1, 200)
+        for r in range(0, 1):
+            self.ctrl_grid_layout_2.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.ctrl_grid_layout_2.setColumnStretch(c, 1)
         self._rf_gain_range = qtgui.Range(0, 49.6, 1, 25, 10)
         self._rf_gain_win = qtgui.RangeWidget(self._rf_gain_range, self.set_rf_gain, "RF Gain", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._rf_gain_win, 1, 100, 1, 100)
-        for r in range(1, 2):
-            self.top_grid_layout.setRowStretch(r, 1)
-        for c in range(100, 200):
-            self.top_grid_layout.setColumnStretch(c, 1)
+        self.ctrl_grid_layout_1.addWidget(self._rf_gain_win, 0, 0, 1, 200)
+        for r in range(0, 1):
+            self.ctrl_grid_layout_1.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.ctrl_grid_layout_1.setColumnStretch(c, 1)
         self.main = Qt.QTabWidget()
         self.main_widget_0 = Qt.QWidget()
         self.main_layout_0 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.main_widget_0)
@@ -139,15 +162,19 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.main_layout_3 = Qt.QBoxLayout(Qt.QBoxLayout.TopToBottom, self.main_widget_3)
         self.main_grid_layout_3 = Qt.QGridLayout()
         self.main_layout_3.addLayout(self.main_grid_layout_3)
-        self.main.addTab(self.main_widget_3, 'FM RDS')
-        self.top_layout.addWidget(self.main)
+        self.main.addTab(self.main_widget_3, 'FM RDS1')
+        self.top_grid_layout.addWidget(self.main, 1, 0, 1, 200)
+        for r in range(1, 2):
+            self.top_grid_layout.setRowStretch(r, 1)
+        for c in range(0, 200):
+            self.top_grid_layout.setColumnStretch(c, 1)
         self._LO_freq_range = qtgui.Range(87, 108, 0.1, 94.4, 10)
         self._LO_freq_win = qtgui.RangeWidget(self._LO_freq_range, self.set_LO_freq, "LO Freq.", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.top_grid_layout.addWidget(self._LO_freq_win, 0, 0, 1, 100)
+        self.ctrl_grid_layout_0.addWidget(self._LO_freq_win, 0, 0, 1, 100)
         for r in range(0, 1):
-            self.top_grid_layout.setRowStretch(r, 1)
+            self.ctrl_grid_layout_0.setRowStretch(r, 1)
         for c in range(0, 100):
-            self.top_grid_layout.setColumnStretch(c, 1)
+            self.ctrl_grid_layout_0.setColumnStretch(c, 1)
         self.rds_parser_0 = rds.parser(False, False, 0)
         self.rds_panel_0 = rds.rdsPanel((freq_tune/1e6))
         self._rds_panel_0_win = self.rds_panel_0
@@ -291,7 +318,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
             104, #size
             samp_rate_RDS, #samp_rate
-            'RDS Bits', #name
+            'RDS1 Bits', #name
             1, #number of inputs
             None # parent
         )
@@ -481,7 +508,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             window.WIN_BLACKMAN_hARRIS, #wintype
             0, #fc
             samp_rate_FM, #bw
-            "FM MPX", #name
+            "FM MPX Spectrum", #name
             1,
             None # parent
         )
@@ -573,7 +600,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.main_grid_layout_2.setColumnStretch(c, 1)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
             1024, #size
-            "RDS Constellation", #name
+            "RDS1 Constellation", #name
             1, #number of inputs
             None # parent
         )
@@ -685,8 +712,8 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.analog_agc_xx_0, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.analog_fm_deemph_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
         self.connect((self.analog_fm_deemph_0_0_0, 0), (self.blocks_multiply_const_vxx_0, 0))
-        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
         self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
+        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_1_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_waterfall_sink_x_0, 0))
@@ -708,9 +735,9 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_null_source_0, 0), (self.blocks_throttle2_0, 0))
         self.connect((self.blocks_sub_xx_0, 0), (self.analog_fm_deemph_0_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.blocks_null_sink_1, 0))
+        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
-        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 4), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_char_to_float_0, 0))
@@ -877,6 +904,24 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.RDS_LPF_taps = RDS_LPF_taps
         self.freq_xlating_fir_filter_xxx_1_0.set_taps(self.RDS_LPF_taps)
 
+    def get_RDS2_DS3(self):
+        return self.RDS2_DS3
+
+    def set_RDS2_DS3(self, RDS2_DS3):
+        self.RDS2_DS3 = RDS2_DS3
+
+    def get_RDS2_DS2(self):
+        return self.RDS2_DS2
+
+    def set_RDS2_DS2(self, RDS2_DS2):
+        self.RDS2_DS2 = RDS2_DS2
+
+    def get_RDS2_DS1(self):
+        return self.RDS2_DS1
+
+    def set_RDS2_DS1(self, RDS2_DS1):
+        self.RDS2_DS1 = RDS2_DS1
+
     def get_Pilot_BPF_taps(self):
         return self.Pilot_BPF_taps
 
@@ -899,12 +944,6 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_Ch_LPF_taps(self, Ch_LPF_taps):
         self.Ch_LPF_taps = Ch_LPF_taps
         self.freq_xlating_fir_filter_xxx_0.set_taps(self.Ch_LPF_taps)
-
-    def get_CSA_freq(self):
-        return self.CSA_freq
-
-    def set_CSA_freq(self, CSA_freq):
-        self.CSA_freq = CSA_freq
 
 
 

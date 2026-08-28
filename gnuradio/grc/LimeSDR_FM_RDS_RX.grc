@@ -29,18 +29,6 @@ options:
     state: enabled
 
 blocks:
-- name: CSA_freq
-  id: variable
-  parameters:
-    comment: ''
-    value: '76000'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1072, 368.0]
-    rotation: 0
-    state: enabled
 - name: Ch_LPF_taps
   id: variable_low_pass_filter_taps
   parameters:
@@ -63,7 +51,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 0, 0,1, 100
+    gui_hint: ctrl@0:0, 0,1, 100
     label: LO Freq.
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -77,7 +65,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [424, 16.0]
+    coordinate: [416, 136.0]
     rotation: 0
     state: true
 - name: LR_LPF_taps
@@ -95,7 +83,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1360, 16.0]
+    coordinate: [1424, 16.0]
     rotation: 0
     state: enabled
 - name: Pilot_BPF_taps
@@ -118,6 +106,42 @@ blocks:
     coordinate: [904, 20.0]
     rotation: 0
     state: true
+- name: RDS2_DS1
+  id: variable
+  parameters:
+    comment: ''
+    value: '66500'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1192, 224.0]
+    rotation: 0
+    state: enabled
+- name: RDS2_DS2
+  id: variable
+  parameters:
+    comment: ''
+    value: '71250'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1192, 296.0]
+    rotation: 0
+    state: enabled
+- name: RDS2_DS3
+  id: variable
+  parameters:
+    comment: ''
+    value: '76000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1192, 368.0]
+    rotation: 0
+    state: enabled
 - name: RDS_LPF_taps
   id: variable_low_pass_filter_taps
   parameters:
@@ -169,7 +193,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [272, 152.0]
+    coordinate: [184, 72.0]
     rotation: 0
     state: enabled
 - name: freq_tune
@@ -188,7 +212,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 1,100,1, 100
+    gui_hint: ctrl@1:0,0,1,200
     label: RF Gain
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -202,7 +226,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [544, 152.0]
+    coordinate: [536, 272.0]
     rotation: 0
     state: true
 - name: rrc_taps
@@ -219,7 +243,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1216, 16.0]
+    coordinate: [1280, 16.0]
     rotation: 0
     state: true
 - name: rrc_taps_manchester
@@ -231,7 +255,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1216, 152.0]
+    coordinate: [1280, 152.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -279,7 +303,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1360, 152.0]
+    coordinate: [1424, 152.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio_sink
@@ -291,14 +315,14 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1360, 224.0]
+    coordinate: [1424, 224.0]
     rotation: 0
     state: enabled
 - name: update_period
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 1,0,1, 100
+    gui_hint: ctrl@2:0,0,1,200
     label: Update
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -307,19 +331,19 @@ blocks:
     step: '0.0001'
     stop: '0.0500'
     value: '0.0100'
-    widget: counter_slider
+    widget: eng_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [424, 152.0]
+    coordinate: [536, 136.0]
     rotation: 0
     state: true
 - name: volume
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: 0,100,1, 100
+    gui_hint: ctrl@0:1,0,1, 100
     label: Volume
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -333,7 +357,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [544, 16.0]
+    coordinate: [416, 272.0]
     rotation: 0
     state: true
 - name: analog_agc_xx_0
@@ -631,7 +655,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [304, 344.0]
+    coordinate: [1256, 568.0]
     rotation: 0
     state: enabled
 - name: blocks_null_source_0
@@ -650,7 +674,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [16, 344.0]
+    coordinate: [960, 568.0]
     rotation: 0
     state: enabled
 - name: blocks_sub_xx_0
@@ -689,7 +713,41 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [144, 328.0]
+    coordinate: [1096, 552.0]
+    rotation: 0
+    state: enabled
+- name: ctrl
+  id: qtgui_tab_widget
+  parameters:
+    alias: ''
+    comment: ''
+    gui_hint: 0,0,1,200
+    label0: Tuining
+    label1: SDR
+    label10: Tab 10
+    label11: Tab 11
+    label12: Tab 12
+    label13: Tab 13
+    label14: Tab 14
+    label15: Tab 15
+    label16: Tab 16
+    label17: Tab 17
+    label18: Tab 18
+    label19: Tab 19
+    label2: GUI
+    label3: FM RDS
+    label4: Tab 4
+    label5: Tab 5
+    label6: Tab 6
+    label7: Tab 7
+    label8: Tab 8
+    label9: Tab 9
+    num_tabs: '3'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [416, 16.0]
     rotation: 0
     state: enabled
 - name: digital_constellation_receiver_cb_0
@@ -924,7 +982,7 @@ blocks:
   parameters:
     alias: ''
     comment: ''
-    gui_hint: ''
+    gui_hint: 1,0,1,200
     label0: Baseband signal
     label1: FM MPX
     label10: Tab 10
@@ -938,8 +996,8 @@ blocks:
     label18: Tab 18
     label19: Tab 19
     label2: FM Audio
-    label3: FM RDS
-    label4: Tab 4
+    label3: FM RDS1
+    label4: Reference
     label5: Tab 5
     label6: Tab 6
     label7: Tab 7
@@ -957,8 +1015,10 @@ blocks:
   id: note
   parameters:
     alias: ''
-    comment: "L+R   : 50 Hz - 15 kHz  Mono\nPilot : 19 kHz \nL-R     : 23 kHz - 53\
-      \ kHz Stereo\nRDS   : 57 kHz\nSCA   : 64 kHz - 99 kHz"
+    comment: "L+R   : 30 Hz - 15 kHz  Mono (15k BW)\nPilot : 19 kHz \nL-R     : 23\
+      \ kHz - 53 kHz Stereo - Center 2x19kHz = 38kHz (30k BW)\n\nRDS   : 57 kHz -\
+      \ 3x19kHz\n\nRDS2 DS1 66.5 kHz - 3.5x19kHz\nRDS2 DS2 71.25 kHz -  3.75x19kHz\n\
+      RDS2 DS3 76 kHz - 4x19kHz\n\nSCA   : 41kHz, 67kHz, 92kHz"
     note: FM Ch Baseband
   states:
     bus_sink: false
@@ -1018,7 +1078,7 @@ blocks:
     marker7: '0'
     marker8: '0'
     marker9: '0'
-    name: '"RDS Constellation"'
+    name: '"RDS1 Constellation"'
     nconnections: '1'
     size: '1024'
     style1: '0'
@@ -1190,7 +1250,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '"FM MPX"'
+    name: '"FM MPX Spectrum"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -1501,7 +1561,7 @@ blocks:
     marker7: '-1'
     marker8: '-1'
     marker9: '-1'
-    name: RDS Bits
+    name: RDS1 Bits
     nconnections: '1'
     size: '104'
     srate: samp_rate_RDS
@@ -1773,7 +1833,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: ''
+    comment: RDS1 Decoder
     debug: 'False'
     log: 'False'
     maxoutbuf: '0'
@@ -1790,7 +1850,7 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-    comment: RDS output
+    comment: RDS1 output
     freq: freq_tune/1e6
     gui_hint: main@3:0,0,1,200
   states:
@@ -1829,7 +1889,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 400.0]
+    coordinate: [696, 424.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_1
@@ -1837,7 +1897,7 @@ blocks:
   parameters:
     alias: ''
     comment: FM RDS
-    stream_id: FM_RDS
+    stream_id: FM_RDS1
   states:
     bus_sink: false
     bus_source: false
@@ -1850,7 +1910,7 @@ blocks:
   parameters:
     alias: ''
     comment: ''
-    stream_id: RDS_bits
+    stream_id: RDS1_bits
   states:
     bus_sink: false
     bus_source: false
@@ -1863,7 +1923,7 @@ blocks:
   parameters:
     alias: ''
     comment: ''
-    stream_id: RDS_signal
+    stream_id: RDS1_signal
   states:
     bus_sink: false
     bus_source: false
@@ -1940,8 +2000,8 @@ blocks:
   id: virtual_source
   parameters:
     alias: ''
-    comment: FM RDS
-    stream_id: FM_RDS
+    comment: FM RDS1
+    stream_id: FM_RDS1
   states:
     bus_sink: false
     bus_source: false
@@ -1953,8 +2013,8 @@ blocks:
   id: virtual_source
   parameters:
     alias: ''
-    comment: RDS bits
-    stream_id: RDS_bits
+    comment: RDS1 bits
+    stream_id: RDS1_bits
   states:
     bus_sink: false
     bus_source: false
@@ -1966,8 +2026,8 @@ blocks:
   id: virtual_source
   parameters:
     alias: ''
-    comment: RDS Signal
-    stream_id: RDS_signal
+    comment: RDS1 Signal
+    stream_id: RDS1_signal
   states:
     bus_sink: false
     bus_source: false
