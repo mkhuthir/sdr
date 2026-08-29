@@ -1879,6 +1879,49 @@ blocks:
     coordinate: [368, 1920.0]
     rotation: 0
     state: true
+- name: snippet_0
+  id: snippet
+  parameters:
+    alias: ''
+    code: "import sip\nfrom PyQt5.QtWidgets import QWidget\nfrom PyQt5.QtGui import\
+      \ QPainter, QPen\nfrom PyQt5.QtCore import Qt\n\nclass FreqCenterMarkerOverlay(QWidget):\n\
+      \    def __init__(self, plot_canvas):\n        # Attach directly to the internal\
+      \ drawing canvas widget\n        super().__init__(plot_canvas)\n        self.plot_canvas\
+      \ = plot_canvas\n        \n        # Make this overlay fully transparent and\
+      \ click-through\n        self.setAttribute(Qt.WA_TransparentForMouseEvents,\
+      \ True)\n        self.setAttribute(Qt.WA_NoSystemBackground, True)\n       \
+      \ self.setAttribute(Qt.WA_TranslucentBackground, True)\n        \n        #\
+      \ Keep perfect alignment with the canvas size\n        self.plot_canvas.installEventFilter(self)\n\
+      \        self.setGeometry(self.plot_canvas.rect())\n        self.show()\n\n\
+      \    def eventFilter(self, obj, event):\n        if obj == self.plot_canvas\
+      \ and event.type() == event.Resize:\n            self.setGeometry(obj.rect())\n\
+      \        return super().eventFilter(obj, event)\n\n    def paintEvent(self,\
+      \ event):\n        painter = QPainter(self)\n        pen = QPen(Qt.red, 1, Qt.DashLine)\n\
+      \        painter.setPen(pen)\n        \n        # Since we are attached to the\
+      \ canvas, the coordinate space matches the grid perfectly.\n        # The center\
+      \ of the grid is always exactly half of the canvas width.\n        x_pixel =\
+      \ int(self.width() / 2.0)\n        \n        # Draw from the very top to the\
+      \ very bottom of the black grid space\n        painter.drawLine(x_pixel, 0,\
+      \ x_pixel, self.height())\n\n# --- Execute Smart Canvas Extraction ---\nraw_pointer\
+      \ = self.qtgui_freq_sink_x_0_1.qwidget()\nsafe_sink_window = sip.wrapinstance(raw_pointer,\
+      \ QWidget)\n\n# Scan the widget tree to find the internal QwtPlotCanvas drawing\
+      \ box\ntarget_canvas = None\nfor child in safe_sink_window.findChildren(QWidget):\n\
+      \    class_name = child.metaObject().className()\n    if \"Canvas\" in class_name\
+      \ or \"canvas\" in child.objectName().lower():\n        target_canvas = child\n\
+      \        break\n\n# Fallback to the top window frame if the child canvas tree\
+      \ is completely hidden\nif target_canvas is None:\n    target_canvas = safe_sink_window\n\
+      \n# Attach the overlay directly onto the plot canvas grid\nself.custom_frequency_center_marker\
+      \ = FreqCenterMarkerOverlay(plot_canvas=target_canvas)"
+    comment: ''
+    priority: '0'
+    section: main_after_init
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1096, 440.0]
+    rotation: 0
+    state: enabled
 - name: virtual_sink_0
   id: virtual_sink
   parameters:

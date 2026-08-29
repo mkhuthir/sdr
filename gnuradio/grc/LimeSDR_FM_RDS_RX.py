@@ -36,6 +36,67 @@ from gnuradio import eng_notation
 
 
 
+def snipfcn_snippet_0(self):
+    import sip
+    from PyQt5.QtWidgets import QWidget
+    from PyQt5.QtGui import QPainter, QPen
+    from PyQt5.QtCore import Qt
+
+    class FreqCenterMarkerOverlay(QWidget):
+        def __init__(self, plot_canvas):
+            # Attach directly to the internal drawing canvas widget
+            super().__init__(plot_canvas)
+            self.plot_canvas = plot_canvas
+
+            # Make this overlay fully transparent and click-through
+            self.setAttribute(Qt.WA_TransparentForMouseEvents, True)
+            self.setAttribute(Qt.WA_NoSystemBackground, True)
+            self.setAttribute(Qt.WA_TranslucentBackground, True)
+
+            # Keep perfect alignment with the canvas size
+            self.plot_canvas.installEventFilter(self)
+            self.setGeometry(self.plot_canvas.rect())
+            self.show()
+
+        def eventFilter(self, obj, event):
+            if obj == self.plot_canvas and event.type() == event.Resize:
+                self.setGeometry(obj.rect())
+            return super().eventFilter(obj, event)
+
+        def paintEvent(self, event):
+            painter = QPainter(self)
+            pen = QPen(Qt.red, 1, Qt.DashLine)
+            painter.setPen(pen)
+
+            # Since we are attached to the canvas, the coordinate space matches the grid perfectly.
+            # The center of the grid is always exactly half of the canvas width.
+            x_pixel = int(self.width() / 2.0)
+
+            # Draw from the very top to the very bottom of the black grid space
+            painter.drawLine(x_pixel, 0, x_pixel, self.height())
+
+    # --- Execute Smart Canvas Extraction ---
+    raw_pointer = self.qtgui_freq_sink_x_0_1.qwidget()
+    safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)
+
+    # Scan the widget tree to find the internal QwtPlotCanvas drawing box
+    target_canvas = None
+    for child in safe_sink_window.findChildren(QWidget):
+        class_name = child.metaObject().className()
+        if "Canvas" in class_name or "canvas" in child.objectName().lower():
+            target_canvas = child
+            break
+
+    # Fallback to the top window frame if the child canvas tree is completely hidden
+    if target_canvas is None:
+        target_canvas = safe_sink_window
+
+    # Attach the overlay directly onto the plot canvas grid
+    self.custom_frequency_center_marker = FreqCenterMarkerOverlay(plot_canvas=target_canvas)
+
+
+def snippets_main_after_init(tb):
+    snipfcn_snippet_0(tb)
 
 class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
 
@@ -735,9 +796,9 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_null_source_0, 0), (self.blocks_throttle2_0, 0))
         self.connect((self.blocks_sub_xx_0, 0), (self.analog_fm_deemph_0_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.blocks_null_sink_1, 0))
-        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
+        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 4), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_char_to_float_0, 0))
@@ -953,7 +1014,7 @@ def main(top_block_cls=LimeSDR_FM_RDS_RX, options=None):
     qapp = Qt.QApplication(sys.argv)
 
     tb = top_block_cls()
-
+    snippets_main_after_init(tb)
     tb.start()
     tb.flowgraph_started.set()
 
