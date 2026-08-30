@@ -83,7 +83,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1424, 16.0]
+    coordinate: [1432, 16.0]
     rotation: 0
     state: enabled
 - name: Pilot_BPF_taps
@@ -106,7 +106,7 @@ blocks:
     coordinate: [904, 20.0]
     rotation: 0
     state: true
-- name: RDS2_DS1
+- name: RDS2_DS1_freq
   id: variable
   parameters:
     comment: ''
@@ -118,7 +118,7 @@ blocks:
     coordinate: [1184, 152.0]
     rotation: 0
     state: enabled
-- name: RDS2_DS2
+- name: RDS2_DS2_freq
   id: variable
   parameters:
     comment: ''
@@ -130,7 +130,7 @@ blocks:
     coordinate: [1184, 224.0]
     rotation: 0
     state: enabled
-- name: RDS2_DS3
+- name: RDS2_DS3_freq
   id: variable
   parameters:
     comment: ''
@@ -169,7 +169,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 224.0]
+    coordinate: [1072, 152.0]
     rotation: 0
     state: enabled
 - name: RDS_sps
@@ -181,7 +181,19 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1072, 152.0]
+    coordinate: [1072, 224.0]
+    rotation: 0
+    state: enabled
+- name: SCA_freq
+  id: variable
+  parameters:
+    comment: ''
+    value: '76000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1184, 368.0]
     rotation: 0
     state: enabled
 - name: fft_size
@@ -243,7 +255,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1280, 16.0]
+    coordinate: [1288, 16.0]
     rotation: 0
     state: true
 - name: rrc_taps_manchester
@@ -255,7 +267,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1280, 152.0]
+    coordinate: [1288, 152.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -303,7 +315,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1424, 152.0]
+    coordinate: [1432, 152.0]
     rotation: 0
     state: enabled
 - name: samp_rate_audio_sink
@@ -315,7 +327,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1424, 224.0]
+    coordinate: [1432, 224.0]
     rotation: 0
     state: enabled
 - name: update_period
@@ -414,6 +426,25 @@ blocks:
     coordinate: [536, 1104.0]
     rotation: 0
     state: enabled
+- name: analog_nbfm_rx_0
+  id: analog_nbfm_rx
+  parameters:
+    affinity: ''
+    alias: ''
+    audio_rate: samp_rate_audio_SCA
+    comment: SCA NBFM
+    max_dev: SCA_fsk_deviation_hz
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    quad_rate: samp_rate_SCA
+    tau: 75e-6
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [464, 2152.0]
+    rotation: 0
+    state: enabled
 - name: analog_pll_refout_cc_0
   id: analog_pll_refout_cc
   parameters:
@@ -463,6 +494,23 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [232, 1344.0]
+    rotation: 0
+    state: enabled
+- name: audio_sink_0_0
+  id: audio_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: SCA Audio
+    device_name: ''
+    num_inputs: '1'
+    ok_to_block: 'False'
+    samp_rate: samp_rate_audio_SCA
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [888, 2176.0]
     rotation: 0
     state: enabled
 - name: blocks_add_xx_0
@@ -586,6 +634,24 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [704, 1200.0]
+    rotation: 0
+    state: enabled
+- name: blocks_multiply_const_vxx_0_0_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: SCA Volume
+    const: volume2
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [704, 2176.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_xx_0
@@ -928,6 +994,26 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [224, 1568.0]
+    rotation: 0
+    state: enabled
+- name: freq_xlating_fir_filter_xxx_1_0_0
+  id: freq_xlating_fir_filter_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    center_freq: SCA_freq
+    comment: SCA LPF
+    decim: int(samp_rate_FM_band/samp_rate_SCA)
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_rate: samp_rate_FM_band
+    taps: SCA_LPF_taps
+    type: fcc
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [224, 2152.0]
     rotation: 0
     state: enabled
 - name: import_0
@@ -1393,7 +1479,7 @@ blocks:
     color9: '"dark green"'
     comment: ''
     ctrlpanel: 'False'
-    fc: RDS_freq
+    fc: '0'
     fftsize: fft_size
     freqhalf: 'True'
     grid: 'True'
@@ -1977,6 +2063,45 @@ blocks:
     coordinate: [856, 576.0]
     rotation: 0
     state: enabled
+- name: snippet_0_1
+  id: snippet
+  parameters:
+    alias: ''
+    code: "import sip\nfrom PyQt5.QtWidgets import QWidget\nfrom PyQt5.QtGui import\
+      \ QPainter, QPen\nfrom PyQt5.QtCore import Qt\n\nclass FreqCenterMarkerOverlay(QWidget):\n\
+      \    def __init__(self, plot_canvas):\n        # Attach directly to the internal\
+      \ drawing canvas widget\n        super().__init__(plot_canvas)\n        self.plot_canvas\
+      \ = plot_canvas\n        \n        # Make this overlay fully transparent and\
+      \ click-through\n        self.setAttribute(Qt.WA_TransparentForMouseEvents,\
+      \ True)\n        self.setAttribute(Qt.WA_NoSystemBackground, True)\n       \
+      \ self.setAttribute(Qt.WA_TranslucentBackground, True)\n        \n        #\
+      \ Keep perfect alignment with the canvas size\n        self.plot_canvas.installEventFilter(self)\n\
+      \        self.setGeometry(self.plot_canvas.rect())\n        self.show()\n\n\
+      \    def eventFilter(self, obj, event):\n        if obj == self.plot_canvas\
+      \ and event.type() == event.Resize:\n            self.setGeometry(obj.rect())\n\
+      \        return super().eventFilter(obj, event)\n\n    def paintEvent(self,\
+      \ event):\n        painter = QPainter(self)\n        pen = QPen(Qt.red, 1, Qt.DashLine)\n\
+      \        painter.setPen(pen)\n        marker_x = int(self.width() / 2.0)\n \
+      \       painter.drawLine(marker_x, 0, marker_x, self.height())\n\n\n# --- Execute\
+      \ Smart Canvas Extraction ---\nraw_pointer = self.qtgui_freq_sink_x_1.qwidget()\n\
+      safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)\n\n# Scan the widget\
+      \ tree to find the internal QwtPlotCanvas drawing box\ntarget_canvas = None\n\
+      for child in safe_sink_window.findChildren(QWidget):\n    class_name = child.metaObject().className()\n\
+      \    if \"Canvas\" in class_name or \"canvas\" in child.objectName().lower():\n\
+      \        target_canvas = child\n        break\n\n# Fallback to the top window\
+      \ frame if the child canvas tree is completely hidden\nif target_canvas is None:\n\
+      \    target_canvas = safe_sink_window\n\n# Attach the overlay directly onto\
+      \ the plot canvas grid\nself.custom_frequency_center_marker = FreqCenterMarkerOverlay(plot_canvas=target_canvas)"
+    comment: RDS1 Center Marker
+    priority: '0'
+    section: main_after_init
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1208, 1648.0]
+    rotation: 0
+    state: enabled
 - name: virtual_sink_0
   id: virtual_sink
   parameters:
@@ -1987,7 +2112,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 424.0]
+    coordinate: [720, 320.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_1
@@ -2000,7 +2125,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 480.0]
+    coordinate: [720, 400.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_2
@@ -2079,6 +2204,19 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [880, 1112.0]
+    rotation: 0
+    state: enabled
+- name: virtual_sink_8
+  id: virtual_sink
+  parameters:
+    alias: ''
+    comment: FM SCA
+    stream_id: FM_SCA
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [720, 480.0]
     rotation: 0
     state: enabled
 - name: virtual_source_0
@@ -2185,18 +2323,33 @@ blocks:
     coordinate: [24, 1472.0]
     rotation: 0
     state: enabled
+- name: virtual_source_8
+  id: virtual_source
+  parameters:
+    alias: ''
+    comment: FM SCA
+    stream_id: FM_SCA
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [24, 2160.0]
+    rotation: 0
+    state: enabled
 
 connections:
 - [analog_agc_xx_0, '0', qtgui_freq_sink_x_1, '0']
 - [analog_agc_xx_0, '0', virtual_sink_3, '0']
 - [analog_fm_deemph_0_0, '0', blocks_multiply_const_vxx_0_0, '0']
 - [analog_fm_deemph_0_0_0, '0', blocks_multiply_const_vxx_0, '0']
+- [analog_nbfm_rx_0, '0', blocks_multiply_const_vxx_0_0_0, '0']
 - [analog_pll_refout_cc_0, '0', blocks_multiply_xx_0, '0']
 - [analog_pll_refout_cc_0, '0', blocks_multiply_xx_0, '1']
 - [analog_quadrature_demod_cf_0, '0', qtgui_freq_sink_x_0_0, '0']
 - [analog_quadrature_demod_cf_0, '0', qtgui_waterfall_sink_x_0, '0']
 - [analog_quadrature_demod_cf_0, '0', virtual_sink_0, '0']
 - [analog_quadrature_demod_cf_0, '0', virtual_sink_1, '0']
+- [analog_quadrature_demod_cf_0, '0', virtual_sink_8, '0']
 - [blocks_add_xx_0, '0', analog_fm_deemph_0_0_0, '0']
 - [blocks_char_to_float_0, '0', qtgui_time_raster_sink_x_0, '0']
 - [blocks_char_to_float_0, '0', qtgui_time_sink_x_0, '0']
@@ -2207,6 +2360,7 @@ connections:
 - [blocks_float_to_complex_0, '0', qtgui_waterfall_sink_x_0_0, '0']
 - [blocks_multiply_const_vxx_0, '0', virtual_sink_7, '0']
 - [blocks_multiply_const_vxx_0_0, '0', virtual_sink_6, '0']
+- [blocks_multiply_const_vxx_0_0_0, '0', audio_sink_0_0, '0']
 - [blocks_multiply_xx_0, '0', blocks_complex_to_imag_0, '0']
 - [blocks_multiply_xx_1, '0', virtual_sink_5, '0']
 - [blocks_null_source_0, '0', blocks_throttle2_0, '0']
@@ -2228,6 +2382,7 @@ connections:
 - [fir_filter_xxx_2, '0', analog_agc_xx_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', analog_quadrature_demod_cf_0, '0']
 - [freq_xlating_fir_filter_xxx_1_0, '0', rational_resampler_xxx_1, '0']
+- [freq_xlating_fir_filter_xxx_1_0_0, '0', analog_nbfm_rx_0, '0']
 - [limesuiteng_sdrdevice_source_0, '0', freq_xlating_fir_filter_xxx_0, '0']
 - [limesuiteng_sdrdevice_source_0, '0', qtgui_freq_sink_x_0_1, '0']
 - [limesuiteng_sdrdevice_source_0, '0', qtgui_waterfall_sink_x_0_1, '0']
@@ -2246,6 +2401,7 @@ connections:
 - [virtual_source_6, '0', blocks_float_to_complex_0, '0']
 - [virtual_source_7, '0', audio_sink_0, '1']
 - [virtual_source_7, '0', blocks_float_to_complex_0, '1']
+- [virtual_source_8, '0', freq_xlating_fir_filter_xxx_1_0_0, '0']
 
 metadata:
   file_format: 1

@@ -184,10 +184,65 @@ def snipfcn_snippet_0_0(self):
     else:
         print("[Error] Could not locate QwtPlotCanvas in hierarchy.")
 
+def snipfcn_snippet_0_1(self):
+    import sip
+    from PyQt5.QtWidgets import QWidget
+    from PyQt5.QtGui import QPainter, QPen
+    from PyQt5.QtCore import Qt
+
+    class FreqCenterMarkerOverlay(QWidget):
+        def __init__(self, plot_canvas):
+            # Attach directly to the internal drawing canvas widget
+            super().__init__(plot_canvas)
+            self.plot_canvas = plot_canvas
+
+            # Make this overlay fully transparent and click-through
+            self.setAttribute(Qt.WA_TransparentForMouseEvents, True)
+            self.setAttribute(Qt.WA_NoSystemBackground, True)
+            self.setAttribute(Qt.WA_TranslucentBackground, True)
+
+            # Keep perfect alignment with the canvas size
+            self.plot_canvas.installEventFilter(self)
+            self.setGeometry(self.plot_canvas.rect())
+            self.show()
+
+        def eventFilter(self, obj, event):
+            if obj == self.plot_canvas and event.type() == event.Resize:
+                self.setGeometry(obj.rect())
+            return super().eventFilter(obj, event)
+
+        def paintEvent(self, event):
+            painter = QPainter(self)
+            pen = QPen(Qt.red, 1, Qt.DashLine)
+            painter.setPen(pen)
+            marker_x = int(self.width() / 2.0)
+            painter.drawLine(marker_x, 0, marker_x, self.height())
+
+
+    # --- Execute Smart Canvas Extraction ---
+    raw_pointer = self.qtgui_freq_sink_x_1.qwidget()
+    safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)
+
+    # Scan the widget tree to find the internal QwtPlotCanvas drawing box
+    target_canvas = None
+    for child in safe_sink_window.findChildren(QWidget):
+        class_name = child.metaObject().className()
+        if "Canvas" in class_name or "canvas" in child.objectName().lower():
+            target_canvas = child
+            break
+
+    # Fallback to the top window frame if the child canvas tree is completely hidden
+    if target_canvas is None:
+        target_canvas = safe_sink_window
+
+    # Attach the overlay directly onto the plot canvas grid
+    self.custom_frequency_center_marker = FreqCenterMarkerOverlay(plot_canvas=target_canvas)
+
 
 def snippets_main_after_init(tb):
     snipfcn_snippet_0(tb)
     snipfcn_snippet_0_0(tb)
+    snipfcn_snippet_0_1(tb)
 
 class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
 
@@ -239,11 +294,12 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.rf_gain = rf_gain = 25
         self.freq_tune = freq_tune = LO_freq*1e6
         self.fft_size = fft_size = 2048
+        self.SCA_freq = SCA_freq = 76000
         self.RDS_freq = RDS_freq = 57000
         self.RDS_LPF_taps = RDS_LPF_taps = firdes.low_pass(1.0, samp_rate_FMMPX, 7.5e3, 1e3, window.WIN_HAMMING, 6.76)
-        self.RDS2_DS3 = RDS2_DS3 = 76000
-        self.RDS2_DS2 = RDS2_DS2 = 71250
-        self.RDS2_DS1 = RDS2_DS1 = 66500
+        self.RDS2_DS3_freq = RDS2_DS3_freq = 76000
+        self.RDS2_DS2_freq = RDS2_DS2_freq = 71250
+        self.RDS2_DS1_freq = RDS2_DS1_freq = 66500
         self.Pilot_BPF_taps = Pilot_BPF_taps = firdes.complex_band_pass(1.0, samp_rate_audio_band, 18980, 19020, 1e3, window.WIN_HAMMING, 6.76)
         self.LR_LPF_taps = LR_LPF_taps = firdes.low_pass(1.0, samp_rate_audio_band, 15e3, 1e3, window.WIN_HAMMING, 6.76)
         self.Ch_LPF_taps = Ch_LPF_taps = firdes.low_pass(1.0, samp_rate, 135e3, 1e3, window.WIN_HAMMING, 6.76)
@@ -564,7 +620,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.qtgui_freq_sink_x_1 = qtgui.freq_sink_c(
             fft_size, #size
             window.WIN_BLACKMAN_hARRIS, #wintype
-            RDS_freq, #fc
+            0, #fc
             samp_rate_RDS, #bw
             '', #name
             1,
@@ -864,8 +920,8 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.analog_agc_xx_0, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.analog_fm_deemph_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
         self.connect((self.analog_fm_deemph_0_0_0, 0), (self.blocks_multiply_const_vxx_0, 0))
-        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
         self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
+        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_1_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_waterfall_sink_x_0, 0))
@@ -887,9 +943,9 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_null_source_0, 0), (self.blocks_throttle2_0, 0))
         self.connect((self.blocks_sub_xx_0, 0), (self.analog_fm_deemph_0_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.blocks_null_sink_1, 0))
-        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
         self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
+        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 4), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_char_to_float_0, 0))
@@ -934,7 +990,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_samp_rate_RDS(self, samp_rate_RDS):
         self.samp_rate_RDS = samp_rate_RDS
         self.set_rrc_taps(firdes.root_raised_cosine(1.0, self.samp_rate_RDS, self.samp_rate_RDS/self.RDS_sps, 1.0, (11*self.RDS_sps)))
-        self.qtgui_freq_sink_x_1.set_frequency_range(self.RDS_freq, self.samp_rate_RDS)
+        self.qtgui_freq_sink_x_1.set_frequency_range(0, self.samp_rate_RDS)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate_RDS)
 
     def get_RDS_sps(self):
@@ -1041,13 +1097,18 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_fft_size(self, fft_size):
         self.fft_size = fft_size
 
+    def get_SCA_freq(self):
+        return self.SCA_freq
+
+    def set_SCA_freq(self, SCA_freq):
+        self.SCA_freq = SCA_freq
+
     def get_RDS_freq(self):
         return self.RDS_freq
 
     def set_RDS_freq(self, RDS_freq):
         self.RDS_freq = RDS_freq
         self.freq_xlating_fir_filter_xxx_1_0.set_center_freq(self.RDS_freq)
-        self.qtgui_freq_sink_x_1.set_frequency_range(self.RDS_freq, self.samp_rate_RDS)
 
     def get_RDS_LPF_taps(self):
         return self.RDS_LPF_taps
@@ -1056,23 +1117,23 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.RDS_LPF_taps = RDS_LPF_taps
         self.freq_xlating_fir_filter_xxx_1_0.set_taps(self.RDS_LPF_taps)
 
-    def get_RDS2_DS3(self):
-        return self.RDS2_DS3
+    def get_RDS2_DS3_freq(self):
+        return self.RDS2_DS3_freq
 
-    def set_RDS2_DS3(self, RDS2_DS3):
-        self.RDS2_DS3 = RDS2_DS3
+    def set_RDS2_DS3_freq(self, RDS2_DS3_freq):
+        self.RDS2_DS3_freq = RDS2_DS3_freq
 
-    def get_RDS2_DS2(self):
-        return self.RDS2_DS2
+    def get_RDS2_DS2_freq(self):
+        return self.RDS2_DS2_freq
 
-    def set_RDS2_DS2(self, RDS2_DS2):
-        self.RDS2_DS2 = RDS2_DS2
+    def set_RDS2_DS2_freq(self, RDS2_DS2_freq):
+        self.RDS2_DS2_freq = RDS2_DS2_freq
 
-    def get_RDS2_DS1(self):
-        return self.RDS2_DS1
+    def get_RDS2_DS1_freq(self):
+        return self.RDS2_DS1_freq
 
-    def set_RDS2_DS1(self, RDS2_DS1):
-        self.RDS2_DS1 = RDS2_DS1
+    def set_RDS2_DS1_freq(self, RDS2_DS1_freq):
+        self.RDS2_DS1_freq = RDS2_DS1_freq
 
     def get_Pilot_BPF_taps(self):
         return self.Pilot_BPF_taps
