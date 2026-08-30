@@ -115,7 +115,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1192, 224.0]
+    coordinate: [1184, 152.0]
     rotation: 0
     state: enabled
 - name: RDS2_DS2
@@ -127,7 +127,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1192, 296.0]
+    coordinate: [1184, 224.0]
     rotation: 0
     state: enabled
 - name: RDS2_DS3
@@ -139,7 +139,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1192, 368.0]
+    coordinate: [1184, 296.0]
     rotation: 0
     state: enabled
 - name: RDS_LPF_taps
@@ -149,7 +149,7 @@ blocks:
     comment: ''
     cutoff_freq: 7.5e3
     gain: '1.0'
-    samp_rate: samp_rate_FM
+    samp_rate: samp_rate_FMMPX
     value: ''
     width: 1e3
     win: window.WIN_HAMMING
@@ -212,7 +212,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: ctrl@1:0,0,1,200
+    gui_hint: ctrl@1:1,0,1,200
     label: RF Gain
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -262,7 +262,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-    value: 4e6
+    value: 2e6
   states:
     bus_sink: false
     bus_source: false
@@ -270,7 +270,7 @@ blocks:
     coordinate: [672, 16.0]
     rotation: 0
     state: enabled
-- name: samp_rate_FM
+- name: samp_rate_FMMPX
   id: variable
   parameters:
     comment: ''
@@ -377,7 +377,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [856, 1520.0]
+    coordinate: [856, 1568.0]
     rotation: 0
     state: true
 - name: analog_fm_deemph_0_0
@@ -438,7 +438,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: FM Demodulator
-    gain: samp_rate_FM / (2*math.pi*75e3)
+    gain: samp_rate_FMMPX / (2*math.pi*75e3)
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
@@ -462,7 +462,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [232, 1312.0]
+    coordinate: [232, 1344.0]
     rotation: 0
     state: enabled
 - name: blocks_add_xx_0
@@ -497,7 +497,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1168, 1832.0]
+    coordinate: [1168, 1888.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_imag_0
@@ -549,7 +549,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [232, 1416.0]
+    coordinate: [232, 1448.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_const_vxx_0
@@ -638,7 +638,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [856, 1752.0]
+    coordinate: [856, 1808.0]
     rotation: 0
     state: enabled
 - name: blocks_null_sink_1
@@ -655,7 +655,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1256, 568.0]
+    coordinate: [1208, 456.0]
     rotation: 0
     state: enabled
 - name: blocks_null_source_0
@@ -674,7 +674,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 568.0]
+    coordinate: [912, 456.0]
     rotation: 0
     state: enabled
 - name: blocks_sub_xx_0
@@ -713,7 +713,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1096, 552.0]
+    coordinate: [1048, 440.0]
     rotation: 0
     state: enabled
 - name: ctrl
@@ -722,7 +722,7 @@ blocks:
     alias: ''
     comment: ''
     gui_hint: 0,0,1,200
-    label0: Tuining
+    label0: Tuning
     label1: SDR
     label10: Tab 10
     label11: Tab 11
@@ -767,7 +767,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [568, 1720.0]
+    coordinate: [568, 1776.0]
     rotation: 0
     state: true
 - name: digital_diff_decoder_bb_0
@@ -784,7 +784,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [952, 1704.0]
+    coordinate: [952, 1760.0]
     rotation: 0
     state: enabled
 - name: digital_symbol_sync_xx_0
@@ -811,7 +811,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [224, 1724.0]
+    coordinate: [224, 1780.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_0
@@ -887,7 +887,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [648, 1536.0]
+    coordinate: [648, 1584.0]
     rotation: 0
     state: enabled
 - name: freq_xlating_fir_filter_xxx_0
@@ -897,7 +897,7 @@ blocks:
     alias: ''
     center_freq: '0'
     comment: FM Channel Select
-    decim: int(samp_rate/samp_rate_FM)
+    decim: int(samp_rate/samp_rate_FMMPX)
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_rate: samp_rate
@@ -920,14 +920,14 @@ blocks:
     decim: '1'
     maxoutbuf: '0'
     minoutbuf: '0'
-    samp_rate: samp_rate_FM
+    samp_rate: samp_rate_FMMPX
     taps: RDS_LPF_taps
     type: fcc
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [224, 1520.0]
+    coordinate: [224, 1568.0]
     rotation: 0
     state: enabled
 - name: import_0
@@ -1116,7 +1116,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [952, 1824.0]
+    coordinate: [952, 1880.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0
@@ -1138,7 +1138,7 @@ blocks:
     average: '0.2'
     axislabels: 'True'
     bw: samp_rate_audio_sink
-    color1: '"blue"'
+    color1: '"green"'
     color10: '"dark blue"'
     color2: '"red"'
     color3: '"green"'
@@ -1169,7 +1169,7 @@ blocks:
     legend: 'False'
     maxoutbuf: '0'
     minoutbuf: '0'
-    name: '""'
+    name: '"Audio"'
     nconnections: '1'
     norm_window: 'False'
     showports: 'False'
@@ -1197,7 +1197,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [440, 1312.0]
+    coordinate: [440, 1336.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_0
@@ -1218,8 +1218,8 @@ blocks:
     autoscale: 'False'
     average: '0.2'
     axislabels: 'True'
-    bw: samp_rate_FM
-    color1: '"blue"'
+    bw: samp_rate_FMMPX
+    color1: '"green"'
     color10: '"dark blue"'
     color2: '"red"'
     color3: '"green"'
@@ -1278,7 +1278,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 576.0]
+    coordinate: [712, 576.0]
     rotation: 0
     state: enabled
 - name: qtgui_freq_sink_x_0_1
@@ -1440,7 +1440,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1048, 1600.0]
+    coordinate: [1048, 1648.0]
     rotation: 0
     state: enabled
 - name: qtgui_time_raster_sink_x_0
@@ -1505,7 +1505,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1344, 1816.0]
+    coordinate: [1344, 1872.0]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -1602,7 +1602,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1344, 1712.0]
+    coordinate: [1344, 1768.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0
@@ -1621,7 +1621,7 @@ blocks:
     alpha8: '1.0'
     alpha9: '1.0'
     axislabels: 'False'
-    bw: samp_rate_FM
+    bw: samp_rate_FMMPX
     color1: '0'
     color10: '0'
     color2: '0'
@@ -1663,7 +1663,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 704.0]
+    coordinate: [712, 704.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0_0
@@ -1724,7 +1724,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [440, 1408.0]
+    coordinate: [440, 1440.0]
     rotation: 0
     state: enabled
 - name: qtgui_waterfall_sink_x_0_1
@@ -1794,7 +1794,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: FM MPX
-    decim: samp_rate_FM
+    decim: samp_rate_FMMPX
     fbw: '0'
     interp: samp_rate_audio_band
     maxoutbuf: '0'
@@ -1814,7 +1814,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    decim: samp_rate_FM
+    decim: samp_rate_FMMPX
     fbw: '0'
     interp: samp_rate_RDS
     maxoutbuf: '0'
@@ -1825,7 +1825,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [440, 1520.0]
+    coordinate: [440, 1568.0]
     rotation: 0
     state: true
 - name: rds_decoder_0
@@ -1842,7 +1842,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [224, 1928.0]
+    coordinate: [224, 2000.0]
     rotation: 0
     state: true
 - name: rds_panel_0
@@ -1857,7 +1857,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [528, 1944.0]
+    coordinate: [584, 2016.0]
     rotation: 0
     state: true
 - name: rds_parser_0
@@ -1876,7 +1876,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 1920.0]
+    coordinate: [392, 1992.0]
     rotation: 0
     state: true
 - name: snippet_0
@@ -1897,29 +1897,68 @@ blocks:
       \ and event.type() == event.Resize:\n            self.setGeometry(obj.rect())\n\
       \        return super().eventFilter(obj, event)\n\n    def paintEvent(self,\
       \ event):\n        painter = QPainter(self)\n        pen = QPen(Qt.red, 1, Qt.DashLine)\n\
-      \        painter.setPen(pen)\n        \n        # Since we are attached to the\
-      \ canvas, the coordinate space matches the grid perfectly.\n        # The center\
-      \ of the grid is always exactly half of the canvas width.\n        x_pixel =\
-      \ int(self.width() / 2.0)\n        \n        # Draw from the very top to the\
-      \ very bottom of the black grid space\n        painter.drawLine(x_pixel, 0,\
-      \ x_pixel, self.height())\n\n# --- Execute Smart Canvas Extraction ---\nraw_pointer\
-      \ = self.qtgui_freq_sink_x_0_1.qwidget()\nsafe_sink_window = sip.wrapinstance(raw_pointer,\
-      \ QWidget)\n\n# Scan the widget tree to find the internal QwtPlotCanvas drawing\
-      \ box\ntarget_canvas = None\nfor child in safe_sink_window.findChildren(QWidget):\n\
-      \    class_name = child.metaObject().className()\n    if \"Canvas\" in class_name\
-      \ or \"canvas\" in child.objectName().lower():\n        target_canvas = child\n\
-      \        break\n\n# Fallback to the top window frame if the child canvas tree\
-      \ is completely hidden\nif target_canvas is None:\n    target_canvas = safe_sink_window\n\
-      \n# Attach the overlay directly onto the plot canvas grid\nself.custom_frequency_center_marker\
-      \ = FreqCenterMarkerOverlay(plot_canvas=target_canvas)"
-    comment: ''
+      \        painter.setPen(pen)\n        marker_x = int(self.width() / 2.0)\n \
+      \       painter.drawLine(marker_x, 0, marker_x, self.height())\n\n\n# --- Execute\
+      \ Smart Canvas Extraction ---\nraw_pointer = self.qtgui_freq_sink_x_0_1.qwidget()\n\
+      safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)\n\n# Scan the widget\
+      \ tree to find the internal QwtPlotCanvas drawing box\ntarget_canvas = None\n\
+      for child in safe_sink_window.findChildren(QWidget):\n    class_name = child.metaObject().className()\n\
+      \    if \"Canvas\" in class_name or \"canvas\" in child.objectName().lower():\n\
+      \        target_canvas = child\n        break\n\n# Fallback to the top window\
+      \ frame if the child canvas tree is completely hidden\nif target_canvas is None:\n\
+      \    target_canvas = safe_sink_window\n\n# Attach the overlay directly onto\
+      \ the plot canvas grid\nself.custom_frequency_center_marker = FreqCenterMarkerOverlay(plot_canvas=target_canvas)"
+    comment: Baseband Center Marker
     priority: '0'
     section: main_after_init
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1096, 440.0]
+    coordinate: [424, 584.0]
+    rotation: 0
+    state: enabled
+- name: snippet_0_0
+  id: snippet
+  parameters:
+    alias: ''
+    code: "# FM MPX Markers for GNU Radio Qt GUI Freq Sink\nimport sip\nfrom PyQt5.QtWidgets\
+      \ import QWidget\nfrom PyQt5.QtGui import QPainter, QPen\nfrom PyQt5.QtCore\
+      \ import Qt\n\nclass FreqCenterMarkerOverlay(QWidget):\n    def __init__(self,\
+      \ plot_canvas, freq_sink):\n        super().__init__(plot_canvas)\n        self.plot_canvas\
+      \ = plot_canvas\n        self.freq_sink = freq_sink  \n        \n        # Make\
+      \ this overlay fully transparent and click-through\n        self.setAttribute(Qt.WA_TransparentForMouseEvents,\
+      \ True)\n        self.setAttribute(Qt.WA_NoSystemBackground, True)\n       \
+      \ self.setAttribute(Qt.WA_TranslucentBackground, True)\n        \n        #\
+      \ Keep perfect alignment with the canvas size\n        self.plot_canvas.installEventFilter(self)\n\
+      \        self.setGeometry(self.plot_canvas.rect())\n        self.show()\n\n\
+      \    def eventFilter(self, obj, event):\n        if obj == self.plot_canvas\
+      \ and event.type() == event.Resize:\n            self.setGeometry(obj.rect())\n\
+      \        return super().eventFilter(obj, event)\n\n    def paintEvent(self,\
+      \ event):\n        painter = QPainter(self)\n        \n        # Single Pen\
+      \ Style: Red, 1 pixel wide, Dotted line\n        pen = QPen(Qt.red, 1, Qt.DashLine)\n\
+      \        painter.setPen(pen)\n        \t\n        # FM MPX frequencies in kHz\n\
+      \        mpx_frequencies = [0.00, 19.00, 38.00, 57.00, 66.50, 71.25, 76.00,100.00]\n\
+      \n        # FM MPX Bandwidth in kHz\n        mpx_bw = 100.00\n             \
+      \   \n        for freq in mpx_frequencies:\n              x_pixel = int(self.width()/mpx_bw*freq)\n\
+      \              painter.drawLine(x_pixel, 0, x_pixel, self.height())\n\n# ---\
+      \ Execute Smart Canvas Extraction ---\nraw_pointer = self.qtgui_freq_sink_x_0_0.qwidget()\n\
+      safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)\n\n# Scan the widget\
+      \ tree to find the internal QwtPlotCanvas drawing box\ntarget_canvas = None\n\
+      for child in safe_sink_window.findChildren(QWidget):\n    class_name = child.metaObject().className()\n\
+      \    if \"QwtPlotCanvas\" in class_name:\n        target_canvas = child\n  \
+      \      break\n\n# Instantiate overlay if canvas detection succeeded\nif target_canvas\
+      \ is not None:\n    self.mpx_markers = FreqCenterMarkerOverlay(target_canvas,\
+      \ self.qtgui_freq_sink_x_0_0)\nelse:\n    print(\"[Error] Could not locate QwtPlotCanvas\
+      \ in the GNU Radio Sink hierarchy.\")"
+    comment: FM MPX Markers
+    priority: '0'
+    section: main_after_init
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [856, 576.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_0
@@ -1932,7 +1971,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 424.0]
+    coordinate: [712, 424.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_1
@@ -1945,7 +1984,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 480.0]
+    coordinate: [712, 480.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_2
@@ -1958,7 +1997,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1168, 1712.0]
+    coordinate: [1168, 1768.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_3
@@ -1971,7 +2010,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1048, 1544.0]
+    coordinate: [1048, 1592.0]
     rotation: 0
     state: enabled
 - name: virtual_sink_4
@@ -2049,7 +2088,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [24, 1528.0]
+    coordinate: [24, 1576.0]
     rotation: 0
     state: enabled
 - name: virtual_source_2
@@ -2062,7 +2101,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [24, 1936.0]
+    coordinate: [24, 2008.0]
     rotation: 0
     state: enabled
 - name: virtual_source_3
@@ -2075,7 +2114,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [24, 1784.0]
+    coordinate: [24, 1840.0]
     rotation: 0
     state: enabled
 - name: virtual_source_4
@@ -2114,7 +2153,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [24, 1304.0]
+    coordinate: [24, 1336.0]
     rotation: 0
     state: enabled
 - name: virtual_source_7
@@ -2127,7 +2166,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [24, 1440.0]
+    coordinate: [24, 1472.0]
     rotation: 0
     state: enabled
 
