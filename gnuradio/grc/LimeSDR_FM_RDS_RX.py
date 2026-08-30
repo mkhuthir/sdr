@@ -94,8 +94,8 @@ def snipfcn_snippet_0_0(self):
     # FM MPX Markers for GNU Radio Qt GUI Freq Sink
     import sip
     from PyQt5.QtWidgets import QWidget
-    from PyQt5.QtGui import QPainter, QPen
-    from PyQt5.QtCore import Qt
+    from PyQt5.QtGui import QPainter, QPen, QColor, QFont
+    from PyQt5.QtCore import Qt, QRect
 
     class FreqCenterMarkerOverlay(QWidget):
         def __init__(self, plot_canvas, freq_sink):
@@ -103,7 +103,7 @@ def snipfcn_snippet_0_0(self):
             self.plot_canvas = plot_canvas
             self.freq_sink = freq_sink
 
-            # Make this overlay fully transparent and click-through
+            # Transparent click-through overlay setup
             self.setAttribute(Qt.WA_TransparentForMouseEvents, True)
             self.setAttribute(Qt.WA_NoSystemBackground, True)
             self.setAttribute(Qt.WA_TranslucentBackground, True)
@@ -121,25 +121,57 @@ def snipfcn_snippet_0_0(self):
         def paintEvent(self, event):
             painter = QPainter(self)
 
-            # Single Pen Style: Red, 1 pixel wide, Dotted line
-            pen = QPen(Qt.red, 1, Qt.DashLine)
-            painter.setPen(pen)
 
-            # FM MPX frequencies in kHz
-            mpx_frequencies = [0.00, 19.00, 38.00, 57.00, 66.50, 71.25, 76.00,100.00]
+            marker_pen = QPen(Qt.red, 1, Qt.DashLine)
 
-            # FM MPX Bandwidth in kHz
-            mpx_bw = 100.00
+            label_pen = QPen(Qt.black)
+            font = QFont("Arial", 8)
+            painter.setFont(font)
 
-            for freq in mpx_frequencies:
-                  x_pixel = int(self.width()/mpx_bw*freq)
-                  painter.drawLine(x_pixel, 0, x_pixel, self.height())
+            # Canvas size and margins
+            canvas_width = self.width()
+            canvas_height = self.height()
+            left_margin = 6.0
+            right_margin = 20.0
+            usable_width = canvas_width - left_margin - right_margin
+            max_freq = 100.0  # Total scale span from 0 to 100 kHz
+
+            # Dictionary linking specific target frequencies (kHz) to their names
+            mpx_markers = {
+                0.0: "",
+                19.0: "Pilot",
+                38.0: "L-R",
+                57.0: "RDS1",
+                66.5: "RDS2DS1",
+                71.25: "RDS2DS2",
+                76.0: "RDS2DS3 / SCA",
+                100.0: ""
+            }
+
+            for freq, label_name in mpx_markers.items():
+
+                # Map the frequency directly into the padded graph region
+                x_pixel = int(left_margin + (freq / max_freq) * usable_width)
+
+                if 0 <= x_pixel <= canvas_width:
+                    #Draw the vertical marker line
+                    painter.setPen(marker_pen)
+                    painter.drawLine(x_pixel, 0, x_pixel, canvas_height)
+
+                    # Draw the text label
+                    # Create a 2-line string containing the frequency value and its structural name
+                    label_text = f"{int(freq)}kHz\n{label_name}"
+
+                    # Create a boundary box for text formatting (100px wide, centered over the line)
+                    # Positioned 10 pixels down from the top edge of the plot canvas
+                    text_rect = QRect(x_pixel - 50, 10, 100, 40)
+                    painter.setPen(label_pen)
+                    painter.drawText(text_rect, Qt.AlignHCenter | Qt.TextWordWrap, label_text)
 
     # --- Execute Smart Canvas Extraction ---
     raw_pointer = self.qtgui_freq_sink_x_0_0.qwidget()
     safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)
 
-    # Scan the widget tree to find the internal QwtPlotCanvas drawing box
     target_canvas = None
     for child in safe_sink_window.findChildren(QWidget):
         class_name = child.metaObject().className()
@@ -147,11 +179,10 @@ def snipfcn_snippet_0_0(self):
             target_canvas = child
             break
 
-    # Instantiate overlay if canvas detection succeeded
     if target_canvas is not None:
         self.mpx_markers = FreqCenterMarkerOverlay(target_canvas, self.qtgui_freq_sink_x_0_0)
     else:
-        print("[Error] Could not locate QwtPlotCanvas in the GNU Radio Sink hierarchy.")
+        print("[Error] Could not locate QwtPlotCanvas in hierarchy.")
 
 
 def snippets_main_after_init(tb):
@@ -833,8 +864,8 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.analog_agc_xx_0, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.analog_fm_deemph_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
         self.connect((self.analog_fm_deemph_0_0_0, 0), (self.blocks_multiply_const_vxx_0, 0))
-        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
         self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
+        self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_1_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_waterfall_sink_x_0, 0))
@@ -856,9 +887,9 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_null_source_0, 0), (self.blocks_throttle2_0, 0))
         self.connect((self.blocks_sub_xx_0, 0), (self.analog_fm_deemph_0_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.blocks_null_sink_1, 0))
-        self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
+        self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 4), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_char_to_float_0, 0))

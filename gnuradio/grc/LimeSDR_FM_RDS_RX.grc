@@ -1923,11 +1923,11 @@ blocks:
   parameters:
     alias: ''
     code: "# FM MPX Markers for GNU Radio Qt GUI Freq Sink\nimport sip\nfrom PyQt5.QtWidgets\
-      \ import QWidget\nfrom PyQt5.QtGui import QPainter, QPen\nfrom PyQt5.QtCore\
-      \ import Qt\n\nclass FreqCenterMarkerOverlay(QWidget):\n    def __init__(self,\
-      \ plot_canvas, freq_sink):\n        super().__init__(plot_canvas)\n        self.plot_canvas\
-      \ = plot_canvas\n        self.freq_sink = freq_sink  \n        \n        # Make\
-      \ this overlay fully transparent and click-through\n        self.setAttribute(Qt.WA_TransparentForMouseEvents,\
+      \ import QWidget\nfrom PyQt5.QtGui import QPainter, QPen, QColor, QFont\nfrom\
+      \ PyQt5.QtCore import Qt, QRect\n\nclass FreqCenterMarkerOverlay(QWidget):\n\
+      \    def __init__(self, plot_canvas, freq_sink):\n        super().__init__(plot_canvas)\n\
+      \        self.plot_canvas = plot_canvas\n        self.freq_sink = freq_sink\
+      \  \n        \n        # Transparent click-through overlay setup\n        self.setAttribute(Qt.WA_TransparentForMouseEvents,\
       \ True)\n        self.setAttribute(Qt.WA_NoSystemBackground, True)\n       \
       \ self.setAttribute(Qt.WA_TranslucentBackground, True)\n        \n        #\
       \ Keep perfect alignment with the canvas size\n        self.plot_canvas.installEventFilter(self)\n\
@@ -1935,22 +1935,38 @@ blocks:
       \    def eventFilter(self, obj, event):\n        if obj == self.plot_canvas\
       \ and event.type() == event.Resize:\n            self.setGeometry(obj.rect())\n\
       \        return super().eventFilter(obj, event)\n\n    def paintEvent(self,\
-      \ event):\n        painter = QPainter(self)\n        \n        # Single Pen\
-      \ Style: Red, 1 pixel wide, Dotted line\n        pen = QPen(Qt.red, 1, Qt.DashLine)\n\
-      \        painter.setPen(pen)\n        \t\n        # FM MPX frequencies in kHz\n\
-      \        mpx_frequencies = [0.00, 19.00, 38.00, 57.00, 66.50, 71.25, 76.00,100.00]\n\
-      \n        # FM MPX Bandwidth in kHz\n        mpx_bw = 100.00\n             \
-      \   \n        for freq in mpx_frequencies:\n              x_pixel = int(self.width()/mpx_bw*freq)\n\
-      \              painter.drawLine(x_pixel, 0, x_pixel, self.height())\n\n# ---\
-      \ Execute Smart Canvas Extraction ---\nraw_pointer = self.qtgui_freq_sink_x_0_0.qwidget()\n\
-      safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)\n\n# Scan the widget\
-      \ tree to find the internal QwtPlotCanvas drawing box\ntarget_canvas = None\n\
-      for child in safe_sink_window.findChildren(QWidget):\n    class_name = child.metaObject().className()\n\
-      \    if \"QwtPlotCanvas\" in class_name:\n        target_canvas = child\n  \
-      \      break\n\n# Instantiate overlay if canvas detection succeeded\nif target_canvas\
-      \ is not None:\n    self.mpx_markers = FreqCenterMarkerOverlay(target_canvas,\
-      \ self.qtgui_freq_sink_x_0_0)\nelse:\n    print(\"[Error] Could not locate QwtPlotCanvas\
-      \ in the GNU Radio Sink hierarchy.\")"
+      \ event):\n        painter = QPainter(self)\n        \n\n        marker_pen\
+      \ = QPen(Qt.red, 1, Qt.DashLine)\n\n        label_pen = QPen(Qt.black)\n   \
+      \     font = QFont(\"Arial\", 8)\n        painter.setFont(font)\n        \n\
+      \        # Canvas size and margins\n        canvas_width = self.width()\n  \
+      \      canvas_height = self.height()\n        left_margin = 6.0\n        right_margin\
+      \ = 20.0\n        usable_width = canvas_width - left_margin - right_margin\n\
+      \        max_freq = 100.0  # Total scale span from 0 to 100 kHz\n        \n\
+      \        # Dictionary linking specific target frequencies (kHz) to their names\n\
+      \        mpx_markers = {\n            0.0: \"\",\n            19.0: \"Pilot\"\
+      ,\n            38.0: \"L-R\",\n            57.0: \"RDS1\",\n            66.5:\
+      \ \"RDS2DS1\",\n            71.25: \"RDS2DS2\",\n            76.0: \"RDS2DS3\
+      \ / SCA\",\n            100.0: \"\"\n        }\n        \n        for freq,\
+      \ label_name in mpx_markers.items():\n\n            # Map the frequency directly\
+      \ into the padded graph region\n            x_pixel = int(left_margin + (freq\
+      \ / max_freq) * usable_width)\n            \n            if 0 <= x_pixel <=\
+      \ canvas_width:\n                #Draw the vertical marker line\n          \
+      \      painter.setPen(marker_pen)\n                painter.drawLine(x_pixel,\
+      \ 0, x_pixel, canvas_height)\n                \n                # Draw the text\
+      \ label\n                # Create a 2-line string containing the frequency value\
+      \ and its structural name\n                label_text = f\"{int(freq)}kHz\\\
+      n{label_name}\"\n                \n                # Create a boundary box for\
+      \ text formatting (100px wide, centered over the line)\n                # Positioned\
+      \ 10 pixels down from the top edge of the plot canvas\n                text_rect\
+      \ = QRect(x_pixel - 50, 10, 100, 40)\n                painter.setPen(label_pen)\n\
+      \                painter.drawText(text_rect, Qt.AlignHCenter | Qt.TextWordWrap,\
+      \ label_text)\n\n# --- Execute Smart Canvas Extraction ---\nraw_pointer = self.qtgui_freq_sink_x_0_0.qwidget()\n\
+      safe_sink_window = sip.wrapinstance(raw_pointer, QWidget)\n\ntarget_canvas =\
+      \ None\nfor child in safe_sink_window.findChildren(QWidget):\n    class_name\
+      \ = child.metaObject().className()\n    if \"QwtPlotCanvas\" in class_name:\n\
+      \        target_canvas = child\n        break\n\nif target_canvas is not None:\n\
+      \    self.mpx_markers = FreqCenterMarkerOverlay(target_canvas, self.qtgui_freq_sink_x_0_0)\n\
+      else:\n    print(\"[Error] Could not locate QwtPlotCanvas in hierarchy.\")"
     comment: FM MPX Markers
     priority: '0'
     section: main_after_init
