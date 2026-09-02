@@ -284,17 +284,22 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.samp_rate_RDS = samp_rate_RDS = 19000
         self.RDS_sps = RDS_sps = 8
         self.samp_rate_audio_band = samp_rate_audio_band = int(samp_rate_audio_sink*5)
+        self.samp_rate_audio_SCA = samp_rate_audio_SCA = 8000
         self.samp_rate_FMMPX = samp_rate_FMMPX = int(200e3)
         self.samp_rate = samp_rate = 2e6
         self.rrc_taps = rrc_taps = firdes.root_raised_cosine(1.0, samp_rate_RDS,samp_rate_RDS/RDS_sps, 1.0, (11*RDS_sps))
         self.LO_freq = LO_freq = 94.4
+        self.volume2 = volume2 = -6
         self.volume = volume = -6
         self.update_period = update_period = 0.0100
+        self.samp_rate_SCA = samp_rate_SCA = samp_rate_audio_SCA*4
         self.rrc_taps_manchester = rrc_taps_manchester = [rrc_taps[n] - rrc_taps[n+8] for n in range(len(rrc_taps)-8)]
         self.rf_gain = rf_gain = 25
         self.freq_tune = freq_tune = LO_freq*1e6
         self.fft_size = fft_size = 2048
+        self.SCA_fsk_deviation_hz = SCA_fsk_deviation_hz = 7.5e3
         self.SCA_freq = SCA_freq = 76000
+        self.SCA_LPF_taps = SCA_LPF_taps = firdes.low_pass(1, samp_rate_FMMPX , 7.5e3, 1.8e3, window.WIN_HAMMING, 6.76)
         self.RDS_freq = RDS_freq = 57000
         self.RDS_LPF_taps = RDS_LPF_taps = firdes.low_pass(1.0, samp_rate_FMMPX, 7.5e3, 1e3, window.WIN_HAMMING, 6.76)
         self.RDS2_DS3_freq = RDS2_DS3_freq = 76000
@@ -329,6 +334,13 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setRowStretch(r, 1)
         for c in range(0, 200):
             self.top_grid_layout.setColumnStretch(c, 1)
+        self._volume2_range = qtgui.Range(-20, 1, 0.5, -6, 10)
+        self._volume2_win = qtgui.RangeWidget(self._volume2_range, self.set_volume2, "SCA Volume", "counter_slider", float, QtCore.Qt.Horizontal)
+        self.ctrl_grid_layout_0.addWidget(self._volume2_win, 1, 100, 1, 100)
+        for r in range(1, 2):
+            self.ctrl_grid_layout_0.setRowStretch(r, 1)
+        for c in range(100, 200):
+            self.ctrl_grid_layout_0.setColumnStretch(c, 1)
         self._volume_range = qtgui.Range(-20, 1, 0.5, -6, 10)
         self._volume_win = qtgui.RangeWidget(self._volume_range, self.set_volume, "Volume", "counter_slider", float, QtCore.Qt.Horizontal)
         self.ctrl_grid_layout_0.addWidget(self._volume_win, 1, 0, 1, 100)
@@ -378,10 +390,10 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
             self.top_grid_layout.setColumnStretch(c, 1)
         self._LO_freq_range = qtgui.Range(87, 108, 0.1, 94.4, 10)
         self._LO_freq_win = qtgui.RangeWidget(self._LO_freq_range, self.set_LO_freq, "LO Freq.", "counter_slider", float, QtCore.Qt.Horizontal)
-        self.ctrl_grid_layout_0.addWidget(self._LO_freq_win, 0, 0, 1, 100)
+        self.ctrl_grid_layout_0.addWidget(self._LO_freq_win, 0, 0, 1, 200)
         for r in range(0, 1):
             self.ctrl_grid_layout_0.setRowStretch(r, 1)
-        for c in range(0, 100):
+        for c in range(0, 200):
             self.ctrl_grid_layout_0.setColumnStretch(c, 1)
         self.rds_parser_0 = rds.parser(False, False, 0)
         self.rds_panel_0 = rds.rdsPanel((freq_tune/1e6))
@@ -865,6 +877,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.limesuiteng_sdrdevice_source_0.set_nco_frequency(0)
         self.limesuiteng_sdrdevice_source_0.set_lpf_bandwidth(20e6) # Rx LPF range depends on TIA gain
         self.limesuiteng_sdrdevice_source_0.set_calibration_enable(1)
+        self.freq_xlating_fir_filter_xxx_1_0_0 = filter.freq_xlating_fir_filter_fcc((int(samp_rate_FMMPX /samp_rate_SCA)), SCA_LPF_taps, SCA_freq, samp_rate_FMMPX )
         self.freq_xlating_fir_filter_xxx_1_0 = filter.freq_xlating_fir_filter_fcc(1, RDS_LPF_taps, RDS_freq, samp_rate_FMMPX)
         self.freq_xlating_fir_filter_xxx_0 = filter.freq_xlating_fir_filter_ccc((int(samp_rate/samp_rate_FMMPX)), Ch_LPF_taps, 0, samp_rate)
         self.fir_filter_xxx_2 = filter.fir_filter_ccc(1, rrc_taps_manchester)
@@ -896,6 +909,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.blocks_null_sink_0 = blocks.null_sink(gr.sizeof_float*1)
         self.blocks_multiply_xx_1 = blocks.multiply_vff(1)
         self.blocks_multiply_xx_0 = blocks.multiply_vcc(1)
+        self.blocks_multiply_const_vxx_0_0_0 = blocks.multiply_const_ff((10**(1.*(volume2)/10)))
         self.blocks_multiply_const_vxx_0_0 = blocks.multiply_const_ff((10**(1.*(volume)/10)))
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_ff((10**(1.*(volume)/10)))
         self.blocks_float_to_complex_0 = blocks.float_to_complex(1)
@@ -903,9 +917,16 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.blocks_complex_to_imag_0 = blocks.complex_to_imag(1)
         self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
         self.blocks_add_xx_0 = blocks.add_vff(1)
+        self.audio_sink_0_0 = audio.sink(samp_rate_audio_SCA, '', False)
         self.audio_sink_0 = audio.sink(48000, '', True)
         self.analog_quadrature_demod_cf_0 = analog.quadrature_demod_cf((samp_rate_FMMPX / (2*math.pi*75e3)))
         self.analog_pll_refout_cc_0 = analog.pll_refout_cc(0.001, (2 * math.pi * 19020 / samp_rate_audio_band), (2 * math.pi * 18980 / samp_rate_audio_band))
+        self.analog_nbfm_rx_0 = analog.nbfm_rx(
+        	audio_rate=samp_rate_audio_SCA,
+        	quad_rate=samp_rate_SCA,
+        	tau=(75e-6),
+        	max_dev=SCA_fsk_deviation_hz,
+          )
         self.analog_fm_deemph_0_0_0 = analog.fm_deemph(fs=samp_rate_audio_sink, tau=(50e-6))
         self.analog_fm_deemph_0_0 = analog.fm_deemph(fs=samp_rate_audio_sink, tau=(50e-6))
         self.analog_agc_xx_0 = analog.agc_cc((2e-3), 0.585, 53, 1000)
@@ -920,9 +941,11 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.analog_agc_xx_0, 0), (self.qtgui_freq_sink_x_1, 0))
         self.connect((self.analog_fm_deemph_0_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))
         self.connect((self.analog_fm_deemph_0_0_0, 0), (self.blocks_multiply_const_vxx_0, 0))
+        self.connect((self.analog_nbfm_rx_0, 0), (self.blocks_multiply_const_vxx_0_0_0, 0))
         self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 1))
         self.connect((self.analog_pll_refout_cc_0, 0), (self.blocks_multiply_xx_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_1_0, 0))
+        self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_1_0_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_freq_sink_x_0_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.qtgui_waterfall_sink_x_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.rational_resampler_xxx_0, 0))
@@ -938,14 +961,15 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_multiply_const_vxx_0, 0), (self.blocks_float_to_complex_0, 0))
         self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.audio_sink_0, 1))
         self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.blocks_float_to_complex_0, 1))
+        self.connect((self.blocks_multiply_const_vxx_0_0_0, 0), (self.audio_sink_0_0, 0))
         self.connect((self.blocks_multiply_xx_0, 0), (self.blocks_complex_to_imag_0, 0))
         self.connect((self.blocks_multiply_xx_1, 0), (self.fir_filter_xxx_1_0, 0))
         self.connect((self.blocks_null_source_0, 0), (self.blocks_throttle2_0, 0))
         self.connect((self.blocks_sub_xx_0, 0), (self.analog_fm_deemph_0_0, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.blocks_null_sink_1, 0))
+        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 3), (self.blocks_null_sink_0, 2))
         self.connect((self.digital_constellation_receiver_cb_0, 1), (self.blocks_null_sink_0, 0))
-        self.connect((self.digital_constellation_receiver_cb_0, 2), (self.blocks_null_sink_0, 1))
         self.connect((self.digital_constellation_receiver_cb_0, 0), (self.digital_diff_decoder_bb_0, 0))
         self.connect((self.digital_constellation_receiver_cb_0, 4), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.digital_diff_decoder_bb_0, 0), (self.blocks_char_to_float_0, 0))
@@ -959,6 +983,7 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.connect((self.fir_filter_xxx_2, 0), (self.analog_agc_xx_0, 0))
         self.connect((self.freq_xlating_fir_filter_xxx_0, 0), (self.analog_quadrature_demod_cf_0, 0))
         self.connect((self.freq_xlating_fir_filter_xxx_1_0, 0), (self.rational_resampler_xxx_1, 0))
+        self.connect((self.freq_xlating_fir_filter_xxx_1_0_0, 0), (self.analog_nbfm_rx_0, 0))
         self.connect((self.limesuiteng_sdrdevice_source_0, 0), (self.freq_xlating_fir_filter_xxx_0, 0))
         self.connect((self.limesuiteng_sdrdevice_source_0, 0), (self.qtgui_freq_sink_x_0_1, 0))
         self.connect((self.limesuiteng_sdrdevice_source_0, 0), (self.qtgui_waterfall_sink_x_0_1, 0))
@@ -1010,12 +1035,20 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.analog_pll_refout_cc_0.set_max_freq((2 * math.pi * 19020 / self.samp_rate_audio_band))
         self.analog_pll_refout_cc_0.set_min_freq((2 * math.pi * 18980 / self.samp_rate_audio_band))
 
+    def get_samp_rate_audio_SCA(self):
+        return self.samp_rate_audio_SCA
+
+    def set_samp_rate_audio_SCA(self, samp_rate_audio_SCA):
+        self.samp_rate_audio_SCA = samp_rate_audio_SCA
+        self.set_samp_rate_SCA(self.samp_rate_audio_SCA*4)
+
     def get_samp_rate_FMMPX(self):
         return self.samp_rate_FMMPX
 
     def set_samp_rate_FMMPX(self, samp_rate_FMMPX):
         self.samp_rate_FMMPX = samp_rate_FMMPX
         self.set_RDS_LPF_taps(firdes.low_pass(1.0, self.samp_rate_FMMPX, 7.5e3, 1e3, window.WIN_HAMMING, 6.76))
+        self.set_SCA_LPF_taps(firdes.low_pass(1, self.samp_rate_FMMPX , 7.5e3, 1.8e3, window.WIN_HAMMING, 6.76))
         self.analog_quadrature_demod_cf_0.set_gain((self.samp_rate_FMMPX / (2*math.pi*75e3)))
         self.qtgui_freq_sink_x_0_0.set_frequency_range(0, self.samp_rate_FMMPX)
         self.qtgui_waterfall_sink_x_0.set_frequency_range(0, self.samp_rate_FMMPX)
@@ -1045,6 +1078,13 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.set_freq_tune(self.LO_freq*1e6)
         self.limesuiteng_sdrdevice_source_0.set_lo_frequency(self.LO_freq*1e6)
 
+    def get_volume2(self):
+        return self.volume2
+
+    def set_volume2(self, volume2):
+        self.volume2 = volume2
+        self.blocks_multiply_const_vxx_0_0_0.set_k((10**(1.*(self.volume2)/10)))
+
     def get_volume(self):
         return self.volume
 
@@ -1067,6 +1107,12 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
         self.qtgui_waterfall_sink_x_0.set_update_time(self.update_period)
         self.qtgui_waterfall_sink_x_0_0.set_update_time(self.update_period)
         self.qtgui_waterfall_sink_x_0_1.set_update_time(self.update_period)
+
+    def get_samp_rate_SCA(self):
+        return self.samp_rate_SCA
+
+    def set_samp_rate_SCA(self, samp_rate_SCA):
+        self.samp_rate_SCA = samp_rate_SCA
 
     def get_rrc_taps_manchester(self):
         return self.rrc_taps_manchester
@@ -1097,11 +1143,26 @@ class LimeSDR_FM_RDS_RX(gr.top_block, Qt.QWidget):
     def set_fft_size(self, fft_size):
         self.fft_size = fft_size
 
+    def get_SCA_fsk_deviation_hz(self):
+        return self.SCA_fsk_deviation_hz
+
+    def set_SCA_fsk_deviation_hz(self, SCA_fsk_deviation_hz):
+        self.SCA_fsk_deviation_hz = SCA_fsk_deviation_hz
+        self.analog_nbfm_rx_0.set_max_deviation(self.SCA_fsk_deviation_hz)
+
     def get_SCA_freq(self):
         return self.SCA_freq
 
     def set_SCA_freq(self, SCA_freq):
         self.SCA_freq = SCA_freq
+        self.freq_xlating_fir_filter_xxx_1_0_0.set_center_freq(self.SCA_freq)
+
+    def get_SCA_LPF_taps(self):
+        return self.SCA_LPF_taps
+
+    def set_SCA_LPF_taps(self, SCA_LPF_taps):
+        self.SCA_LPF_taps = SCA_LPF_taps
+        self.freq_xlating_fir_filter_xxx_1_0_0.set_taps(self.SCA_LPF_taps)
 
     def get_RDS_freq(self):
         return self.RDS_freq

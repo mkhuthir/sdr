@@ -51,7 +51,7 @@ blocks:
   id: variable_qtgui_range
   parameters:
     comment: ''
-    gui_hint: ctrl@0:0, 0,1, 100
+    gui_hint: ctrl@0:0, 0,1, 200
     label: LO Freq.
     min_len: '10'
     orient: QtCore.Qt.Horizontal
@@ -184,6 +184,24 @@ blocks:
     coordinate: [1072, 224.0]
     rotation: 0
     state: enabled
+- name: SCA_LPF_taps
+  id: variable_low_pass_filter_taps
+  parameters:
+    beta: '6.76'
+    comment: ''
+    cutoff_freq: 7.5e3
+    gain: '1'
+    samp_rate: 'samp_rate_FMMPX '
+    value: ''
+    width: 1.8e3
+    win: window.WIN_HAMMING
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1584, 368.0]
+    rotation: 0
+    state: enabled
 - name: SCA_freq
   id: variable
   parameters:
@@ -193,7 +211,19 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1184, 368.0]
+    coordinate: [1584, 152.0]
+    rotation: 0
+    state: enabled
+- name: SCA_fsk_deviation_hz
+  id: variable
+  parameters:
+    comment: ''
+    value: 7.5e3
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1584, 296.0]
     rotation: 0
     state: enabled
 - name: fft_size
@@ -306,6 +336,30 @@ blocks:
     coordinate: [1072, 296.0]
     rotation: 0
     state: enabled
+- name: samp_rate_SCA
+  id: variable
+  parameters:
+    comment: ''
+    value: samp_rate_audio_SCA*4
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1584, 224.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate_audio_SCA
+  id: variable
+  parameters:
+    comment: ''
+    value: '8000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1584, 504.0]
+    rotation: 0
+    state: enabled
 - name: samp_rate_audio_band
   id: variable
   parameters:
@@ -370,6 +424,27 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [416, 272.0]
+    rotation: 0
+    state: true
+- name: volume2
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ctrl@0:1,100,1, 100
+    label: SCA Volume
+    min_len: '10'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '-20'
+    step: '0.5'
+    stop: '1'
+    value: '-6'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1584, 16.0]
     rotation: 0
     state: true
 - name: analog_agc_xx_0
@@ -510,7 +585,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [888, 2176.0]
+    coordinate: [848, 2176.0]
     rotation: 0
     state: enabled
 - name: blocks_add_xx_0
@@ -642,7 +717,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: SCA Volume
-    const: volume2
+    const: 10**(1.*(volume2)/10)
     maxoutbuf: '0'
     minoutbuf: '0'
     type: float
@@ -651,7 +726,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [704, 2176.0]
+    coordinate: [664, 2176.0]
     rotation: 0
     state: enabled
 - name: blocks_multiply_xx_0
@@ -1003,10 +1078,10 @@ blocks:
     alias: ''
     center_freq: SCA_freq
     comment: SCA LPF
-    decim: int(samp_rate_FM_band/samp_rate_SCA)
+    decim: int(samp_rate_FMMPX /samp_rate_SCA)
     maxoutbuf: '0'
     minoutbuf: '0'
-    samp_rate: samp_rate_FM_band
+    samp_rate: 'samp_rate_FMMPX '
     taps: SCA_LPF_taps
     type: fcc
   states:
